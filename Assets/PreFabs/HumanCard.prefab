@@ -757,6 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardAsset: {fileID: 0}
+  prefabName: HumanCard
   cardGraphic: {fileID: 0}
   titleText: {fileID: 0}
   price: {fileID: 0}

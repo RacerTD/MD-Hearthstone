@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class OneCardManager : MonoBehaviour
 {
     public CardAsset cardAsset;
+    public string prefabName;
 
     [Header("CardComponents")]
     public Image cardGraphic;

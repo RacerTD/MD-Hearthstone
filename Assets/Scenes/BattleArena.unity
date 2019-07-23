@@ -1179,7 +1179,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckCards: []
-  cardAsset: {fileID: 0}
+  cardAsset: {fileID: 11400000, guid: ba880a1f0438aee48b30757269a83ae7, type: 2}
+  cardToSpawn: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
+    type: 3}
+  cardValues: {fileID: 11400000, guid: ba880a1f0438aee48b30757269a83ae7, type: 2}
 --- !u!1 &1002489348
 GameObject:
   m_ObjectHideFlags: 0
