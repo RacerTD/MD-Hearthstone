@@ -30,4 +30,5 @@ public class CardAsset : ScriptableObject
     public string AbilityScriptName;
     [TextArea(2, 3)]
     public string description;
+
 }

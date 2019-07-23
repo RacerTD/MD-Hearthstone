@@ -20,9 +20,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (GameState)
-        {
-            case GameState
-        }
+        
     }
 }

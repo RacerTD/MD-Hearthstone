@@ -16,13 +16,10 @@ public class OneCardManager : MonoBehaviour
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
-    public GameObject enemyCardBack;
     public GameObject spellCardFront;
-    public GameObject spellCardBack;
     public GameObject equipmentCardFront;
-    public GameObject equipmentCardBack;
     public GameObject humanCardFront;
-    public GameObject humanCardBack;
+    public GameObject CardBack;
 
     void Start()
     {
@@ -45,7 +42,19 @@ public class OneCardManager : MonoBehaviour
         cardGraphic.sprite = cardAsset.cardImageLarge;
         if (newAsset.cardType == "enemy")
         {
-            enemyCardFront.SetActive;
+            enemyCardFront.SetActive(true);
+        }
+        else if (newAsset.cardType == "spell")
+        {
+            spellCardFront.SetActive(true);
+        }
+        else if (newAsset.cardType == "equipment")
+        {
+            equipmentCardFront.SetActive(true);
+        }
+        else
+        {
+            humanCardFront.SetActive(true);
         }
 
     }
