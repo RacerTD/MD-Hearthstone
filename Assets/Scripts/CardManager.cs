@@ -32,11 +32,11 @@ public class CardManager : MonoBehaviour
     {
         //Attacke mithilfe einer Attack Fähigkeit
         //Abzug der entsprechenden Fähigkeitenpunkte
-// Test Kommentar
     }
 
     void AbilityHeal()
     {
         //Heal einer eigenen Einheit
+        //Gelb
     }
 }
