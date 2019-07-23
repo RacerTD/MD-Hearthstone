@@ -11,8 +11,11 @@ public enum TargetingOptions
     Nothing
 }
 
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
 public class CardAsset : ScriptableObject
 {
+
+    public string prefabName = "HumanCard";
     [Header("General Info")]
     [Tooltip("Spell, Enemy, Human, Equipment")]
     public string cardType;
