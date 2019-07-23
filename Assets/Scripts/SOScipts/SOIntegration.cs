@@ -14,24 +14,9 @@ public class SOIntegration
 
 public class SOEnabler
 {
-    [MenuItem("Assets/Create/EquipmentCardAsset", priority = 1)]
-    public static void EquipmentAssetObject()
+    [MenuItem("Assets/Create/CardAsset", priority = 1)]
+    public static void CardAssetObject()
     {
-        SOIntegration.CreateMyOwnSO<EquipmentCardAsset>();
-    }
-    [MenuItem("Assets/Create/SpellCardAsset", priority = 1)]
-    public static void SpellAssetObject()
-    {
-        SOIntegration.CreateMyOwnSO<SpellCardAsset>();
-    }
-    [MenuItem("Assets/Create/EnemyCardAsset", priority = 1)]
-    public static void EnemyAssetObject()
-    {
-        SOIntegration.CreateMyOwnSO<EnemyCardAsset>();
-    }
-    [MenuItem("Assets/Create/HumanCardAsset", priority = 1)]
-    public static void HumanAssetObject()
-    {
-        SOIntegration.CreateMyOwnSO<HumanCardAsset>();
+        SOIntegration.CreateMyOwnSO<CardAsset>();
     }
 }
