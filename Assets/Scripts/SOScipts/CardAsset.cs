@@ -15,7 +15,7 @@ public enum TargetingOptions
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
 public class CardAsset : ScriptableObject
 {
-
+    public int probability;
     public string prefabName = "HumanCard";
     [Header("General Info")]
     [Tooltip("Spell, Enemy, Human, Equipment")]
@@ -35,4 +35,8 @@ public class CardAsset : ScriptableObject
     [TextArea(2, 3)]
     public string description;
 
+    [Header("Human")]
+    public int equipmentCount;
+    public bool canAttack;
+    public bool summoningSickness;
 }

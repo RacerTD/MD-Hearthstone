@@ -6,7 +6,6 @@ public class CardManager : MonoBehaviour
 {   
     public GameObject entityToSpawn;
     public OneCardManager spawnManagerValues;
-    int instantiateNumber;
     void Start()
     {
         SpawnCards();
@@ -16,6 +15,6 @@ public class CardManager : MonoBehaviour
         Vector3 test = new Vector3(0f, 0f, 0f);
 
         GameObject currentEntity = Instantiate(entityToSpawn, test, Quaternion.identity);
-        currentEntity.name = spawnManagerValues.name + instantiateNumber;
+        currentEntity.name = spawnManagerValues.name;
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class OneCardManager : MonoBehaviour
 {
+    private GameManager gameManager;
     public CardAsset cardAsset;
     public string prefabName;
 
@@ -22,6 +23,10 @@ public class OneCardManager : MonoBehaviour
     public GameObject humanCardFront;
     public GameObject CardBack;
 
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         UpdateCard();
