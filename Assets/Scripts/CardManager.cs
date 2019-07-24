@@ -8,7 +8,7 @@ public class CardManager : MonoBehaviour
     public OneCardManager spawnManagerValues;
     void Start()
     {
-        SpawnCards();
+        //SpawnCards();
     }
     void SpawnCards()
     {

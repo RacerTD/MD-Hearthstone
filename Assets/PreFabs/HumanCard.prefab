@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.062000003, y: 0.017494364}
   m_AnchorMax: {x: 0.9635421, y: 0.93840516}
-  m_AnchoredPosition: {x: -0.086979, y: 0.18442}
+  m_AnchoredPosition: {x: -0.0869751, y: 0.18441772}
   m_SizeDelta: {x: 0.17393, y: -0.36887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6221838644577608406
@@ -189,7 +189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.046618134, y: 0.8357528}
   m_AnchorMax: {x: 0.320636, y: 1}
-  m_AnchoredPosition: {x: 0.011886, y: 0.011794}
+  m_AnchoredPosition: {x: 0.011886597, y: 0.011795044}
   m_SizeDelta: {x: -0.023773, y: -0.023582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7344837301163068027
@@ -436,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.062000003, y: 0.017494364}
   m_AnchorMax: {x: 0.9635421, y: 0.485}
-  m_AnchoredPosition: {x: -0.07003048, y: 0.26254177}
+  m_AnchoredPosition: {x: -0.07003784, y: 0.26254272}
   m_SizeDelta: {x: 0.37954718, y: -0.03198433}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3122000879489650755
@@ -584,7 +584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7462608, y: 0}
   m_AnchorMax: {x: 0.9695977, y: 0.22360286}
-  m_AnchoredPosition: {x: 0.1958211, y: 0.14097443}
+  m_AnchoredPosition: {x: 0.19582367, y: 0.14097595}
   m_SizeDelta: {x: 0.26690173, y: 0.2898485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3832857217031641860
@@ -651,7 +651,7 @@ Transform:
   m_GameObject: {fileID: 8024431533381291182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 0}
   m_Children:
   - {fileID: 4561436740606786519}
   m_Father: {fileID: 0}
@@ -682,6 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65483974692589f49944cc7394a1c9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardDeck: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: HumanCard
   cardGraphic: {fileID: 0}
@@ -728,7 +729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26673776, y: 0.2555629}
   m_AnchorMax: {x: 0.863273, y: 0.85200006}
-  m_AnchoredPosition: {x: 0.5732892, y: -0.5750896}
+  m_AnchoredPosition: {x: 0.57328796, y: -0.5750885}
   m_SizeDelta: {x: -1.3052503, y: -1.3314328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7865648872477190790

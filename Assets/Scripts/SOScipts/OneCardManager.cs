@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class OneCardManager : MonoBehaviour
 {
-    private GameManager gameManager;
+    public GameObject cardDeck;
     public CardAsset cardAsset;
     public string prefabName;
 
@@ -25,15 +26,19 @@ public class OneCardManager : MonoBehaviour
 
     private void Awake()
     {
-        
+        cardDeck = GameObject.Find("CardDeck");
     }
     void Start()
     {
+        cardAsset = cardDeck.GetComponent<CardDeckScript>().cardToSpawn();
         UpdateCard();
     }
 
     void UpdateCard(CardAsset newAsset = null)
     {
+        tag = "CardDeck";
+        transform.SetParent(cardDeck.transform, false);
+
         if (newAsset == null && cardAsset == null)
         {
             return;
@@ -62,6 +67,5 @@ public class OneCardManager : MonoBehaviour
         {
             humanCardFront.SetActive(true);
         }
-
     }
 }
