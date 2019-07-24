@@ -9,6 +9,7 @@ public enum TargetingOptions
     Human,
     All,
     Nothing
+
 }
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
