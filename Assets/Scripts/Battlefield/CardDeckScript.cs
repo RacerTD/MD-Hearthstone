@@ -5,16 +5,26 @@ using UnityEngine;
 public class CardDeckScript : MonoBehaviour
 {
     public List<CardAsset> deckCards = new List<CardAsset>();
+    public GameObject hand;
     public GameObject cardPrefab;
 
     void Start()
     {
+        shuffleDeck();
         spawnCardDeck();
     }
 
-    void Update()
+    void shuffleDeck()
     {
-        
+        CardAsset merker;
+        int switcher;
+        for (int i = 0; i <= (deckCards.Count - 1); i++)
+        {
+            merker = deckCards[i];
+            switcher = Random.Range(0, deckCards.Count);
+            deckCards[i] = deckCards[switcher];
+            deckCards[switcher] = merker;
+        }
     }
 
     void spawnCardDeck()
@@ -32,5 +42,9 @@ public class CardDeckScript : MonoBehaviour
         CardAsset cardToSpawn = deckCards[0];
         deckCards.RemoveAt(0);
         return cardToSpawn;
+    }
+    public void moveCardToHand()
+    {
+        this.gameObject.transform.GetChild(0).SetParent(hand.transform, false);
     }
 }

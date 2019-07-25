@@ -8,13 +8,11 @@ public class CardManager : MonoBehaviour
     public OneCardManager spawnManagerValues;
     void Start()
     {
-        //SpawnCards();
-    }
-    void SpawnCards()
-    {
-        Vector3 test = new Vector3(0f, 0f, 0f);
 
-        GameObject currentEntity = Instantiate(entityToSpawn, test, Quaternion.identity);
-        currentEntity.name = spawnManagerValues.name;
+    }
+    
+    void checkHandCards()
+    {
+        int handCards = this.gameObject.transform.childCount;
     }
 }

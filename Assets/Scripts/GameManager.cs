@@ -13,10 +13,11 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public GameState gameState;
+    public GameObject cardDeck;
 
     void Awake()
     {
-        
+        cardDeck = GameObject.Find("CardDeck");
     }
 
     // Update is called once per frame
@@ -30,6 +31,11 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.player:
                 break;
+        }
+
+        if (Input.GetKeyDown("space"))
+        {
+            cardDeck.GetComponent<CardDeckScript>().moveCardToHand();
         }
     }
 }

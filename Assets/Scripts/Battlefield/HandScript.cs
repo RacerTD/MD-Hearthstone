@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyField : MonoBehaviour
+public class HandScript : MonoBehaviour
 {
-    public List<CardAsset> EnemyCards = new List<CardAsset>();
+    // Start is called before the first frame update
     void Start()
     {
         
