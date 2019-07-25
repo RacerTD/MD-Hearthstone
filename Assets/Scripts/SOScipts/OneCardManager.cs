@@ -73,4 +73,9 @@ public class OneCardManager : MonoBehaviour
 
 
     }
+
+    public void HandPosition(int i)
+    {
+        transform.position = new Vector3(i, i, 0);
+    }
 }
