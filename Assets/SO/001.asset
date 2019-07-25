@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
   m_Name: 001
   m_EditorClassIdentifier: 
+  probability: 0
   prefabName: HumanCard
   cardType: spell
   cardImageSmall: {fileID: 0}
@@ -20,7 +21,7 @@ MonoBehaviour:
   health: 0
   macHealth: 0
   attack: 0
-  cost: 0
+  cost: 5
   AbilityScriptName: 
   description: 
   equipmentCount: 0

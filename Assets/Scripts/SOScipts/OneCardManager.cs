@@ -24,6 +24,9 @@ public class OneCardManager : MonoBehaviour
     public GameObject humanCardFront;
     public GameObject CardBack;
 
+    [HideInInspector]
+    public int cost;
+
     private void Awake()
     {
         cardDeck = GameObject.Find("CardDeck");
@@ -38,7 +41,7 @@ public class OneCardManager : MonoBehaviour
     {
         tag = "CardDeck";
         transform.SetParent(cardDeck.transform, false);
-
+        cost = cardAsset.cost;
         if (newAsset == null && cardAsset == null)
         {
             return;
@@ -67,5 +70,7 @@ public class OneCardManager : MonoBehaviour
         {
             humanCardFront.SetActive(true);
         }
+
+
     }
 }
