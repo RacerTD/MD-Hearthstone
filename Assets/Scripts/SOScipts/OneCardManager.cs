@@ -39,6 +39,7 @@ public class OneCardManager : MonoBehaviour
 
     void UpdateCard(CardAsset newAsset = null)
     {
+        cost = cardAsset.cost;
         transform.SetParent(cardDeck.transform, false);
         if (newAsset == null && cardAsset == null)
         {
@@ -79,7 +80,7 @@ public class OneCardManager : MonoBehaviour
         {
             descriptionText[i].text = cardAsset.description.ToString();
         }
-        cost = cardAsset.cost;
+
     }
 
     public void HandPosition(int i)

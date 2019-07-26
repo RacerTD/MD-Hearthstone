@@ -18,7 +18,7 @@ public class ManPowerScript : MonoBehaviour
         manPowerText.text = manPower.ToString();
     }
 
-    void UpdateManPower()
+    public void UpdateManPower()
     {
         manPower = 0;
         foreach (Transform child in transform)

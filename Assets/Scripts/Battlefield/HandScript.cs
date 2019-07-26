@@ -21,9 +21,11 @@ public class HandScript : MonoBehaviour
     public void moveCardToMana()
     {
         this.gameObject.transform.GetChild(0).SetParent(mana.transform, false);
+        mana.GetComponent<ManaScript>().updateManaText();
     }
     public void moveCardToManPower()
     {
         this.gameObject.transform.GetChild(0).SetParent(manPower.transform, false);
+        manPower.GetComponent<ManPowerScript>().UpdateManPower();
     }
 }

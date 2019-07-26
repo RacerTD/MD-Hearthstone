@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject cardDeck;
+    public GameObject hand;
 
     void Awake()
     {
@@ -18,6 +19,14 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             cardDeck.GetComponent<CardDeckScript>().moveCardToHand();
+        }
+        if (Input.GetKeyDown("c"))
+        {
+            hand.GetComponent<HandScript>().moveCardToManPower();
+        }
+        if (Input.GetKeyDown("v"))
+        {
+            hand.GetComponent<HandScript>().moveCardToMana();
         }
     }
 }
