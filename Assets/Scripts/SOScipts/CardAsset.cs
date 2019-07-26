@@ -15,23 +15,21 @@ public enum TargetingOptions
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
 public class CardAsset : ScriptableObject
 {
-    public int probability;
     public string prefabName = "HumanCard";
+
     [Header("General Info")]
     [Tooltip("Spell, Enemy, Human, Equipment")]
     public string cardType;
     public Sprite cardImageSmall;
     public Sprite cardImageLarge;
-    public string cardTitle;
 
     [Header("Equipment & Humand & Enemys")]
     public int health;
-    public int macHealth;
+    public int maxHealth;
     public int attack;
 
     [Header("Equipment & Humand & Spell")]
     public int cost;
-    public string AbilityScriptName;
     [TextArea(2, 3)]
     public string description;
 
@@ -39,4 +37,21 @@ public class CardAsset : ScriptableObject
     public int equipmentCount;
     public bool canAttack;
     public bool summoningSickness;
+
+    [Header("Abilitys")]
+    public bool healLowUsed = false;
+    public int healLowCost;
+    public bool healLowEnabled;
+
+    public bool healHighUsed = false;
+    public int healHighCost;
+    public bool healHighEnabled;
+
+    public bool attackLowUsed = false;
+    public int attackLowCost;
+    public bool attackLowEnabled;
+
+    public bool attackHighUsed = false;
+    public int attackHighCost;
+    public bool attackHighEnabled;
 }

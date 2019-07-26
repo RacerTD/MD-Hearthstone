@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CardManager : MonoBehaviour
-{   
-    public GameObject entityToSpawn;
-    public OneCardManager spawnManagerValues;
+{
+    public GameObject playerField;
+    public GameObject manPower;
+    public GameObject mana;
     void Start()
     {
 
     }
-    
-    void checkHandCards()
+    public void moveCardToField()
     {
-        int handCards = this.gameObject.transform.childCount;
+        this.gameObject.transform.GetChild(0).SetParent(playerField.transform, false);
+    }
+    public void moveCardToMana()
+    {
+        this.gameObject.transform.GetChild(0).SetParent(mana.transform, false);
+    }
+    public void moveCardToManPower()
+    {
+        this.gameObject.transform.GetChild(0).SetParent(manPower.transform, false);
     }
 }

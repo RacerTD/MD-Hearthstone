@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class HandScript : MonoBehaviour
 {
-    int childCounter = 0;
+    public GameObject playerField;
+    public GameObject manPower;
+    public GameObject mana;
+
+    public List<GameObject> handPositions = new List<GameObject>();
     void Start()
     {
         
     }
 
-    
-    void Update()
+    public void moveCardToField()
     {
-        if (transform.childCount > 0)
-        {
-            do
-            {
-                this.gameObject.GetComponentInChildren<OneCardManager>().HandPosition(childCounter);
-                childCounter++;
-            } while (transform.childCount > childCounter);
-            childCounter = 0;
-        }
-        
+        this.gameObject.transform.GetChild(0).SetParent(playerField.transform, false);
     }
-
+    public void moveCardToMana()
+    {
+        this.gameObject.transform.GetChild(0).SetParent(mana.transform, false);
+    }
+    public void moveCardToManPower()
+    {
+        this.gameObject.transform.GetChild(0).SetParent(manPower.transform, false);
+    }
 }

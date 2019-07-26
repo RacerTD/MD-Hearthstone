@@ -12,10 +12,13 @@ public class OneCardManager : MonoBehaviour
 
     [Header("CardComponents")]
     public Image cardGraphic;
-    public Text titleText;
-    public Text price;
-    public Text attack;
-    public Text life;
+    public List<Text> costText = new List<Text>();
+    public List<Text> nameText = new List<Text>();
+    public List<Text> descriptionText = new List<Text>();
+    public int cost;
+    public Text attackText;
+    public Text lifeText;
+    public Text maxLifeText;
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
@@ -23,9 +26,6 @@ public class OneCardManager : MonoBehaviour
     public GameObject equipmentCardFront;
     public GameObject humanCardFront;
     public GameObject CardBack;
-
-    [HideInInspector]
-    public int cost;
 
     private void Awake()
     {
@@ -39,9 +39,7 @@ public class OneCardManager : MonoBehaviour
 
     void UpdateCard(CardAsset newAsset = null)
     {
-        tag = "CardDeck";
         transform.SetParent(cardDeck.transform, false);
-        cost = cardAsset.cost;
         if (newAsset == null && cardAsset == null)
         {
             return;
@@ -52,8 +50,6 @@ public class OneCardManager : MonoBehaviour
             newAsset = cardAsset;
         }
 
-        titleText.text = cardAsset.name;
-        cardGraphic.sprite = cardAsset.cardImageLarge;
         if (newAsset.cardType == "enemy")
         {
             enemyCardFront.SetActive(true);
@@ -70,8 +66,20 @@ public class OneCardManager : MonoBehaviour
         {
             humanCardFront.SetActive(true);
         }
-
-
+        
+        for (int i = 0; i >= costText.Count; i++)
+        {
+            costText[i].text = cardAsset.cost.ToString();
+        }
+        for (int i = 0; i >= nameText.Count; i++)
+        {
+            nameText[i].text = cardAsset.name.ToString();
+        }
+        for (int i = 0; i >= descriptionText.Count; i++)
+        {
+            descriptionText[i].text = cardAsset.description.ToString();
+        }
+        cost = cardAsset.cost;
     }
 
     public void HandPosition(int i)
