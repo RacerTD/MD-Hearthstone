@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class ManaScript : MonoBehaviour
 {
-    int manaCount = 0;
-    int maxMana = 0;
-    public Text manaText;
-    public Text maxManaText;
+    public int manaCount = 0;
+    public int maxMana = 0;
+    int childcounter;
     void Start()
     {
         
@@ -17,18 +16,20 @@ public class ManaScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        manaText.text = manaCount.ToString();
-        maxManaText.text = maxMana.ToString();
+        if (childcounter != transform.childCount)
+        {
+            UpdateManPower();
+        }
+        childcounter = transform.childCount;
     }
 
-    public void updateManaText()
+    public void UpdateManPower()
     {
-        manaCount = 0;
         foreach (Transform child in transform)
         {
             manaCount = manaCount + child.GetComponent<OneCardManager>().cost;
+            maxMana = maxMana + child.GetComponent<OneCardManager>().cost;
+            child.GetComponent<OneCardManager>().delete();
         }
-        maxMana = manaCount;
     }
 }

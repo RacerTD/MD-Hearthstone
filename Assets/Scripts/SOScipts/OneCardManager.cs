@@ -87,4 +87,9 @@ public class OneCardManager : MonoBehaviour
     {
         transform.position = new Vector3(i, i, 0);
     }
+
+    public void delete()
+    {
+        Destroy(gameObject);
+    }
 }

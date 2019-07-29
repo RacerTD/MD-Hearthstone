@@ -20,13 +20,6 @@ public class GameManager : MonoBehaviour
         {
             cardDeck.GetComponent<CardDeckScript>().moveCardToHand();
         }
-        if (Input.GetKeyDown("c"))
-        {
-            hand.GetComponent<HandScript>().moveCardToManPower();
-        }
-        if (Input.GetKeyDown("v"))
-        {
-            hand.GetComponent<HandScript>().moveCardToMana();
-        }
+
     }
 }

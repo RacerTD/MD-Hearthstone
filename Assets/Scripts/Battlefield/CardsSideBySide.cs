@@ -27,7 +27,7 @@ public class CardsSideBySide : MonoBehaviour
     void UpdateCardPositions()
     {
         startingAngle = -(rotationOffSet * (transform.childCount - 1) / 2);
-        startingPosition = - ((transform.childCount - 1) / 2) * cardOffSetHorizontal;
+        startingPosition = - ((transform.childCount - 1) * cardOffSetHorizontal) / 2;
 
         for (int i = 0; i < transform.childCount; i++)
         {
