@@ -16,7 +16,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     }
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.LogWarning(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
+        //Debug.LogWarning(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
 
         Draggable drag = eventData.pointerDrag.GetComponent<Draggable>();       // parentToReturnTo wird überschrieben,
         if (drag != null)                                                       // sodass die Karten 
