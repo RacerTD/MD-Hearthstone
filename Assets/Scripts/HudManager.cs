@@ -6,14 +6,12 @@ using UnityEngine.UI;
 public class HudManager : MonoBehaviour
 {
     public Text manPowerText;
-    public Text abilityPowerText;
+    public Text maxManPowerText;
+    public Text manaText;
+    public Text maxManaText;
 
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
     void Update()
     {
         
