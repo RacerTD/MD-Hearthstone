@@ -11,6 +11,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
    public void OnBeginDrag(PointerEventData eventData) // 1
     {
         Debug.Log("OnBeginDrag"); // 1
+        
 
         parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
         this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
@@ -25,6 +26,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnEndDrag(PointerEventData eventData) // 1
     {
         Debug.Log("OnEndDrag"); // 1
+        this.transform.position = parentToReturnTo.transform.position;
         this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
         GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
     }

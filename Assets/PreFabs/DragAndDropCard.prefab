@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 7108931506173717345}
   - component: {fileID: -7319116667273168311}
   m_Layer: 5
-  m_Name: Card
+  m_Name: DragAndDropCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85683ca6d5bf98b4ab1d13e63ccc86ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentToReturnTo: {fileID: 0}
 --- !u!114 &7108931506173717345
 MonoBehaviour:
   m_ObjectHideFlags: 0
