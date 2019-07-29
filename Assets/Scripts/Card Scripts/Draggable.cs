@@ -8,6 +8,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 {
     public Transform parentToReturnTo = null;// sets the parent (Hand)
     public bool draggable = true;
+    public bool setsDraggableFalse = false;
 
    public void OnBeginDrag(PointerEventData eventData) // 1
     {
@@ -24,19 +25,26 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnDrag(PointerEventData eventData) // 1
     {
-        //Debug.Log("OnDrag"); // 1
-        this.transform.position = eventData.position; // 1
-    }
+        if (draggable)
+        {
+            Debug.Log("OnDrag"); // 1
+            this.transform.position = eventData.position; // 1
+        }
+        }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
         if (draggable)
         {
-
-            //Debug.Log("OnEndDrag"); // 1
+            if (setsDraggableFalse)
+            {
+                setsDraggableFalse = false;
+                draggable = false;
+            }
+            Debug.Log("OnEndDrag"); // 1
             this.transform.position = parentToReturnTo.transform.position;
             this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
             GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
-            draggable = false;
+            
         }
     }
 }       
