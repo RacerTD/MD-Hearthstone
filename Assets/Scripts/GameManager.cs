@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class GameManager : MonoBehaviour
 {
     public GameObject cardDeck;
     public GameObject hand;
+    public GameObject enemyField;
+    public bool playersTurn;
 
     void Awake()
     {
@@ -20,6 +21,18 @@ public class GameManager : MonoBehaviour
         {
             cardDeck.GetComponent<CardDeckScript>().moveCardToHand();
         }
+        if (Input.GetKeyDown("x"))
+        {
+            enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+        }
+        if (Input.GetKeyDown("c"))
+        {
+            playersTurn = !playersTurn;
+        }
+    }
+
+    void BaseAttack()
+    {
 
     }
 }

@@ -3086,6 +3086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65483974692589f49944cc7394a1c9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyField: {fileID: 0}
+  gameManger: {fileID: 0}
   cardDeck: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: HumanCard
@@ -3093,15 +3095,22 @@ MonoBehaviour:
   costText: []
   nameText: []
   descriptionText: []
-  cost: 0
   attackText: {fileID: 0}
   lifeText: {fileID: 0}
   maxLifeText: {fileID: 0}
-  enemyCardFront: {fileID: 0}
+  enemyCardFront: {fileID: 8325782594982157761}
   spellCardFront: {fileID: 974368559264845230}
   equipmentCardFront: {fileID: 4972689045649434876}
   humanCardFront: {fileID: 1421869232191804632}
   CardBack: {fileID: 0}
+  cardType: 
+  health: 0
+  maxHealth: 0
+  attack: 0
+  cost: 0
+  equipmentCount: 0
+  hasAttacked: 0
+  summoningSickness: 1
 --- !u!114 &-8600564734841319568
 MonoBehaviour:
   m_ObjectHideFlags: 0

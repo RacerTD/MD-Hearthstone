@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class OneCardManager : MonoBehaviour
 {
+    public GameObject enemyField;
+    public GameObject gameManger;
     public GameObject cardDeck;
     public CardAsset cardAsset;
     public string prefabName;
@@ -15,10 +17,9 @@ public class OneCardManager : MonoBehaviour
     public List<Text> costText = new List<Text>();
     public List<Text> nameText = new List<Text>();
     public List<Text> descriptionText = new List<Text>();
-    public int cost;
-    public Text attackText;
-    public Text lifeText;
-    public Text maxLifeText;
+    public List<Text> attackText = new List<Text>();
+    public List<Text> lifeText = new List<Text>();
+    public List<Text> maxLifeText = new List<Text>();
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
@@ -27,20 +28,56 @@ public class OneCardManager : MonoBehaviour
     public GameObject humanCardFront;
     public GameObject CardBack;
 
+    [Header("Karten Attribute")]
+    public string cardType;
+    public int health;
+    public int maxHealth;
+    public int attack;
+
+    public int cost;
+
+    public int equipmentCount;
+    public bool hasAttacked = false;
+    public bool summoningSickness = true;
+
     private void Awake()
     {
+        gameManger = GameObject.Find("GameManager");
+        enemyField = GameObject.Find("EnemyField");
         cardDeck = GameObject.Find("CardDeck");
     }
     void Start()
     {
-        cardAsset = cardDeck.GetComponent<CardDeckScript>().cardToSpawn();
+        if (gameManger.GetComponent<GameManager>().playersTurn)
+        {
+            cardAsset = cardDeck.GetComponent<CardDeckScript>().cardToSpawn();
+        }
+        else
+        {
+            cardAsset = enemyField.GetComponent<EnemyFieldScript>().cardToSpawn();
+        }
         UpdateCard();
     }
 
     void UpdateCard(CardAsset newAsset = null)
     {
+        if (gameManger.GetComponent<GameManager>().playersTurn)
+        {
+            transform.SetParent(cardDeck.transform, false);
+            transform.localPosition = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            transform.SetParent(enemyField.transform, false);
+            transform.localPosition = new Vector3(0, 0, 0);
+        }
+
+        attack = cardAsset.attack;
+        maxHealth = cardAsset.maxHealth;
+        health = maxHealth;
+        cardType = cardAsset.cardType;
         cost = cardAsset.cost;
-        transform.SetParent(cardDeck.transform, false);
+
         if (newAsset == null && cardAsset == null)
         {
             return;

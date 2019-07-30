@@ -24,7 +24,6 @@ public class CardAsset : ScriptableObject
     public Sprite cardImageLarge;
 
     [Header("Equipment & Humand & Enemys")]
-    public int health;
     public int maxHealth;
     public int attack;
 
@@ -32,11 +31,6 @@ public class CardAsset : ScriptableObject
     public int cost;
     [TextArea(2, 3)]
     public string description;
-
-    [Header("Human")]
-    public int equipmentCount;
-    public bool canAttack;
-    public bool summoningSickness;
 
     [Header("Abilitys")]
     public bool healLowUsed = false;
