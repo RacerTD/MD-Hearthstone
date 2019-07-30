@@ -27,6 +27,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             // Die Raycasts werden zum Zeiger durch die Karte (CanvasGroup) nicht mehr geblockt. 
             GetComponent<CanvasGroup>().blocksRaycasts = false;
             dragOffset = this.transform.position - new Vector3(eventData.position.x,eventData.position.y,0);
+            transform.rotation = Quaternion.identity;
         }
                   
     }
@@ -34,7 +35,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         if (draggable)
         {
-            Debug.Log("OnDrag"); // 1
+            //Debug.Log("OnDrag"); // 1
             this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; // 1
         }
         }
@@ -47,7 +48,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 setsDraggableFalse = false;
                 draggable = false;
             }
-            Debug.Log("OnEndDrag"); // 1
+            //Debug.Log("OnEndDrag"); // 1
             this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
             this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
             GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
