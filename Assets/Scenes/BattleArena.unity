@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -624, y: 110.27}
-  m_SizeDelta: {x: -1671.2, y: 244.4}
+  m_AnchoredPosition: {x: -569, y: 46.653}
+  m_SizeDelta: {x: -1763.4, y: 152.2}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &129020265
 MonoBehaviour:
@@ -349,8 +349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1, y: 742}
-  m_SizeDelta: {x: -144, y: 252.7}
+  m_AnchoredPosition: {x: -1, y: 648.8}
+  m_SizeDelta: {x: -144, y: 398.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &188098478
 MonoBehaviour:
@@ -388,10 +388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: 0
-  cardOffSetHorizontal: 300
+  cardOffSetVertical: 200
+  cardOffSetHorizontal: 200
   cardOffSetDepth: 0
   rotationOffSet: 0
+  scale: 0.5
 --- !u!114 &188098480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +442,8 @@ GameObject:
   - component: {fileID: 316994142}
   - component: {fileID: 316994141}
   - component: {fileID: 316994144}
+  - component: {fileID: 316994146}
+  - component: {fileID: 316994145}
   m_Layer: 0
   m_Name: Battlefield
   m_TagString: Untagged
@@ -533,6 +536,43 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &316994145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316994140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c5a660b7154af4f448a7ca965a364dd1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &316994146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316994140}
+  m_CullTransparentMesh: 0
 --- !u!1 &501992558
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 413.9}
+  m_AnchoredPosition: {x: -1, y: 322}
   m_SizeDelta: {x: -144, y: 252.7}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &501992560
@@ -592,7 +632,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501992558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -659,10 +699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: 0
-  cardOffSetHorizontal: 300
+  cardOffSetVertical: 130
+  cardOffSetHorizontal: 230
   cardOffSetDepth: 0
   rotationOffSet: 0
+  scale: 0.6
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,8 +877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 358, y: 110.27}
-  m_SizeDelta: {x: -1661, y: 243.4}
+  m_AnchoredPosition: {x: 573.6, y: 27.153}
+  m_SizeDelta: {x: -1749.1, y: 170.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
 MonoBehaviour:
@@ -937,7 +978,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1683640947}
   - component: {fileID: 1683640946}
-  - component: {fileID: 1683640948}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -961,6 +1001,7 @@ MonoBehaviour:
   hand: {fileID: 1771408303}
   enemyField: {fileID: 188098476}
   playersTurn: 1
+  gameState: 0
 --- !u!4 &1683640947
 Transform:
   m_ObjectHideFlags: 0
@@ -975,21 +1016,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1683640948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683640945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bdd04df669b3a4e983f5347c326b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerField: {fileID: 501992558}
-  manPower: {fileID: 129020263}
-  mana: {fileID: 1520702370}
 --- !u!1 &1771408303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: 0
-  cardOffSetHorizontal: 200
+  cardOffSetVertical: -50
+  cardOffSetHorizontal: 100
   cardOffSetDepth: 0
-  rotationOffSet: -5
+  rotationOffSet: -6
+  scale: 0.75

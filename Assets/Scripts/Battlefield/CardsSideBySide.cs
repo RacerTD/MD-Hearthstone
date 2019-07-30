@@ -8,6 +8,7 @@ public class CardsSideBySide : MonoBehaviour
     public float cardOffSetHorizontal;
     public float cardOffSetDepth;
     public float rotationOffSet;
+    public float scale;
     Transform myChild;
     int childCount;
     float startingAngle;
@@ -32,8 +33,9 @@ public class CardsSideBySide : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);
-            myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), (i * cardOffSetVertical), (i * cardOffSetDepth));
+            myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), ( cardOffSetVertical), (i * cardOffSetDepth));
             myChild.transform.eulerAngles = new Vector3(0, 0, startingAngle + rotationOffSet * i);
+            myChild.transform.localScale = new Vector3(scale, scale, scale);
         }
     }
 }
