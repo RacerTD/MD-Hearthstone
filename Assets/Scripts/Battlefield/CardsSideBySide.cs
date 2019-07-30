@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CardsSideBySide : MonoBehaviour
 {
-    public float cardOffSetVertical;
+    public List<float> verticalOffset = new List<float>();
+    public bool randomVertical;
+    public float verticalOffset_;
+
     public float cardOffSetHorizontal;
     public float cardOffSetDepth;
     public float rotationOffSet;
@@ -13,6 +16,13 @@ public class CardsSideBySide : MonoBehaviour
     int childCount;
     float startingAngle;
     float startingPosition;
+    private void Start()
+    {
+        for (int k = 0; k < 20; k++)
+        {
+            verticalOffset.Add(Random.Range(-25, 25));
+        }
+    }
     void Update()
     {
         if (childCount != transform.childCount)
@@ -21,7 +31,7 @@ public class CardsSideBySide : MonoBehaviour
             //Debug.Log("Baum");
         }
         childCount = transform.childCount;
-        UpdateCardPositions();
+        //UpdateCardPositions();
     }
 
     
@@ -33,7 +43,15 @@ public class CardsSideBySide : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);
-            myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), ( cardOffSetVertical), (i * cardOffSetDepth));
+            if (randomVertical)
+            {
+                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
+            }
+            else
+            {
+                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), verticalOffset_, (i * cardOffSetDepth));
+            }
+            
             myChild.transform.eulerAngles = new Vector3(0, 0, startingAngle + rotationOffSet * i);
             myChild.transform.localScale = new Vector3(scale, scale, scale);
         }

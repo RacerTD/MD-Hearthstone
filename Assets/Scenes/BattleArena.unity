@@ -388,8 +388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: 200
-  cardOffSetHorizontal: 200
+  verticalOffset: []
+  randomVertical: 1
+  verticalOffset_: 130
+  cardOffSetHorizontal: 230
   cardOffSetDepth: 0
   rotationOffSet: 0
   scale: 0.5
@@ -699,11 +701,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: 130
+  verticalOffset: []
+  randomVertical: 1
+  verticalOffset_: 130
   cardOffSetHorizontal: 230
   cardOffSetDepth: 0
   rotationOffSet: 0
-  scale: 0.6
+  scale: 0.55
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929220776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 659, y: -400, z: 0}
+  m_LocalPosition: {x: 988, y: -527, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 316994143}
@@ -1112,7 +1116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOffSetVertical: -50
+  verticalOffset: []
+  randomVertical: 0
+  verticalOffset_: 0
   cardOffSetHorizontal: 100
   cardOffSetDepth: 0
   rotationOffSet: -6

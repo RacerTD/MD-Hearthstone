@@ -3223,6 +3223,7 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   draggable: 1
   setsDraggableFalse: 0
+  dragOffset: {x: 0, y: 0, z: 0}
 --- !u!225 &-66830520009072450
 CanvasGroup:
   m_ObjectHideFlags: 0
