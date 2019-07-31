@@ -10,11 +10,10 @@ public class CardDeckScript : MonoBehaviour
 
     void Start()
     {
-        shuffleDeck();
-        spawnCardDeck();
+        
     }
 
-    void shuffleDeck()
+    public void ShuffleDeck()
     {
         CardAsset merker;
         int switcher;
@@ -27,7 +26,7 @@ public class CardDeckScript : MonoBehaviour
         }
     }
 
-    void spawnCardDeck()
+    public void SpawnCardDeck()
     {
         int i = deckCards.Count;
         do
@@ -37,13 +36,13 @@ public class CardDeckScript : MonoBehaviour
         } while (i > 0);
         
     }
-    public CardAsset cardToSpawn()
+    public CardAsset CardToSpawn()
     {
         CardAsset cardToSpawn = deckCards[0];
         deckCards.RemoveAt(0);
         return cardToSpawn;
     }
-    public void moveCardToHand()
+    public void MoveCardToHand()
     {
         this.gameObject.transform.GetChild(0).SetParent(hand.transform, false);
     }

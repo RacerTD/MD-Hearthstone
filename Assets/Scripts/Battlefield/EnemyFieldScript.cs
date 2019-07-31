@@ -6,6 +6,7 @@ public class EnemyFieldScript : MonoBehaviour
 {
     public List<CardAsset> enemyCards = new List<CardAsset>();
     public GameObject cardPrefab;
+    public GameManager gameManager;
     void Start()
     {
         
@@ -15,9 +16,10 @@ public class EnemyFieldScript : MonoBehaviour
     {
         
     }
+
     public CardAsset cardToSpawn()
     {
-        CardAsset cardToSpawn = enemyCards[0];
+        CardAsset cardToSpawn = enemyCards[Random.Range(0, (enemyCards.Count) - 1)];
         enemyCards.RemoveAt(0);
         return cardToSpawn;
     }

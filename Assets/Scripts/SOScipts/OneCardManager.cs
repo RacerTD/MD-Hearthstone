@@ -45,23 +45,24 @@ public class OneCardManager : MonoBehaviour
         gameManger = GameObject.Find("GameManager");
         enemyField = GameObject.Find("EnemyField");
         cardDeck = GameObject.Find("CardDeck");
-    }
-    void Start()
-    {
-        if (gameManger.GetComponent<GameManager>().playersTurn)
+        if (gameManger.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
         {
-            cardAsset = cardDeck.GetComponent<CardDeckScript>().cardToSpawn();
+            cardAsset = cardDeck.GetComponent<CardDeckScript>().CardToSpawn();
         }
         else
         {
             cardAsset = enemyField.GetComponent<EnemyFieldScript>().cardToSpawn();
         }
-        UpdateCard();
+        InitializeCard();
+    }
+    void Start()
+    {
+
     }
 
-    void UpdateCard(CardAsset newAsset = null)
+    void InitializeCard(CardAsset newAsset = null)
     {
-        if (gameManger.GetComponent<GameManager>().playersTurn)
+        if (gameManger.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
         {
             transform.SetParent(cardDeck.transform, false);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -118,11 +119,6 @@ public class OneCardManager : MonoBehaviour
             descriptionText[i].text = cardAsset.description.ToString();
         }
 
-    }
-
-    public void HandPosition(int i)
-    {
-        transform.position = new Vector3(i, i, 0);
     }
 
     public void delete()
