@@ -8,6 +8,7 @@ TagManager:
   - HandCard
   - FieldCard
   - EnemyField
+  - Background
   layers:
   - Default
   - TransparentFX
