@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject hand;
     public GameObject enemyField;
     public bool playersTurn;
+
+    public GameObject clicked01 = null;
+    public GameObject clicked02 = null;
+    
     public enum GameState
     {
         GameStart,
@@ -41,60 +45,76 @@ public class GameManager : MonoBehaviour
             enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
         }
 
-        if (gameState == GameState.GameStart)
+
+        switch (gameState)
         {
-            //KartenDeck Spawnen
-            cardDeck.GetComponent<CardDeckScript>().ShuffleDeck();
-            cardDeck.GetComponent<CardDeckScript>().SpawnCardDeck();
-            gameState = GameState.Enemy;
-        }
-        else if (gameState == GameState.Enemy)
-        {
-            //Gesamter Enemy Turn
-            if (enemyField.GetComponent<Transform>().transform.childCount < 3)
-            {
-                enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                Debug.Log("Spawned Card");
-            }
-            gameState = GameState.PlayerCardDraw;
-        }
-        else if (gameState == GameState.PlayerCardDraw)
-        {
-            //Spieler Karten auffüllen
-            if (hand.GetComponent<Transform>().transform.childCount < 5)
-            {
-                for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
+            case GameState.GameStart:
+                //KartenDeck Spawnen
+                cardDeck.GetComponent<CardDeckScript>().ShuffleDeck();
+                cardDeck.GetComponent<CardDeckScript>().SpawnCardDeck();
+                gameState = GameState.Enemy;
+                break;
+
+            case GameState.Enemy:
+                //Gesamter Enemy Turn
+                if (enemyField.GetComponent<Transform>().transform.childCount < 3)
                 {
-                    cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    //Debug.Log("Spawned Card");
                 }
-            }
-            gameState = GameState.PlayerIdle;
+                gameState = GameState.PlayerCardDraw;
+                break;
+
+            case GameState.PlayerCardDraw:
+                //Spieler Karten auffüllen
+                if (hand.GetComponent<Transform>().transform.childCount < 5)
+                {
+                    for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
+                    {
+                        cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
+                    }
+                }
+                gameState = GameState.PlayerIdle;
+                break;
+
+            case GameState.PlayerIdle:
+                break;
+
         }
-        else if (gameState == GameState.PlayerIdle)
-        {
-            //Bei start reset aller Highlights
-            //Warten auf Player Input
-        }
-        else if (gameState == GameState.PlayerCardInHand)
-        {
-            //Highlighting + Klickable
-            //Abhängig vom typ der Karte
-        }
-        else if (gameState == GameState.PlayerAttack)
-        {
-            //Highlighting + Klickable
-            //Kommunikation der Werte und ausführen der aktion
-        }
-        else if (gameState == GameState.PlayerAbility)
-        {
-            //Highlighting + Klickable
-            //Ausführen des Spells
-        }
-        
     }
 
-    void BaseAttack()
+    public void CardClicked(GameObject clickedOn)
     {
+        Debug.Log("Backstäääähhhh");
+        if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+        {
+            clicked01 = clickedOn;
+        }
+        else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+        {
+            clicked02 = clickedOn;
+        } else
+        {
+            clicked01 = null;
+            clicked02 = null;
+        }
 
+        if (clicked01 != null && clicked02 != null)
+        {
+            BasicAttack();
+            clicked01 = null;
+            clicked02 = null;
+        }
+    }
+
+    private void BasicAttack()
+    {
+        clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().attack;
+        clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().attack;
     }
 }

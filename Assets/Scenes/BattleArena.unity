@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 316994143}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -569, y: 46.653}
-  m_SizeDelta: {x: -1763.4, y: 152.2}
+  m_AnchorMin: {x: 0.162, y: 0.05177917}
+  m_AnchorMax: {x: 0.24612501, y: 0.19644167}
+  m_AnchoredPosition: {x: -0.49993896, y: -9.347168}
+  m_SizeDelta: {x: -4.4000244, y: -3.800003}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &129020265
 MonoBehaviour:
@@ -347,10 +347,10 @@ RectTransform:
   m_Father: {fileID: 316994143}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1, y: 648.8}
-  m_SizeDelta: {x: -144, y: 398.5}
+  m_AnchorMin: {x: 0, y: 0.6}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1, y: 0.7999878}
+  m_SizeDelta: {x: -144, y: -32.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &188098478
 MonoBehaviour:
@@ -366,16 +366,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCards:
   - {fileID: 11400000, guid: 4e791500832f77f40b474672c01d9a33, type: 2}
-  - {fileID: 11400000, guid: 252f7ac43de5b954ab751b5b113eb82a, type: 2}
-  - {fileID: 11400000, guid: f13ff2e03216b5e4e9b009a5dcb95baa, type: 2}
-  - {fileID: 11400000, guid: a3df48a505161cd40a193fe01a242a18, type: 2}
-  - {fileID: 11400000, guid: b5b1f3675b0553945bd02d7d1dd585e6, type: 2}
-  - {fileID: 11400000, guid: 3291d5de4cdb53645b40525db2140924, type: 2}
-  - {fileID: 11400000, guid: 2b2047272a0d3dd4ca64e51087b7ddc1, type: 2}
-  - {fileID: 11400000, guid: 48437a808c230f94bafcfcf0356322bf, type: 2}
-  - {fileID: 11400000, guid: 1f4e98cba7ad6ad4f9bfcedc31ff79de, type: 2}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
+  gameManager: {fileID: 1683640946}
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +551,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c5a660b7154af4f448a7ca965a364dd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4568e5be6828ef4aaf6843fb732e717, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -610,10 +603,10 @@ RectTransform:
   m_Father: {fileID: 316994143}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1, y: 322}
-  m_SizeDelta: {x: -144, y: 252.7}
+  m_AnchorMin: {x: 0, y: 0.3}
+  m_AnchorMax: {x: 1, y: 0.54826397}
+  m_AnchoredPosition: {x: -1, y: -2}
+  m_SizeDelta: {x: -144, y: -15.299988}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &501992560
 MonoBehaviour:
@@ -879,10 +872,10 @@ RectTransform:
   m_Father: {fileID: 316994143}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 573.6, y: 27.153}
-  m_SizeDelta: {x: -1749.1, y: 170.5}
+  m_AnchorMin: {x: 0.744, y: 0.028619442}
+  m_AnchorMax: {x: 0.8457917, y: 0.19644167}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8469238}
+  m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
 MonoBehaviour:
@@ -1005,6 +998,8 @@ MonoBehaviour:
   hand: {fileID: 1771408303}
   enemyField: {fileID: 188098476}
   playersTurn: 1
+  clicked01: {fileID: 0}
+  clicked02: {fileID: 0}
   gameState: 0
 --- !u!4 &1683640947
 Transform:

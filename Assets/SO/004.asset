@@ -13,20 +13,16 @@ MonoBehaviour:
   m_Name: 004
   m_EditorClassIdentifier: 
   prefabName: HumanCard
-  cardType: 
+  cardType: 1
   cardImageSmall: {fileID: 0}
   cardImageLarge: {fileID: 0}
-  health: 0
-  maxHealth: 0
-  attack: 0
+  maxHealth: 2
+  attack: 1
   cost: 14
   description: 
-  equipmentCount: 0
-  canAttack: 0
-  summoningSickness: 0
-  healLowUsed: 0
-  healLowCost: 0
-  healLowEnabled: 0
+  lowHeal:
+    used: 0
+    hallo: 0
   healHighUsed: 0
   healHighCost: 0
   healHighEnabled: 0

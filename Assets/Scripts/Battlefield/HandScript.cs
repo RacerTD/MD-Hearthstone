@@ -8,7 +8,7 @@ public class HandScript : MonoBehaviour
     public GameObject manPower;
     public GameObject mana;
 
-
+    //Liste aller Handkarten
     public List<GameObject> handPositions = new List<GameObject>();
     void Start()
     {

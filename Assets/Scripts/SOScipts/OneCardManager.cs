@@ -20,17 +20,29 @@ public class OneCardManager : MonoBehaviour
     public List<Text> attackText = new List<Text>();
     public List<Text> lifeText = new List<Text>();
     public List<Text> maxLifeText = new List<Text>();
+    public Button selector;
+    private bool selector_;
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
     public GameObject spellCardFront;
     public GameObject equipmentCardFront;
     public GameObject humanCardFront;
-    public GameObject CardBack;
+    //public GameObject CardBack;
 
     [Header("Karten Attribute")]
     public string cardType;
-    public int health;
+    public int Health
+    {
+        get { return _health; }
+        set
+        {
+            _health = value;
+            CheckIfDead();
+            UIUpdate();
+        }
+    }
+    public int _health;
     public int maxHealth;
     public int attack;
 
@@ -60,6 +72,11 @@ public class OneCardManager : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+
+    }
+
     void InitializeCard(CardAsset newAsset = null)
     {
         if (gameManger.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
@@ -73,11 +90,7 @@ public class OneCardManager : MonoBehaviour
             transform.localPosition = new Vector3(0, 0, 0);
         }
 
-        attack = cardAsset.attack;
-        maxHealth = cardAsset.maxHealth;
-        health = maxHealth;
-        cardType = cardAsset.cardType;
-        cost = cardAsset.cost;
+        
 
         if (newAsset == null && cardAsset == null)
         {
@@ -88,41 +101,66 @@ public class OneCardManager : MonoBehaviour
         {
             newAsset = cardAsset;
         }
+        switch (newAsset.cardType)
+        {
+            case CardType.Enemy:
+                enemyCardFront.SetActive(true);
+                break;
+            case CardType.Spell:
+                spellCardFront.SetActive(true);
+                break;
+            case CardType.Epuipment:
+                equipmentCardFront.SetActive(true);
+                break;
+            case CardType.Human:
+                humanCardFront.SetActive(true);
+                break;
+        }
 
-        if (newAsset.cardType == "enemy")
-        {
-            enemyCardFront.SetActive(true);
-        }
-        else if (newAsset.cardType == "spell")
-        {
-            spellCardFront.SetActive(true);
-        }
-        else if (newAsset.cardType == "equipment")
-        {
-            equipmentCardFront.SetActive(true);
-        }
-        else
-        {
-            humanCardFront.SetActive(true);
-        }
-        
-        for (int i = 0; i >= costText.Count; i++)
-        {
-            costText[i].text = cardAsset.cost.ToString();
-        }
-        for (int i = 0; i >= nameText.Count; i++)
-        {
-            nameText[i].text = cardAsset.name.ToString();
-        }
-        for (int i = 0; i >= descriptionText.Count; i++)
-        {
-            descriptionText[i].text = cardAsset.description.ToString();
-        }
+        attack = newAsset.attack;
+        maxHealth = newAsset.maxHealth;
+        Health = maxHealth;
+        cost = newAsset.cost;
+
+
+        UpdateList(costText, cost.ToString());
+        UpdateList(nameText, cardAsset.name);
+        UpdateList(descriptionText, cardAsset.description);
+        UpdateList(attackText, attack.ToString());
+        UpdateList(lifeText, _health.ToString());
+        UpdateList(maxLifeText, maxHealth.ToString());
 
     }
 
     public void delete()
     {
         Destroy(gameObject);
+    }
+
+    public void GiveGameManagerCard()
+    {
+        gameManger.GetComponent<GameManager>().CardClicked(this.gameObject);
+    }
+    private void UpdateList(List<Text> bla, string value)
+    {
+        for (int i = 0; i <= bla.Count - 1; i++)
+        {
+            bla[i].text = value;
+        }
+    }
+
+    private void UIUpdate()
+    {
+        UpdateList(attackText, attack.ToString());
+        UpdateList(lifeText, _health.ToString());
+        UpdateList(maxLifeText, maxHealth.ToString());
+    }
+
+    private void CheckIfDead()
+    {
+        if (_health <= 0 && (cardAsset.cardType == CardType.Enemy || cardAsset.cardType == CardType.Human))
+        {
+            delete();
+        }
     }
 }

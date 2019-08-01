@@ -20,7 +20,7 @@ public class CardsSideBySide : MonoBehaviour
     {
         for (int k = 0; k < 20; k++)
         {
-            verticalOffset.Add(Random.Range(-25, 25));
+            verticalOffset.Add(Random.Range(-40, 40));
         }
     }
     void Update()
@@ -49,7 +49,7 @@ public class CardsSideBySide : MonoBehaviour
             }
             else
             {
-                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), verticalOffset_, (i * cardOffSetDepth));
+                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth));
             }
             
             myChild.transform.eulerAngles = new Vector3(0, 0, startingAngle + rotationOffSet * i);

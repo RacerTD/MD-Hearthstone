@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum TargetingOptions
+public enum CardType
 {
     Enemy,
     Human,
-    All,
-    Nothing
-
+    Epuipment,
+    Spell
 }
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
 public class CardAsset : ScriptableObject
 {
-    public string prefabName = "HumanCard";
+    public string prefabName = "Card";
 
     [Header("General Info")]
     [Tooltip("Spell, Enemy, Human, Equipment")]
-    public string cardType;
+    public CardType cardType;
     public Sprite cardImageSmall;
     public Sprite cardImageLarge;
 
@@ -33,9 +32,7 @@ public class CardAsset : ScriptableObject
     public string description;
 
     [Header("Abilitys")]
-    public bool healLowUsed = false;
-    public int healLowCost;
-    public bool healLowEnabled;
+    public Ability lowHeal;
 
     public bool healHighUsed = false;
     public int healHighCost;
@@ -48,4 +45,13 @@ public class CardAsset : ScriptableObject
     public bool attackHighUsed = false;
     public int attackHighCost;
     public bool attackHighEnabled;
+
+}
+
+[System.Serializable]
+public class Ability
+{
+    public bool used = false;
+    public int hallo;
+
 }

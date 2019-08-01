@@ -12,18 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
   m_Name: 001
   m_EditorClassIdentifier: 
-  probability: 0
   prefabName: HumanCard
-  cardType: spell
+  cardType: 1
   cardImageSmall: {fileID: 0}
   cardImageLarge: {fileID: 0}
-  cardTitle: 
-  health: 0
-  macHealth: 0
-  attack: 0
+  maxHealth: 5
+  attack: 3
   cost: 5
-  AbilityScriptName: 
   description: 
-  equipmentCount: 0
-  canAttack: 0
-  summoningSickness: 0
+  lowHeal:
+    used: 0
+    hallo: 0
+  healHighUsed: 0
+  healHighCost: 0
+  healHighEnabled: 0
+  attackLowUsed: 0
+  attackLowCost: 0
+  attackLowEnabled: 0
+  attackHighUsed: 0
+  attackHighCost: 0
+  attackHighEnabled: 0

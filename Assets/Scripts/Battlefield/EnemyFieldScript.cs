@@ -19,8 +19,7 @@ public class EnemyFieldScript : MonoBehaviour
 
     public CardAsset cardToSpawn()
     {
-        CardAsset cardToSpawn = enemyCards[Random.Range(0, (enemyCards.Count) - 1)];
-        enemyCards.RemoveAt(0);
+        CardAsset cardToSpawn = enemyCards[Random.Range(0, enemyCards.Count)];
         return cardToSpawn;
     }
     public void SpawnNewEnemy()
