@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;  // 1
+using UnityEngine.EventSystems;
+
 
 //Code nur für Drag and Drop Funktion = 1
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler // 1
@@ -10,38 +11,60 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public bool draggable = true;
     public bool setsDraggableFalse = false;
     public Vector3 dragOffset;
+    public GameObject gameManager;
     
-
     
 
    public void OnBeginDrag(PointerEventData eventData) // 1
     {
-        
-        
-        if (draggable)
+        gameManager = GameObject.Find("GameManager");
+        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
         {
-            
-            parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
-            this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
+            draggable = true ;
+ 
+            if (draggable)
+            {
 
-            // Die Raycasts werden zum Zeiger durch die Karte (CanvasGroup) nicht mehr geblockt. 
-            GetComponent<CanvasGroup>().blocksRaycasts = false;
-            dragOffset = this.transform.position - new Vector3(eventData.position.x,eventData.position.y,0);
-            transform.rotation = Quaternion.identity;
+                parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
+                this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
+
+                // Die Raycasts werden zum Zeiger durch die Karte (CanvasGroup) nicht mehr geblockt. 
+                GetComponent<CanvasGroup>().blocksRaycasts = false;
+                dragOffset = this.transform.position - new Vector3(eventData.position.x, eventData.position.y, 0);
+                transform.rotation = Quaternion.identity;
+            }
         }
-                  
+        else
+        {
+            draggable = false;
+        }
+
     }
     public void OnDrag(PointerEventData eventData) // 1
     {
-        if (draggable)
+        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        {
+            draggable = true;
+            if (draggable)
         {
             //Debug.Log("OnDrag"); // 1
             this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; // 1
         }
         }
+        else
+        {
+            draggable = false;
+        }
+    }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
-        if (draggable)
+            if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+            {
+                draggable = true;
+                if (draggable)
         {
             if (setsDraggableFalse)
             {
@@ -53,6 +76,11 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
             GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
             
+        }
+        }
+        else
+        {
+            draggable = false;
         }
     }
 
