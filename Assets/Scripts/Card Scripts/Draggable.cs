@@ -10,7 +10,10 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public Transform parentToReturnTo = null;// sets the parent (Hand)
     public bool draggable = true;
     public bool setsDraggableFalse = false;
+
+    //durch den dragOffset kann die Karte überall "angefasst" und bewegt werden
     public Vector3 dragOffset;
+
     public GameObject gameManager;
     
     
@@ -18,8 +21,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
    public void OnBeginDrag(PointerEventData eventData) // 1
     {
         gameManager = GameObject.Find("GameManager");
-        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        if (CheckForGamestate())
         {
             draggable = true ;
  
@@ -43,8 +45,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnDrag(PointerEventData eventData) // 1
     {
-        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        if (CheckForGamestate())
         {
             draggable = true;
             if (draggable)
@@ -60,8 +61,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
-            if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+            if (CheckForGamestate())
             {
                 draggable = true;
                 if (draggable)
@@ -83,7 +83,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             draggable = false;
         }
     }
+    private bool CheckForGamestate()
+    {
+        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+            return true;
 
+        return false;
+    }
     
 
 }       
