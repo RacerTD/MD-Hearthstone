@@ -23,7 +23,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         {
             Debug.Log("OnDrop - DropZone");
             drag.parentToReturnTo = this.transform;
-            drag.setsDraggableFalse = true;// beim Loslassen in die Dropzone gelgt werden.
+            drag.setsDraggableFalse = true;                                     // beim Loslassen in die Dropzone gelgt werden.
         }
         
     }

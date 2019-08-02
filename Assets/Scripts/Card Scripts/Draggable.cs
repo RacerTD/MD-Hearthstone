@@ -15,16 +15,16 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public Vector3 dragOffset;
 
     public GameObject gameManager;
-    
-    
 
-   public void OnBeginDrag(PointerEventData eventData) // 1
+
+
+    public void OnBeginDrag(PointerEventData eventData) // 1
     {
         gameManager = GameObject.Find("GameManager");
         if (CheckForGamestate())
         {
-            draggable = true ;
- 
+            //draggable = true;
+
             if (draggable)
             {
 
@@ -47,12 +47,12 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         if (CheckForGamestate())
         {
-            draggable = true;
+            //draggable = true;
             if (draggable)
-        {
-            //Debug.Log("OnDrag"); // 1
-            this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; // 1
-        }
+            {
+                //Debug.Log("OnDrag"); // 1
+                this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; // 1
+            }
         }
         else
         {
@@ -61,22 +61,23 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
-            if (CheckForGamestate())
+       if (CheckForGamestate())
+       {
+            //draggable = true;
+
+            if (draggable)
             {
-                draggable = true;
-                if (draggable)
-        {
-            if (setsDraggableFalse)
-            {
-                setsDraggableFalse = false;
-                draggable = false;
+                if (setsDraggableFalse)
+                {
+                    setsDraggableFalse = false;
+                    draggable = false;
+                }
+                //Debug.Log("OnEndDrag"); // 1
+                this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
+                this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
+                GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
+
             }
-            //Debug.Log("OnEndDrag"); // 1
-            this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
-            this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
-            GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
-            
-        }
         }
         else
         {
@@ -91,6 +92,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         return false;
     }
-    
 
-}       
+
+}
