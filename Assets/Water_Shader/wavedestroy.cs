@@ -8,7 +8,7 @@ public class wavedestroy : MonoBehaviour
     float deathtime;
     void Start()
     {
-        deathtime = Time.time + 9;
+        deathtime = Time.time + 1.483f;
     }
 
     
