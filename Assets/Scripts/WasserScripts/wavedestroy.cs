@@ -6,8 +6,11 @@ public class wavedestroy : MonoBehaviour
     
 {
     float deathtime;
+
+    private wavespawn ws;
     void Start()
     {
+        ws = GameObject.Find("Waves").GetComponent<wavespawn>();
         deathtime = Time.time + 1.483f;
     }
 
