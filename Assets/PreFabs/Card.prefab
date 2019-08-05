@@ -2956,10 +2956,10 @@ MonoBehaviour:
   - {fileID: 5425673934970066423}
   maxLifeText: []
   selector: {fileID: 0}
-  enemyCardFront: {fileID: 0}
-  spellCardFront: {fileID: 0}
-  equipmentCardFront: {fileID: 0}
-  humanCardFront: {fileID: 0}
+  enemyCardFront: {fileID: 5417867203999520390}
+  spellCardFront: {fileID: 5484373957921347962}
+  equipmentCardFront: {fileID: 5484373957921347962}
+  humanCardFront: {fileID: 3721817166388540110}
   cardType: 
   _health: 0
   maxHealth: 0
