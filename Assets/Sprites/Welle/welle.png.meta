@@ -1,0 +1,3149 @@
+fileFormatVersion: 2
+guid: 7743bf1299d339d4e848862da3ea7bb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6758997384066677844
+    second: EineWelle_0
+  - first:
+      213: -2425894356752539166
+    second: EineWelle_1
+  - first:
+      213: 6159064193058643437
+    second: EineWelle_2
+  - first:
+      213: 933130171937565929
+    second: EineWelle_3
+  - first:
+      213: -1812460891962428127
+    second: EineWelle_4
+  - first:
+      213: 2213690781620373384
+    second: EineWelle_5
+  - first:
+      213: 4440057707650710093
+    second: EineWelle_6
+  - first:
+      213: -2097129814172165747
+    second: EineWelle_7
+  - first:
+      213: 2472333466924246896
+    second: EineWelle_8
+  - first:
+      213: 6262385552589771923
+    second: EineWelle_9
+  - first:
+      213: 5305199920269516325
+    second: EineWelle_10
+  - first:
+      213: -2637957954025730888
+    second: EineWelle_11
+  - first:
+      213: -672533858430978715
+    second: EineWelle_12
+  - first:
+      213: 4849082293119095848
+    second: EineWelle_13
+  - first:
+      213: 3922838557881928987
+    second: EineWelle_14
+  - first:
+      213: -2961285058489948693
+    second: EineWelle_15
+  - first:
+      213: 6597091885020723544
+    second: EineWelle_16
+  - first:
+      213: 5745436112874049053
+    second: EineWelle_17
+  - first:
+      213: 6371780093768990097
+    second: EineWelle_18
+  - first:
+      213: -491137123768087150
+    second: EineWelle_19
+  - first:
+      213: -8599088740978510177
+    second: EineWelle_20
+  - first:
+      213: -4306476667848315287
+    second: EineWelle_21
+  - first:
+      213: -8800544968891876416
+    second: EineWelle_22
+  - first:
+      213: 3309779844743158821
+    second: EineWelle_23
+  - first:
+      213: -1020262418428809311
+    second: EineWelle_24
+  - first:
+      213: 5354428525717262174
+    second: EineWelle_25
+  - first:
+      213: -1564166893392910072
+    second: EineWelle_26
+  - first:
+      213: -272312631230283298
+    second: EineWelle_27
+  - first:
+      213: 1169062202951020687
+    second: EineWelle_28
+  - first:
+      213: 3410222452654705137
+    second: EineWelle_29
+  - first:
+      213: 1581081516157955073
+    second: EineWelle_30
+  - first:
+      213: 1415919809589915844
+    second: EineWelle_31
+  - first:
+      213: -1618101195016931733
+    second: EineWelle_32
+  - first:
+      213: 2400609063309031993
+    second: EineWelle_33
+  - first:
+      213: -7933877997148766565
+    second: EineWelle_34
+  - first:
+      213: 5925520929133231521
+    second: EineWelle_35
+  - first:
+      213: 8619497606038758577
+    second: EineWelle_36
+  - first:
+      213: 8464933307537910333
+    second: EineWelle_37
+  - first:
+      213: 2919620698459942277
+    second: EineWelle_38
+  - first:
+      213: 7198106389294429604
+    second: EineWelle_39
+  - first:
+      213: -1219363923598769963
+    second: EineWelle_40
+  - first:
+      213: 7574562836945277369
+    second: EineWelle_41
+  - first:
+      213: -470449623506826657
+    second: EineWelle_42
+  - first:
+      213: 1411081648642156837
+    second: EineWelle_43
+  - first:
+      213: 287775264506679850
+    second: EineWelle_44
+  - first:
+      213: 7575492074967218456
+    second: EineWelle_45
+  - first:
+      213: -382976255175123787
+    second: EineWelle_46
+  - first:
+      213: -8803140503656112224
+    second: EineWelle_47
+  - first:
+      213: 1667019551542461591
+    second: EineWelle_48
+  - first:
+      213: 6352138454713429327
+    second: EineWelle_49
+  - first:
+      213: -3890897738708960592
+    second: EineWelle_50
+  - first:
+      213: -6186648540860135399
+    second: EineWelle_51
+  - first:
+      213: -3867677139125766688
+    second: EineWelle_52
+  - first:
+      213: -1348739766951970869
+    second: EineWelle_53
+  - first:
+      213: 187068203028029385
+    second: EineWelle_54
+  - first:
+      213: -2449481423787771968
+    second: EineWelle_55
+  - first:
+      213: 1837755937912340919
+    second: EineWelle_56
+  - first:
+      213: -2845726781548316575
+    second: EineWelle_57
+  - first:
+      213: -1994283998420311335
+    second: EineWelle_58
+  - first:
+      213: 361973638444230746
+    second: EineWelle_59
+  - first:
+      213: 7977544498442925433
+    second: EineWelle_60
+  - first:
+      213: 1767395583612929380
+    second: EineWelle_61
+  - first:
+      213: -2393252324138013653
+    second: EineWelle_62
+  - first:
+      213: -9199890507845519696
+    second: EineWelle_63
+  - first:
+      213: 1217490524636498856
+    second: EineWelle_64
+  - first:
+      213: 5519149250156021174
+    second: EineWelle_65
+  - first:
+      213: 9100026796232793002
+    second: EineWelle_66
+  - first:
+      213: 7345112038227776541
+    second: EineWelle_67
+  - first:
+      213: -3183071540812567255
+    second: EineWelle_68
+  - first:
+      213: 7052446478625165212
+    second: EineWelle_69
+  - first:
+      213: 8002724206399821931
+    second: EineWelle_70
+  - first:
+      213: -1935611440223933394
+    second: EineWelle_71
+  - first:
+      213: -1706040136494684483
+    second: EineWelle_72
+  - first:
+      213: 605711779891678607
+    second: EineWelle_73
+  - first:
+      213: -3912941449990843516
+    second: EineWelle_74
+  - first:
+      213: -6218271861086545213
+    second: EineWelle_75
+  - first:
+      213: -1742315398502444965
+    second: EineWelle_76
+  - first:
+      213: 4332709731997346852
+    second: EineWelle_77
+  - first:
+      213: -3881676159762408818
+    second: EineWelle_78
+  - first:
+      213: 4892744659428433770
+    second: EineWelle_79
+  - first:
+      213: 6283287992162374180
+    second: EineWelle_80
+  - first:
+      213: -12100966971219052
+    second: EineWelle_81
+  - first:
+      213: 7646837163392192826
+    second: EineWelle_82
+  - first:
+      213: 2902184692049189571
+    second: EineWelle_83
+  - first:
+      213: -847420390725931179
+    second: EineWelle_84
+  - first:
+      213: 6030215581358846037
+    second: EineWelle_85
+  - first:
+      213: 4863152692450019266
+    second: EineWelle_86
+  - first:
+      213: 3659134813247856302
+    second: EineWelle_87
+  - first:
+      213: -114116317542727159
+    second: EineWelle_88
+  - first:
+      213: 4617860226528062159
+    second: EineWelle_89
+  - first:
+      213: -8821073257711839630
+    second: EineWelle_90
+  - first:
+      213: -3892719991256891249
+    second: EineWelle_91
+  - first:
+      213: 1034562639582067573
+    second: EineWelle_92
+  - first:
+      213: 6028561162437579262
+    second: EineWelle_93
+  - first:
+      213: 8344059512469490242
+    second: EineWelle_94
+  - first:
+      213: -4183382872271936323
+    second: EineWelle_95
+  - first:
+      213: -7151122066326662049
+    second: EineWelle_96
+  - first:
+      213: 6446189765342001187
+    second: EineWelle_97
+  - first:
+      213: 4392988011670796389
+    second: EineWelle_98
+  - first:
+      213: -6750121279130494637
+    second: EineWelle_99
+  - first:
+      213: 9043555136276965491
+    second: EineWelle_100
+  - first:
+      213: 4963218105717037151
+    second: EineWelle_101
+  - first:
+      213: -6620840036614779724
+    second: EineWelle_102
+  - first:
+      213: 2387584543834008057
+    second: EineWelle_103
+  - first:
+      213: 452177192339357485
+    second: EineWelle_104
+  - first:
+      213: 6358237608504108188
+    second: EineWelle_105
+  - first:
+      213: 497144843612282062
+    second: EineWelle_106
+  - first:
+      213: -3302132360051271724
+    second: EineWelle_107
+  - first:
+      213: 5434027724882333836
+    second: EineWelle_108
+  - first:
+      213: 8192272527962559657
+    second: EineWelle_109
+  - first:
+      213: -4207077845659257187
+    second: EineWelle_110
+  - first:
+      213: -8989687622460622735
+    second: EineWelle_111
+  - first:
+      213: 5959656562670706320
+    second: EineWelle_112
+  - first:
+      213: -4954222379493256083
+    second: EineWelle_113
+  - first:
+      213: -1962470070008244915
+    second: EineWelle_114
+  - first:
+      213: -8054523418697842562
+    second: EineWelle_115
+  - first:
+      213: 2086245289988027910
+    second: EineWelle_116
+  - first:
+      213: -534511675712690463
+    second: EineWelle_117
+  - first:
+      213: -7793178582994650462
+    second: EineWelle_118
+  - first:
+      213: 3017899293344657894
+    second: EineWelle_119
+  - first:
+      213: -1064086026165519074
+    second: EineWelle_120
+  - first:
+      213: 6602637059480060285
+    second: EineWelle_121
+  - first:
+      213: -6352794160742002326
+    second: EineWelle_122
+  - first:
+      213: -2534916497874466002
+    second: EineWelle_123
+  - first:
+      213: 3459607016735230246
+    second: EineWelle_124
+  - first:
+      213: -4847512620361645426
+    second: EineWelle_125
+  - first:
+      213: 369774779309698600
+    second: EineWelle_126
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EineWelle_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1004
+        width: 97
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6788eb4dcf7894098cf7f885818756
+      internalID: -6758997384066677844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 994
+        width: 104
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e790672878d9e34fa909e77257c99f8
+      internalID: -2425894356752539166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1003
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b492b2bd4acabac4a9e0e85351fb7e97
+      internalID: 6159064193058643437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 979
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd559b6e7e103b548a31b40fff2de66d
+      internalID: 933130171937565929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 962
+        width: 104
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96a56a991a33db48b86ff98bb5c3221
+      internalID: -1812460891962428127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_5
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 978
+        width: 102
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f50cebba73830646ac298c4968ef96f
+      internalID: 2213690781620373384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 952
+        width: 103
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d90f527fad64a418185655c6624259
+      internalID: 4440057707650710093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 934
+        width: 104
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a39ab31dfbf3e43b37ea01b4b41efd
+      internalID: -2097129814172165747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 941
+        width: 160
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5048e36a019da334a9629e1236cde54c
+      internalID: 2472333466924246896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 923
+        width: 103
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a07a4950df2ff4fa1e8a86bcc8e2b6
+      internalID: 6262385552589771923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 900
+        width: 104
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bbb52b55d423d478f6baad19f74daf
+      internalID: 5305199920269516325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_11
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 923
+        width: 98
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb8f2f567e72f34b8a895f560e9e6b1
+      internalID: -2637957954025730888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 896
+        width: 104
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e5ccef5dd083246a0114defb6cf495
+      internalID: -672533858430978715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 895
+        width: 104
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b045b7aab4467843833c222f8a34b11
+      internalID: 4849082293119095848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 858
+        width: 102
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b78a7884d60e7448caca39c358eaa4
+      internalID: 3922838557881928987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_15
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 882
+        width: 89
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9efb730d6fc3e74ea5c2aa18ac9ad7e
+      internalID: -2961285058489948693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_16
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 861
+        width: 98
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035e1f612f78d7a4184c9831f67deaca
+      internalID: 6597091885020723544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 855
+        width: 104
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7ab4be96621bd4a9718142d4a9c50b
+      internalID: 5745436112874049053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 833
+        width: 103
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4989643e7a725c4288da2bf0f2b7c03
+      internalID: 6371780093768990097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_19
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 825
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b593751e68d69418ad20a06c2e078c
+      internalID: -491137123768087150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_20
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 838
+        width: 97
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7005d31af3b5dd488ea5fe1c6890217
+      internalID: -8599088740978510177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 818
+        width: 90
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6aa602b10722945882cacbf1a70472
+      internalID: -4306476667848315287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 806
+        width: 104
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a0eb130f570114ab3dacc3bcb410f4
+      internalID: -8800544968891876416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 784
+        width: 103
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d66dc98a0ae9c4abd8611bee786b0c
+      internalID: 3309779844743158821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_24
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 795
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5314779a8cf95384a883c06c8fa7a062
+      internalID: -1020262418428809311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_25
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 770
+        width: 104
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c79a1522e34b904eaa3a587fb2a340c
+      internalID: 5354428525717262174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_26
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 769
+        width: 89
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43938bec87ee36479a735b95f07a37d
+      internalID: -1564166893392910072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 765
+        width: 105
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7343040101828b245b8263d907dca817
+      internalID: -272312631230283298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 738
+        width: 104
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b95a274fe174e4ea4fa2193a649a89
+      internalID: 1169062202951020687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_29
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 738
+        width: 104
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4001e2645c8d6b74c8328e371266a6e3
+      internalID: 3410222452654705137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_30
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 739
+        width: 104
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c225ec136180dc4d881007ccc34fbe3
+      internalID: 1581081516157955073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 711
+        width: 103
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8312ade0632f37f46b8b5f84a0e3e33b
+      internalID: 1415919809589915844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_32
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 709
+        width: 104
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5062ce7914df24e838016d9b50a725
+      internalID: -1618101195016931733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_33
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 703
+        width: 102
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344e4614dcbebd340aa579129fdfd318
+      internalID: 2400609063309031993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_34
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 689
+        width: 93
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd3891920427264bb1c941192d5969f
+      internalID: -7933877997148766565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 678
+        width: 104
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5e6240db8a09b419d99e14bbbc929f
+      internalID: 5925520929133231521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_36
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 675
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ff6c1db259ed847a40d16341bbf485
+      internalID: 8619497606038758577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_37
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 657
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff5cd594822b5e45a3f4a5fdc2ce8b7
+      internalID: 8464933307537910333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_38
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 643
+        width: 104
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51fd087a22a7e84e975067ab0f208fe
+      internalID: 2919620698459942277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 645
+        width: 104
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb1fd0694ae2fd4e80cf5bc850307dc
+      internalID: 7198106389294429604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_40
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 627
+        width: 104
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d2ccad6f6056f4f855986c39d931af
+      internalID: -1219363923598769963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 611
+        width: 103
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f080ce92237b7854992b64b5462dbac4
+      internalID: 7574562836945277369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_42
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 611
+        width: 96
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7862aeb458e57234cbf53a81367ebfa2
+      internalID: -470449623506826657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_43
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 606
+        width: 88
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1f4281d32ea53448a238e5e2f98d2e
+      internalID: 1411081648642156837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_44
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 575
+        width: 104
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9162a0762af09d34389a1ba1c9755844
+      internalID: 287775264506679850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_45
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 593
+        width: 87
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c03f76bcdbf5cf4aa70c1429c690c2f
+      internalID: 7575492074967218456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 573
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2644f972587b6b6409bab887fe6d4a1c
+      internalID: -382976255175123787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_47
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 555
+        width: 90
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dacdad78876b80498dc912a5238ca1f
+      internalID: -8803140503656112224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_48
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 566
+        width: 104
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa26a0b89a6e2d4ca8891e5c11a5234
+      internalID: 1667019551542461591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_49
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 550
+        width: 91
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdbd722652e32b47b7ad104c8df0a38
+      internalID: 6352138454713429327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_50
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 534
+        width: 102
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8ad9e6a3727b845ac9bf8842dd0eba
+      internalID: -3890897738708960592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 522
+        width: 104
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e4361b4c5534b48b9ecca70f959623
+      internalID: -6186648540860135399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_52
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 522
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9d470c41e3bd945b870eeedaf4aeca
+      internalID: -3867677139125766688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_53
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 480
+        width: 202
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f00c2289906e046903a655c9f64f06
+      internalID: -1348739766951970869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_54
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 507
+        width: 90
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28c473cb02d98840a39c72c2a36d289
+      internalID: 187068203028029385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_55
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 502
+        width: 91
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2b25d60a4ef674baf5445e5276aa14
+      internalID: -2449481423787771968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_56
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 490
+        width: 85
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5809f703856d8044a8515cd5cf3cc8c5
+      internalID: 1837755937912340919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_57
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 468
+        width: 103
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2fb591799395d43aecbc456f9f4019
+      internalID: -2845726781548316575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_58
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 467
+        width: 101
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee4068ed78507041a8745c65f306c3a
+      internalID: -1994283998420311335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_59
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 464
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c040245e3d4684592d91722098e0a9
+      internalID: 361973638444230746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_60
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 444
+        width: 92
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3405876821559e34592f0144de625617
+      internalID: 7977544498442925433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_61
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 438
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e42e9b9c25cd984ba110e9aa823b2e0
+      internalID: 1767395583612929380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_62
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 446
+        width: 91
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da174783ea0232d4fa2758d679f96d03
+      internalID: -2393252324138013653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_63
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 448
+        width: 89
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287578253a24630498f048709a4eab25
+      internalID: -9199890507845519696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_64
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 414
+        width: 104
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60604806f7f7d74485574b73e66cd83
+      internalID: 1217490524636498856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_65
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 431
+        width: 90
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a4c673664c3743b8038c0da732b2d
+      internalID: 5519149250156021174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_66
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 408
+        width: 103
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2ae12073c7c4e4da11582181b3843f
+      internalID: 9100026796232793002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_67
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 407
+        width: 102
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6895a4df8bc074d8b8c03b347654ac
+      internalID: 7345112038227776541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_68
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 421
+        width: 89
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1047104b4033cf14eaf75455da2b059f
+      internalID: -3183071540812567255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_69
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 410
+        width: 89
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9384b512121e88545a48145d4f3a3327
+      internalID: 7052446478625165212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_70
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 391
+        width: 93
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80a224f93f1d974881b2ac83befc30d
+      internalID: 8002724206399821931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_71
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 385
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbebd971f22fdd24b945af42f1d41c85
+      internalID: -1935611440223933394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 372
+        width: 103
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f2e0112aebcdf40a85217243cb4743
+      internalID: -1706040136494684483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_73
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 372
+        width: 83
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bafe83f73142242a50da3e5c23368c
+      internalID: 605711779891678607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_74
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 355
+        width: 100
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4ea03e61bcdf24a9ac6e053cd0b0af
+      internalID: -3912941449990843516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_75
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 346
+        width: 96
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a039bc957aee704e866577608cbd149
+      internalID: -6218271861086545213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_76
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 359
+        width: 75
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f43a6674ae53845aa9ebfabc357ab6
+      internalID: -1742315398502444965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_77
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 329
+        width: 76
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd947e16830f3ff4aafe73af19cb0594
+      internalID: 4332709731997346852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_78
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 331
+        width: 94
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df62dce2378cdf245bb4005104c17576
+      internalID: -3881676159762408818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_79
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 330
+        width: 95
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583ee7dcda4df98489a59fa96e0eeb39
+      internalID: 4892744659428433770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_80
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 291
+        width: 99
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fd1d07e9095fc4ebf384373f5e4cc9
+      internalID: 6283287992162374180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_81
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 291
+        width: 99
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4166d0049ec7f47af9ce95c02554ef
+      internalID: -12100966971219052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_82
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 291
+        width: 101
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f9325c398289a4bb2517471839447c
+      internalID: 7646837163392192826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_83
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 319
+        width: 89
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8a22f54296af148940c1f8a43e4b4b
+      internalID: 2902184692049189571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_84
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 302
+        width: 76
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa8c3d67f1f4fc4e907a733757bc65a
+      internalID: -847420390725931179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_85
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 289
+        width: 79
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa59c806fc295334daa0963caa9eb4d3
+      internalID: 6030215581358846037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_86
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 273
+        width: 81
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c127d3e398e872645ab9cdd6a3a6d89a
+      internalID: 4863152692450019266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_87
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 273
+        width: 84
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf10a5ed17365d4c9f39b0bcc6fc1a0
+      internalID: 3659134813247856302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_88
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 271
+        width: 85
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acd7fe4969b90d489f44bfa0af93fe1
+      internalID: -114116317542727159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_89
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 235
+        width: 98
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e824fb4b0323149944a380bb7c4917
+      internalID: 4617860226528062159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_90
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 231
+        width: 99
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb3a7cf976dc424aa2179c679a5bf9c
+      internalID: -8821073257711839630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_91
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 238
+        width: 96
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083e46eeaa4001140be5c00f5255023b
+      internalID: -3892719991256891249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_92
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 252
+        width: 87
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d1f7d01ae535042a857d1fa0f00e17
+      internalID: 1034562639582067573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_93
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 200
+        width: 102
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9462bab0c1fc914a88e32ff201b32b9
+      internalID: 6028561162437579262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_94
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 210
+        width: 92
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeb6961055dc304783f81c9c1f09ceb
+      internalID: 8344059512469490242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_95
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 211
+        width: 93
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf9da15efd709b4c826c6ee15eb7d2a
+      internalID: -4183382872271936323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_96
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 197
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f0ff41a1b81d7439e552e64dae8a88
+      internalID: -7151122066326662049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_97
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 195
+        width: 78
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b69a74b06f5ab45a511b53112d20b0
+      internalID: 6446189765342001187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_98
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 175
+        width: 97
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e8223135d65914d90a407bf32ecf5d
+      internalID: 4392988011670796389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_99
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 167
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b024a388ec33c4593529bb30e20afb
+      internalID: -6750121279130494637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_100
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 176
+        width: 92
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330efe35bba0d5740a2d70b3ef4019eb
+      internalID: 9043555136276965491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_101
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 179
+        width: 83
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07272813557cabb4bbfff0c624856469
+      internalID: 4963218105717037151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_102
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 136
+        width: 98
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0e24e7165905b4a92ef9e607618177
+      internalID: -6620840036614779724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_103
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 166
+        width: 74
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7d1c7e95fc8ef4f8190feb37a32d69
+      internalID: 2387584543834008057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_104
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 150
+        width: 94
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2a7910d0818a54cbcb7d9f03e9f98f
+      internalID: 452177192339357485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_105
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 130
+        width: 97
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e13f9e30387917438fc9261b098479e
+      internalID: 6358237608504108188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 138
+        width: 104
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a764c1e0ec5d8584088d55bac2ef4920
+      internalID: 497144843612282062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_107
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 110
+        width: 92
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba03dc4a3a1a9c34aa4277a3d5fc5e72
+      internalID: -3302132360051271724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_108
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 101
+        width: 96
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d90d43669428a49a0a1af2473b7f02
+      internalID: 5434027724882333836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_109
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 96
+        width: 99
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f896ce434f7412443bdaa1db3b5038d4
+      internalID: 8192272527962559657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_110
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 119
+        width: 89
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd82fde865a134489ad966eb79b74a0
+      internalID: -4207077845659257187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_111
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 82
+        width: 96
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ba62007ac94654c867b78ac1d0b04c
+      internalID: -8989687622460622735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_112
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 81
+        width: 92
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3eafdf7926efc498c2dc9de162cbe0
+      internalID: 5959656562670706320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_113
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 81
+        width: 81
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811c85692c016f4ba4d01618df13677
+      internalID: -4954222379493256083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_114
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 83
+        width: 96
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c99571e4980284e9070376c3ce18da
+      internalID: -1962470070008244915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_115
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 87
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1ffbc936c251c4f96e4e4de12a12cf
+      internalID: -8054523418697842562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_116
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 55
+        width: 93
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0d3dc5661871840b4668ddb9fca31a
+      internalID: 2086245289988027910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_117
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 60
+        width: 99
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da9fefe406ab0c479a46a6f779f9e2f
+      internalID: -534511675712690463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_118
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 57
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c17e8399f5597a4bb5e8d9fc9084762
+      internalID: -7793178582994650462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_119
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 97
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de19953d98a931349b5ab21c96c968ce
+      internalID: 3017899293344657894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_120
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 29
+        width: 92
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35d0de84aa63ca41aa8f8f6ce7071f7
+      internalID: -1064086026165519074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_121
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 28
+        width: 94
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea40a76e142819840ac55c3a5c6785e7
+      internalID: 6602637059480060285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_122
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 40
+        width: 79
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eb5bb6b50998f44b16955413d5c512
+      internalID: -6352794160742002326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_123
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 26
+        width: 91
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300489c09202960478932ff593b8c50f
+      internalID: -2534916497874466002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_124
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2
+        width: 82
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef53310538e34874eb87d607758c43c4
+      internalID: 3459607016735230246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_125
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 7
+        width: 76
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcf5a898629a8c458a12afd5674b3fd
+      internalID: -4847512620361645426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EineWelle_126
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 10
+        width: 77
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de72724d70cf2b540b8733275c022025
+      internalID: 369774779309698600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8f493f3482ba9394586a31f19b88258b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

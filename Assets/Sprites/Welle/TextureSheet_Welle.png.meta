@@ -1,0 +1,1397 @@
+fileFormatVersion: 2
+guid: 5abd116aef92b164fb120f3489449db5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3980261366717776293
+    second: TextureSheet_Welle_0
+  - first:
+      213: -7576050266195994900
+    second: TextureSheet_Welle_1
+  - first:
+      213: 814162967354197395
+    second: TextureSheet_Welle_2
+  - first:
+      213: -7389233959541017407
+    second: TextureSheet_Welle_3
+  - first:
+      213: 5649568754412240204
+    second: TextureSheet_Welle_4
+  - first:
+      213: -8669830811617836287
+    second: TextureSheet_Welle_5
+  - first:
+      213: 7697085356585094577
+    second: TextureSheet_Welle_6
+  - first:
+      213: -943443452295250063
+    second: TextureSheet_Welle_7
+  - first:
+      213: 8064732589159862703
+    second: TextureSheet_Welle_8
+  - first:
+      213: 6857319951584115871
+    second: TextureSheet_Welle_9
+  - first:
+      213: -1894608286321251987
+    second: TextureSheet_Welle_10
+  - first:
+      213: 6652292334823838837
+    second: TextureSheet_Welle_11
+  - first:
+      213: -8056488633544833553
+    second: TextureSheet_Welle_12
+  - first:
+      213: -3547193349087445014
+    second: TextureSheet_Welle_13
+  - first:
+      213: -6136815868626955512
+    second: TextureSheet_Welle_14
+  - first:
+      213: -3807376197059561196
+    second: TextureSheet_Welle_15
+  - first:
+      213: 2472301012813656868
+    second: TextureSheet_Welle_16
+  - first:
+      213: -8839845034592062717
+    second: TextureSheet_Welle_17
+  - first:
+      213: -8881318803418411254
+    second: TextureSheet_Welle_18
+  - first:
+      213: 2620280032196433944
+    second: TextureSheet_Welle_19
+  - first:
+      213: -8701654085214210994
+    second: TextureSheet_Welle_20
+  - first:
+      213: 249144641053262185
+    second: TextureSheet_Welle_21
+  - first:
+      213: 4414051745302268052
+    second: TextureSheet_Welle_22
+  - first:
+      213: 3425318623038990375
+    second: TextureSheet_Welle_23
+  - first:
+      213: 6784043175198852980
+    second: TextureSheet_Welle_24
+  - first:
+      213: 1702376217445597332
+    second: TextureSheet_Welle_25
+  - first:
+      213: 9042976863533962886
+    second: TextureSheet_Welle_26
+  - first:
+      213: 4733866487854659753
+    second: TextureSheet_Welle_27
+  - first:
+      213: -2258030292719146474
+    second: TextureSheet_Welle_28
+  - first:
+      213: 311771047630965782
+    second: TextureSheet_Welle_29
+  - first:
+      213: -1090648763042684665
+    second: TextureSheet_Welle_30
+  - first:
+      213: 8562292309410480117
+    second: TextureSheet_Welle_31
+  - first:
+      213: -412036210351021272
+    second: TextureSheet_Welle_32
+  - first:
+      213: 2107152894523580943
+    second: TextureSheet_Welle_33
+  - first:
+      213: -7066601422079404165
+    second: TextureSheet_Welle_34
+  - first:
+      213: -4010248743754990028
+    second: TextureSheet_Welle_35
+  - first:
+      213: -228684760318200438
+    second: TextureSheet_Welle_36
+  - first:
+      213: -6463121538710800606
+    second: TextureSheet_Welle_37
+  - first:
+      213: 430905486409926308
+    second: TextureSheet_Welle_38
+  - first:
+      213: -1879741985297913808
+    second: TextureSheet_Welle_39
+  - first:
+      213: -8668643616260104680
+    second: TextureSheet_Welle_40
+  - first:
+      213: 8696440750661464273
+    second: TextureSheet_Welle_41
+  - first:
+      213: -3131342004345175091
+    second: TextureSheet_Welle_42
+  - first:
+      213: 3623251616137394756
+    second: TextureSheet_Welle_43
+  - first:
+      213: -6015947870031821108
+    second: TextureSheet_Welle_44
+  - first:
+      213: 5033351582055430778
+    second: TextureSheet_Welle_45
+  - first:
+      213: 2160009549772816472
+    second: TextureSheet_Welle_46
+  - first:
+      213: 7878028703846903335
+    second: TextureSheet_Welle_47
+  - first:
+      213: -1389733225548008725
+    second: TextureSheet_Welle_48
+  - first:
+      213: -1534650403814439065
+    second: TextureSheet_Welle_49
+  - first:
+      213: -5037104161209869580
+    second: TextureSheet_Welle_50
+  - first:
+      213: -4849577327824563095
+    second: TextureSheet_Welle_51
+  - first:
+      213: -7113768114007424940
+    second: TextureSheet_Welle_52
+  - first:
+      213: 8276901196712684175
+    second: TextureSheet_Welle_53
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TextureSheet_Welle_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3838
+        width: 86
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa676ab191ef1534d9fddb72cf5dc255
+      internalID: -3980261366717776293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_1
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 3838
+        width: 88
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70059bcdf5a04ba4ebc0f0ba584b8de2
+      internalID: -7576050266195994900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_2
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 3838
+        width: 92
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e5f10a6c5144040b3a468c77771d3e
+      internalID: 814162967354197395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3838
+        width: 95
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c07a743593044b4fb37f4bf429c5b6f
+      internalID: -7389233959541017407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_4
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 3838
+        width: 95
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bce0c785056c54cbd6517638681704
+      internalID: 5649568754412240204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_5
+      rect:
+        serializedVersion: 2
+        x: 3654
+        y: 3838
+        width: 95
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee969bbc1bf2c645ab71e0b7a3e900e
+      internalID: -8669830811617836287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_6
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 3838
+        width: 96
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7ccf3bf3870924c921d162c9ae9f1c
+      internalID: 7697085356585094577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_7
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 3838
+        width: 96
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba03b7f022f1ef24eb78e3478285c5b5
+      internalID: -943443452295250063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_8
+      rect:
+        serializedVersion: 2
+        x: 5754
+        y: 3838
+        width: 100
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848c6d500c1133a43b607b27a80d758b
+      internalID: 8064732589159862703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_9
+      rect:
+        serializedVersion: 2
+        x: 6454
+        y: 3838
+        width: 100
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2696e2a387c99a48a86128d30205bdd
+      internalID: 6857319951584115871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_10
+      rect:
+        serializedVersion: 2
+        x: 7158
+        y: 3838
+        width: 100
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381d06914ee0c58409d96145d80757d5
+      internalID: -1894608286321251987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3362
+        width: 100
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b1b83d79d3206468ad9b1e85a85a7a
+      internalID: 6652292334823838837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_12
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 3362
+        width: 100
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4a9703f37c8b743984ec2e3176ac4c
+      internalID: -8056488633544833553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_13
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 3362
+        width: 103
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7d938ec784785408dfd22964250694
+      internalID: -3547193349087445014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_14
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 3362
+        width: 104
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c68dac6d0541ad4abf44712d84d1ea6
+      internalID: -6136815868626955512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_15
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 3362
+        width: 100
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd60e662a170144aa79453dc9fe9cad
+      internalID: -3807376197059561196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_16
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 3358
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1ff1738f8cb344e9597af102a99544
+      internalID: 2472301012813656868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_17
+      rect:
+        serializedVersion: 2
+        x: 4386
+        y: 3358
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a62798b7307474f9acafc69f56fd5b
+      internalID: -8839845034592062717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_18
+      rect:
+        serializedVersion: 2
+        x: 5086
+        y: 3358
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf65bbb232216c4b86a89a531f8f00a
+      internalID: -8881318803418411254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_19
+      rect:
+        serializedVersion: 2
+        x: 5786
+        y: 3358
+        width: 106
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf0a87c9fb7e894c88a856b4f0010c2
+      internalID: 2620280032196433944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_20
+      rect:
+        serializedVersion: 2
+        x: 6486
+        y: 3358
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da315953a9582f54b84ca594ac298d7c
+      internalID: -8701654085214210994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_21
+      rect:
+        serializedVersion: 2
+        x: 7186
+        y: 3358
+        width: 108
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae47d4ca366b1b549b6609065538b8d6
+      internalID: 249144641053262185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_22
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2882
+        width: 104
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d49861c390f5d04097ca6d3915cf165
+      internalID: 4414051745302268052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_23
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2882
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed59322a6f993494ea59823ae87b85f7
+      internalID: 3425318623038990375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_24
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 2882
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d174cb3f293a6d4e93216e577d693ef
+      internalID: 6784043175198852980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_25
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 2882
+        width: 108
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6084053d099d844189a2f9c10a8b99f
+      internalID: 1702376217445597332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_26
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 2882
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d455f35aab9f33e4d8ec5872dc4356cc
+      internalID: 9042976863533962886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_27
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 2882
+        width: 112
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b42e5d4f36ed7540980c72da224f96f
+      internalID: 4733866487854659753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_28
+      rect:
+        serializedVersion: 2
+        x: 4406
+        y: 2878
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256f201337bd33b43aa57996b134dbfd
+      internalID: -2258030292719146474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_29
+      rect:
+        serializedVersion: 2
+        x: 5106
+        y: 2878
+        width: 108
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c0990ed9bf6604bb9214c909a12856
+      internalID: 311771047630965782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_30
+      rect:
+        serializedVersion: 2
+        x: 5806
+        y: 2878
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d180ceff2f92d24482fd23044e5cefb
+      internalID: -1090648763042684665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_31
+      rect:
+        serializedVersion: 2
+        x: 6506
+        y: 2878
+        width: 112
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edd881ea26a55f4a9ff9eb26e505d8e
+      internalID: 8562292309410480117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_32
+      rect:
+        serializedVersion: 2
+        x: 7206
+        y: 2878
+        width: 111
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8737f6a3d4bb9468297a00184b57c8
+      internalID: -412036210351021272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_33
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2398
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fef16797525da64f9b47bd110abf968
+      internalID: 2107152894523580943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_34
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2398
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e83cca29d375c4e9b650ccbc1b6ee1
+      internalID: -7066601422079404165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_35
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2398
+        width: 110
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efc27977a06b664d8354c98e2710daf
+      internalID: -4010248743754990028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_36
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 2398
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442de6cb80c715b459dc28296e4b9fac
+      internalID: -228684760318200438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_37
+      rect:
+        serializedVersion: 2
+        x: 3030
+        y: 2398
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa23f8b2a7a1450459809cd40c2a4324
+      internalID: -6463121538710800606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_38
+      rect:
+        serializedVersion: 2
+        x: 3734
+        y: 2398
+        width: 104
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47e89d1641347b49bb605cbf2d43632
+      internalID: 430905486409926308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_39
+      rect:
+        serializedVersion: 2
+        x: 4434
+        y: 2398
+        width: 104
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d168b7539aab7e46afbbb5e564b16c8
+      internalID: -1879741985297913808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_40
+      rect:
+        serializedVersion: 2
+        x: 5138
+        y: 2398
+        width: 100
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29abdf0d5b6aae4cbdc29028fe88b5d
+      internalID: -8668643616260104680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_41
+      rect:
+        serializedVersion: 2
+        x: 5838
+        y: 2402
+        width: 100
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a20785a0542714b8c72919ae88fe08
+      internalID: 8696440750661464273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_42
+      rect:
+        serializedVersion: 2
+        x: 6538
+        y: 2402
+        width: 100
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7c4f191fa3bc14f84e58b15279a90e
+      internalID: -3131342004345175091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_43
+      rect:
+        serializedVersion: 2
+        x: 7242
+        y: 2402
+        width: 96
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057c1c03d9b0433498dcba25da4be2a3
+      internalID: 3623251616137394756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1926
+        width: 96
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e338705a89981aa4eb216254455a1396
+      internalID: -6015947870031821108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_45
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1926
+        width: 96
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b200a8ae29e194f90457bd3ab7c2c8
+      internalID: 5033351582055430778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_46
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 1926
+        width: 92
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61368f37452c6284cb4a665467530829
+      internalID: 2160009549772816472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_47
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1926
+        width: 92
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c126a4374817894fa69b833d66608d9
+      internalID: 7878028703846903335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_48
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 1926
+        width: 88
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e96dbf21bff2764abb62c74911e0298
+      internalID: -1389733225548008725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_49
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 1926
+        width: 88
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d9e36b0cb27784e8200554ddb7f679
+      internalID: -1534650403814439065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_50
+      rect:
+        serializedVersion: 2
+        x: 4475
+        y: 1926
+        width: 87
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7d3f15b17010948b1c1c2844b1b3cc
+      internalID: -5037104161209869580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_51
+      rect:
+        serializedVersion: 2
+        x: 5178
+        y: 1926
+        width: 84
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9285758a6308e24db23e1e8315498ec
+      internalID: -4849577327824563095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_52
+      rect:
+        serializedVersion: 2
+        x: 5879
+        y: 1927
+        width: 83
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059827abaa3ffb9438baec8dec39b350
+      internalID: -7113768114007424940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextureSheet_Welle_53
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 1930
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ffd8096cd4ff844aeff5b782c857ac
+      internalID: 8276901196712684175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 19cf18c5558e5814f91e45b3e037b2b4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
