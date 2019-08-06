@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class CardDeckScript : MonoBehaviour
 {
     public List<CardAsset> deckCards = new List<CardAsset>();
     public GameObject hand;
     public GameObject cardPrefab;
-
+    //comment
     void Start()
     {
         
@@ -24,6 +25,8 @@ public class CardDeckScript : MonoBehaviour
             deckCards[i] = deckCards[switcher];
             deckCards[switcher] = merker;
         }
+
+        //deckCards=deckCards.OrderBy(c => Random.value).ToList();
     }
 
     public void SpawnCardDeck()
