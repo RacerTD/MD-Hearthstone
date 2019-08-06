@@ -171,7 +171,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
   hand: {fileID: 777401053}
-  cardPrefab: {fileID: 8024431533381291182, guid: 3486fbad6ccf2cc46b6ea54458941d51,
+  cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
 --- !u!1 &267822846
 GameObject:
