@@ -18,12 +18,12 @@ public class ManaScript : MonoBehaviour
     {
         if (childcounter != transform.childCount)
         {
-            UpdateManPower();
+            UpdateMana();
         }
         childcounter = transform.childCount;
     }
 
-    public void UpdateManPower()
+    public void UpdateMana()
     {
         foreach (Transform child in transform)
         {
@@ -31,5 +31,10 @@ public class ManaScript : MonoBehaviour
             maxMana = maxMana + child.GetComponent<OneCardManager>().cost;
             child.GetComponent<OneCardManager>().delete();
         }
+    }
+
+    public void UsedMana(int cost)
+    {
+        manaCount = manaCount - cost;
     }
 }

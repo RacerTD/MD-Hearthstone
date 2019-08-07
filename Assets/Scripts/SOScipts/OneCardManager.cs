@@ -20,18 +20,17 @@ public class OneCardManager : MonoBehaviour
     public List<Text> attackText = new List<Text>();
     public List<Text> lifeText = new List<Text>();
     public List<Text> maxLifeText = new List<Text>();
-    public Button selector;
-    private bool selector_;
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
     public GameObject spellCardFront;
     public GameObject equipmentCardFront;
     public GameObject humanCardFront;
+    public GameObject boardCard;
     //public GameObject CardBack;
 
-    [Header("Karten Attribute")]
-    public string cardType;
+    
+
     public int Health
     {
         get { return _health; }
@@ -43,14 +42,25 @@ public class OneCardManager : MonoBehaviour
         }
     }
     public int _health;
+
+    public int Attack
+    {
+        get { return _attack; }
+        set
+        {
+            _attack = value;
+            UIUpdate();
+        }
+    }
+    public int _attack;
     public int maxHealth;
     public int attack;
 
     public int cost;
 
-    public int equipmentCount;
-    public bool hasAttacked = false;
-    public bool summoningSickness = true;
+    private int equipmentCount;
+    //private bool hasAttacked = false;
+    //private bool summoningSickness = true;
 
     private void Awake()
     {
@@ -67,7 +77,7 @@ public class OneCardManager : MonoBehaviour
         }
         InitializeCard();
     }
-    void Start()
+    private void Start()
     {
 
     }
@@ -90,17 +100,15 @@ public class OneCardManager : MonoBehaviour
             transform.localPosition = new Vector3(0, 0, 0);
         }
 
-        
-
         if (newAsset == null && cardAsset == null)
         {
             return;
         }
-
         if (newAsset == null)
         {
             newAsset = cardAsset;
         }
+
         switch (newAsset.cardType)
         {
             case CardType.Enemy:
@@ -139,8 +147,9 @@ public class OneCardManager : MonoBehaviour
 
     public void GiveGameManagerCard()
     {
-        gameManger.GetComponent<GameManager>().CardClicked(this.gameObject);
+        gameManger.GetComponent<GameManager>().CardClicked(gameObject);
     }
+
     private void UpdateList(List<Text> bla, string value)
     {
         for (int i = 0; i <= bla.Count - 1; i++)
@@ -151,7 +160,7 @@ public class OneCardManager : MonoBehaviour
 
     private void UIUpdate()
     {
-        UpdateList(attackText, attack.ToString());
+        UpdateList(attackText, _attack.ToString());
         UpdateList(lifeText, _health.ToString());
         UpdateList(maxLifeText, maxHealth.ToString());
     }
@@ -162,5 +171,24 @@ public class OneCardManager : MonoBehaviour
         {
             delete();
         }
+    }
+
+    public void NowOnField()
+    {
+        humanCardFront.SetActive(false);
+        boardCard.SetActive(true);
+    }
+
+    public void HealAbility()
+    {
+        if (cardAsset.lowHeal.enabled)
+        {
+            gameManger.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost);
+        }
+        else if (cardAsset.highHeal.enabled)
+        {
+            gameManger.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost);
+        }
+        
     }
 }

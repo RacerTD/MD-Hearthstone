@@ -62,9 +62,6 @@ public class GameManager : MonoBehaviour
                     enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
                     enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
                     enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
                     //Debug.Log("Spawned Card");
                 }
                 gameState = GameState.PlayerCardDraw;
@@ -116,5 +113,10 @@ public class GameManager : MonoBehaviour
     {
         clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().attack;
         clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().attack;
+    }
+
+    public void HealAbility(int heal, int cost)
+    {
+
     }
 }

@@ -11,7 +11,15 @@ public enum CardType
     Spell
 }
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+public enum AbilityNames
+{
+    lowHeal,
+    highHeal,
+    lowDMG,
+    highDMG
+}
+
+[CreateAssetMenu(fileName = "Data", menuName = "Create New Card", order = 1)]
 public class CardAsset : ScriptableObject
 {
     public string prefabName = "Card";
@@ -33,25 +41,17 @@ public class CardAsset : ScriptableObject
 
     [Header("Abilitys")]
     public Ability lowHeal;
-
-    public bool healHighUsed = false;
-    public int healHighCost;
-    public bool healHighEnabled;
-
-    public bool attackLowUsed = false;
-    public int attackLowCost;
-    public bool attackLowEnabled;
-
-    public bool attackHighUsed = false;
-    public int attackHighCost;
-    public bool attackHighEnabled;
-
+    public Ability highHeal;
+    public Ability lowDMG;
+    public Ability highDMG;
 }
 
 [System.Serializable]
 public class Ability
 {
+    public bool enabled;
+    public int effect;
     public bool used = false;
-    public int hallo;
-
+    public int cost;
+    public AbilityNames name;
 }
