@@ -7,10 +7,14 @@ using UnityEngine.UI;
 public class OneCardManager : MonoBehaviour
 {
     public GameObject enemyField;
-    public GameObject gameManger;
+    public GameObject gameManager;
     public GameObject cardDeck;
+    public GameObject manPower;
+    public GameObject mana;
+    public GameObject hand;
     public CardAsset cardAsset;
     public string prefabName;
+    private bool onBoard = false;
 
     [Header("CardComponents")]
     public Image cardGraphic;
@@ -27,9 +31,15 @@ public class OneCardManager : MonoBehaviour
     public GameObject equipmentCardFront;
     public GameObject humanCardFront;
     public GameObject boardCard;
-    //public GameObject CardBack;
 
-    
+    [Header("Ability Symbole")]
+    public GameObject lowHealGameObject;
+    public GameObject highHealGameObject;
+    public GameObject lowDMGGameObject;
+    public GameObject highDMGGameObject;
+
+    [Header("Spott")]
+    public GameObject taunt;
 
     public int Health
     {
@@ -54,7 +64,6 @@ public class OneCardManager : MonoBehaviour
     }
     public int _attack;
     public int maxHealth;
-    public int attack;
 
     public int cost;
 
@@ -64,10 +73,13 @@ public class OneCardManager : MonoBehaviour
 
     private void Awake()
     {
-        gameManger = GameObject.Find("GameManager");
+        gameManager = GameObject.Find("GameManager");
         enemyField = GameObject.Find("EnemyField");
         cardDeck = GameObject.Find("CardDeck");
-        if (gameManger.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
+        manPower = GameObject.Find("ManPower");
+        mana = GameObject.Find("Mana");
+        hand = GameObject.Find("Hand");
+        if (gameManager.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
         {
             cardAsset = cardDeck.GetComponent<CardDeckScript>().CardToSpawn();
         }
@@ -77,19 +89,10 @@ public class OneCardManager : MonoBehaviour
         }
         InitializeCard();
     }
-    private void Start()
-    {
-
-    }
-
-    private void Update()
-    {
-
-    }
 
     void InitializeCard(CardAsset newAsset = null)
     {
-        if (gameManger.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
+        if (gameManager.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
         {
             transform.SetParent(cardDeck.transform, false);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -125,29 +128,34 @@ public class OneCardManager : MonoBehaviour
                 break;
         }
 
-        attack = newAsset.attack;
+        Attack = newAsset.attack;
         maxHealth = newAsset.maxHealth;
         Health = maxHealth;
         cost = newAsset.cost;
 
-
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
         UpdateList(descriptionText, cardAsset.description);
-        UpdateList(attackText, attack.ToString());
+        UpdateList(attackText, Attack.ToString());
         UpdateList(lifeText, _health.ToString());
         UpdateList(maxLifeText, maxHealth.ToString());
 
+        UpdateAbilitys();
     }
 
     public void delete()
     {
+        if (onBoard)
+        {
+            manPower.GetComponent<ManPowerScript>().UsedManPower(- cardAsset.cost);
+        }
+        
         Destroy(gameObject);
     }
 
     public void GiveGameManagerCard()
     {
-        gameManger.GetComponent<GameManager>().CardClicked(gameObject);
+        gameManager.GetComponent<GameManager>().CardClicked(gameObject);
     }
 
     private void UpdateList(List<Text> bla, string value)
@@ -155,6 +163,37 @@ public class OneCardManager : MonoBehaviour
         for (int i = 0; i <= bla.Count - 1; i++)
         {
             bla[i].text = value;
+        }
+    }
+
+    private void UpdateAbilitys()
+    {
+        if (cardAsset.lowHeal.enabled)
+        {
+            lowHealGameObject.SetActive(true);
+        }
+        else if (cardAsset.highHeal.enabled)
+        {
+            highHealGameObject.SetActive(true);
+        }
+        else
+        {
+            highHealGameObject.SetActive(false);
+            lowHealGameObject.SetActive(false);
+        }
+
+        if (cardAsset.lowDMG.enabled)
+        {
+            lowDMGGameObject.SetActive(true);
+        }
+        else if (cardAsset.highDMG.enabled)
+        {
+            highDMGGameObject.SetActive(true);
+        }
+        else
+        {
+            highDMGGameObject.SetActive(false);
+            lowDMGGameObject.SetActive(false);
         }
     }
 
@@ -175,20 +214,59 @@ public class OneCardManager : MonoBehaviour
 
     public void NowOnField()
     {
-        humanCardFront.SetActive(false);
-        boardCard.SetActive(true);
+        if (!onBoard)
+        {
+            if (manPower.GetComponent<ManPowerScript>().manPower >= cardAsset.cost)
+            {
+                humanCardFront.SetActive(false);
+                boardCard.SetActive(true);
+                manPower.GetComponent<ManPowerScript>().UsedManPower(cardAsset.cost);
+                onBoard = true;
+            }
+            else
+            {
+                this.gameObject.transform.SetParent(hand.GetComponent<Transform>());
+            }
+        }
     }
 
+    #region Abilitys
     public void HealAbility()
     {
         if (cardAsset.lowHeal.enabled)
         {
-            gameManger.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost);
+            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost);
         }
         else if (cardAsset.highHeal.enabled)
         {
-            gameManger.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost);
+            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost);
         }
-        
     }
+
+    public void Heal(int heal)
+    {
+        Health = Health + heal;
+        if (Health > maxHealth)
+        {
+            Health = maxHealth;
+        }
+    }
+
+    public void DamageAbility()
+    {
+        if (cardAsset.lowDMG.enabled)
+        {
+            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost);
+        }
+        else if (cardAsset.highDMG.enabled)
+        {
+            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost);
+        }
+    }
+
+    public void Damage(int damage)
+    {
+        Health = Health - damage;
+    }
+    #endregion
 }

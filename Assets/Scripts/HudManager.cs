@@ -6,14 +6,22 @@ using UnityEngine.UI;
 public class HudManager : MonoBehaviour
 {
     public Text manPowerText;
-    public Text maxManPowerText;
     public Text manaText;
-    public Text maxManaText;
 
     
 
     void Update()
     {
         
+    }
+
+    public void UpdateManPower(int manPower)
+    {
+        manPowerText.text = manPower.ToString();
+    }
+
+    public void UpdateMana(int mana)
+    {
+        manaText.text = mana.ToString();
     }
 }

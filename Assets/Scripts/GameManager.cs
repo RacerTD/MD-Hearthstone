@@ -7,11 +7,18 @@ public class GameManager : MonoBehaviour
     public GameObject cardDeck;
     public GameObject hand;
     public GameObject enemyField;
+    public GameObject mana;
     public bool playersTurn;
 
-    public GameObject clicked01 = null;
-    public GameObject clicked02 = null;
-    
+    private GameObject clicked01 = null;
+    private GameObject clicked02 = null;
+
+    private int healAbilityCost;
+    private int healAbilityEffect;
+    private int DMGAbilityCost;
+    private int DMGAbilityEffect;
+
+
     public enum GameState
     {
         GameStart,
@@ -68,15 +75,8 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.PlayerCardDraw:
+                PlayerCardDraw();
                 //Spieler Karten auffüllen
-                if (hand.GetComponent<Transform>().transform.childCount < 5)
-                {
-                    for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
-                    {
-                        cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
-                    }
-                }
-                gameState = GameState.PlayerIdle;
                 break;
 
             case GameState.PlayerIdle:
@@ -87,36 +87,116 @@ public class GameManager : MonoBehaviour
 
     public void CardClicked(GameObject clickedOn)
     {
-        Debug.Log("Backstäääähhhh");
+        
         if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
         {
             clicked01 = clickedOn;
+            if (healAbilityCost != 0 && healAbilityEffect != 0) //Check for Heal Ability
+            {
+                Heal();
+            }
+        }
+        else if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+        {
+            clicked01 = clickedOn;
+            if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
+            {
+                Damage();
+            }
+            else
+            {
+                clicked01 = null;
+            }
         }
         else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
         {
             clicked02 = clickedOn;
         } else
         {
-            clicked01 = null;
-            clicked02 = null;
+            ResetAbilitys();
         }
 
-        if (clicked01 != null && clicked02 != null)
+        if (clicked01 != null && clicked02 != null) //Basic Attack
         {
-            BasicAttack();
-            clicked01 = null;
-            clicked02 = null;
+            clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
+            clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
+            ResetAbilitys();
         }
     }
 
-    private void BasicAttack()
+    private void ResetAbilitys()
     {
-        clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().attack;
-        clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().attack;
+        clicked01 = null;
+        clicked02 = null;
+        healAbilityCost = 0;
+        healAbilityEffect = 0;
+        DMGAbilityCost = 0;
+        DMGAbilityEffect = 0;
+    }
+
+    #region Abilitys
+    private void Heal()
+    {
+        clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
+        mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
+        ResetAbilitys();
+    }
+
+    private void Damage()
+    {
+        clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
+        ResetAbilitys();
     }
 
     public void HealAbility(int heal, int cost)
     {
+        if (healAbilityCost == 0 && healAbilityEffect == 0)
+        {
+            healAbilityCost = cost;
+            healAbilityEffect = heal;
+        }
+        else
+        {
+            ResetAbilitys();
+        }
+    }
 
+    public void DMGAbility(int DMG, int cost)
+    {
+        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0)
+        {
+            DMGAbilityCost = cost;
+            DMGAbilityEffect = DMG;
+        }
+        else
+        {
+            ResetAbilitys();
+        }
+    }
+    #endregion
+
+    public void EndTurn()
+    {
+        gameState = GameState.Enemy;
+    }
+
+    private void PlayerCardDraw()
+    {
+        if (hand.GetComponent<Transform>().transform.childCount < 5)
+        {
+            for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
+            {
+                if (cardDeck.GetComponent<Transform>().transform.childCount > 0)
+                {
+                    cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
+                }
+                else
+                {
+                    break;
+                }
+                
+            }
+        }
+        gameState = GameState.PlayerIdle;
     }
 }

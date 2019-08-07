@@ -15,19 +15,25 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public Vector3 dragOffset;
 
     public GameObject gameManager;
+    public GameObject manPower;
+    public GameObject mana;
 
 
 
     public void OnBeginDrag(PointerEventData eventData) // 1
     {
         gameManager = GameObject.Find("GameManager");
+        manPower = GameObject.Find("ManPower");
+        mana = GameObject.Find("Mana");
+
+        Debug.Log("0");
         if (CheckForGamestate())
         {
             //draggable = true;
-
+            Debug.Log("1");
             if (draggable)
             {
-
+                Debug.Log("2");
                 parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
                 this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
 
@@ -86,12 +92,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     private bool CheckForGamestate()
     {
-        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) || (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) ||
+            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        {
             return true;
+        }  
 
-        return false;
+        return true;
     }
-
-
 }

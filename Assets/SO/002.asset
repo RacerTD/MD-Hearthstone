@@ -18,17 +18,29 @@ MonoBehaviour:
   cardImageLarge: {fileID: 0}
   maxHealth: 5
   attack: 5
-  cost: 73
+  cost: 4
   description: 
   lowHeal:
+    enabled: 0
+    effect: 0
     used: 0
-    hallo: 0
-  healHighUsed: 0
-  healHighCost: 0
-  healHighEnabled: 0
-  attackLowUsed: 0
-  attackLowCost: 0
-  attackLowEnabled: 0
-  attackHighUsed: 0
-  attackHighCost: 0
-  attackHighEnabled: 0
+    cost: 0
+    name: 0
+  highHeal:
+    enabled: 0
+    effect: 0
+    used: 0
+    cost: 0
+    name: 1
+  lowDMG:
+    enabled: 1
+    effect: 3
+    used: 0
+    cost: 5
+    name: 2
+  highDMG:
+    enabled: 0
+    effect: 0
+    used: 0
+    cost: 0
+    name: 3

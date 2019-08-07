@@ -21,7 +21,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         Draggable drag = eventData.pointerDrag.GetComponent<Draggable>();       // parentToReturnTo wird überschrieben,
         if (drag != null)                                                       // sodass die Karten 
         {
-            Debug.Log("OnDrop - DropZone");
+            //Debug.Log("OnDrop - DropZone");
             drag.parentToReturnTo = this.transform;
             drag.setsDraggableFalse = true;                                     // beim Loslassen in die Dropzone gelgt werden.
         }

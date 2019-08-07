@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -245,12 +245,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8589536950243986773}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7828345410005056317}
-        m_MethodName: GiveGameManagerCard
+        m_MethodName: HealAbility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2393,7 +2393,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 3176393274514319072}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2451,12 +2451,12 @@ GameObject:
   - component: {fileID: 3096448983136976721}
   - component: {fileID: 7165192992553401926}
   m_Layer: 0
-  m_Name: AbilityBackgroundRight
+  m_Name: LowHealAbilitySymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8672362928119634107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3049,12 +3049,12 @@ GameObject:
   - component: {fileID: 3765088925241465159}
   - component: {fileID: 815028134198083743}
   m_Layer: 0
-  m_Name: HealIcon
+  m_Name: HighHealAbilitySymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6208133689426734382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3123,12 +3123,12 @@ GameObject:
   - component: {fileID: 1930716812978078390}
   - component: {fileID: 2623525793671166522}
   m_Layer: 0
-  m_Name: AbilityBackgroundLeft
+  m_Name: LowDamageAbilitySymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &99514923247383245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4451,12 +4451,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2479608936232650859}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7828345410005056317}
-        m_MethodName: GiveGameManagerCard
+        m_MethodName: DamageAbility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4694,12 +4694,12 @@ GameObject:
   - component: {fileID: 1992698859297863301}
   - component: {fileID: 6571849472457725292}
   m_Layer: 0
-  m_Name: DamageIcon
+  m_Name: HighDamageAbilitySymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3656275154012573065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5450,7 +5450,13 @@ MonoBehaviour:
   equipmentCardFront: {fileID: 5484373957921347962}
   humanCardFront: {fileID: 3721817166388540110}
   boardCard: {fileID: 1826604114551978219}
+  lowHealGameObject: {fileID: 3860239620310752507}
+  highHealGameObject: {fileID: 4838957960786439543}
+  lowDMGGameObject: {fileID: 4950162859170515547}
+  highDMGGameObject: {fileID: 6949324951023926921}
+  taunt: {fileID: 0}
   _health: 0
+  _attack: 0
   maxHealth: 0
   attack: 0
   cost: 0
@@ -5794,7 +5800,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 6247190260149868248}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:

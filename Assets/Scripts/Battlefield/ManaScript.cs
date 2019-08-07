@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ManaScript : MonoBehaviour
 {
+    public GameManager gameManager;
     public int manaCount = 0;
     public int maxMana = 0;
     int childcounter;
@@ -31,10 +32,12 @@ public class ManaScript : MonoBehaviour
             maxMana = maxMana + child.GetComponent<OneCardManager>().cost;
             child.GetComponent<OneCardManager>().delete();
         }
+        gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
     }
 
     public void UsedMana(int cost)
     {
         manaCount = manaCount - cost;
+        gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
     }
 }
