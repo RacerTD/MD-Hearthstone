@@ -5434,16 +5434,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyField: {fileID: 0}
-  gameManger: {fileID: 0}
+  gameManager: {fileID: 0}
   cardDeck: {fileID: 0}
+  manPower: {fileID: 0}
+  mana: {fileID: 0}
+  hand: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: Card
   cardGraphic: {fileID: 0}
-  costText: []
+  costText:
+  - {fileID: 7468989295531121839}
+  - {fileID: 8598176565226295731}
   nameText: []
-  descriptionText: []
-  attackText: []
-  lifeText: []
+  descriptionText:
+  - {fileID: 3877422553795464316}
+  - {fileID: 4854005312142825582}
+  attackText:
+  - {fileID: 8713700212934884906}
+  - {fileID: 2525405862592004278}
+  - {fileID: 1479878134241065316}
+  lifeText:
+  - {fileID: 5533799513633816684}
+  - {fileID: 1985845163506357961}
+  - {fileID: 855212604930130579}
   maxLifeText: []
   enemyCardFront: {fileID: 5417867203999520390}
   spellCardFront: {fileID: 5484373957921347962}
@@ -5458,7 +5471,6 @@ MonoBehaviour:
   _health: 0
   _attack: 0
   maxHealth: 0
-  attack: 0
   cost: 0
 --- !u!114 &-8600564734841319568
 MonoBehaviour:
@@ -5477,6 +5489,8 @@ MonoBehaviour:
   setsDraggableFalse: 0
   dragOffset: {x: 0, y: 0, z: 0}
   gameManager: {fileID: 0}
+  manPower: {fileID: 0}
+  mana: {fileID: 0}
 --- !u!225 &-66830520009072450
 CanvasGroup:
   m_ObjectHideFlags: 0

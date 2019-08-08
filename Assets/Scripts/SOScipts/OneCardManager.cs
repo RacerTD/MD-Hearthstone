@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class OneCardManager : MonoBehaviour
@@ -18,12 +19,12 @@ public class OneCardManager : MonoBehaviour
 
     [Header("CardComponents")]
     public Image cardGraphic;
-    public List<Text> costText = new List<Text>();
-    public List<Text> nameText = new List<Text>();
-    public List<Text> descriptionText = new List<Text>();
-    public List<Text> attackText = new List<Text>();
-    public List<Text> lifeText = new List<Text>();
-    public List<Text> maxLifeText = new List<Text>();
+    public List<TextMeshProUGUI> costText = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> nameText = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> descriptionText = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> attackText = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>();
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
@@ -158,7 +159,7 @@ public class OneCardManager : MonoBehaviour
         gameManager.GetComponent<GameManager>().CardClicked(gameObject);
     }
 
-    private void UpdateList(List<Text> bla, string value)
+    private void UpdateList(List<TextMeshProUGUI> bla, string value)
     {
         for (int i = 0; i <= bla.Count - 1; i++)
         {
