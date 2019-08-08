@@ -5670,7 +5670,11 @@ GameObject:
   - component: {fileID: 7828345410005056317}
   - component: {fileID: -8600564734841319568}
   - component: {fileID: -66830520009072450}
+<<<<<<< Updated upstream
   - component: {fileID: 4901837019658236716}
+=======
+  - component: {fileID: 8794823414951612448}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -5801,14 +5805,30 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+<<<<<<< Updated upstream
 --- !u!222 &4901837019658236716
 CanvasRenderer:
+=======
+--- !u!114 &8794823414951612448
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8024431533381291182}
+<<<<<<< Updated upstream
   m_CullTransparentMesh: 0
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b24c8891355054eb25d4992111b2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 350218901138899287}
+  - {fileID: 4801455478890523504}
+>>>>>>> Stashed changes
 --- !u!1 &8195037775092677742
 GameObject:
   m_ObjectHideFlags: 0
