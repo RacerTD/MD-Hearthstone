@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class wavespawn : MonoBehaviour
 {
     public GameObject wave;
-    public GameObject Cards;
     public float spawnRate = 0.2f;
     float nextSpawn = 1.1f;
     void Start()
