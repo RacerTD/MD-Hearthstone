@@ -11,13 +11,17 @@ public class wavedestroy : MonoBehaviour
     void Start()
     {
         ws = GameObject.Find("Waves").GetComponent<wavespawn>();
-        deathtime = Time.time + 1.483f;
+        deathtime = Time.time + 3.04f;
+        
     }
 
     
     void Update()
     {
-       if ( Time.time > deathtime)
+        var pos = transform.position;
+        pos.x += 0.2f;
+        transform.position = pos;
+        if ( Time.time > deathtime)
         {
             Destroy(gameObject);
         }
