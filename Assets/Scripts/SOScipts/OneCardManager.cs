@@ -93,7 +93,7 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
-            
+
     }
 
     void InitializeCard(CardAsset newAsset = null)
@@ -153,7 +153,7 @@ public class OneCardManager : MonoBehaviour
     {
         if (onBoard)
         {
-            manPower.GetComponent<ManPowerScript>().UsedManPower(- cardAsset.cost);
+            manPower.GetComponent<ManPowerScript>().UsedManPower(-cardAsset.cost);
         }
         Destroy(gameObject);
     }
@@ -228,6 +228,7 @@ public class OneCardManager : MonoBehaviour
                 manPower.GetComponent<ManPowerScript>().UsedManPower(cardAsset.cost);
                 onBoard = true;
                 ManPowerCost();
+                gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
             }
             else
             {

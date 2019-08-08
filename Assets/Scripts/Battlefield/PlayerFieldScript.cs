@@ -28,7 +28,7 @@ public class PlayerFieldScript : MonoBehaviour
         {
             myChild = transform.GetChild(i);
             myChild.GetComponent<OneCardManager>().NowOnField();
-            myChild.GetComponent<Draggable>().enabled = false;
+            //myChild.GetComponent<Draggable>().enabled = false;
         }
     }
 }

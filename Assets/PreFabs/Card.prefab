@@ -5751,6 +5751,7 @@ MonoBehaviour:
   equipmentCardFront: {fileID: 5484373957921347962}
   humanCardFront: {fileID: 3721817166388540110}
   boardCard: {fileID: 1826604114551978219}
+  manaShow: []
   lowHealGameObject: {fileID: 3860239620310752507}
   highHealGameObject: {fileID: 4838957960786439543}
   lowDMGGameObject: {fileID: 4950162859170515547}
@@ -5773,7 +5774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
-  draggable: 1
+  _draggable: 1
   setsDraggableFalse: 0
   dragOffset: {x: 0, y: 0, z: 0}
   gameManager: {fileID: 0}

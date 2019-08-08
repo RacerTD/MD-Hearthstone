@@ -80,8 +80,29 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.PlayerIdle:
+                PlayerInput();
                 break;
 
+        }
+    }
+
+    void PlayerInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
+                if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
+                if (hit.collider.name == "Frame")
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+            }
         }
     }
 
@@ -197,9 +218,9 @@ public class GameManager : MonoBehaviour
 
     private void PlayerCardDraw()
     {
-        if (hand.GetComponent<Transform>().transform.childCount < 5)
+        if (hand.GetComponent<Transform>().transform.childCount < 2)
         {
-            for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
+            for (int i = hand.GetComponent<Transform>().transform.childCount; i < 2; i++)
             {
                 if (cardDeck.GetComponent<Transform>().transform.childCount > 0)
                 {

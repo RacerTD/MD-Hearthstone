@@ -8,7 +8,19 @@ using UnityEngine.EventSystems;
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler // 1
 {
     public Transform parentToReturnTo = null;// sets the parent (Hand)
-    public bool draggable = true;
+    public bool Dragable
+    {
+        set
+        {
+            _draggable = value;
+            //Debug.Log("Dragset");
+        }
+        get
+        {
+            return _draggable;
+        }
+    }
+    public bool _draggable = true;
     public bool setsDraggableFalse = false;
 
     //durch den dragOffset kann die Karte überall "angefasst" und bewegt werden
@@ -18,22 +30,26 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public GameObject manPower;
     public GameObject mana;
 
-
-
-    public void OnBeginDrag(PointerEventData eventData) // 1
+    void Start()
     {
         gameManager = GameObject.Find("GameManager");
         manPower = GameObject.Find("ManPower");
         mana = GameObject.Find("Mana");
+    }
 
-        Debug.Log("0");
+
+    public void OnBeginDrag(PointerEventData eventData) // 1
+    {
+
+
+        //Debug.Log("0");
         if (CheckForGamestate())
         {
             //draggable = true;
-            Debug.Log("1");
-            if (draggable)
+            //Debug.Log("1");
+            if (Dragable)
             {
-                Debug.Log("2");
+                //Debug.Log("2");
                 parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
                 this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
 
@@ -45,17 +61,16 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         }
         else
         {
-            draggable = false;
+            Dragable = false;
         }
 
     }
     public void OnDrag(PointerEventData eventData) // 1
     {
-        Debug.Log("0b");
         if (CheckForGamestate())
         {
             //draggable = true;
-            if (draggable)
+            if (Dragable)
             {
                 //Debug.Log("OnDrag"); // 1
                 this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; // 1
@@ -63,33 +78,30 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         }
         else
         {
-            draggable = false;
+            Dragable = false;
         }
     }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
-        Debug.Log("0c");
+        //Debug.Log("0c");
         if (CheckForGamestate())
-       {
-            //draggable = true;
+        {
+            Dragable = true;
 
-            if (draggable)
+            if (setsDraggableFalse)
             {
-                if (setsDraggableFalse)
-                {
-                    setsDraggableFalse = false;
-                    draggable = false;
-                }
-                //Debug.Log("OnEndDrag"); // 1
-                this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
-                this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
-                GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
-
+                setsDraggableFalse = false;
+                Dragable = false;
             }
+            //Debug.Log("OnEndDrag"); // 1
+            this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
+            this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
+            GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.
+
         }
         else
         {
-            draggable = false;
+            Dragable = false;
         }
     }
     private bool CheckForGamestate()
@@ -100,7 +112,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
         {
             return true;
-        }  
+        }
 
         return true;
     }
