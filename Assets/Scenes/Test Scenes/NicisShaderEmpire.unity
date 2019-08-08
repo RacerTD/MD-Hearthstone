@@ -267,6 +267,56 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1479878134241065316, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479878134241065316, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479878134241065316, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479878134241065316, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 855212604930130579, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 855212604930130579, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 855212604930130579, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 855212604930130579, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 855212604930130579, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126678337393594420, guid: 5d961669afe0e234c8c9563f90525759,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d961669afe0e234c8c9563f90525759, type: 3}
 --- !u!1 &639573771
