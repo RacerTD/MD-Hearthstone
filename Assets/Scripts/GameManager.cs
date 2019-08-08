@@ -137,15 +137,30 @@ public class GameManager : MonoBehaviour
     #region Abilitys
     private void Heal()
     {
-        clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
-        mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
-        ResetAbilitys();
+        if (mana.GetComponent<ManaScript>().manaCount >= healAbilityCost)
+        {
+            clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
+            mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
+            ResetAbilitys();
+        }
+        else
+        {
+            //Debug.Log("Bärenkatapult");
+            ResetAbilitys();
+        }
     }
 
     private void Damage()
     {
-        clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
-        ResetAbilitys();
+        if (mana.GetComponent<ManaScript>().manaCount >= DMGAbilityCost)
+        {
+            clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
+            ResetAbilitys();
+        }
+        else
+        {
+            ResetAbilitys();
+        }
     }
 
     public void HealAbility(int heal, int cost)
@@ -194,7 +209,6 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                
             }
         }
         gameState = GameState.PlayerIdle;

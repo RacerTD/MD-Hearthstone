@@ -51,6 +51,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnDrag(PointerEventData eventData) // 1
     {
+        Debug.Log("0b");
         if (CheckForGamestate())
         {
             //draggable = true;
@@ -67,7 +68,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnEndDrag(PointerEventData eventData) // 1
     {
-       if (CheckForGamestate())
+        Debug.Log("0c");
+        if (CheckForGamestate())
        {
             //draggable = true;
 

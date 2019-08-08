@@ -32,6 +32,7 @@ public class OneCardManager : MonoBehaviour
     public GameObject equipmentCardFront;
     public GameObject humanCardFront;
     public GameObject boardCard;
+    public List<GameObject> manaShow = new List<GameObject>();
 
     [Header("Ability Symbole")]
     public GameObject lowHealGameObject;
@@ -89,6 +90,10 @@ public class OneCardManager : MonoBehaviour
             cardAsset = enemyField.GetComponent<EnemyFieldScript>().cardToSpawn();
         }
         InitializeCard();
+    }
+    private void Update()
+    {
+            
     }
 
     void InitializeCard(CardAsset newAsset = null)
@@ -150,7 +155,6 @@ public class OneCardManager : MonoBehaviour
         {
             manPower.GetComponent<ManPowerScript>().UsedManPower(- cardAsset.cost);
         }
-        
         Destroy(gameObject);
     }
 
@@ -223,11 +227,31 @@ public class OneCardManager : MonoBehaviour
                 boardCard.SetActive(true);
                 manPower.GetComponent<ManPowerScript>().UsedManPower(cardAsset.cost);
                 onBoard = true;
+                ManPowerCost();
             }
             else
             {
                 this.gameObject.transform.SetParent(hand.GetComponent<Transform>());
             }
+        }
+    }
+    private void ManPowerCost()
+    {
+        if (cardAsset.cost == 1)
+        {
+            manaShow[0].SetActive(true);
+        }
+        else if (cardAsset.cost == 2)
+        {
+            manaShow[1].SetActive(true);
+        }
+        else if (cardAsset.cost == 3)
+        {
+            manaShow[2].SetActive(true);
+        }
+        else if (cardAsset.cost == 4)
+        {
+            manaShow[3].SetActive(true);
         }
     }
 

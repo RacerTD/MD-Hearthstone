@@ -18,7 +18,7 @@ MonoBehaviour:
   cardImageLarge: {fileID: 0}
   maxHealth: 5
   attack: 3
-  cost: 4
+  cost: 2
   description: 
   lowHeal:
     enabled: 1

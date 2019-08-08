@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HudManager : MonoBehaviour
 {
-    public Text manPowerText;
-    public Text manaText;
+    public TextMeshProUGUI manPowerText;
+    public TextMeshProUGUI manaText;
 
     
 
