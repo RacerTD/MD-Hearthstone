@@ -22,9 +22,9 @@ MonoBehaviour:
   description: 
   lowHeal:
     enabled: 1
-    effect: 3
+    effect: 1
     used: 0
-    cost: 5
+    cost: 2
     name: 0
   highHeal:
     enabled: 0

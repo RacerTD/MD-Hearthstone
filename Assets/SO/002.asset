@@ -34,9 +34,9 @@ MonoBehaviour:
     name: 1
   lowDMG:
     enabled: 1
-    effect: 3
+    effect: 1
     used: 0
-    cost: 5
+    cost: 2
     name: 2
   highDMG:
     enabled: 0

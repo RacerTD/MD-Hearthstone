@@ -80,63 +80,32 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.PlayerIdle:
-                PlayerInput();
 
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
                     RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
                     if (hit.collider != null)
                     {
-                        Debug.Log(hit.collider.name);
-                        Debug.Log("Baum");
                         if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
                         {
-                            Debug.Log("Hast du noch PinkPongShit?");
                             hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
                         }
                         if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
                         {
-                            Debug.Log("Jürgen");
                             hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
                         }
                         if (hit.collider.name == "Frame" || hit.collider.name == "Background")
                         {
-                            Debug.Log("Bärenkatapult");
                             hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
                         }
-
                     }
                 }
                 break;
 
         }
-    }
-
-    void PlayerInput()
-    {
-        //if (Input.GetKeyDown(KeyCode.Mouse0))
-        //{
-        //    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        //    RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-        //    if (hit.collider != null)
-        //    {
-        //        Debug.Log(hit.collider.name);
-        //        if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
-        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
-        //        if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
-        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
-        //        if (hit.collider.name == "Frame" ||hit.collider.name == "Background")
-        //        {
-        //            Debug.Log("Backstääähhh");
-        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
-        //        }
-                    
-        //    }
-        //}
     }
 
     public void CardClicked(GameObject clickedOn)
@@ -199,7 +168,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //Debug.Log("Bärenkatapult");
             ResetAbilitys();
         }
     }
@@ -209,6 +177,7 @@ public class GameManager : MonoBehaviour
         if (mana.GetComponent<ManaScript>().manaCount >= DMGAbilityCost)
         {
             clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
+            mana.GetComponent<ManaScript>().UsedMana(DMGAbilityCost);
             ResetAbilitys();
         }
         else

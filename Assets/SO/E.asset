@@ -16,19 +16,31 @@ MonoBehaviour:
   cardType: 0
   cardImageSmall: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
   cardImageLarge: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
-  maxHealth: 2
+  maxHealth: 4
   attack: 2
-  cost: 52
+  cost: 2
   description: 
   lowHeal:
+    enabled: 0
+    effect: 0
     used: 0
-    hallo: 0
-  healHighUsed: 0
-  healHighCost: 0
-  healHighEnabled: 0
-  attackLowUsed: 0
-  attackLowCost: 0
-  attackLowEnabled: 0
-  attackHighUsed: 0
-  attackHighCost: 0
-  attackHighEnabled: 0
+    cost: 0
+    name: 0
+  highHeal:
+    enabled: 0
+    effect: 0
+    used: 0
+    cost: 0
+    name: 0
+  lowDMG:
+    enabled: 0
+    effect: 0
+    used: 0
+    cost: 0
+    name: 0
+  highDMG:
+    enabled: 0
+    effect: 0
+    used: 0
+    cost: 0
+    name: 0
