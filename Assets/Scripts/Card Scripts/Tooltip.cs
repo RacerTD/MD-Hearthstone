@@ -29,7 +29,7 @@ public class Tooltip : MonoBehaviour
         {
             for (int i = 0; i <= objects.Count - 1; i++)
             {
-                objects[i].transform.position = new Vector3(-1.0f, 2.0f, 0.0f);
+                objects[i].transform.position = objects[i].transform.position + new Vector3(-0.5f, 0.0f, 0.0f);
 
                 //myChild = transform.GetChild(0);
                 //myChild.GetComponent<Image>().color = new Vector4(0,0,0,0);
@@ -47,7 +47,7 @@ public class Tooltip : MonoBehaviour
             {
                 //objects[i].GetComponentsInChildren<Image>()
                 timer = timer - waitTime;
-                objects[i].transform.DOMove(new Vector3(1, 2, 0), 1).SetEase(Ease.OutQuart);
+                objects[i].transform.DOLocalMoveX(0.5f, 1).SetEase(Ease.OutQuart);
                 //myChild.GetComponent<Image>().color = new Vector4(0, 0, 0, 1) * (durationTimer / duration);
             }
         }
@@ -57,7 +57,7 @@ public class Tooltip : MonoBehaviour
             {
                 for (int i = 0; i <= objects.Count - 1; i++)
                 {
-                    objects[i].transform.DOMove(new Vector3(-1, 2, 0), 1).SetEase(Ease.OutQuart);
+                    
                     objects[i].SetActive(false);
                     durationTimer = 0.0f;
                 }
