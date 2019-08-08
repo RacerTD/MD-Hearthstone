@@ -87,8 +87,6 @@ public class GameManager : MonoBehaviour
                     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
                     RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-                    Debug.DrawRay(mousePos, Vector2.zero);
-                    Debug.DrawLine(mousePos, Vector2.zero);
                     if (hit.collider != null)
                     {
                         Debug.Log(hit.collider.name);
