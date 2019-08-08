@@ -81,6 +81,36 @@ public class GameManager : MonoBehaviour
 
             case GameState.PlayerIdle:
                 PlayerInput();
+
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                    RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+                    Debug.DrawRay(mousePos, Vector2.zero);
+                    Debug.DrawLine(mousePos, Vector2.zero);
+                    if (hit.collider != null)
+                    {
+                        Debug.Log(hit.collider.name);
+                        Debug.Log("Baum");
+                        if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
+                        {
+                            Debug.Log("Hast du noch PinkPongShit?");
+                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
+                        }
+                        if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
+                        {
+                            Debug.Log("Jürgen");
+                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
+                        }
+                        if (hit.collider.name == "Frame" || hit.collider.name == "Background")
+                        {
+                            Debug.Log("Bärenkatapult");
+                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+                        }
+
+                    }
+                }
                 break;
 
         }
@@ -88,22 +118,27 @@ public class GameManager : MonoBehaviour
 
     void PlayerInput()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+        //    RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-            if (hit.collider != null)
-            {
-                if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
-                if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
-                if (hit.collider.name == "Frame")
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
-            }
-        }
+        //    if (hit.collider != null)
+        //    {
+        //        Debug.Log(hit.collider.name);
+        //        if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
+        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
+        //        if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
+        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
+        //        if (hit.collider.name == "Frame" ||hit.collider.name == "Background")
+        //        {
+        //            Debug.Log("Backstääähhh");
+        //            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+        //        }
+                    
+        //    }
+        //}
     }
 
     public void CardClicked(GameObject clickedOn)
@@ -218,9 +253,9 @@ public class GameManager : MonoBehaviour
 
     private void PlayerCardDraw()
     {
-        if (hand.GetComponent<Transform>().transform.childCount < 2)
+        if (hand.GetComponent<Transform>().transform.childCount < 5)
         {
-            for (int i = hand.GetComponent<Transform>().transform.childCount; i < 2; i++)
+            for (int i = hand.GetComponent<Transform>().transform.childCount; i < 5; i++)
             {
                 if (cardDeck.GetComponent<Transform>().transform.childCount > 0)
                 {
