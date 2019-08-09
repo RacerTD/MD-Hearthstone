@@ -28,7 +28,7 @@ public class Tooltip : MonoBehaviour
         {
             for (int i = 0; i <= objects.Count - 1; i++)
             {
-                objects[i].transform.position = objects[i].transform.position + new Vector3(-0.7f, 0.0f, 0.0f);
+                objects[i].transform.position = objects[i].transform.position + new Vector3(-1.5f, 0.0f, 0.0f);
                 objects[i].transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
                 objects[i].SetActive(true);
             }
@@ -42,7 +42,7 @@ public class Tooltip : MonoBehaviour
             for (int i = 0; i <= objects.Count - 1; i++)
             {
                 timer = timer - waitTime;
-                objects[i].transform.DOLocalMoveX(0.7f, 1).SetEase(Ease.OutQuart);
+                objects[i].transform.DOLocalMoveX(1.5f, 1).SetEase(Ease.OutQuart);
             }
         }
 
