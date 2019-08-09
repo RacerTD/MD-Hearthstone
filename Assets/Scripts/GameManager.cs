@@ -8,16 +8,23 @@ public class GameManager : MonoBehaviour
     public GameObject hand;
     public GameObject enemyField;
     public GameObject mana;
+    public GameObject playerField;
     public bool playersTurn;
+    public CardType cardInHand = CardType.Nothing;
 
     private GameObject clicked01 = null;
     private GameObject clicked02 = null;
+    private GameObject abilityUser = null;
 
     private int healAbilityCost;
     private int healAbilityEffect;
     private int DMGAbilityCost;
     private int DMGAbilityEffect;
 
+    public enum Highlight
+    {
+
+    }
 
     public enum GameState
     {
@@ -76,6 +83,7 @@ public class GameManager : MonoBehaviour
 
             case GameState.PlayerCardDraw:
                 PlayerCardDraw();
+                TurnBegin();
                 //Spieler Karten auffüllen
                 break;
 
@@ -89,7 +97,7 @@ public class GameManager : MonoBehaviour
 
                     if (hit.collider != null)
                     {
-                        Debug.Log("Baum");
+                        Debug.Log(hit.collider.name);
                         if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
                         {
                             hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
@@ -148,6 +156,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void TurnBegin()
+    {
+        playerField.GetComponent<PlayerFieldScript>().TurnBegin();
+        mana.GetComponent<ManaScript>().TurnBegin();
+    }
+
+
     private void ResetAbilitys()
     {
         clicked01 = null;
@@ -156,6 +171,7 @@ public class GameManager : MonoBehaviour
         healAbilityEffect = 0;
         DMGAbilityCost = 0;
         DMGAbilityEffect = 0;
+        abilityUser = null;
     }
 
     #region Abilitys
@@ -165,6 +181,8 @@ public class GameManager : MonoBehaviour
         {
             clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
             mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
+
+            abilityUser.GetComponent<OneCardManager>().UsedHeal();
             ResetAbilitys();
         }
         else
@@ -179,6 +197,8 @@ public class GameManager : MonoBehaviour
         {
             clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
             mana.GetComponent<ManaScript>().UsedMana(DMGAbilityCost);
+
+            abilityUser.GetComponent<OneCardManager>().UsedDamage();
             ResetAbilitys();
         }
         else
@@ -187,12 +207,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HealAbility(int heal, int cost)
+    public void HealAbility(int heal, int cost, GameObject user, bool used)
     {
-        if (healAbilityCost == 0 && healAbilityEffect == 0)
+        if (healAbilityCost == 0 && healAbilityEffect == 0 && !used)
         {
             healAbilityCost = cost;
             healAbilityEffect = heal;
+            abilityUser = user;
         }
         else
         {
@@ -200,12 +221,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void DMGAbility(int DMG, int cost)
+    public void DMGAbility(int DMG, int cost, GameObject user, bool used)
     {
-        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0)
+        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0 && !used)
         {
             DMGAbilityCost = cost;
             DMGAbilityEffect = DMG;
+            abilityUser = user;
         }
         else
         {

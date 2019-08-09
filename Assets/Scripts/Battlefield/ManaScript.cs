@@ -40,4 +40,10 @@ public class ManaScript : MonoBehaviour
         manaCount = manaCount - cost;
         gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
     }
+
+    public void TurnBegin()
+    {
+        manaCount = maxMana;
+        gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
+    }
 }

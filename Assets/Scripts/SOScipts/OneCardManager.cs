@@ -16,6 +16,7 @@ public class OneCardManager : MonoBehaviour
     public CardAsset cardAsset;
     public string prefabName;
     private bool onBoard = false;
+    public int equipmentCount = 0;
 
     [Header("CardComponents")]
     public Image cardGraphic;
@@ -68,8 +69,6 @@ public class OneCardManager : MonoBehaviour
     public int maxHealth;
 
     public int cost;
-
-    private int equipmentCount;
     //private bool hasAttacked = false;
     //private bool summoningSickness = true;
 
@@ -171,6 +170,15 @@ public class OneCardManager : MonoBehaviour
         }
     }
 
+    public void TurnBegin()
+    {
+        //Debug.Log("Baum3");
+        cardAsset.lowHeal.used = false;
+        cardAsset.highHeal.used = false;
+        cardAsset.lowDMG.used = false;
+        cardAsset.highDMG.used = false;
+    }
+
     private void UpdateAbilitys()
     {
         if (cardAsset.lowHeal.enabled)
@@ -230,6 +238,7 @@ public class OneCardManager : MonoBehaviour
                 ManPowerCost();
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
                 gameObject.GetComponent<Draggable>().Dragable = false;
+                TurnBegin();
             }
             else
             {
@@ -237,6 +246,7 @@ public class OneCardManager : MonoBehaviour
             }
         }
     }
+
     private void ManPowerCost()
     {
         if (cardAsset.cost == 1)
@@ -260,14 +270,23 @@ public class OneCardManager : MonoBehaviour
     #region Abilitys
     public void HealAbility()
     {
+        //Debug.Log("Heal Called");
         if (cardAsset.lowHeal.enabled)
         {
-            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost);
+            //Debug.Log("HealEnabled");
+            //Debug.Log(cardAsset.lowHeal.used);
+            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this.gameObject, cardAsset.lowHeal.used);
         }
         else if (cardAsset.highHeal.enabled)
         {
-            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost);
+            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this.gameObject, cardAsset.highHeal.used);
         }
+    }
+
+    public void UsedHeal()
+    {
+        cardAsset.lowHeal.used = true;
+        cardAsset.highHeal.used = true;
     }
 
     public void Heal(int heal)
@@ -283,12 +302,17 @@ public class OneCardManager : MonoBehaviour
     {
         if (cardAsset.lowDMG.enabled)
         {
-            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost);
+            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this.gameObject, cardAsset.lowDMG.used);
         }
         else if (cardAsset.highDMG.enabled)
         {
-            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost);
+            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this.gameObject, cardAsset.highDMG.used);
         }
+    }
+    public void UsedDamage()
+    {
+        cardAsset.lowDMG.used = true;
+        cardAsset.highDMG.used = true;
     }
 
     public void Damage(int damage)

@@ -31,4 +31,13 @@ public class PlayerFieldScript : MonoBehaviour
             //myChild.GetComponent<Draggable>().enabled = false;
         }
     }
+
+    public void TurnBegin()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            myChild = transform.GetChild(i);
+            myChild.GetComponent<OneCardManager>().TurnBegin();
+        }
+    }
 }

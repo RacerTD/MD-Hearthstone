@@ -8,7 +8,8 @@ public enum CardType
     Enemy,
     Human,
     Epuipment,
-    Spell
+    Spell,
+    Nothing
 }
 
 public enum AbilityNames
