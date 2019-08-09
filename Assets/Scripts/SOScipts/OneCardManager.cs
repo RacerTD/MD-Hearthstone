@@ -229,6 +229,7 @@ public class OneCardManager : MonoBehaviour
                 onBoard = true;
                 ManPowerCost();
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
+                gameObject.GetComponent<Draggable>().Dragable = false;
             }
             else
             {

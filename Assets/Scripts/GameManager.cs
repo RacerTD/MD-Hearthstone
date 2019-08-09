@@ -83,12 +83,13 @@ public class GameManager : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
-                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
+                    Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
+                    
                     RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
                     if (hit.collider != null)
                     {
+                        Debug.Log("Baum");
                         if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
                         {
                             hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();

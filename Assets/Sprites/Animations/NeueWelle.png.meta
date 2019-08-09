@@ -1,0 +1,1661 @@
+fileFormatVersion: 2
+guid: 1e2a4a19e7d10b0489ad8e8c83d5b829
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5816972185928055638
+    second: NeueWelle_0
+  - first:
+      213: -6084997398257145195
+    second: NeueWelle_1
+  - first:
+      213: -1510211823547675789
+    second: NeueWelle_2
+  - first:
+      213: -8465264128024444536
+    second: NeueWelle_3
+  - first:
+      213: -6941991917070446495
+    second: NeueWelle_4
+  - first:
+      213: 7009005539589801995
+    second: NeueWelle_5
+  - first:
+      213: 1779824086538615321
+    second: NeueWelle_6
+  - first:
+      213: -2124247812608873714
+    second: NeueWelle_7
+  - first:
+      213: 3770126213228291935
+    second: NeueWelle_8
+  - first:
+      213: -1443679328920169364
+    second: NeueWelle_9
+  - first:
+      213: -1348972841761228432
+    second: NeueWelle_10
+  - first:
+      213: -3915443578655055346
+    second: NeueWelle_11
+  - first:
+      213: -7301240923010397138
+    second: NeueWelle_12
+  - first:
+      213: 2683523956667790384
+    second: NeueWelle_13
+  - first:
+      213: 7258896628477674315
+    second: NeueWelle_14
+  - first:
+      213: -6205109215608173286
+    second: NeueWelle_15
+  - first:
+      213: 4878463283960007824
+    second: NeueWelle_16
+  - first:
+      213: 5783409583798529878
+    second: NeueWelle_17
+  - first:
+      213: 2828252654292604385
+    second: NeueWelle_18
+  - first:
+      213: 659793190021010798
+    second: NeueWelle_19
+  - first:
+      213: -5118175180428023251
+    second: NeueWelle_20
+  - first:
+      213: 5594629013733082359
+    second: NeueWelle_21
+  - first:
+      213: 2253611231220170137
+    second: NeueWelle_22
+  - first:
+      213: -7461183023885237966
+    second: NeueWelle_23
+  - first:
+      213: -2524842437206099063
+    second: NeueWelle_24
+  - first:
+      213: -5099989842670267934
+    second: NeueWelle_25
+  - first:
+      213: 7618751891739033013
+    second: NeueWelle_26
+  - first:
+      213: 4151953901730207554
+    second: NeueWelle_27
+  - first:
+      213: 1048889160569515616
+    second: NeueWelle_28
+  - first:
+      213: 3019001943108216692
+    second: NeueWelle_29
+  - first:
+      213: -1807861014426809679
+    second: NeueWelle_30
+  - first:
+      213: -6060019687703226205
+    second: NeueWelle_31
+  - first:
+      213: 6193157927313514895
+    second: NeueWelle_32
+  - first:
+      213: 6550296359380275528
+    second: NeueWelle_33
+  - first:
+      213: 2272373608288582603
+    second: NeueWelle_34
+  - first:
+      213: -1404378587815397950
+    second: NeueWelle_35
+  - first:
+      213: 6161056934336834443
+    second: NeueWelle_36
+  - first:
+      213: 2564675851784027195
+    second: NeueWelle_37
+  - first:
+      213: -229996580972687787
+    second: NeueWelle_38
+  - first:
+      213: -4091619436470159620
+    second: NeueWelle_39
+  - first:
+      213: -7178168079110737864
+    second: NeueWelle_40
+  - first:
+      213: 4552066302342188697
+    second: NeueWelle_41
+  - first:
+      213: -4281465122761002619
+    second: NeueWelle_42
+  - first:
+      213: -6479103111008814520
+    second: NeueWelle_43
+  - first:
+      213: -2561548334267940076
+    second: NeueWelle_44
+  - first:
+      213: -397953477207397722
+    second: NeueWelle_45
+  - first:
+      213: 3125192465186152743
+    second: NeueWelle_46
+  - first:
+      213: 6428559802682765304
+    second: NeueWelle_47
+  - first:
+      213: 6760409937911159490
+    second: NeueWelle_48
+  - first:
+      213: -2142472589082982715
+    second: NeueWelle_49
+  - first:
+      213: -6403667888545105455
+    second: NeueWelle_50
+  - first:
+      213: -3773767423502757843
+    second: NeueWelle_51
+  - first:
+      213: -1362820769499684350
+    second: NeueWelle_52
+  - first:
+      213: -728753346282621130
+    second: NeueWelle_53
+  - first:
+      213: 1570954290451485488
+    second: NeueWelle_54
+  - first:
+      213: 1013732632984609903
+    second: NeueWelle_55
+  - first:
+      213: -7328185331054134003
+    second: NeueWelle_56
+  - first:
+      213: 3876889835131071865
+    second: NeueWelle_57
+  - first:
+      213: 1997592174344539979
+    second: NeueWelle_58
+  - first:
+      213: 9121423222283692954
+    second: NeueWelle_59
+  - first:
+      213: 4586040830696888952
+    second: NeueWelle_60
+  - first:
+      213: -2347355192843467069
+    second: NeueWelle_61
+  - first:
+      213: -2731898883029724801
+    second: NeueWelle_62
+  - first:
+      213: -2956153482920721635
+    second: NeueWelle_63
+  - first:
+      213: -3122399531019466767
+    second: NeueWelle_64
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NeueWelle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7715
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bea6acca05c1248bb69e3ccc827d0e
+      internalID: 5816972185928055638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_1
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 7715
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94909268ce8aab847b5ea0d59fd8dfd4
+      internalID: -6084997398257145195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_2
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 7715
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea54064e8440c849b147c342dcc0a09
+      internalID: -1510211823547675789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 7715
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e81cb46723b9f4a9297293a7a4caf9
+      internalID: -8465264128024444536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_4
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 7715
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc99def4a30300441a46e5733a7cfea2
+      internalID: -6941991917070446495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7238
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6684f6cf585b94949a2900483ef81126
+      internalID: 7009005539589801995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_6
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 7238
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d9551655d6dc44f87f85024f795c24
+      internalID: 1779824086538615321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_7
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 7238
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a8341ff4ba5474596d8d96345579ec
+      internalID: -2124247812608873714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_8
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 7238
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dd9d3880b98c442b4cca7d5b91add0
+      internalID: 3770126213228291935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_9
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 7238
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a268fe2f59873974d82a8d2fc450ca57
+      internalID: -1443679328920169364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6761
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdaa81ecc0d5af4094217ed5e206ec9
+      internalID: -1348972841761228432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_11
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 6761
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4048cb93507a745960a5c765b08ec7
+      internalID: -3915443578655055346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_12
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 6761
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f95421200ef3864aab07f1ea9698318
+      internalID: -7301240923010397138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_13
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 6761
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a652d14e068f4394baa5682fb572718f
+      internalID: 2683523956667790384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_14
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 6761
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ea1b9a6b9bd8941bf50fcd2f4911c0
+      internalID: 7258896628477674315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6284
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2092c467eb6328f469e0309db3cfc55e
+      internalID: -6205109215608173286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_16
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 6284
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cfbbd3e4c7d894abc7acf333cd5149
+      internalID: 4878463283960007824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_17
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 6284
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbef25b670d35d4082b11c0236745d4
+      internalID: 5783409583798529878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_18
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 6284
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc314eb74d6935d479cda1a63f6e04ed
+      internalID: 2828252654292604385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_19
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 6284
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7a5d507fba4d942b51fcd5652ed9c5
+      internalID: 659793190021010798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5807
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce70cda65b33544eaed2fd273bbc8d3
+      internalID: -5118175180428023251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_21
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 5807
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92587d562caad0449cbc6f9b87b25d7
+      internalID: 5594629013733082359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_22
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 5807
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65289a4f54b8c3d44b857caa40f910b6
+      internalID: 2253611231220170137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_23
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 5807
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6532901476a2fd4f94f6be30ecd62bc
+      internalID: -7461183023885237966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_24
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 5807
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ea32881b53ee345920cf42fccdcfd0
+      internalID: -2524842437206099063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5330
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6657faeba6c83e84da12e7f21a6cb32b
+      internalID: -5099989842670267934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_26
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 5330
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61195dc1009bab0459473c25c9334895
+      internalID: 7618751891739033013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_27
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 5330
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec51ffe1a9e1d8c43a6e963b22f9edb7
+      internalID: 4151953901730207554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_28
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 5330
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c24e16dd515dbc44bb86d213ef32c1f
+      internalID: 1048889160569515616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_29
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 5330
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f40f55f2c5f7104e886d7ec8eb44e8b
+      internalID: 3019001943108216692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4853
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590d51cc80826e645893df1779482b6b
+      internalID: -1807861014426809679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_31
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 4853
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5c9c16a047cc44783cbbe145b67be9
+      internalID: -6060019687703226205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_32
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 4853
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43c614bbb65f2449b3ba8f42c483839
+      internalID: 6193157927313514895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_33
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 4853
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e7d91ce60374347b5e032071c57f7f
+      internalID: 6550296359380275528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_34
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 4853
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6596a8bba2e9d114eb9a79c372b1fd95
+      internalID: 2272373608288582603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4376
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce345f8854e59344aeaded2e09fa511
+      internalID: -1404378587815397950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_36
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 4376
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b775937d7f818459ea4bf90653638a
+      internalID: 6161056934336834443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_37
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 4376
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32cd99274999fd4099f66c0855e8ae2
+      internalID: 2564675851784027195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_38
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 4376
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046b17360fec17c47a3387079b12774a
+      internalID: -229996580972687787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_39
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 4376
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024cf0cf68b7c2346810d59dd31a6920
+      internalID: -4091619436470159620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3899
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f30d8142eff9a428a80d713429ff23
+      internalID: -7178168079110737864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_41
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3899
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7dc2b4f4666749b8711289d99bb7b
+      internalID: 4552066302342188697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_42
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3899
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ad461762ee1b448dbc7ef79ca3a84
+      internalID: -4281465122761002619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_43
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3899
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6a9929bdcbd634ca644511172bc6a9
+      internalID: -6479103111008814520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_44
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3899
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8671a83f1aaa9a04c9920fe68750bb43
+      internalID: -2561548334267940076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3422
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc209e59b69b50e4388499711dbfcd7e
+      internalID: -397953477207397722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_46
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3422
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3bfbf360855544bb78ca35350289de
+      internalID: 3125192465186152743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_47
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3422
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34435596cda1c94bad0fd44f9dcaddb
+      internalID: 6428559802682765304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_48
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3422
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a533879ed4c35be448d32d21ae0128e6
+      internalID: 6760409937911159490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_49
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3422
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebe279fefca9814aaa60efd25567f29
+      internalID: -2142472589082982715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2945
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbc62003ce5d024184e6c62d9e835bc
+      internalID: -6403667888545105455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_51
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2945
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f3b6e7d2cef264dad4de6797a55bdb
+      internalID: -3773767423502757843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_52
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2945
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e57f4139595454586c2089fd62c591
+      internalID: -1362820769499684350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_53
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2945
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fbb2bad80fc434ab3662d191e2c9dc
+      internalID: -728753346282621130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_54
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2945
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91c63544f84f28408b3fbf323ee5e24
+      internalID: 1570954290451485488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2468
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df32d6f048520848b28a88e3d686e87
+      internalID: 1013732632984609903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_56
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2468
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a083e00b0ec8b49bd29c947fe7bcd9
+      internalID: -7328185331054134003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_57
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2468
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca912f20de2f784bb33caba48665466
+      internalID: 3876889835131071865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_58
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2468
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b6876f9d32bca4b9ca3d686beca759
+      internalID: 1997592174344539979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_59
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2468
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc55d174de903143985dabf13ee25e7
+      internalID: 9121423222283692954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1991
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2573e1296425efa439fc571bea27ef6a
+      internalID: 4586040830696888952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_61
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1991
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de192fa64110cd4b9eb4fd572ee409e
+      internalID: -2347355192843467069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_62
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1991
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c1eef406b429d4facfc2667efc0d96
+      internalID: -2731898883029724801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_63
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1991
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f09911209f9f14696c477565754a4f
+      internalID: -2956153482920721635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NeueWelle_64
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1991
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e875089b8529544b276dcbf9c7bdcf
+      internalID: -3122399531019466767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9a3d5d3ffa88dc748a2b22da33f7f99c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

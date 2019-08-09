@@ -1,0 +1,1685 @@
+fileFormatVersion: 2
+guid: efdf1dc99a2184344bddca0f5c744525
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3503524776489812952
+    second: Wellen_Charakter_0
+  - first:
+      213: -4223155303729252178
+    second: Wellen_Charakter_1
+  - first:
+      213: -8544992108708251230
+    second: Wellen_Charakter_2
+  - first:
+      213: -4308527448094293404
+    second: Wellen_Charakter_3
+  - first:
+      213: 5812677639454978694
+    second: Wellen_Charakter_4
+  - first:
+      213: -6898173397187716309
+    second: Wellen_Charakter_5
+  - first:
+      213: -7244102174865025050
+    second: Wellen_Charakter_6
+  - first:
+      213: -6274748845835430740
+    second: Wellen_Charakter_7
+  - first:
+      213: -6877932980013776345
+    second: Wellen_Charakter_8
+  - first:
+      213: 4145813591567785431
+    second: Wellen_Charakter_9
+  - first:
+      213: 8951642252296339461
+    second: Wellen_Charakter_10
+  - first:
+      213: 8703286018479750975
+    second: Wellen_Charakter_11
+  - first:
+      213: 8438860461346282604
+    second: Wellen_Charakter_12
+  - first:
+      213: -5955235605704117728
+    second: Wellen_Charakter_13
+  - first:
+      213: -1440964266868698378
+    second: Wellen_Charakter_14
+  - first:
+      213: 8874509474821321669
+    second: Wellen_Charakter_15
+  - first:
+      213: -8771050749695046227
+    second: Wellen_Charakter_16
+  - first:
+      213: 5636661629830194113
+    second: Wellen_Charakter_17
+  - first:
+      213: 8138045796644003945
+    second: Wellen_Charakter_18
+  - first:
+      213: 8319268461391280042
+    second: Wellen_Charakter_19
+  - first:
+      213: -1108285934825270535
+    second: Wellen_Charakter_20
+  - first:
+      213: -8669187824322884593
+    second: Wellen_Charakter_21
+  - first:
+      213: -6563901093287684969
+    second: Wellen_Charakter_22
+  - first:
+      213: -2675912465521103466
+    second: Wellen_Charakter_23
+  - first:
+      213: 5076389683257079447
+    second: Wellen_Charakter_24
+  - first:
+      213: -3017646115404464148
+    second: Wellen_Charakter_25
+  - first:
+      213: 2480200914169224755
+    second: Wellen_Charakter_26
+  - first:
+      213: 7614246403902801661
+    second: Wellen_Charakter_27
+  - first:
+      213: -1460707354553389689
+    second: Wellen_Charakter_28
+  - first:
+      213: 1420971725906132659
+    second: Wellen_Charakter_29
+  - first:
+      213: 7966532147897884186
+    second: Wellen_Charakter_30
+  - first:
+      213: -1680410261783418004
+    second: Wellen_Charakter_31
+  - first:
+      213: -5947925499295722083
+    second: Wellen_Charakter_32
+  - first:
+      213: 3026445275130686125
+    second: Wellen_Charakter_33
+  - first:
+      213: 5944422154592361107
+    second: Wellen_Charakter_34
+  - first:
+      213: 3018493783556981442
+    second: Wellen_Charakter_35
+  - first:
+      213: -393956839080964668
+    second: Wellen_Charakter_36
+  - first:
+      213: -5538414636436679901
+    second: Wellen_Charakter_37
+  - first:
+      213: -8701608637175447368
+    second: Wellen_Charakter_38
+  - first:
+      213: 1703489753371099128
+    second: Wellen_Charakter_39
+  - first:
+      213: 6656889914312128989
+    second: Wellen_Charakter_40
+  - first:
+      213: -9188666808478686566
+    second: Wellen_Charakter_41
+  - first:
+      213: -6304799706134460788
+    second: Wellen_Charakter_42
+  - first:
+      213: 7441871717898281461
+    second: Wellen_Charakter_43
+  - first:
+      213: 1371146632305017720
+    second: Wellen_Charakter_44
+  - first:
+      213: -8184297337507629328
+    second: Wellen_Charakter_45
+  - first:
+      213: 8582220792376797936
+    second: Wellen_Charakter_46
+  - first:
+      213: 6197593838186832983
+    second: Wellen_Charakter_47
+  - first:
+      213: -8900262056549172731
+    second: Wellen_Charakter_48
+  - first:
+      213: 2142904664513222456
+    second: Wellen_Charakter_49
+  - first:
+      213: 4280774749261572698
+    second: Wellen_Charakter_50
+  - first:
+      213: 7478315682434199994
+    second: Wellen_Charakter_51
+  - first:
+      213: 283331153905114450
+    second: Wellen_Charakter_52
+  - first:
+      213: -2315849411728322342
+    second: Wellen_Charakter_53
+  - first:
+      213: -6248244731956390930
+    second: Wellen_Charakter_54
+  - first:
+      213: -8669490116989815506
+    second: Wellen_Charakter_55
+  - first:
+      213: 713285570264803732
+    second: Wellen_Charakter_56
+  - first:
+      213: 6086150931575181008
+    second: Wellen_Charakter_57
+  - first:
+      213: -2645589579641182943
+    second: Wellen_Charakter_58
+  - first:
+      213: -5041206552604112721
+    second: Wellen_Charakter_59
+  - first:
+      213: 3067360787488932427
+    second: Wellen_Charakter_60
+  - first:
+      213: -7870023431442763620
+    second: Wellen_Charakter_61
+  - first:
+      213: 3705826050025243607
+    second: Wellen_Charakter_62
+  - first:
+      213: 5282673579251646568
+    second: Wellen_Charakter_63
+  - first:
+      213: 3881856249814658456
+    second: Wellen_Charakter_64
+  - first:
+      213: -8911216117914484499
+    second: Wellen_Charakter_65
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wellen_Charakter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455697b017bf97d46a4172732a62e402
+      internalID: -3503524776489812952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_1
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee40c9c92de86742b8cd86af39f2a5e
+      internalID: -4223155303729252178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_2
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbdbb9959788584a986a9b59605bb82
+      internalID: -8544992108708251230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_3
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8ab89874f80364293e5f5c535732b8
+      internalID: -4308527448094293404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_4
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00259144daa7b8b498e52bedea5926c9
+      internalID: 5812677639454978694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_5
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aa555955a4ed445a46f512d0b288fc
+      internalID: -6898173397187716309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_6
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 3767
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbbc99b0b0fdde4389c2377cb22734e
+      internalID: -7244102174865025050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166176d88f1cdca4daac3f180cad9634
+      internalID: -6274748845835430740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_8
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd0f97e18534094da987501a7f7190a
+      internalID: -6877932980013776345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_9
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03e321656cec8947b72e6b22efaf948
+      internalID: 4145813591567785431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_10
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f80a6f3407f994f9e3b91443023502
+      internalID: 8951642252296339461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_11
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de16422db50513a4893e5a27fb0169d6
+      internalID: 8703286018479750975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_12
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a95c1e89350174faa6dff0e7f7f4be
+      internalID: 8438860461346282604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_13
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 3438
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b39eea79b9df740933eff13d8a217d
+      internalID: -5955235605704117728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8794c134d4c144694a2f30710666b3
+      internalID: -1440964266868698378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_15
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ace7550f4f1d14fa8069ce32b247c5
+      internalID: 8874509474821321669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_16
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79616ec14c21a3947a396f7c52accf86
+      internalID: -8771050749695046227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_17
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7112dbd56ba89ac48aa1ebc3cf1a8bb5
+      internalID: 5636661629830194113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_18
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51ec680b5779484ca2c5fca7856ce76
+      internalID: 8138045796644003945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_19
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4affa0bf89f02b45b8adde1994a20b0
+      internalID: 8319268461391280042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_20
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 3109
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bdcd652971c844f859266cdca9e8d9
+      internalID: -1108285934825270535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f941785f84522345bcb7a51b07ce85c
+      internalID: -8669187824322884593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_22
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67a2c6b9251ea64daa50ae4b04338a1
+      internalID: -6563901093287684969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_23
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2180d26110aa58478852d6ca3d63b88
+      internalID: -2675912465521103466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_24
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5846e703ed68c4683f8364144ec2b2
+      internalID: 5076389683257079447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_25
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e80fbf6b5d04047adacc810980895b
+      internalID: -3017646115404464148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_26
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aec5a34b035b9a4a9291ef6e2532c2d
+      internalID: 2480200914169224755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_27
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 2780
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61858c70990a43243ace4972e4be886b
+      internalID: 7614246403902801661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aa7e0dadfa47e44b19559b0b734f28
+      internalID: -1460707354553389689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_29
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfe944db64d84d4fa13c9348c8eb951
+      internalID: 1420971725906132659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_30
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ae514638a48eb4c8fece583655899e
+      internalID: 7966532147897884186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_31
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a24a14ddaec8248889aa8947be9715
+      internalID: -1680410261783418004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_32
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ae5c1c450fb3142b30b258a8eac187
+      internalID: -5947925499295722083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_33
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd59058f48c2e354a9ca624682d56fd0
+      internalID: 3026445275130686125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_34
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 2451
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f621b6198f8310d46b771622d6eba193
+      internalID: 5944422154592361107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f8abb9da7bc0f4eba85af7883decea
+      internalID: 3018493783556981442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_36
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184eb0fc9146b3c45a9d30592d437f63
+      internalID: -393956839080964668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_37
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595b705a1d9a81f409b1f08a4477dfb5
+      internalID: -5538414636436679901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_38
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb092c11622d314eac93b6b64bd8bae
+      internalID: -8701608637175447368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_39
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b725a8de6fe145a4f82d110d8a526e59
+      internalID: 1703489753371099128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_40
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0fb460ea1b13445b2b8cb019abc586
+      internalID: 6656889914312128989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_41
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 2122
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27db10f76d6a3a44ab0bf78fbe8a06f
+      internalID: -9188666808478686566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a066877c595ccf45a5d421640f4ff2c
+      internalID: -6304799706134460788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_43
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6749b60831d9cf94d8cc8a9cf813cdbb
+      internalID: 7441871717898281461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_44
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9d17c8857b056479ea56dfca609953
+      internalID: 1371146632305017720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_45
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693c8da4ac9934147aae54c50e2b8933
+      internalID: -8184297337507629328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_46
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07802b7b61c1c5345bdae4f23c48061f
+      internalID: 8582220792376797936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_47
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed785fef1e45f349bf44e4c8975ea85
+      internalID: 6197593838186832983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_48
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 1793
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c327be49107f1fe4c9aa256edc0e8292
+      internalID: -8900262056549172731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1eab75711adb9a488a01d8f9f3b1ffe
+      internalID: 2142904664513222456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_50
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e86714218aef64096962266b9666ab
+      internalID: 4280774749261572698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_51
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f93888f9e150749a3f3f8fe3719169
+      internalID: 7478315682434199994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_52
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6f06f0188f64448aa7b19bd659b8ef
+      internalID: 283331153905114450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_53
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd96af7541cbf749af0bedf57e17ab2
+      internalID: -2315849411728322342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_54
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a86a6ba3df245a4d99c7e6034345f2c
+      internalID: -6248244731956390930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_55
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 1464
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bcfa919d3ec564da81042702afab9b
+      internalID: -8669490116989815506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d4a7606d68cc8439fc7e8376415c0e
+      internalID: 713285570264803732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_57
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740bacb2dd3e2ec40b8a37f055a9e9bf
+      internalID: 6086150931575181008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_58
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201261f619dab0d499343161ea1b3025
+      internalID: -2645589579641182943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_59
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869886638e1cb50458c9b1eee298f658
+      internalID: -5041206552604112721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_60
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4af9ef64e29a984bae64a16164648b8
+      internalID: 3067360787488932427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_61
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169f1ee2c23d7a944acef2e1dea0cbc4
+      internalID: -7870023431442763620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_62
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 1135
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaecacee68b0f1489229e42bb7203ae
+      internalID: 3705826050025243607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0827799625f43134cb4ff252ee5e117e
+      internalID: 5282673579251646568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_64
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 806
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb6b25902f3df44baad5bd9357c4027
+      internalID: 3881856249814658456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wellen_Charakter_65
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 806
+        width: 566
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a7cab3b26b3cc4f8259de3a656c0cf
+      internalID: -8911216117914484499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e23ce8bcf3208b74fa35560a6e41b34a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
