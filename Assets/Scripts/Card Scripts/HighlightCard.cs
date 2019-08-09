@@ -19,6 +19,7 @@ public class HighlightCard : MonoBehaviour
     void Update()
     {
         currendCardInHand = gameManager.GetComponent<GameManager>().cardInHand;
+
         if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount <= 4)
         {
             Debug.Log("Highlight equipment");
