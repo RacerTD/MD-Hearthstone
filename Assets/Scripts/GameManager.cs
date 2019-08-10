@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerField;
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
+    public Highlight highlight = Highlight.Nothing;
 
     private GameObject clicked01 = null;
     private GameObject clicked02 = null;
@@ -23,7 +24,11 @@ public class GameManager : MonoBehaviour
 
     public enum Highlight
     {
-
+        Attack,
+        Heal,
+        AOEAttack,
+        AOEHeal,
+        Nothing
     }
 
     public enum GameState
@@ -123,6 +128,7 @@ public class GameManager : MonoBehaviour
         if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
         {
             clicked01 = clickedOn;
+            highlight = Highlight.Attack;
             if (healAbilityCost != 0 && healAbilityEffect != 0) //Check for Heal Ability
             {
                 Heal();
@@ -172,6 +178,7 @@ public class GameManager : MonoBehaviour
         DMGAbilityCost = 0;
         DMGAbilityEffect = 0;
         abilityUser = null;
+        highlight = Highlight.Nothing;
     }
 
     #region Abilitys
@@ -214,6 +221,7 @@ public class GameManager : MonoBehaviour
             healAbilityCost = cost;
             healAbilityEffect = heal;
             abilityUser = user;
+            highlight = Highlight.Heal;
         }
         else
         {
@@ -228,6 +236,7 @@ public class GameManager : MonoBehaviour
             DMGAbilityCost = cost;
             DMGAbilityEffect = DMG;
             abilityUser = user;
+            highlight = Highlight.Attack;
         }
         else
         {

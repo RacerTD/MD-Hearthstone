@@ -148,6 +148,20 @@ public class OneCardManager : MonoBehaviour
         UpdateAbilitys();
     }
 
+    public bool Healable()
+    {
+        if (maxHealth > _health)
+        {
+            Debug.Log("Healable");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Not Healable");
+            return false;
+        }
+    }
+
     public void delete()
     {
         if (onBoard)
@@ -298,6 +312,18 @@ public class OneCardManager : MonoBehaviour
         }
     }
 
+    public bool HealAbilityAvailible()
+    {
+        if (cardAsset.lowHeal.used || cardAsset.highHeal.used)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void DamageAbility()
     {
         if (cardAsset.lowDMG.enabled)
@@ -318,6 +344,18 @@ public class OneCardManager : MonoBehaviour
     public void Damage(int damage)
     {
         Health = Health - damage;
+    }
+
+    public bool AttackAbilityAvailible()
+    {
+        if (cardAsset.lowDMG.used || cardAsset.highDMG.used)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     #endregion
 }

@@ -907,7 +907,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.21729279, y: 6.213928}
+  m_Offset: {x: -0.21729279, y: 50.95794}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -918,7 +918,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 163.03835, y: 233.2449}
+  m_Size: {x: 163.03835, y: 143.75688}
   m_EdgeRadius: 0
 --- !u!1 &2514565438305445272
 GameObject:
@@ -2293,7 +2293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8672362928119634107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2918,7 +2918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6208133689426734382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3019,7 +3019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &99514923247383245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4531,7 +4531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3656275154012573065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4941,7 +4941,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 7441871717898281461, guid: efdf1dc99a2184344bddca0f5c744525,
+  m_Sprite: {fileID: 2480200914169224755, guid: efdf1dc99a2184344bddca0f5c744525,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5508,10 +5508,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d85885b6d78434b900704fc5d809a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toHighlight:
+  waves:
   - {fileID: 4914210289381398589}
   - {fileID: 2515278369238426866}
+  healAbility:
+  - {fileID: 7165192992553401926}
+  - {fileID: 815028134198083743}
+  attackAbility:
+  - {fileID: 2623525793671166522}
+  - {fileID: 6571849472457725292}
   gameManager: {fileID: 0}
+  healColor: {r: 0, g: 1, b: 0.07855153, a: 1}
+  equipmentColor: {r: 1, g: 0.6687182, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  attackColor: {r: 1, g: 0, b: 0, a: 1}
+  abilityUsed: {r: 0.64199996, g: 0.64199996, b: 0.64199996, a: 1}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
