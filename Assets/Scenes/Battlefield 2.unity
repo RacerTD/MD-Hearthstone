@@ -384,7 +384,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalOffset: []
+  horizontalOffset: []
+  angleOffset: []
   randomVertical: 1
+  randomHorizontal: 1
+  randomAngle: 1
   verticalOffset_: 130
   cardOffSetHorizontal: 230
   cardOffSetDepth: 0
@@ -919,7 +923,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalOffset: []
+  horizontalOffset: []
+  angleOffset: []
   randomVertical: 1
+  randomHorizontal: 0
+  randomAngle: 0
   verticalOffset_: 130
   cardOffSetHorizontal: 230
   cardOffSetDepth: 0
@@ -2285,6 +2293,7 @@ MonoBehaviour:
   playerField: {fileID: 501992558}
   playersTurn: 1
   cardInHand: 4
+  highlight: 4
   gameState: 0
 --- !u!4 &1683640947
 Transform:
@@ -2649,7 +2658,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalOffset: []
+  horizontalOffset: []
+  angleOffset: []
   randomVertical: 0
+  randomHorizontal: 0
+  randomAngle: 0
   verticalOffset_: 0
   cardOffSetHorizontal: 100
   cardOffSetDepth: 0
