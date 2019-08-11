@@ -88,37 +88,41 @@ public class GameManager : MonoBehaviour
 
             case GameState.PlayerCardDraw:
                 PlayerCardDraw();
+                ResetAbilitys();
                 TurnBegin();
-                //Spieler Karten auffüllen
                 break;
 
             case GameState.PlayerIdle:
-
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-                {
-                    Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
-                    
-                    RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-                    if (hit.collider != null)
-                    {
-                        Debug.Log(hit.collider.name);
-                        if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
-                        {
-                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
-                        }
-                        if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
-                        {
-                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
-                        }
-                        if (hit.collider.name == "Frame" || hit.collider.name == "Background")
-                        {
-                            hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
-                        }
-                    }
-                }
+                Clicking();
                 break;
 
+        }
+    }
+
+    private void Clicking()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
+
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                //Debug.Log(hit.collider.name);
+                if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
+                {
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
+                }
+                if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
+                {
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
+                }
+                if (hit.collider.name == "Frame" || hit.collider.name == "Background")
+                {
+                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+                }
+            }
         }
     }
 
