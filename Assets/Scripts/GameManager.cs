@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
     public Highlight highlight = Highlight.Nothing;
+    public GameObject currentlyDragging = null;
 
     private GameObject clicked01 = null;
     private GameObject clicked02 = null;
@@ -122,6 +123,25 @@ public class GameManager : MonoBehaviour
                 {
                     hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
                 }
+                if (hit.collider.name == "PlayerField")
+                {
+                    ResetAbilitys();
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Vector3 mousePos = Input.mousePosition;
+
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.name == "Frame")
+                {
+                    hit.collider.gameObject.GetComponentInParent<NameTooltip>().TooltipSwitch();
+                }
             }
         }
     }
@@ -153,7 +173,8 @@ public class GameManager : MonoBehaviour
         else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
         {
             clicked02 = clickedOn;
-        } else
+        }
+        else
         {
             ResetAbilitys();
         }

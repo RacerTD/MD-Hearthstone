@@ -6,6 +6,7 @@ using DG.Tweening;
 public class NameTooltip : MonoBehaviour
 {
     public GameObject box;
+    bool visible = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,21 @@ public class NameTooltip : MonoBehaviour
         
     }
 
-    public void moveNameTip()
+    public void TooltipSwitch()
+    {
+        visible = !visible;
+
+        if (visible)
+        {
+            moveNameTip();
+        }
+        else
+        {
+            HideTip();
+        }
+    }
+
+    private void moveNameTip()
     {
         box.transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
         box.transform.position = box.transform.position + new Vector3(0, -20f, 0);
@@ -27,7 +42,7 @@ public class NameTooltip : MonoBehaviour
         box.transform.DOLocalMove(new Vector3(447, 600, 0), 0.7f).SetEase(Ease.OutQuart);
     }
 
-    public void HideTip()
+    private void HideTip()
     {
         box.transform.DOScale(0.7f, 0.2f).SetEase(Ease.InQuart);
         StartCoroutine(Hide());

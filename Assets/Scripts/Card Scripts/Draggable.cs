@@ -53,6 +53,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
                 this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
                 gameManager.GetComponent<GameManager>().cardInHand = gameObject.GetComponent<OneCardManager>().cardAsset.cardType;
+                gameManager.GetComponent<GameManager>().currentlyDragging = gameObject;
 
                 // Die Raycasts werden zum Zeiger durch die Karte (CanvasGroup) nicht mehr geblockt. 
                 GetComponent<CanvasGroup>().blocksRaycasts = false;
@@ -89,6 +90,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         {
             Dragable = true;
             gameManager.GetComponent<GameManager>().cardInHand = CardType.Nothing;
+            gameManager.GetComponent<GameManager>().currentlyDragging = null;
 
             if (setsDraggableFalse)
             {

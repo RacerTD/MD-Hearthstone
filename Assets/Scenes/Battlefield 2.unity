@@ -810,6 +810,7 @@ GameObject:
   - component: {fileID: 501992560}
   - component: {fileID: 501992561}
   - component: {fileID: 501992564}
+  - component: {fileID: 501992566}
   m_Layer: 5
   m_Name: PlayerField
   m_TagString: Untagged
@@ -886,7 +887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48584908, g: 1, b: 0.7044181, a: 0.392}
+  m_Color: {r: 0.48584908, g: 1, b: 0.7044181, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -945,6 +946,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0122a4d6836780644bd1ba2218fb4a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1683640945}
+  manPower: {fileID: 129020263}
+  toHighlight: {fileID: 501992562}
+  humanCardHighlight: {r: 1, g: 1, b: 0, a: 0.5882353}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.5882353}
+--- !u!61 &501992566
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501992558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.49990845, y: 126.2225}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1801.3987, y: 253.445}
+  m_EdgeRadius: 0
 --- !u!1001 &512506344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1287,7 +1319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.760503, y: 0.532}
   m_AnchorMax: {x: 1, y: 0.6116809}
-  m_AnchoredPosition: {x: 0.9999695, y: 0}
+  m_AnchoredPosition: {x: 0.99993896, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905709587
@@ -2294,6 +2326,7 @@ MonoBehaviour:
   playersTurn: 1
   cardInHand: 4
   highlight: 4
+  currentlyDragging: {fileID: 0}
   gameState: 0
 --- !u!4 &1683640947
 Transform:

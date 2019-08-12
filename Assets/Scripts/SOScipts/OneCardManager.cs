@@ -254,6 +254,11 @@ public class OneCardManager : MonoBehaviour
                 gameObject.GetComponent<Draggable>().Dragable = false;
                 TurnBegin();
             }
+            else if (cardAsset.cardType == CardType.Epuipment)
+            {
+                //Werte anrechnen
+                Debug.Log("Equpment angelegt");
+            }
             else
             {
                 this.gameObject.transform.SetParent(hand.GetComponent<Transform>());
