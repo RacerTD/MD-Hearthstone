@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using static GameManager;
 public class PlayerFieldScript : MonoBehaviour
 {
     int childCount = 0;
@@ -42,6 +42,15 @@ public class PlayerFieldScript : MonoBehaviour
                 toHighlight.color = defaultColor;
             }
         }
+
+        if (gameManager.GetComponent<GameManager>().highlight != Highlight.Nothing)
+        {
+            //gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        }
+        else
+        {
+            //gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
         
     }
 
@@ -51,7 +60,6 @@ public class PlayerFieldScript : MonoBehaviour
         {
             myChild = transform.GetChild(i);
             myChild.GetComponent<OneCardManager>().NowOnField();
-            //myChild.GetComponent<Draggable>().enabled = false;
         }
     }
 

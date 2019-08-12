@@ -107,26 +107,26 @@ public class GameManager : MonoBehaviour
             Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+            Debug.Log(hit.collider.name);
 
-            if (hit.collider != null)
+            switch(hit.collider.name)
             {
-                Debug.Log(hit.collider.name);
-                if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
-                {
+                
+                case "HighDamageAbilitySymbol":
+                case "LowDamageAbilitySymbol":
                     hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
-                }
-                if (hit.collider.name == "LowHealAbilitySymbol" || hit.collider.name == "HighHealAbilitySymbol")
-                {
+                    break;
+                case "LowHealAbilitySymbol":
+                case "HighHealAbilitySymbol":
                     hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
-                }
-                if (hit.collider.name == "Frame" || hit.collider.name == "Background")
-                {
+                    break;
+                case "Frame":
+                case "Background":
                     hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
-                }
-                if (hit.collider.name == "PlayerField")
-                {
+                    break;
+                default:
                     ResetAbilitys();
-                }
+                    break;
             }
         }
 
@@ -192,12 +192,14 @@ public class GameManager : MonoBehaviour
             {
                 clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
                 clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
+                clicked01.GetComponent<OneCardManager>().cardAsset.attackUsed = true;
                 ResetAbilitys();
             }
             else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
             {
                 clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
                 clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
+                clicked01.GetComponent<OneCardManager>().cardAsset.attackUsed = true;
                 ResetAbilitys();
             }
         }
@@ -225,7 +227,7 @@ public class GameManager : MonoBehaviour
     #region Abilitys
     private void Heal()
     {
-        if (mana.GetComponent<ManaScript>().manaCount >= healAbilityCost)
+        if (mana.GetComponent<ManaScript>().manaCount >= healAbilityCost && clicked01.GetComponent<OneCardManager>().Healable())
         {
             clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
             mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
@@ -257,7 +259,7 @@ public class GameManager : MonoBehaviour
 
     public void HealAbility(int heal, int cost, GameObject user, bool used)
     {
-        if (healAbilityCost == 0 && healAbilityEffect == 0 && !used)
+        if (healAbilityCost == 0 && healAbilityEffect == 0 && !used && cost <= mana.GetComponent<ManaScript>().manaCount)
         {
             healAbilityCost = cost;
             healAbilityEffect = heal;
@@ -272,7 +274,7 @@ public class GameManager : MonoBehaviour
 
     public void DMGAbility(int DMG, int cost, GameObject user, bool used)
     {
-        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0 && !used)
+        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0 && !used && cost <= mana.GetComponent<ManaScript>().manaCount)
         {
             DMGAbilityCost = cost;
             DMGAbilityEffect = DMG;

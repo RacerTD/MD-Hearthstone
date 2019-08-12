@@ -15,7 +15,7 @@ public class OneCardManager : MonoBehaviour
     public GameObject hand;
     public CardAsset cardAsset;
     public string prefabName;
-    private bool onBoard = false;
+    public bool onBoard = false;
     public int equipmentCount = 0;
 
     [Header("CardComponents")]
@@ -26,6 +26,7 @@ public class OneCardManager : MonoBehaviour
     public List<TextMeshProUGUI> attackText = new List<TextMeshProUGUI>();
     public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>();
     public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>();
+    public List<BoxCollider2D> abilityCollider = new List<BoxCollider2D>();
 
     [Header("Kartenart Objekte")]
     public GameObject enemyCardFront;
@@ -69,8 +70,6 @@ public class OneCardManager : MonoBehaviour
     public int maxHealth;
 
     public int cost;
-    //private bool hasAttacked = false;
-    //private bool summoningSickness = true;
 
     private void Awake()
     {
@@ -152,12 +151,12 @@ public class OneCardManager : MonoBehaviour
     {
         if (maxHealth > _health)
         {
-            Debug.Log("Healable");
+            //Debug.Log("Healable");
             return true;
         }
         else
         {
-            Debug.Log("Not Healable");
+            //Debug.Log("Not Healable");
             return false;
         }
     }
@@ -173,7 +172,7 @@ public class OneCardManager : MonoBehaviour
 
     public void GiveGameManagerCard()
     {
-        gameManager.GetComponent<GameManager>().CardClicked(gameObject);
+       gameManager.GetComponent<GameManager>().CardClicked(gameObject);
     }
 
     private void UpdateList(List<TextMeshProUGUI> bla, string value)
@@ -191,8 +190,19 @@ public class OneCardManager : MonoBehaviour
         cardAsset.highHeal.used = false;
         cardAsset.lowDMG.used = false;
         cardAsset.highDMG.used = false;
+        cardAsset.attackUsed = false;
+        ChangeSummoningSickness();
     }
 
+    public void ChangeSummoningSickness()
+    {
+        cardAsset.summoningSickness = false;
+        for (int i = 0; i < abilityCollider.Count; i++)
+        {
+            abilityCollider[i].enabled = true;
+        }
+        
+    }
     private void UpdateAbilitys()
     {
         if (cardAsset.lowHeal.enabled)
@@ -253,6 +263,12 @@ public class OneCardManager : MonoBehaviour
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
                 gameObject.GetComponent<Draggable>().Dragable = false;
                 TurnBegin();
+
+                for (int i = 0; i < abilityCollider.Count; i++)
+                {
+                    abilityCollider[i].enabled = false;
+                }
+                cardAsset.summoningSickness = true;
             }
             else if (cardAsset.cardType == CardType.Epuipment)
             {
@@ -287,6 +303,7 @@ public class OneCardManager : MonoBehaviour
     }
 
     #region Abilitys
+
     public void HealAbility()
     {
         //Debug.Log("Heal Called");

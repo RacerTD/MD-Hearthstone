@@ -11,23 +11,32 @@ public class HighlightCard : MonoBehaviour
     public List<Image> waves = new List<Image>();
     public List<Image> healAbility = new List<Image>();
     public List<Image> attackAbility = new List<Image>();
+    public List<Image> bigImages = new List<Image>();
+
     public GameObject gameManager;
     public GameObject enemyField;
+    private bool summoningSickness;
     private CardType currendCardInHand = CardType.Nothing;
     private Highlight currenHighlight = Highlight.Nothing;
     private bool healAbilityUsed = false;
     private bool attackAbilityUsed = false;
     private bool seeMaxLife = false;
+    private bool attackUsed = false;
     public TextMeshProUGUI maxLife;
     public TextMeshProUGUI currentLife;
+
+    private Vector3 originalPosition = new Vector3(0, 0, 0);
+    private Vector3 originalRotation = new Vector3(0, 0, 0);
+    private Vector3 originalScale = new Vector3(0, 0, 0);
+    private bool newSizeSet = false;
 
     [Header("Colors")]
     public Color healColor;
     public Color equipmentColor;
     public Color defaultColor;
     public Color attackColor;
-
     public Color abilityUsed;
+    public Color summoningSicknessColor;
 
     void Start()
     {
@@ -38,7 +47,7 @@ public class HighlightCard : MonoBehaviour
 
     void Update()
     {
-        MaxLifeSwitcher();
+        Hover();
 
         if (currendCardInHand != gameManager.GetComponent<GameManager>().cardInHand)
         {
@@ -60,7 +69,7 @@ public class HighlightCard : MonoBehaviour
         {
             currenHighlight = gameManager.GetComponent<GameManager>().highlight;
 
-            if (currenHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+            if (currenHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
             {
                 //Umfärben auf healColor
                 ChangeColor(healColor, waves);
@@ -115,6 +124,21 @@ public class HighlightCard : MonoBehaviour
                 ChangeBoxColliderState(true, attackAbility);
             }
         }
+
+        if (summoningSickness != gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness || attackUsed != gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed)
+        {
+            summoningSickness = gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness;
+            attackUsed = gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed;
+
+            if (gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness || gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed)
+            {
+                ChangeColor(summoningSicknessColor, bigImages);
+            }
+            else
+            {
+                ChangeColor(defaultColor, bigImages);
+            }
+        }
     }
 
     private void ChangeColor(Color color, List<Image> toChange)
@@ -133,7 +157,7 @@ public class HighlightCard : MonoBehaviour
         }
     }
 
-    private void MaxLifeSwitcher()
+    private void Hover()
     {
         Vector3 mousePos = Input.mousePosition;
 
@@ -141,16 +165,51 @@ public class HighlightCard : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (hit.collider.name == "HPIcon")
+            if (hit.collider.name == "HPIcon" && gameObject.GetComponent<OneCardManager>().onBoard)
             {
-                maxLife.enabled = true;
-                currentLife.enabled = false;
+                //hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = true;
+                //hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = false;
             }
             else
             {
-                maxLife.enabled = false;
-                currentLife.enabled = true;
+                //hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = false;
+                //hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = true;
+            }
+
+            if (hit.collider.name == "HandCard")
+            {
+                //hit.collider.GetComponentInParent<HighlightCard>().HandHover(true);
+            }
+            else
+            {
+                //hit.collider.GetComponentInParent<HighlightCard>().HandHover(false);
+            }
+            
+        }
+    }
+    public void HandHover(bool ja)
+    {
+        if (ja)
+        {
+            if (!newSizeSet)
+            {
+                originalPosition = transform.position;
+                originalRotation = transform.eulerAngles;
+                originalScale = transform.localScale;
+                newSizeSet = true;
+                transform.position += new Vector3(0, 20, 0);
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                transform.localScale = new Vector3(1, 1, 1);
             }
         }
+        else
+        {
+            transform.position = originalPosition;
+            transform.eulerAngles = originalRotation;
+            transform.localScale = originalScale;
+            newSizeSet = false;
+        }
+        
+
     }
 }

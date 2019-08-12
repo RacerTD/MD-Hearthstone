@@ -5437,7 +5437,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -8701608637175447368, guid: efdf1dc99a2184344bddca0f5c744525,
+  m_Sprite: {fileID: 1420971725906132659, guid: efdf1dc99a2184344bddca0f5c744525,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -6174,6 +6174,9 @@ MonoBehaviour:
   attackAbility:
   - {fileID: 2623525793671166522}
   - {fileID: 6571849472457725292}
+  bigImages:
+  - {fileID: 2128503077460143997}
+  - {fileID: 5202951085365801590}
   gameManager: {fileID: 0}
   enemyField: {fileID: 0}
   maxLife: {fileID: 9010260354255808698}
@@ -6183,6 +6186,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   attackColor: {r: 1, g: 0.6808, b: 0.5377358, a: 1}
   abilityUsed: {r: 0.64199996, g: 0.64199996, b: 0.64199996, a: 1}
+  summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6203,6 +6207,7 @@ MonoBehaviour:
   hand: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: Card
+  onBoard: 0
   equipmentCount: 0
   cardGraphic: {fileID: 0}
   costText:
@@ -6221,6 +6226,12 @@ MonoBehaviour:
   - {fileID: 1985845163506357961}
   - {fileID: 855212604930130579}
   maxLifeText: []
+  abilityCollider:
+  - {fileID: 7300961016330758611}
+  - {fileID: 6306574297894328979}
+  - {fileID: 888947002177703485}
+  - {fileID: 5418095197840424841}
+  - {fileID: 5606672449076157661}
   enemyCardFront: {fileID: 5417867203999520390}
   spellCardFront: {fileID: 5484373957921347962}
   equipmentCardFront: {fileID: 5484373957921347962}
