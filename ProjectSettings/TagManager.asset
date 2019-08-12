@@ -9,6 +9,7 @@ TagManager:
   - FieldCard
   - EnemyField
   - Background
+  - PointMarker
   layers:
   - Default
   - TransparentFX

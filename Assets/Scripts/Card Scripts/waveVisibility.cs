@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
 public class waveVisibility : MonoBehaviour
 {
     public List<Sprite> animation = new List<Sprite>();
