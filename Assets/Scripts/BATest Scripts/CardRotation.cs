@@ -41,6 +41,7 @@ public class CardRotation : MonoBehaviour
                 passedThroughColliderOnCard = true;
         }
 
+        // passedThroughColliderOnCard and showingBack must be in sync, if not, changes must be done
         if (passedThroughColliderOnCard != showingBack)
         {
             showingBack = passedThroughColliderOnCard;
