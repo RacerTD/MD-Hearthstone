@@ -5335,7 +5335,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -6898173397187716309, guid: efdf1dc99a2184344bddca0f5c744525,
+  m_Sprite: {fileID: 7478315682434199994, guid: efdf1dc99a2184344bddca0f5c744525,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -6073,6 +6073,9 @@ MonoBehaviour:
   - {fileID: 2623525793671166522}
   - {fileID: 6571849472457725292}
   gameManager: {fileID: 0}
+  enemyField: {fileID: 0}
+  maxLife: {fileID: 9010260354255808698}
+  currentLife: {fileID: 1985845163506357961}
   healColor: {r: 0.55802774, g: 0.8962264, b: 0.6631637, a: 1}
   equipmentColor: {r: 1, g: 0.6687182, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}

@@ -34,6 +34,7 @@ public class CardAsset : ScriptableObject
     [Header("Equipment & Humand & Enemys")]
     public int maxHealth;
     public int attack;
+    public bool taunt;
 
     [Header("Equipment & Humand & Spell")]
     public int cost;

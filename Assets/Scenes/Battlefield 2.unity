@@ -368,9 +368,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCards:
   - {fileID: 11400000, guid: 4e791500832f77f40b474672c01d9a33, type: 2}
+  - {fileID: 11400000, guid: 129cdf06e854d534d8f4186a3f4ff692, type: 2}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
   gameManager: {fileID: 1683640946}
+  myChild: {fileID: 0}
+  taunt: 0
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,7 +953,7 @@ MonoBehaviour:
   manPower: {fileID: 129020263}
   toHighlight: {fileID: 501992562}
   humanCardHighlight: {r: 1, g: 1, b: 0, a: 0.5882353}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.5882353}
+  defaultColor: {r: 0, g: 1, b: 0.0791831, a: 0.19607843}
 --- !u!61 &501992566
 BoxCollider2D:
   m_ObjectHideFlags: 0

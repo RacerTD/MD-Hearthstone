@@ -34,7 +34,7 @@ public class CardDeckScript : MonoBehaviour
         int i = deckCards.Count;
         do
         {
-            Instantiate(cardPrefab, new Vector3(0,0,0), Quaternion.identity);
+            Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
             i--;
         } while (i > 0);
         

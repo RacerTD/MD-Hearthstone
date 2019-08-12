@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
+using TMPro;
 
 public class HighlightCard : MonoBehaviour
 {
@@ -11,10 +12,14 @@ public class HighlightCard : MonoBehaviour
     public List<Image> healAbility = new List<Image>();
     public List<Image> attackAbility = new List<Image>();
     public GameObject gameManager;
+    public GameObject enemyField;
     private CardType currendCardInHand = CardType.Nothing;
     private Highlight currenHighlight = Highlight.Nothing;
     private bool healAbilityUsed = false;
     private bool attackAbilityUsed = false;
+    private bool seeMaxLife = false;
+    public TextMeshProUGUI maxLife;
+    public TextMeshProUGUI currentLife;
 
     [Header("Colors")]
     public Color healColor;
@@ -27,11 +32,14 @@ public class HighlightCard : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
+        enemyField = GameObject.Find("EnemyField");
     }
 
 
     void Update()
     {
+        MaxLifeSwitcher();
+
         if (currendCardInHand != gameManager.GetComponent<GameManager>().cardInHand)
         {
             currendCardInHand = gameManager.GetComponent<GameManager>().cardInHand;
@@ -59,8 +67,15 @@ public class HighlightCard : MonoBehaviour
             }
             else if (currenHighlight == Highlight.Attack && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
             {
+                if (enemyField.GetComponent<EnemyFieldScript>().taunt && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+                {
+                    ChangeColor(attackColor, waves);
+                }
+                else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
+                {
+                    ChangeColor(attackColor, waves);
+                }
                 //Umfärben auf attackColor
-                ChangeColor(attackColor, waves);
             }
             else
             {
@@ -115,6 +130,27 @@ public class HighlightCard : MonoBehaviour
         for (int i = 0; i < toChange.Count; i++)
         {
             toChange[i].GetComponent<BoxCollider2D>().enabled = toSetTo;
+        }
+    }
+
+    private void MaxLifeSwitcher()
+    {
+        Vector3 mousePos = Input.mousePosition;
+
+        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.name == "HPIcon")
+            {
+                maxLife.enabled = true;
+                currentLife.enabled = false;
+            }
+            else
+            {
+                maxLife.enabled = false;
+                currentLife.enabled = true;
+            }
         }
     }
 }

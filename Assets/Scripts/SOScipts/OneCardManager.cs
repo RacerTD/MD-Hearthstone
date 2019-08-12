@@ -92,7 +92,7 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
-
+        
     }
 
     void InitializeCard(CardAsset newAsset = null)

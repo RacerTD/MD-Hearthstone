@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
 
             if (hit.collider != null)
             {
-                //Debug.Log(hit.collider.name);
+                Debug.Log(hit.collider.name);
                 if (hit.collider.name == "LowDamageAbilitySymbol" || hit.collider.name == "HighDamageAbilitySymbol")
                 {
                     hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
@@ -163,7 +163,14 @@ public class GameManager : MonoBehaviour
             clicked01 = clickedOn;
             if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
             {
-                Damage();
+                if (clicked01.GetComponent<OneCardManager>().cardAsset.taunt && enemyField.GetComponent<EnemyFieldScript>().taunt)
+                {
+                    Damage();
+                } 
+                else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
+                {
+                    Damage();
+                }
             }
             else
             {
@@ -181,9 +188,18 @@ public class GameManager : MonoBehaviour
 
         if (clicked01 != null && clicked02 != null) //Basic Attack
         {
-            clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
-            clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
-            ResetAbilitys();
+            if (clicked02.GetComponent<OneCardManager>().cardAsset.taunt && enemyField.GetComponent<EnemyFieldScript>().taunt)
+            {
+                clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
+                clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
+                ResetAbilitys();
+            }
+            else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
+            {
+                clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
+                clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
+                ResetAbilitys();
+            }
         }
     }
 
