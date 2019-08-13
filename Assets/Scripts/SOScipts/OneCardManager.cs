@@ -120,6 +120,7 @@ public class OneCardManager : MonoBehaviour
         switch (newAsset.cardType)
         {
             case CardType.Enemy:
+            case CardType.Egg:
                 enemyCardFront.SetActive(true);
                 break;
             case CardType.Spell:

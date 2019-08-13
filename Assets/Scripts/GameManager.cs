@@ -63,7 +63,6 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown("x"))
         {
-            enemyField.SpawnNewEnemy();
         }
 
 
@@ -78,14 +77,6 @@ public class GameManager : MonoBehaviour
 
             case GameState.Enemy:
                 //Gesamter Enemy Turn
-                if (enemyField.GetComponent<Transform>().transform.childCount < 3)
-                {
-                    enemyField.SpawnNewEnemy();
-                    enemyField.SpawnNewEnemy();
-                    enemyField.SpawnNewEnemy();
-                    //Debug.Log("Spawned Card");
-                }
-                gameState = GameState.PlayerCardDraw;
                 break;
 
             case GameState.PlayerCardDraw:
@@ -167,7 +158,7 @@ public class GameManager : MonoBehaviour
                     Heal();
                 }
             }
-            else if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            else if (clicked02 == null && clicked01 == null && (clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
             {
                 clicked01 = clickedOn;
                 if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
@@ -186,7 +177,7 @@ public class GameManager : MonoBehaviour
                     clicked01 = null;
                 }
             }
-            else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            else if (clicked01 != null && clickedOn != clicked01 && (clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
             {
                 clicked02 = clickedOn;
             }

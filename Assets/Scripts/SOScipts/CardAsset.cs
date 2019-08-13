@@ -9,6 +9,7 @@ public enum CardType
     Human,
     Epuipment,
     Spell,
+    Egg,
     Nothing
 }
 

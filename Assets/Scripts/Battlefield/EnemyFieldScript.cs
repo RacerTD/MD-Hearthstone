@@ -9,9 +9,11 @@ using static GameManager;
 public class EnemyFieldScript : MonoBehaviour
 {
     [Header("Gegner die Gespawnt werden können")]
-    public List<CardAsset> hardEnemyCards = new List<CardAsset>();
-    public List<CardAsset> softEnemyCards = new List<CardAsset>();
+    public List<CardAsset> strongEnemyCards = new List<CardAsset>();
+    public List<CardAsset> weakEnemyCards = new List<CardAsset>();
+    public List<CardAsset> eggCard = new List<CardAsset>();
     public CardAsset queen;
+    public List<CardAsset> cardsToSpawn = new List<CardAsset>();
 
     [Header("Wichtige Dinge vom Feld")]
     public GameObject cardPrefab;
@@ -22,6 +24,7 @@ public class EnemyFieldScript : MonoBehaviour
     public float timeBetweenActions = 5;
 
     [Header("Variablen für andere Scripte")]
+    public int enemyWaveCount = 0;
     public bool taunt = false;
 
     private Transform myChild;
@@ -66,10 +69,12 @@ public class EnemyFieldScript : MonoBehaviour
                     EnemyCardSpawn();
                     break;
                 case EnemyState.Attack:
+                    AttackSomeone();
                     break;
                 case EnemyState.Wait:
                     break;
                 case EnemyState.End:
+                    gameManager.gameState = GameState.PlayerCardDraw;
                     break;
             }
         }
@@ -86,18 +91,65 @@ public class EnemyFieldScript : MonoBehaviour
 
     private void EnemyCardSpawn()
     {
+        if (transform.childCount == 0)
+        {
+            switch (enemyWaveCount)
+            {
+                case 0:
+                    SpawnEggEnemy();
+                    SpawnWeakEnemy();
+                    SpawnWeakEnemy();
+                    enemyState = EnemyState.End;
+                    break;
+                case 1:
+                    SpawnWeakEnemy();
+                    SpawnStrongEnemy();
+                    SpawnEggEnemy();
+                    break;
+                case 2:
+                    SpawnStrongEnemy();
+                    SpawnStrongEnemy();
+                    SpawnEggEnemy();
+                    break;
+                case 3:
+                    break;
+            }
+            enemyWaveCount++;
+            enemyState = EnemyState.End;
+        }
+    }
 
+    private void SpawnEggEnemy()
+    {
+        cardsToSpawn.Add(eggCard[Random.Range(0, eggCard.Count)]);
+        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+    }
+
+    private void SpawnWeakEnemy()
+    {
+        cardsToSpawn.Add(weakEnemyCards[Random.Range(0, weakEnemyCards.Count)]);
+        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+    }
+
+    private void SpawnStrongEnemy()
+    {
+        cardsToSpawn.Add(strongEnemyCards[Random.Range(0, strongEnemyCards.Count)]);
+        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
     }
 
     public CardAsset cardToSpawn()
     {
-        CardAsset cardToSpawn = hardEnemyCards[Random.Range(0, hardEnemyCards.Count)];
+        CardAsset cardToSpawn = cardsToSpawn[0];
+        cardsToSpawn.RemoveAt(0);
+
         return cardToSpawn;
     }
-
-    public void SpawnNewEnemy()
+    /// <summary>
+    /// Spawns the needed Enemys for the round.
+    /// </summary>
+    private void SpawnNewEnemy()
     {
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        
     }
 
     public void HasTaunt()

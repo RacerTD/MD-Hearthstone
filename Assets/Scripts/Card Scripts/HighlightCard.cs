@@ -74,7 +74,7 @@ public class HighlightCard : MonoBehaviour
                 //Umfärben auf healColor
                 ChangeColor(healColor, waves);
             }
-            else if (currenHighlight == Highlight.Attack && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            else if (currenHighlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
             {
                 if (enemyField.taunt && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
                 {
