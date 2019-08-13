@@ -9,9 +9,36 @@ public class UILineRenderer : MaskableGraphic
     public bool UseMargins;
     public Vector2 Margin;
     public Vector2[] Points;
+    public Texture Texture;
 
-    protected override void OnFillVBO(List<UIVertex> vbo)
+    public override Texture mainTexture
     {
+        get
+        {
+            return Texture == null ? s_WhiteTexture : Texture;
+        }
+    }
+
+    protected override void OnPopulateMesh(Mesh m)
+    {
+        var vbo = new List<UIVertex>();
+        _OnFillVBO(vbo);
+
+        using (var vh = new VertexHelper())
+        {
+            var quad = new UIVertex[4];
+            for (int i = 0; i < vbo.Count; i += 4)
+            {
+                vbo.CopyTo(i, quad, 0, 4);
+                vh.AddUIVertexQuad(quad);
+            }
+            vh.FillMesh(m);
+        }
+    }
+
+    protected void _OnFillVBO(List<UIVertex> vbo)
+    {
+        //Debug.Log("OnFillVBO");
         if (Points == null || Points.Length < 2)
             Points = new[] { new Vector2(0, 0), new Vector2(1, 1) };
 
@@ -69,6 +96,10 @@ public class UILineRenderer : MaskableGraphic
             var vert = UIVertex.simpleVert;
             vert.color = color;
             vert.position = vertices[i];
+            if (i == 0) vert.uv0 = new Vector2(0, 0);
+            if (i == 1) vert.uv0 = new Vector2(1, 0);
+            if (i == 2) vert.uv0 = new Vector2(1, 1);
+            if (i == 3) vert.uv0 = new Vector2(0, 1);
             vbo.Add(vert);
         }
     }
