@@ -133,6 +133,11 @@ public class OneCardManager : MonoBehaviour
                 break;
         }
 
+        if (cardAsset.lowHeal.enabled)
+        {
+            Debug.Log("HealEnabled");
+        }
+
         Attack = newAsset.attack;
         maxHealth = newAsset.maxHealth;
         Health = maxHealth;
@@ -173,7 +178,14 @@ public class OneCardManager : MonoBehaviour
 
     public void GiveGameManagerCard()
     {
-       gameManager.CardClicked(this);
+        if (gameManager.highlight == GameManager.Highlight.Heal || gameManager.highlight == GameManager.Highlight.Attack)
+        {
+            gameManager.CardClicked(this);
+        }
+        else if (cardAsset.attackUsed == false)
+        {
+            gameManager.CardClicked(this);
+        }
     }
 
     private void UpdateList(List<TextMeshProUGUI> bla, string value)

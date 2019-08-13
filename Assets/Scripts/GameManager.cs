@@ -108,26 +108,29 @@ public class GameManager : MonoBehaviour
             Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
 
-            switch(hit.collider.name)
+            if (hit.collider != null)
             {
-                
-                case "HighDamageAbilitySymbol":
-                case "LowDamageAbilitySymbol":
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
-                    break;
-                case "LowHealAbilitySymbol":
-                case "HighHealAbilitySymbol":
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
-                    break;
-                case "Frame":
-                case "Background":
-                    hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
-                    break;
-                default:
-                    ResetAbilitys();
-                    break;
+                switch (hit.collider.name)
+                {
+
+                    case "HighDamageAbilitySymbol":
+                    case "LowDamageAbilitySymbol":
+                        hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().DamageAbility();
+                        break;
+                    case "LowHealAbilitySymbol":
+                    case "HighHealAbilitySymbol":
+                        hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
+                        break;
+                    case "Frame":
+                    case "Background":
+                        hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+                        break;
+                    default:
+                        ResetAbilitys();
+                        break;
+                }
             }
         }
 
@@ -147,6 +150,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// clickedOn will be set ...
+    /// </summary>
+    /// <param name="clickedOn"></param>
     public void CardClicked(OneCardManager clickedOn)
     {
         if (gameState == GameState.PlayerIdle)

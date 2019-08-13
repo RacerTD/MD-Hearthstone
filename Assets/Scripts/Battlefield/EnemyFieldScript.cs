@@ -3,16 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using static GameManager;
 
+/// <summary>
+/// Contains Logic of Enemy turn
+/// </summary>
 public class EnemyFieldScript : MonoBehaviour
 {
-    public List<CardAsset> enemyCards = new List<CardAsset>();
+    [Header("Gegner die Gespawnt werden können")]
+    public List<CardAsset> hardEnemyCards = new List<CardAsset>();
+    public List<CardAsset> softEnemyCards = new List<CardAsset>();
+    public CardAsset queen;
+
+    [Header("Wichtige Dinge vom Feld")]
     public GameObject cardPrefab;
     public GameManager gameManager;
     public PlayerFieldScript playerField;
-    private Transform myChild;
-    public bool taunt = false;
-    private int childCount;
+
+    [Header("Anderes")]
     public float timeBetweenActions = 5;
+
+    [Header("Variablen für andere Scripte")]
+    public bool taunt = false;
+
+    private Transform myChild;
+    private int childCount;
     private float timer;
     private int childNumber;
 
@@ -49,6 +62,8 @@ public class EnemyFieldScript : MonoBehaviour
             switch (enemyState)
             {
                 case EnemyState.Start:
+                    TurnStart();
+                    EnemyCardSpawn();
                     break;
                 case EnemyState.Attack:
                     break;
@@ -60,9 +75,23 @@ public class EnemyFieldScript : MonoBehaviour
         }
     }
 
+    private void TurnStart()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            myChild = transform.GetChild(i);
+            myChild.GetComponent<OneCardManager>().TurnBegin();
+        }
+    }
+
+    private void EnemyCardSpawn()
+    {
+
+    }
+
     public CardAsset cardToSpawn()
     {
-        CardAsset cardToSpawn = enemyCards[Random.Range(0, enemyCards.Count)];
+        CardAsset cardToSpawn = hardEnemyCards[Random.Range(0, hardEnemyCards.Count)];
         return cardToSpawn;
     }
 

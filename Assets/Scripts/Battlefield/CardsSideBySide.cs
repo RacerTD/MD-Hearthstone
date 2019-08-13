@@ -73,5 +73,6 @@ public class CardsSideBySide : MonoBehaviour
                 myChild.transform.localScale = new Vector3(scale, scale, scale);
             }
         }
+
     }
 }
