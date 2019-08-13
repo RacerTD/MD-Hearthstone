@@ -1,0 +1,1637 @@
+fileFormatVersion: 2
+guid: 0f3705880dc9eeb48bc300a99da0d863
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9200551929359147264
+    second: Enemy_Welle2_0
+  - first:
+      213: -960895903140388826
+    second: Enemy_Welle2_1
+  - first:
+      213: -6736971042799521207
+    second: Enemy_Welle2_2
+  - first:
+      213: -3436562470414325520
+    second: Enemy_Welle2_3
+  - first:
+      213: -2684031279638562739
+    second: Enemy_Welle2_4
+  - first:
+      213: 4553441224936744837
+    second: Enemy_Welle2_5
+  - first:
+      213: 3367433546398329783
+    second: Enemy_Welle2_6
+  - first:
+      213: 2743662043504685053
+    second: Enemy_Welle2_7
+  - first:
+      213: -1484746450898941365
+    second: Enemy_Welle2_8
+  - first:
+      213: -4259709488610951301
+    second: Enemy_Welle2_9
+  - first:
+      213: -4213085784344421009
+    second: Enemy_Welle2_10
+  - first:
+      213: -2288007932678547150
+    second: Enemy_Welle2_11
+  - first:
+      213: 3776682696535948491
+    second: Enemy_Welle2_12
+  - first:
+      213: -5184701832984472915
+    second: Enemy_Welle2_13
+  - first:
+      213: 4158210664969238823
+    second: Enemy_Welle2_14
+  - first:
+      213: 920415011346402558
+    second: Enemy_Welle2_15
+  - first:
+      213: 7622995260807407097
+    second: Enemy_Welle2_16
+  - first:
+      213: -4622660113885644310
+    second: Enemy_Welle2_17
+  - first:
+      213: 4180532945094036456
+    second: Enemy_Welle2_18
+  - first:
+      213: 779391879142425891
+    second: Enemy_Welle2_19
+  - first:
+      213: 402033568052778555
+    second: Enemy_Welle2_20
+  - first:
+      213: 9120121317168086927
+    second: Enemy_Welle2_21
+  - first:
+      213: -2266910018674987218
+    second: Enemy_Welle2_22
+  - first:
+      213: 7271102340936897067
+    second: Enemy_Welle2_23
+  - first:
+      213: 3208059018517847413
+    second: Enemy_Welle2_24
+  - first:
+      213: -4088617691627498569
+    second: Enemy_Welle2_25
+  - first:
+      213: -492144926628676951
+    second: Enemy_Welle2_26
+  - first:
+      213: -6520804602033986797
+    second: Enemy_Welle2_27
+  - first:
+      213: -6413332347412013973
+    second: Enemy_Welle2_28
+  - first:
+      213: -9124344847556541181
+    second: Enemy_Welle2_29
+  - first:
+      213: -1234758515463926802
+    second: Enemy_Welle2_30
+  - first:
+      213: -8289257138106565965
+    second: Enemy_Welle2_31
+  - first:
+      213: -7954079680366141578
+    second: Enemy_Welle2_32
+  - first:
+      213: 167276694813460344
+    second: Enemy_Welle2_33
+  - first:
+      213: 6929343421636323178
+    second: Enemy_Welle2_34
+  - first:
+      213: 4612219037090877028
+    second: Enemy_Welle2_35
+  - first:
+      213: 1402062155295796732
+    second: Enemy_Welle2_36
+  - first:
+      213: 5239600806995458407
+    second: Enemy_Welle2_37
+  - first:
+      213: -5569357042748928208
+    second: Enemy_Welle2_38
+  - first:
+      213: 4403719617931445194
+    second: Enemy_Welle2_39
+  - first:
+      213: -1812706191691215567
+    second: Enemy_Welle2_40
+  - first:
+      213: -5144442947391967117
+    second: Enemy_Welle2_41
+  - first:
+      213: 7844985137652102180
+    second: Enemy_Welle2_42
+  - first:
+      213: -2721736809523088350
+    second: Enemy_Welle2_43
+  - first:
+      213: -1721768416115566084
+    second: Enemy_Welle2_44
+  - first:
+      213: -5352265969951815444
+    second: Enemy_Welle2_45
+  - first:
+      213: 7323372638928274792
+    second: Enemy_Welle2_46
+  - first:
+      213: -6846953596941203945
+    second: Enemy_Welle2_47
+  - first:
+      213: -2516882667910612500
+    second: Enemy_Welle2_48
+  - first:
+      213: -1036481825455850714
+    second: Enemy_Welle2_49
+  - first:
+      213: 7010290629917583977
+    second: Enemy_Welle2_50
+  - first:
+      213: 1199440757457093693
+    second: Enemy_Welle2_51
+  - first:
+      213: -4562514127428095951
+    second: Enemy_Welle2_52
+  - first:
+      213: 2548801045718246812
+    second: Enemy_Welle2_53
+  - first:
+      213: -6790552931548237987
+    second: Enemy_Welle2_54
+  - first:
+      213: 3257172571937468049
+    second: Enemy_Welle2_55
+  - first:
+      213: -2518506944688205484
+    second: Enemy_Welle2_56
+  - first:
+      213: -2296305553867470317
+    second: Enemy_Welle2_57
+  - first:
+      213: 2811995693970761651
+    second: Enemy_Welle2_58
+  - first:
+      213: -5362046612960252700
+    second: Enemy_Welle2_59
+  - first:
+      213: 2340157289497842662
+    second: Enemy_Welle2_60
+  - first:
+      213: 8149249467946442012
+    second: Enemy_Welle2_61
+  - first:
+      213: -716470769826832187
+    second: Enemy_Welle2_62
+  - first:
+      213: -6773976910784641001
+    second: Enemy_Welle2_63
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Welle2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cde599c14914844cac1b40ae432cc96
+      internalID: 9200551929359147264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c4e34086e7d74489e22b8c73afd87f
+      internalID: -960895903140388826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_2
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b56ccb1273837458602e718bc707b0
+      internalID: -6736971042799521207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_3
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7c4a3688f424b459e5dd01d0661cba
+      internalID: -3436562470414325520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_4
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffa2b198778a564d8df4bcdf4940385
+      internalID: -2684031279638562739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_5
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9531438753e9c9a4d9f2b245d15df007
+      internalID: 4553441224936744837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_6
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 3830
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c750cae528fcd14692d269a4e40f2e4
+      internalID: 3367433546398329783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eedf54f53eb6440a4dfe125eef8ccc
+      internalID: 2743662043504685053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d93cc49cf3ca5e49b2b368695732352
+      internalID: -1484746450898941365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_9
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d7de266739573419e3484f6c2bf959
+      internalID: -4259709488610951301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_10
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda2b5290d3621f4d8641aded712e38a
+      internalID: -4213085784344421009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_11
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500271107884cd444afb7526bb792bf6
+      internalID: -2288007932678547150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_12
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d00f2da97450d147a58433b209c5050
+      internalID: 3776682696535948491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_13
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 3564
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8287893182c98b346b0fe743a4ab1f4f
+      internalID: -5184701832984472915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bbb097c562440478f5e7c4c175e30c
+      internalID: 4158210664969238823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_15
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668a9f722d6604046b4d64a96a502209
+      internalID: 920415011346402558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_16
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103e912794dd3c94c96c9078499e91da
+      internalID: 7622995260807407097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_17
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fe443a53436cb40870d6bdc01fae23
+      internalID: -4622660113885644310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_18
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c769675bec20e640b918bd058278dbf
+      internalID: 4180532945094036456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_19
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b914e95962b5946a4743f28661b484
+      internalID: 779391879142425891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_20
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 3298
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075bde3ed0db44b4db3afa27765c14cb
+      internalID: 402033568052778555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d9d6aebe34b73449ac7117a1f7c87e
+      internalID: 9120121317168086927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_22
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f9ee9b65b605d45a14ea54c614b1b8
+      internalID: -2266910018674987218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_23
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcf4524de5bae4458862e84f5c89fe7
+      internalID: 7271102340936897067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_24
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecab3afd07029247a6e64173860970c
+      internalID: 3208059018517847413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_25
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6189bb3a08915469a814afcd788dcc
+      internalID: -4088617691627498569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_26
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cf852ad013cb242845e1d107d3d402
+      internalID: -492144926628676951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_27
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 3032
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e79082340f199547a718f9f94fae285
+      internalID: -6520804602033986797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5080f9155962e254e96ab287ac2f3395
+      internalID: -6413332347412013973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_29
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c401c13710f22d5418630269324ac9b7
+      internalID: -9124344847556541181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_30
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945afe5edcfedf24cb214a5aae7933cf
+      internalID: -1234758515463926802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_31
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60fe08792b7c6c43808e02165b6be67
+      internalID: -8289257138106565965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_32
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55de5c30bbb6ea42b202c32c29a05b9
+      internalID: -7954079680366141578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_33
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4691d7c4f21d54a98b1f4e65a29d3f
+      internalID: 167276694813460344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_34
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 2766
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b9a40905b79c14fb863827ec100a27
+      internalID: 6929343421636323178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3083834ecfed66e4b9a7b482da65f2bd
+      internalID: 4612219037090877028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_36
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7965a57c3129a41428b6190bb4f635d9
+      internalID: 1402062155295796732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_37
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5991c3a80edaf4cadbff79bcb0582d
+      internalID: 5239600806995458407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_38
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8308cf4deacea544a581f750a6e188f
+      internalID: -5569357042748928208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_39
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ed52a97b0bebf448fc39d7bcddfa36
+      internalID: 4403719617931445194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_40
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e172dd231cb175a459b3d287f1a429c6
+      internalID: -1812706191691215567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_41
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 2500
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e5274ffa0375a47a07bfb122e2db4e
+      internalID: -5144442947391967117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1388b5ac8b72b9542a8f7607a8cef1eb
+      internalID: 7844985137652102180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_43
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec06ae6891573f46b5b3950cae5e081
+      internalID: -2721736809523088350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_44
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96615ae31268b448bf8a108a2bc8f58
+      internalID: -1721768416115566084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_45
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e3398cb7ea8394a84eb8fcf2358e2b
+      internalID: -5352265969951815444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_46
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e5a7af8ec18474694d67d3b444dcd4
+      internalID: 7323372638928274792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_47
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1184ecfa4809436438ae0b0d29bfda3a
+      internalID: -6846953596941203945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_48
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 2234
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6358a5baff2b7ce458f3bd4065d6484a
+      internalID: -2516882667910612500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2f51f3346280146956750904bef5b9
+      internalID: -1036481825455850714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_50
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b25f92a4d6084694a308f57aa21b0
+      internalID: 7010290629917583977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_51
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c6759ee7d8a3c41a2afe73e30704f1
+      internalID: 1199440757457093693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_52
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ec19fe633bc3347b03c23e367bd2fc
+      internalID: -4562514127428095951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_53
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fe3e77a4b91c440822a1d3dceb2e6b
+      internalID: 2548801045718246812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_54
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4ae1781bf5aad45a96447e66b8af48
+      internalID: -6790552931548237987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_55
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1968
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48492b424f7579240b3a04ce38b134b5
+      internalID: 3257172571937468049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149d4bd179c107c46864cbfac51668ab
+      internalID: -2518506944688205484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_57
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933a83d7575aa1e4db26ade1e62bf261
+      internalID: -2296305553867470317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_58
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abd350e46ac5524e90de1080461499f
+      internalID: 2811995693970761651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_59
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e994591373430e49b9f2390853f3546
+      internalID: -5362046612960252700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_60
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923459ac2d975d449a38c5eb985db3f9
+      internalID: 2340157289497842662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_61
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ea9675a0c8294f995e7b92616e75f
+      internalID: 8149249467946442012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_62
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1702
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13608d8a902d484096f089f85799683
+      internalID: -716470769826832187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Welle2_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 530
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750a93b58f80f444fa1478682090fb84
+      internalID: -6773976910784641001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 735454f88bc1fb1488492e630f667539
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
