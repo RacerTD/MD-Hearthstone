@@ -43,7 +43,7 @@ public class NameTooltip : MonoBehaviour
             objects[i].transform.position = objects[i].transform.position + new Vector3(-20f, 0, 0);
             objects[i].transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
             objects[i].SetActive(true);
-            objects[i].transform.DOLocalMove(new Vector3(685, 350, 0), 0.7f).SetEase(Ease.OutQuart);
+            objects[i].transform.DOLocalMove(new Vector3(15, -26, 0), 0.7f).SetEase(Ease.OutQuart);
         }
         /*box.transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
         box.transform.position = box.transform.position + new Vector3(0, -20f, 0);
