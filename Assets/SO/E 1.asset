@@ -16,8 +16,8 @@ MonoBehaviour:
   cardType: 0
   cardImageSmall: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
   cardImageLarge: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
-  maxHealth: 4
-  attack: 2
+  maxHealth: 2
+  attack: 1
   attackUsed: 0
   summoningSickness: 0
   taunt: 0

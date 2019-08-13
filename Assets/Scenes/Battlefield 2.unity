@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.162, y: 0.05177917}
   m_AnchorMax: {x: 0.24612501, y: 0.19644167}
-  m_AnchoredPosition: {x: -0.5, y: -9.347107}
+  m_AnchoredPosition: {x: -0.5, y: -9.347168}
   m_SizeDelta: {x: -4.4000244, y: -3.800003}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &129020265
@@ -366,14 +366,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f642863dcc7e739448778465e175f2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCards:
+  strongEnemyCards:
+  - {fileID: 11400000, guid: 129cdf06e854d534d8f4186a3f4ff692, type: 2}
+  weakEnemyCards:
   - {fileID: 11400000, guid: 4e791500832f77f40b474672c01d9a33, type: 2}
+  eggCard:
+  - {fileID: 11400000, guid: ef2b93a1b93c22b46b4c2b7728f0ec50, type: 2}
+  queen: {fileID: 0}
+  cardsToSpawn: []
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
-  taunt: 0
   timeBetweenActions: 0
+  enemyWaveCount: 0
+  taunt: 0
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,7 +1785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8467407}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8466797}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
