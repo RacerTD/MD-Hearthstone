@@ -26,15 +26,15 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     //durch den dragOffset kann die Karte überall "angefasst" und bewegt werden
     public Vector3 dragOffset;
 
-    public GameObject gameManager;
-    public GameObject manPower;
-    public GameObject mana;
+    public GameManager gameManager;
+    public ManPowerScript manPower;
+    public ManaScript mana;
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager");
-        manPower = GameObject.Find("ManPower");
-        mana = GameObject.Find("Mana");
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        manPower = GameObject.Find("ManPower").GetComponent<ManPowerScript>();
+        mana = GameObject.Find("Mana").GetComponent<ManaScript>();
     }
 
 
@@ -52,8 +52,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 //Debug.Log("2");
                 parentToReturnTo = this.transform.parent;                       // Wenn die angewählte Karte aus der Hand geschoben wird,
                 this.transform.SetParent(this.transform.parent.parent);         // Ordnen sich die übrigen neu an.
-                gameManager.GetComponent<GameManager>().cardInHand = gameObject.GetComponent<OneCardManager>().cardAsset.cardType;
-                gameManager.GetComponent<GameManager>().currentlyDragging = gameObject;
+                gameManager.cardInHand = gameObject.GetComponent<OneCardManager>().cardAsset.cardType;
+                gameManager.currentlyDragging = gameObject.GetComponent<OneCardManager>();
 
                 // Die Raycasts werden zum Zeiger durch die Karte (CanvasGroup) nicht mehr geblockt. 
                 GetComponent<CanvasGroup>().blocksRaycasts = false;
@@ -89,8 +89,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         if (CheckForGamestate())
         {
             Dragable = true;
-            gameManager.GetComponent<GameManager>().cardInHand = CardType.Nothing;
-            gameManager.GetComponent<GameManager>().currentlyDragging = null;
+            gameManager.cardInHand = CardType.Nothing;
+            gameManager.currentlyDragging = null;
 
             if (setsDraggableFalse)
             {
@@ -110,10 +110,10 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     private bool CheckForGamestate()
     {
-        if ((gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerIdle) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerCardInHand) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAttack) ||
-            (gameManager.GetComponent<GameManager>().gameState == GameManager.GameState.PlayerAbility))
+        if ((gameManager.gameState == GameManager.GameState.PlayerIdle) ||
+            (gameManager.gameState == GameManager.GameState.PlayerCardInHand) ||
+            (gameManager.gameState == GameManager.GameState.PlayerAttack) ||
+            (gameManager.gameState == GameManager.GameState.PlayerAbility))
         {
             return true;
         }

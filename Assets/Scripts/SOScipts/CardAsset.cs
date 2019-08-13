@@ -53,7 +53,7 @@ public class CardAsset : ScriptableObject
 [System.Serializable]
 public class Ability
 {
-    public bool enabled;
+    public bool enabled = false;
     public int effect;
     public bool used = false;
     public int cost;

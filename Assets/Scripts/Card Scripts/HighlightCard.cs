@@ -13,8 +13,8 @@ public class HighlightCard : MonoBehaviour
     public List<Image> attackAbility = new List<Image>();
     public List<Image> bigImages = new List<Image>();
 
-    public GameObject gameManager;
-    public GameObject enemyField;
+    public GameManager gameManager;
+    public EnemyFieldScript enemyField;
     private bool summoningSickness;
     private CardType currendCardInHand = CardType.Nothing;
     private Highlight currenHighlight = Highlight.Nothing;
@@ -40,8 +40,8 @@ public class HighlightCard : MonoBehaviour
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager");
-        enemyField = GameObject.Find("EnemyField");
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        enemyField = GameObject.Find("EnemyField").GetComponent<EnemyFieldScript>();
     }
 
 
@@ -49,9 +49,9 @@ public class HighlightCard : MonoBehaviour
     {
         Hover();
 
-        if (currendCardInHand != gameManager.GetComponent<GameManager>().cardInHand)
+        if (currendCardInHand != gameManager.cardInHand)
         {
-            currendCardInHand = gameManager.GetComponent<GameManager>().cardInHand;
+            currendCardInHand = gameManager.cardInHand;
 
             if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount <= 4 && gameObject.GetComponent < OneCardManager>().cardAsset.cardType == CardType.Human)
             {
@@ -65,9 +65,9 @@ public class HighlightCard : MonoBehaviour
             }
         }
 
-        if (currenHighlight != gameManager.GetComponent<GameManager>().highlight)
+        if (currenHighlight != gameManager.highlight)
         {
-            currenHighlight = gameManager.GetComponent<GameManager>().highlight;
+            currenHighlight = gameManager.highlight;
 
             if (currenHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
             {
@@ -76,11 +76,11 @@ public class HighlightCard : MonoBehaviour
             }
             else if (currenHighlight == Highlight.Attack && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
             {
-                if (enemyField.GetComponent<EnemyFieldScript>().taunt && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+                if (enemyField.taunt && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
                 {
                     ChangeColor(attackColor, waves);
                 }
-                else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
+                else if (!enemyField.taunt)
                 {
                     ChangeColor(attackColor, waves);
                 }
@@ -167,24 +167,14 @@ public class HighlightCard : MonoBehaviour
         {
             if (hit.collider.name == "HPIcon" && gameObject.GetComponent<OneCardManager>().onBoard)
             {
-                //hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = true;
-                //hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = false;
+                hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = true;
+                hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = false;
             }
             else
             {
-                //hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = false;
-                //hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = true;
+                hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = false;
+                hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = true;
             }
-
-            if (hit.collider.name == "HandCard")
-            {
-                //hit.collider.GetComponentInParent<HighlightCard>().HandHover(true);
-            }
-            else
-            {
-                //hit.collider.GetComponentInParent<HighlightCard>().HandHover(false);
-            }
-            
         }
     }
     public void HandHover(bool ja)

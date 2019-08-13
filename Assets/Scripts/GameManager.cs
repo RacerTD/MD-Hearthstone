@@ -5,18 +5,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject cardDeck;
-    public GameObject hand;
-    public GameObject enemyField;
-    public GameObject mana;
-    public GameObject playerField;
+    public HandScript hand;
+    public EnemyFieldScript enemyField;
+    public ManaScript mana;
+    public PlayerFieldScript playerField;
+
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
     public Highlight highlight = Highlight.Nothing;
-    public GameObject currentlyDragging = null;
+    public OneCardManager currentlyDragging = null;
 
-    private GameObject clicked01 = null;
-    private GameObject clicked02 = null;
-    private GameObject abilityUser = null;
+    private OneCardManager clicked01 = null;
+    private OneCardManager clicked02 = null;
+    private OneCardManager abilityUser = null;
 
     private int healAbilityCost;
     private int healAbilityEffect;
@@ -62,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown("x"))
         {
-            enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+            enemyField.SpawnNewEnemy();
         }
 
 
@@ -79,9 +80,9 @@ public class GameManager : MonoBehaviour
                 //Gesamter Enemy Turn
                 if (enemyField.GetComponent<Transform>().transform.childCount < 3)
                 {
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
-                    enemyField.GetComponent<EnemyFieldScript>().SpawnNewEnemy();
+                    enemyField.SpawnNewEnemy();
+                    enemyField.SpawnNewEnemy();
+                    enemyField.SpawnNewEnemy();
                     //Debug.Log("Spawned Card");
                 }
                 gameState = GameState.PlayerCardDraw;
@@ -146,60 +147,84 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CardClicked(GameObject clickedOn)
+    public void CardClicked(OneCardManager clickedOn)
     {
-        
-        if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+        if (gameState == GameState.PlayerIdle)
         {
-            clicked01 = clickedOn;
-            highlight = Highlight.Attack;
-            if (healAbilityCost != 0 && healAbilityEffect != 0) //Check for Heal Ability
+            if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
             {
-                Heal();
-            }
-        }
-        else if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
-        {
-            clicked01 = clickedOn;
-            if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
-            {
-                if (clicked01.GetComponent<OneCardManager>().cardAsset.taunt && enemyField.GetComponent<EnemyFieldScript>().taunt)
+                clicked01 = clickedOn;
+                highlight = Highlight.Attack;
+                if (healAbilityCost != 0 && healAbilityEffect != 0) //Check for Heal Abilityclicked01.GetComponent<OneCardManager>().
                 {
-                    Damage();
-                } 
-                else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
-                {
-                    Damage();
+                    Heal();
                 }
+            }
+            else if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            {
+                clicked01 = clickedOn;
+                if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
+                {
+                    if (clicked01.cardAsset.taunt && enemyField.taunt)
+                    {
+                        Damage();
+                    }
+                    else if (!enemyField.taunt)
+                    {
+                        Damage();
+                    }
+                }
+                else
+                {
+                    clicked01 = null;
+                }
+            }
+            else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            {
+                clicked02 = clickedOn;
             }
             else
             {
-                clicked01 = null;
-            }
-        }
-        else if (clicked01 != null && clickedOn != clicked01 && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
-        {
-            clicked02 = clickedOn;
-        }
-        else
-        {
-            ResetAbilitys();
-        }
-
-        if (clicked01 != null && clicked02 != null) //Basic Attack
-        {
-            if (clicked02.GetComponent<OneCardManager>().cardAsset.taunt && enemyField.GetComponent<EnemyFieldScript>().taunt)
-            {
-                clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
-                clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
-                clicked01.GetComponent<OneCardManager>().cardAsset.attackUsed = true;
                 ResetAbilitys();
             }
-            else if (!enemyField.GetComponent<EnemyFieldScript>().taunt)
+
+            if (clicked01 != null && clicked02 != null) //Basic Attack
             {
-                clicked01.GetComponent<OneCardManager>().Health = clicked01.GetComponent<OneCardManager>().Health - clicked02.GetComponent<OneCardManager>().Attack;
-                clicked02.GetComponent<OneCardManager>().Health = clicked02.GetComponent<OneCardManager>().Health - clicked01.GetComponent<OneCardManager>().Attack;
-                clicked01.GetComponent<OneCardManager>().cardAsset.attackUsed = true;
+                if (clicked02.cardAsset.taunt && enemyField.taunt)
+                {
+                    clicked01.Health = clicked01.Health - clicked02.Attack;
+                    clicked02.Health = clicked02.Health - clicked01.Attack;
+                    clicked01.cardAsset.attackUsed = true;
+                    ResetAbilitys();
+                }
+                else if (!enemyField.taunt)
+                {
+                    clicked01.Health = clicked01.Health - clicked02.Attack;
+                    clicked02.Health = clicked02.Health - clicked01.Attack;
+                    clicked01.cardAsset.attackUsed = true;
+                    ResetAbilitys();
+                }
+            }
+        }
+        else if (gameState == GameState.Enemy)
+        {
+            if (clicked01 == null && clicked02 == null)
+            {
+                clicked01 = clickedOn;
+            }
+            else if (clicked01 != null && clicked02 == null && clicked01 != clickedOn)
+            {
+                clicked02 = clickedOn;
+            }
+            else
+            {
+                ResetAbilitys();
+            }
+
+            if (clicked01 != null && clicked02 != null)
+            {
+                clicked01.Health = clicked01.Health - clicked02.Attack;
+                clicked02.Health = clicked02.Health - clicked01.Attack;
                 ResetAbilitys();
             }
         }
@@ -207,8 +232,8 @@ public class GameManager : MonoBehaviour
 
     void TurnBegin()
     {
-        playerField.GetComponent<PlayerFieldScript>().TurnBegin();
-        mana.GetComponent<ManaScript>().TurnBegin();
+        playerField.TurnBegin();
+        mana.TurnBegin();
     }
 
 
@@ -227,12 +252,12 @@ public class GameManager : MonoBehaviour
     #region Abilitys
     private void Heal()
     {
-        if (mana.GetComponent<ManaScript>().manaCount >= healAbilityCost && clicked01.GetComponent<OneCardManager>().Healable())
+        if (mana.manaCount >= healAbilityCost && clicked01.Healable())
         {
-            clicked01.GetComponent<OneCardManager>().Heal(healAbilityEffect);
-            mana.GetComponent<ManaScript>().UsedMana(healAbilityCost);
+            clicked01.Heal(healAbilityEffect);
+            mana.UsedMana(healAbilityCost);
 
-            abilityUser.GetComponent<OneCardManager>().UsedHeal();
+            abilityUser.UsedHeal();
             ResetAbilitys();
         }
         else
@@ -243,12 +268,12 @@ public class GameManager : MonoBehaviour
 
     private void Damage()
     {
-        if (mana.GetComponent<ManaScript>().manaCount >= DMGAbilityCost)
+        if (mana.manaCount >= DMGAbilityCost)
         {
-            clicked01.GetComponent<OneCardManager>().Damage(DMGAbilityEffect);
-            mana.GetComponent<ManaScript>().UsedMana(DMGAbilityCost);
+            clicked01.Damage(DMGAbilityEffect);
+            mana.UsedMana(DMGAbilityCost);
 
-            abilityUser.GetComponent<OneCardManager>().UsedDamage();
+            abilityUser.UsedDamage();
             ResetAbilitys();
         }
         else
@@ -257,9 +282,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HealAbility(int heal, int cost, GameObject user, bool used)
+    public void HealAbility(int heal, int cost, OneCardManager user, bool used)
     {
-        if (healAbilityCost == 0 && healAbilityEffect == 0 && !used && cost <= mana.GetComponent<ManaScript>().manaCount)
+        if (healAbilityCost == 0 && healAbilityEffect == 0 && !used && cost <= mana.manaCount)
         {
             healAbilityCost = cost;
             healAbilityEffect = heal;
@@ -272,9 +297,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void DMGAbility(int DMG, int cost, GameObject user, bool used)
+    public void DMGAbility(int DMG, int cost, OneCardManager user, bool used)
     {
-        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0 && !used && cost <= mana.GetComponent<ManaScript>().manaCount)
+        if (DMGAbilityCost == 0 && DMGAbilityEffect == 0 && !used && cost <= mana.manaCount)
         {
             DMGAbilityCost = cost;
             DMGAbilityEffect = DMG;

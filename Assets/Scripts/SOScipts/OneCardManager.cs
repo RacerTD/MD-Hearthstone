@@ -7,12 +7,12 @@ using TMPro;
 
 public class OneCardManager : MonoBehaviour
 {
-    public GameObject enemyField;
-    public GameObject gameManager;
-    public GameObject cardDeck;
-    public GameObject manPower;
-    public GameObject mana;
-    public GameObject hand;
+    public EnemyFieldScript enemyField;
+    public GameManager gameManager;
+    public CardDeckScript cardDeck;
+    public ManPowerScript manPower;
+    public ManaScript mana;
+    public HandScript hand;
     public CardAsset cardAsset;
     public string prefabName;
     public bool onBoard = false;
@@ -73,19 +73,20 @@ public class OneCardManager : MonoBehaviour
 
     private void Awake()
     {
-        gameManager = GameObject.Find("GameManager");
-        enemyField = GameObject.Find("EnemyField");
-        cardDeck = GameObject.Find("CardDeck");
-        manPower = GameObject.Find("ManPower");
-        mana = GameObject.Find("Mana");
-        hand = GameObject.Find("Hand");
-        if (gameManager.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        enemyField = GameObject.Find("EnemyField").GetComponent<EnemyFieldScript>();
+        cardDeck = GameObject.Find("CardDeck").GetComponent<CardDeckScript>();
+        manPower = GameObject.Find("ManPower").GetComponent<ManPowerScript>();
+        mana = GameObject.Find("Mana").GetComponent<ManaScript>();
+        hand = GameObject.Find("Hand").GetComponent<HandScript>();
+
+        if (gameManager.gameState != GameManager.GameState.Enemy)
         {
-            cardAsset = cardDeck.GetComponent<CardDeckScript>().CardToSpawn();
+            cardAsset = cardDeck.CardToSpawn();
         }
         else
         {
-            cardAsset = enemyField.GetComponent<EnemyFieldScript>().cardToSpawn();
+            cardAsset = enemyField.cardToSpawn();
         }
         InitializeCard();
     }
@@ -96,7 +97,7 @@ public class OneCardManager : MonoBehaviour
 
     void InitializeCard(CardAsset newAsset = null)
     {
-        if (gameManager.GetComponent<GameManager>().gameState != GameManager.GameState.Enemy)
+        if (gameManager.gameState != GameManager.GameState.Enemy)
         {
             transform.SetParent(cardDeck.transform, false);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -165,14 +166,14 @@ public class OneCardManager : MonoBehaviour
     {
         if (onBoard)
         {
-            manPower.GetComponent<ManPowerScript>().UsedManPower(-cardAsset.cost);
+            manPower.UsedManPower(-cardAsset.cost);
         }
         Destroy(gameObject);
     }
 
     public void GiveGameManagerCard()
     {
-       gameManager.GetComponent<GameManager>().CardClicked(gameObject);
+       gameManager.CardClicked(this);
     }
 
     private void UpdateList(List<TextMeshProUGUI> bla, string value)
@@ -253,11 +254,11 @@ public class OneCardManager : MonoBehaviour
     {
         if (!onBoard)
         {
-            if (manPower.GetComponent<ManPowerScript>().manPower >= cardAsset.cost)
+            if (manPower.manPower >= cardAsset.cost)
             {
                 humanCardFront.SetActive(false);
                 boardCard.SetActive(true);
-                manPower.GetComponent<ManPowerScript>().UsedManPower(cardAsset.cost);
+                manPower.UsedManPower(cardAsset.cost);
                 onBoard = true;
                 ManPowerCost();
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
@@ -311,11 +312,11 @@ public class OneCardManager : MonoBehaviour
         {
             //Debug.Log("HealEnabled");
             //Debug.Log(cardAsset.lowHeal.used);
-            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this.gameObject, cardAsset.lowHeal.used);
+            gameManager.HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this, cardAsset.lowHeal.used);
         }
         else if (cardAsset.highHeal.enabled)
         {
-            gameManager.GetComponent<GameManager>().HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this.gameObject, cardAsset.highHeal.used);
+            gameManager.HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this, cardAsset.highHeal.used);
         }
     }
 
@@ -350,11 +351,11 @@ public class OneCardManager : MonoBehaviour
     {
         if (cardAsset.lowDMG.enabled)
         {
-            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this.gameObject, cardAsset.lowDMG.used);
+            gameManager.DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this, cardAsset.lowDMG.used);
         }
         else if (cardAsset.highDMG.enabled)
         {
-            gameManager.GetComponent<GameManager>().DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this.gameObject, cardAsset.highDMG.used);
+            gameManager.DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this, cardAsset.highDMG.used);
         }
     }
     public void UsedDamage()

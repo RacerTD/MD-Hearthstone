@@ -7,7 +7,7 @@ public class PlayerFieldScript : MonoBehaviour
 {
     int childCount = 0;
     Transform myChild;
-    public GameObject gameManager;
+    public GameManager gameManager;
     public GameObject manPower;
     private CardType currentHandCard;
 
@@ -29,11 +29,11 @@ public class PlayerFieldScript : MonoBehaviour
         }
         childCount = transform.childCount;
 
-        if (currentHandCard != gameManager.GetComponent<GameManager>().cardInHand)
+        if (currentHandCard != gameManager.cardInHand)
         {
-            currentHandCard = gameManager.GetComponent<GameManager>().cardInHand;
+            currentHandCard = gameManager.cardInHand;
 
-            if (currentHandCard == CardType.Human && gameManager.GetComponent<GameManager>().currentlyDragging.GetComponent<OneCardManager>().cardAsset.cost <= manPower.GetComponent<ManPowerScript>().manPower)
+            if (currentHandCard == CardType.Human && gameManager.currentlyDragging.cardAsset.cost <= manPower.GetComponent<ManPowerScript>().manPower)
             {
                 toHighlight.color = humanCardHighlight;
             }
@@ -43,7 +43,7 @@ public class PlayerFieldScript : MonoBehaviour
             }
         }
 
-        if (gameManager.GetComponent<GameManager>().highlight != Highlight.Nothing)
+        if (gameManager.highlight != Highlight.Nothing)
         {
             //gameObject.GetComponent<BoxCollider2D>().enabled = true;
         }
