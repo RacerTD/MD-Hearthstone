@@ -163,11 +163,11 @@ public class GameManager : MonoBehaviour
                 clicked01 = clickedOn;
                 if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
                 {
-                    if (clicked01.cardAsset.taunt && enemyField.taunt)
+                    if (clicked01.cardAsset.taunt && enemyField.HasTaunt())
                     {
                         Damage();
                     }
-                    else if (!enemyField.taunt)
+                    else if (!enemyField.HasTaunt())
                     {
                         Damage();
                     }
@@ -188,14 +188,14 @@ public class GameManager : MonoBehaviour
 
             if (clicked01 != null && clicked02 != null) //Basic Attack
             {
-                if (clicked02.cardAsset.taunt && enemyField.taunt)
+                if (clicked02.cardAsset.taunt && enemyField.HasTaunt())
                 {
                     clicked01.Health = clicked01.Health - clicked02.Attack;
                     clicked02.Health = clicked02.Health - clicked01.Attack;
                     clicked01.cardAsset.attackUsed = true;
                     ResetAbilitys();
                 }
-                else if (!enemyField.taunt)
+                else if (!enemyField.HasTaunt())
                 {
                     clicked01.Health = clicked01.Health - clicked02.Attack;
                     clicked02.Health = clicked02.Health - clicked01.Attack;
@@ -223,6 +223,7 @@ public class GameManager : MonoBehaviour
             {
                 clicked01.Health = clicked01.Health - clicked02.Attack;
                 clicked02.Health = clicked02.Health - clicked01.Attack;
+                clicked01.cardAsset.attackUsed = true;
                 ResetAbilitys();
             }
         }
@@ -314,6 +315,7 @@ public class GameManager : MonoBehaviour
     public void EndTurn()
     {
         gameState = GameState.Enemy;
+        enemyField.ResetEnemyState();
     }
 
     private void PlayerCardDraw()

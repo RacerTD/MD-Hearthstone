@@ -13,12 +13,14 @@ public class OneCardManager : MonoBehaviour
     public ManPowerScript manPower;
     public ManaScript mana;
     public HandScript hand;
+
     public CardAsset cardAsset;
     public string prefabName;
     public bool onBoard = false;
     public int equipmentCount = 0;
 
     [Header("CardComponents")]
+    public List<Image> boardCardImage = new List<Image>();
     public List<Image> cardGraphic = new List<Image>(); //
     public List<TextMeshProUGUI> costText = new List<TextMeshProUGUI>(); //
     public List<TextMeshProUGUI> nameText = new List<TextMeshProUGUI>(); //
@@ -150,6 +152,10 @@ public class OneCardManager : MonoBehaviour
         for (int i = 0; i < cardGraphic.Count; i++)
         {
             cardGraphic[i].sprite = cardAsset.cardImage;
+        }
+        for (int i = 0; i < boardCardImage.Count; i++)
+        {
+            boardCardImage[i].sprite = cardAsset.boardCardImage;
         }
 
         UpdateAbilitys();

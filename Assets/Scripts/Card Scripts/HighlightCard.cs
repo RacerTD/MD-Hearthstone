@@ -76,11 +76,11 @@ public class HighlightCard : MonoBehaviour
             }
             else if (currenHighlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
             {
-                if (enemyField.taunt && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+                if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
                 {
                     ChangeColor(attackColor, waves);
                 }
-                else if (!enemyField.taunt)
+                else if (!enemyField.HasTaunt())
                 {
                     ChangeColor(attackColor, waves);
                 }

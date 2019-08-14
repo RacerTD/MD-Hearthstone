@@ -30,6 +30,7 @@ public class CardAsset : ScriptableObject
     [Tooltip("Spell, Enemy, Human, Equipment")]
     public CardType cardType;
     public Sprite cardImage; //
+    public Sprite boardCardImage; //
 
     [Header("Equipment & Humand & Enemys")]
     public int maxHealth; //

@@ -42,16 +42,6 @@ public class PlayerFieldScript : MonoBehaviour
                 toHighlight.color = defaultColor;
             }
         }
-
-        if (gameManager.highlight != Highlight.Nothing)
-        {
-            //gameObject.GetComponent<BoxCollider2D>().enabled = true;
-        }
-        else
-        {
-            //gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        }
-        
     }
 
     void UpdateCardParts()
@@ -70,5 +60,17 @@ public class PlayerFieldScript : MonoBehaviour
             myChild = transform.GetChild(i);
             myChild.GetComponent<OneCardManager>().TurnBegin();
         }
+    }
+
+    public bool HasTaunt()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.taunt)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
