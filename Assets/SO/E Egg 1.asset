@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
-  m_Name: E
+  m_Name: E Egg 1
   m_EditorClassIdentifier: 
   prefabName: HumanCard
-  cardType: 0
+  cardType: 4
   cardImageSmall: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
   cardImageLarge: {fileID: 21300000, guid: 44560814694a17b49b88a29f2a4fa0f7, type: 3}
-  maxHealth: 3
-  attack: 2
+  maxHealth: 1
+  attack: 0
   attackUsed: 0
   summoningSickness: 0
   taunt: 0

@@ -19,13 +19,14 @@ public class OneCardManager : MonoBehaviour
     public int equipmentCount = 0;
 
     [Header("CardComponents")]
-    public Image cardGraphic;
-    public List<TextMeshProUGUI> costText = new List<TextMeshProUGUI>();
-    public List<TextMeshProUGUI> nameText = new List<TextMeshProUGUI>();
-    public List<TextMeshProUGUI> descriptionText = new List<TextMeshProUGUI>();
-    public List<TextMeshProUGUI> attackText = new List<TextMeshProUGUI>();
-    public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>();
-    public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>();
+    public List<Image> cardGraphic = new List<Image>(); //
+    public List<TextMeshProUGUI> costText = new List<TextMeshProUGUI>(); //
+    public List<TextMeshProUGUI> nameText = new List<TextMeshProUGUI>(); //
+    public List<TextMeshProUGUI> descriptionText = new List<TextMeshProUGUI>(); //
+    public List<TextMeshProUGUI> attackText = new List<TextMeshProUGUI>(); //
+    public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>(); //
+    public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>(); //
+
     public List<BoxCollider2D> abilityCollider = new List<BoxCollider2D>();
 
     [Header("Kartenart Objekte")]
@@ -134,11 +135,6 @@ public class OneCardManager : MonoBehaviour
                 break;
         }
 
-        if (cardAsset.lowHeal.enabled)
-        {
-            Debug.Log("HealEnabled");
-        }
-
         Attack = newAsset.attack;
         maxHealth = newAsset.maxHealth;
         Health = maxHealth;
@@ -150,6 +146,11 @@ public class OneCardManager : MonoBehaviour
         UpdateList(attackText, Attack.ToString());
         UpdateList(lifeText, _health.ToString());
         UpdateList(maxLifeText, maxHealth.ToString());
+
+        for (int i = 0; i < cardGraphic.Count; i++)
+        {
+            cardGraphic[i].sprite = cardAsset.cardImage;
+        }
 
         UpdateAbilitys();
     }
@@ -257,7 +258,7 @@ public class OneCardManager : MonoBehaviour
 
     private void CheckIfDead()
     {
-        if (_health <= 0 && (cardAsset.cardType == CardType.Enemy || cardAsset.cardType == CardType.Human))
+        if (_health <= 0 && (cardAsset.cardType == CardType.Enemy || cardAsset.cardType == CardType.Human || cardAsset.cardType == CardType.Egg))
         {
             delete();
         }

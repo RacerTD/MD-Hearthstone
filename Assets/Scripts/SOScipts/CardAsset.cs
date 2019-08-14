@@ -29,20 +29,19 @@ public class CardAsset : ScriptableObject
     [Header("General Info")]
     [Tooltip("Spell, Enemy, Human, Equipment")]
     public CardType cardType;
-    public Sprite cardImageSmall;
-    public Sprite cardImageLarge;
+    public Sprite cardImage; //
 
     [Header("Equipment & Humand & Enemys")]
-    public int maxHealth;
-    public int attack;
+    public int maxHealth; //
+    public int attack; //
     public bool attackUsed;
     public bool summoningSickness;
     public bool taunt;
 
     [Header("Equipment & Humand & Spell")]
-    public int cost;
+    public int cost; //
     [TextArea(2, 3)]
-    public string description;
+    public string description; //
 
     [Header("Abilitys")]
     public Ability lowHeal;
