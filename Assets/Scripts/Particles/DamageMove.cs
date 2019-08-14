@@ -13,16 +13,19 @@ public class DamageMove : MonoBehaviour
     public Sprite[] sprites = new Sprite[12];
     public Image image;
 
+    Vector3 randomDirection; 
+
     // Start is called before the first frame update
     void Start()
     {
+        randomDirection = new Vector3(Random.Range(-5,5), Random.Range(-5, 5), 0);
         StartCoroutine(ShowRandomImage());
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + new Vector3(0, 1, 0);
+        transform.position = transform.position + randomDirection;
         StartCoroutine(Fade());
         StartCoroutine(Kill());
     }

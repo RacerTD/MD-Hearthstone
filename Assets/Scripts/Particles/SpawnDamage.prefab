@@ -46,5 +46,5 @@ MonoBehaviour:
   damageParticle: {fileID: 6660653872741993437, guid: 4a02f5563a39d6d49bdc6340fbfca5f1,
     type: 3}
   spawnRate: 0.001
-  nextSpawn: 0.2
+  nextSpawn: 0.01
   speed: 0

@@ -22,7 +22,7 @@ MonoBehaviour:
   summoningSickness: 0
   taunt: 0
   cost: 0
-  description: 
+  description: Heals for 1
   lowHeal:
     enabled: 1
     effect: 1
