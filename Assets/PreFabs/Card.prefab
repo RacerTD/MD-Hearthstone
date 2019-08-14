@@ -299,7 +299,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f12797771c15824db3c42a0bb597681, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d387ff050fdf03d4a87dc68bc112d88a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -718,7 +718,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 222.7, y: 130}
-  m_SizeDelta: {x: 256, y: 96}
+  m_SizeDelta: {x: 256, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1413526133193839328
 CanvasRenderer:
@@ -748,7 +748,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cc1c2deff37a2b14c85c79799b735b08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcf3c2ee31b2ebc4a8385de9ea08c764, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1904,7 +1904,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f12797771c15824db3c42a0bb597681, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d387ff050fdf03d4a87dc68bc112d88a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2311,7 +2311,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f12797771c15824db3c42a0bb597681, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d387ff050fdf03d4a87dc68bc112d88a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3336,7 +3336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f12797771c15824db3c42a0bb597681, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d387ff050fdf03d4a87dc68bc112d88a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5874,7 +5874,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Yo-yo
+  m_text: Boomerang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
@@ -7020,7 +7020,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -2645589579641182943, guid: efdf1dc99a2184344bddca0f5c744525,
+  m_Sprite: {fileID: -6274748845835430740, guid: efdf1dc99a2184344bddca0f5c744525,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7983,10 +7983,10 @@ MonoBehaviour:
   enemyField: {fileID: 0}
   maxLife: {fileID: 9010260354255808698}
   currentLife: {fileID: 1985845163506357961}
-  healColor: {r: 0.55802774, g: 0.8962264, b: 0.6631637, a: 1}
-  equipmentColor: {r: 1, g: 0.6687182, b: 0, a: 1}
+  healColor: {r: 0.3184436, g: 1, b: 0.2735849, a: 1}
+  equipmentColor: {r: 1, g: 0.84181607, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  attackColor: {r: 1, g: 0.6808, b: 0.5377358, a: 1}
+  attackColor: {r: 1, g: 0.5372549, b: 0.5554664, a: 1}
   abilityUsed: {r: 0.64199996, g: 0.64199996, b: 0.64199996, a: 1}
   summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
 --- !u!114 &7828345410005056317
@@ -8011,7 +8011,11 @@ MonoBehaviour:
   prefabName: Card
   onBoard: 0
   equipmentCount: 0
-  cardGraphic: {fileID: 0}
+  cardGraphic:
+  - {fileID: 6748079393637625128}
+  - {fileID: 2128503077460143997}
+  - {fileID: 5202951085365801590}
+  - {fileID: 559674425037709449}
   costText:
   - {fileID: 7468989295531121839}
   - {fileID: 8221567622445463828}
@@ -8524,7 +8528,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Boomerang
+  m_text: Yo-yo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
