@@ -305,21 +305,25 @@ public class OneCardManager : MonoBehaviour
 
     private void ManPowerCost()
     {
-        if (cardAsset.cost == 1)
+        if (cardAsset.cost == 0)
         {
             manaShow[0].SetActive(true);
         }
-        else if (cardAsset.cost == 2)
+        else if (cardAsset.cost == 1)
         {
             manaShow[1].SetActive(true);
         }
-        else if (cardAsset.cost == 3)
+        else if (cardAsset.cost == 2)
         {
             manaShow[2].SetActive(true);
         }
-        else if (cardAsset.cost == 4)
+        else if (cardAsset.cost == 3)
         {
             manaShow[3].SetActive(true);
+        }
+        else if (cardAsset.cost == 4)
+        {
+            manaShow[4].SetActive(true);
         }
     }
 

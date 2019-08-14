@@ -223,7 +223,6 @@ public class GameManager : MonoBehaviour
             {
                 clicked01.Health = clicked01.Health - clicked02.Attack;
                 clicked02.Health = clicked02.Health - clicked01.Attack;
-                clicked01.cardAsset.attackUsed = true;
                 ResetAbilitys();
             }
         }
@@ -232,6 +231,7 @@ public class GameManager : MonoBehaviour
     void TurnBegin()
     {
         playerField.TurnBegin();
+        enemyField.TurnStart();
         mana.TurnBegin();
     }
 
@@ -314,6 +314,7 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
+        TurnBegin();
         gameState = GameState.Enemy;
         enemyField.ResetEnemyState();
     }

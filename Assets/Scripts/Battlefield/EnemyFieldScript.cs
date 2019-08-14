@@ -14,6 +14,7 @@ public class EnemyFieldScript : MonoBehaviour
     public List<CardAsset> eggCard = new List<CardAsset>();
     public CardAsset queen;
     public List<CardAsset> cardsToSpawn = new List<CardAsset>();
+    private List<OneCardManager> attackList = new List<OneCardManager>();
 
     [Header("Wichtige Dinge vom Feld")]
     public GameObject cardPrefab;
@@ -73,13 +74,23 @@ public class EnemyFieldScript : MonoBehaviour
                     }
                     else
                     {
+                        GenerateAttackList();
                         enemyState = EnemyState.Wait;
                     }
 
                     break;
 
                 case EnemyState.Attack:
-                    InitiateAttack();
+                    //InitiateAttack();
+                    if (attackList.Count != 0)
+                    {
+                        NewAttack();
+                    }
+                    else
+                    {
+                        enemyState = EnemyState.End;
+                    }
+                    
                     break;
 
                 case EnemyState.Wait:
@@ -90,8 +101,20 @@ public class EnemyFieldScript : MonoBehaviour
                     break;
 
                 case EnemyState.End:
+                    TurnStart();
                     gameManager.gameState = GameState.PlayerCardDraw;
                     break;
+            }
+        }
+    }
+
+    private void GenerateAttackList()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            {
+                attackList.Add(transform.GetChild(i).GetComponent<OneCardManager>());
             }
         }
     }
@@ -109,7 +132,7 @@ public class EnemyFieldScript : MonoBehaviour
         
     }
 
-    private void TurnStart()
+    public void TurnStart()
     {
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -180,13 +203,6 @@ public class EnemyFieldScript : MonoBehaviour
 
         return cardToSpawn;
     }
-    /// <summary>
-    /// Spawns the needed Enemys for the round.
-    /// </summary>
-    private void SpawnNewEnemy()
-    {
-        
-    }
 
     public bool HasTaunt()
     {
@@ -202,70 +218,40 @@ public class EnemyFieldScript : MonoBehaviour
         return false;
     }
 
-    private void InitiateAttack()
+    private void NewAttack()
     {
-        do
+        if (playerField.HasTaunt())
         {
-            if (CanDoSomething())
+            do
             {
-                Attack();
-            }
-            else
-            {
-                attacked = true;
-                gameManager.gameState = GameState.PlayerCardDraw;
-            }
-        } while (!attacked);
-
-        attacked = false;
-        timer = 0f;
-    }
-
-    private void Attack()
-    {
-        if (transform.GetChild(attackNumber).GetComponent<OneCardManager>().cardAsset.cardType != CardType.Egg)
-        {
-            if (playerField.HasTaunt())
-            {
-                do
+                int merker = Random.Range(0, playerField.GetComponent<Transform>().childCount);
+                if (playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().cardAsset.taunt)
                 {
-                    int merker = Random.Range(0, playerField.GetComponent<Transform>().childCount);
-                    if (playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().cardAsset.taunt)
-                    {
-                        transform.GetChild(attackNumber).GetComponent<OneCardManager>().GiveGameManagerCard();
-                        playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().GiveGameManagerCard();
-                        attacked = true;
-                        enemyState = EnemyState.Wait;
-                        Debug.Log("Attacked");
-                    }
-                } while (!attacked);
-            }
-            else
-            {
-                transform.GetChild(attackNumber).GetComponent<OneCardManager>().GiveGameManagerCard();
-                playerField.GetComponent<Transform>().GetChild(Random.Range(0, playerField.GetComponent<Transform>().childCount)).GetComponent<OneCardManager>().GiveGameManagerCard();
-                attacked = true;
-                enemyState = EnemyState.Wait;
-                Debug.Log("Attacked");
-            }
+                    attackList[0].GiveGameManagerCard();
+                    attackList.RemoveAt(0);
+                    playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().GiveGameManagerCard();
+                    attacked = true;
+                    timer = 0;
+                    enemyState = EnemyState.Wait;
+                    Debug.Log("Attacked");
+                }
+            } while (!attacked);
+        }
+        else
+        {
+            attackList[0].GiveGameManagerCard();
+            attackList.RemoveAt(0);
+            playerField.GetComponent<Transform>().GetChild(Random.Range(0, playerField.GetComponent<Transform>().childCount)).GetComponent<OneCardManager>().GiveGameManagerCard();
+            attacked = true;
+            timer = 0;
+            enemyState = EnemyState.Wait;
+            Debug.Log("Attacked");
         }
     }
 
+   
     public void ResetEnemyState()
     {
         enemyState = EnemyState.Start;
-    }
-
-    private bool CanDoSomething()
-    {
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy && !transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attackUsed)
-            {
-                attackNumber = i;
-                return true;
-            }
-        }
-        return false;
     }
 }
