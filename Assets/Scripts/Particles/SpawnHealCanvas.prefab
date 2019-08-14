@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2208058058934572407}
   - component: {fileID: 2208058058934572404}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SpawnHealCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

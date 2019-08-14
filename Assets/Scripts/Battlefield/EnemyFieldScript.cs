@@ -30,10 +30,8 @@ public class EnemyFieldScript : MonoBehaviour
     private Transform myChild;
     private int childCount;
     private float timer;
-    private int childNumber = 0;
     private bool attacked = false;
     private bool firstTurn = true;
-    private int attackNumber = 0;
     private int timeToWait = 2;
 
     private EnemyState enemyState = EnemyState.Start;
@@ -59,7 +57,6 @@ public class EnemyFieldScript : MonoBehaviour
 
         if (gameManager.gameState == GameState.Enemy)
         {
-            //Alles was der Gegner machet.
             switch (enemyState)
             {
                 case EnemyState.Start:
@@ -81,7 +78,6 @@ public class EnemyFieldScript : MonoBehaviour
                     break;
 
                 case EnemyState.Attack:
-                    //InitiateAttack();
                     if (attackList.Count != 0)
                     {
                         NewAttack();
@@ -139,9 +135,6 @@ public class EnemyFieldScript : MonoBehaviour
             myChild = transform.GetChild(i);
             myChild.GetComponent<OneCardManager>().TurnBegin();
         }
-
-        childNumber = 0;
-        attackNumber = 0;
         attacked = false;
     }
 
@@ -220,32 +213,40 @@ public class EnemyFieldScript : MonoBehaviour
 
     private void NewAttack()
     {
-        if (playerField.HasTaunt())
+        if (playerField.transform.childCount > 0)
         {
-            do
+            if (playerField.HasTaunt())
             {
-                int merker = Random.Range(0, playerField.GetComponent<Transform>().childCount);
-                if (playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().cardAsset.taunt)
+                do
                 {
-                    attackList[0].GiveGameManagerCard();
-                    attackList.RemoveAt(0);
-                    playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().GiveGameManagerCard();
-                    attacked = true;
-                    timer = 0;
-                    enemyState = EnemyState.Wait;
-                    Debug.Log("Attacked");
-                }
-            } while (!attacked);
+                    int merker = Random.Range(0, playerField.GetComponent<Transform>().childCount);
+                    if (playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().cardAsset.taunt)
+                    {
+                        attackList[0].GiveGameManagerCard();
+                        attackList.RemoveAt(0);
+                        playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().GiveGameManagerCard();
+                        attacked = true;
+                        timer = 0;
+                        enemyState = EnemyState.Wait;
+                        Debug.Log("Attacked");
+                    }
+                } while (!attacked);
+            }
+            else
+            {
+                attackList[0].GiveGameManagerCard();
+                attackList.RemoveAt(0);
+                playerField.GetComponent<Transform>().GetChild(Random.Range(0, playerField.GetComponent<Transform>().childCount)).GetComponent<OneCardManager>().GiveGameManagerCard();
+                attacked = true;
+                timer = 0;
+                enemyState = EnemyState.Wait;
+                Debug.Log("Attacked");
+            }
         }
         else
         {
-            attackList[0].GiveGameManagerCard();
-            attackList.RemoveAt(0);
-            playerField.GetComponent<Transform>().GetChild(Random.Range(0, playerField.GetComponent<Transform>().childCount)).GetComponent<OneCardManager>().GiveGameManagerCard();
-            attacked = true;
-            timer = 0;
-            enemyState = EnemyState.Wait;
-            Debug.Log("Attacked");
+            //Deathscreen
+            enemyState = EnemyState.End;
         }
     }
 

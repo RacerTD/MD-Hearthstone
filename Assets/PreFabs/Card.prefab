@@ -8188,6 +8188,8 @@ MonoBehaviour:
   prefabName: Card
   onBoard: 0
   equipmentCount: 0
+  healParticles: {fileID: 2208058058934572405, guid: 99578a7f9ecefb44e8e120787c24c722,
+    type: 3}
   boardCardImage:
   - {fileID: 2128503077460143997}
   cardGraphic:

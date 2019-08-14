@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private OneCardManager clicked01 = null;
     private OneCardManager clicked02 = null;
     private OneCardManager abilityUser = null;
+    public List<Vector3> particlePosition = new List<Vector3>();
 
     private int healAbilityCost;
     private int healAbilityEffect;
@@ -256,6 +257,7 @@ public class GameManager : MonoBehaviour
             clicked01.Heal(healAbilityEffect);
             mana.UsedMana(healAbilityCost);
 
+            particlePosition.Add(clicked01.transform.position);
             abilityUser.UsedHeal();
             ResetAbilitys();
         }
@@ -271,6 +273,7 @@ public class GameManager : MonoBehaviour
         {
             clicked01.Damage(DMGAbilityEffect);
             mana.UsedMana(DMGAbilityCost);
+            particlePosition.Add(clicked01.transform.position);
 
             abilityUser.UsedDamage();
             ResetAbilitys();

@@ -19,6 +19,9 @@ public class OneCardManager : MonoBehaviour
     public bool onBoard = false;
     public int equipmentCount = 0;
 
+    [Header("Particle Systems")]
+    public GameObject healParticles;
+
     [Header("CardComponents")]
     public List<Image> boardCardImage = new List<Image>();
     public List<Image> cardGraphic = new List<Image>(); //
@@ -357,6 +360,7 @@ public class OneCardManager : MonoBehaviour
         {
             Health = maxHealth;
         }
+        Instantiate(healParticles, gameObject.transform.localPosition, Quaternion.identity);
     }
 
     public bool HealAbilityAvailible()

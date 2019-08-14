@@ -10,12 +10,19 @@ public class Heal : MonoBehaviour
     public float nextSpawn = 1.1f;
     public float speed;
     bool enable = true;
+    private GameManager gameManager;
+    private Vector3 spawnPosition;
 
-
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnPosition = gameManager.particlePosition[0];
+        gameManager.particlePosition.RemoveAt(0);
     }
 
     // Update is called once per frame
@@ -25,7 +32,7 @@ public class Heal : MonoBehaviour
         if (Time.time > nextSpawn && enable)
         {
             nextSpawn = Time.time + (spawnRate + 0.2f);
-            Vector2 newPos = transform.position + new Vector3(UnityEngine.Random.Range(-50, 50), 0, 0);
+            Vector2 newPos = spawnPosition + new Vector3(UnityEngine.Random.Range(-50, 50), 0, 0);
             GameObject myObject = Instantiate(healParticle, newPos, Quaternion.identity);
             myObject.transform.SetParent(transform);
         }
