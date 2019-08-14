@@ -1,0 +1,1877 @@
+fileFormatVersion: 2
+guid: 4caa580d64adae14b99ba7967b498606
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5083788129174161653
+    second: Welleeeeeeeeeee_0
+  - first:
+      213: 7062228918481044687
+    second: Welleeeeeeeeeee_1
+  - first:
+      213: 665044157400490937
+    second: Welleeeeeeeeeee_2
+  - first:
+      213: -7902307673846063730
+    second: Welleeeeeeeeeee_3
+  - first:
+      213: -8227514289710131000
+    second: Welleeeeeeeeeee_4
+  - first:
+      213: -3148972704550120242
+    second: Welleeeeeeeeeee_5
+  - first:
+      213: 4849761754692214944
+    second: Welleeeeeeeeeee_6
+  - first:
+      213: 3114144785505605437
+    second: Welleeeeeeeeeee_7
+  - first:
+      213: -1768693339273586029
+    second: Welleeeeeeeeeee_8
+  - first:
+      213: 1821223452640091358
+    second: Welleeeeeeeeeee_9
+  - first:
+      213: -4395239386473920893
+    second: Welleeeeeeeeeee_10
+  - first:
+      213: -1338343407636735695
+    second: Welleeeeeeeeeee_11
+  - first:
+      213: -5765118470573006249
+    second: Welleeeeeeeeeee_12
+  - first:
+      213: 9046097497102127794
+    second: Welleeeeeeeeeee_13
+  - first:
+      213: -786813640660808352
+    second: Welleeeeeeeeeee_14
+  - first:
+      213: 2559910338267165347
+    second: Welleeeeeeeeeee_15
+  - first:
+      213: 2632332122159738732
+    second: Welleeeeeeeeeee_16
+  - first:
+      213: -5958255843141034422
+    second: Welleeeeeeeeeee_17
+  - first:
+      213: -7608498275952066652
+    second: Welleeeeeeeeeee_18
+  - first:
+      213: 1054980747886997266
+    second: Welleeeeeeeeeee_19
+  - first:
+      213: -5524534660949160097
+    second: Welleeeeeeeeeee_20
+  - first:
+      213: 7206641319464960760
+    second: Welleeeeeeeeeee_21
+  - first:
+      213: -4706640192478231330
+    second: Welleeeeeeeeeee_22
+  - first:
+      213: -2481329913516123877
+    second: Welleeeeeeeeeee_23
+  - first:
+      213: -9102384736515716462
+    second: Welleeeeeeeeeee_24
+  - first:
+      213: -1450237565474485883
+    second: Welleeeeeeeeeee_25
+  - first:
+      213: 6314552507699743261
+    second: Welleeeeeeeeeee_26
+  - first:
+      213: -8575653599394194261
+    second: Welleeeeeeeeeee_27
+  - first:
+      213: -7842751729669631190
+    second: Welleeeeeeeeeee_28
+  - first:
+      213: 4861704971514849324
+    second: Welleeeeeeeeeee_29
+  - first:
+      213: -6985893023481648437
+    second: Welleeeeeeeeeee_30
+  - first:
+      213: -1282336682755969572
+    second: Welleeeeeeeeeee_31
+  - first:
+      213: 4562458647861469882
+    second: Welleeeeeeeeeee_32
+  - first:
+      213: -4464766370305068896
+    second: Welleeeeeeeeeee_33
+  - first:
+      213: -6994611378848178114
+    second: Welleeeeeeeeeee_34
+  - first:
+      213: 5738532733220263436
+    second: Welleeeeeeeeeee_35
+  - first:
+      213: -8870905835585100602
+    second: Welleeeeeeeeeee_36
+  - first:
+      213: -4153683773517398132
+    second: Welleeeeeeeeeee_37
+  - first:
+      213: -8854133746420935831
+    second: Welleeeeeeeeeee_38
+  - first:
+      213: -4324577033166462894
+    second: Welleeeeeeeeeee_39
+  - first:
+      213: -8279662642277197263
+    second: Welleeeeeeeeeee_40
+  - first:
+      213: 3011331195671378607
+    second: Welleeeeeeeeeee_41
+  - first:
+      213: -1157272893458783414
+    second: Welleeeeeeeeeee_42
+  - first:
+      213: -8430634469731795570
+    second: Welleeeeeeeeeee_43
+  - first:
+      213: -8542621288932709833
+    second: Welleeeeeeeeeee_44
+  - first:
+      213: -5356415918988049453
+    second: Welleeeeeeeeeee_45
+  - first:
+      213: 1388088006581032084
+    second: Welleeeeeeeeeee_46
+  - first:
+      213: 8434304854298656823
+    second: Welleeeeeeeeeee_47
+  - first:
+      213: 3231886766608148674
+    second: Welleeeeeeeeeee_48
+  - first:
+      213: 8909526291333249506
+    second: Welleeeeeeeeeee_49
+  - first:
+      213: 5691599692075610420
+    second: Welleeeeeeeeeee_50
+  - first:
+      213: -1913614417870308506
+    second: Welleeeeeeeeeee_51
+  - first:
+      213: 6800927784145477647
+    second: Welleeeeeeeeeee_52
+  - first:
+      213: 4209367402054875312
+    second: Welleeeeeeeeeee_53
+  - first:
+      213: 2245501344828119413
+    second: Welleeeeeeeeeee_54
+  - first:
+      213: 5132717276497798934
+    second: Welleeeeeeeeeee_55
+  - first:
+      213: 3556162713383313614
+    second: Welleeeeeeeeeee_56
+  - first:
+      213: -2075012492384129058
+    second: Welleeeeeeeeeee_57
+  - first:
+      213: -6499113515634938592
+    second: Welleeeeeeeeeee_58
+  - first:
+      213: -2837318268079170907
+    second: Welleeeeeeeeeee_59
+  - first:
+      213: -4975737396066751612
+    second: Welleeeeeeeeeee_60
+  - first:
+      213: -1391063484092814597
+    second: Welleeeeeeeeeee_61
+  - first:
+      213: -2502323466276061932
+    second: Welleeeeeeeeeee_62
+  - first:
+      213: -5333975070315828211
+    second: Welleeeeeeeeeee_63
+  - first:
+      213: -1618368177384179079
+    second: Welleeeeeeeeeee_64
+  - first:
+      213: -5747045898843400116
+    second: Welleeeeeeeeeee_65
+  - first:
+      213: -4400515262932934709
+    second: Welleeeeeeeeeee_66
+  - first:
+      213: 2212134165989976994
+    second: Welleeeeeeeeeee_67
+  - first:
+      213: 1316289903861964746
+    second: Welleeeeeeeeeee_68
+  - first:
+      213: -3373434055416527467
+    second: Welleeeeeeeeeee_69
+  - first:
+      213: 4544713901450917570
+    second: Welleeeeeeeeeee_70
+  - first:
+      213: -4561354778930124078
+    second: Welleeeeeeeeeee_71
+  - first:
+      213: 5768833409663095049
+    second: Welleeeeeeeeeee_72
+  - first:
+      213: 1696947724814828281
+    second: Welleeeeeeeeeee_73
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16e4856172d34845b16b84331010fa2
+      internalID: -5083788129174161653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_1
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b008982745fc0ec418f36d58b96c1958
+      internalID: 7062228918481044687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_2
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be542afb0f4c24dbb08edc20d044d3
+      internalID: 665044157400490937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe2c1131d92be64d8af03be66ea3101
+      internalID: -7902307673846063730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_4
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd58b3a7ce8edc49af68449128b5c0c
+      internalID: -8227514289710131000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_5
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c1ad29fc490b74490c5d4d5b4017e3
+      internalID: -3148972704550120242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_6
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9786327f659f4a4f98fa8df97a41dac
+      internalID: 4849761754692214944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_7
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1083e36c9d66a94c921ba4542752cd1
+      internalID: 3114144785505605437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_8
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bff71455b7f9d442a575ae7b5469160
+      internalID: -1768693339273586029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_9
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59613ddd007102d4ca56481ce0670d71
+      internalID: 1821223452640091358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_10
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 3619
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2130b8a8cdbc62c408ad031985f598ad
+      internalID: -4395239386473920893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6740fb8ca0f7643aeac5edc31c5fa9
+      internalID: -1338343407636735695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_12
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b873ef737bbde045ab3853725527282
+      internalID: -5765118470573006249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_13
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a706a37dc61ce974daae12f8a87d3bda
+      internalID: 9046097497102127794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_14
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea5f0f01c73cee418e7917fe536835e
+      internalID: -786813640660808352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_15
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33f4402b1ee5674eb293b9dac662278
+      internalID: 2559910338267165347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_16
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109062ebc3805dc40a82a3fc0c02bcef
+      internalID: 2632332122159738732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_17
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b1db933863ed14ab3a93384c65f2ef
+      internalID: -5958255843141034422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_18
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3f24beb0688d41b9e072024bed8b5
+      internalID: -7608498275952066652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_19
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809e0c328c09463458d72e160f511972
+      internalID: 1054980747886997266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_20
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fd7df99ec6bfe4ba88c816a1faf923
+      internalID: -5524534660949160097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_21
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 3142
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9155d4afb724d504db8eb841b69a416d
+      internalID: 7206641319464960760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cd6b583715a174b9dff8ade2ae20eb
+      internalID: -4706640192478231330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_23
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2ecd682219f1a4aad9efc73a351aef
+      internalID: -2481329913516123877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_24
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff3eca46f1696f4bb3b190fa5278fec
+      internalID: -9102384736515716462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_25
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794048eee2e38a14c8562a78fd4f818a
+      internalID: -1450237565474485883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_26
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fee440ffffa0345b8ea867d4590114
+      internalID: 6314552507699743261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_27
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629f5e29feddb13439317787de436a77
+      internalID: -8575653599394194261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_28
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f06cebb00f9d2543a25b06938e6c3cb
+      internalID: -7842751729669631190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_29
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33598b0cf6164874da539e6012fe76ad
+      internalID: 4861704971514849324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_30
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dc2e8d145881b4387666df69cc879a
+      internalID: -6985893023481648437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_31
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d1b456fc8f4934d9a12688c85fb52a
+      internalID: -1282336682755969572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_32
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 2665
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b753f1e12b98f4c8ff858318feb7d1
+      internalID: 4562458647861469882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6fe7a1b4f2d584aa0ffeda37069a17
+      internalID: -4464766370305068896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_34
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d1b5c2137a12440a6f3245b9c569d9
+      internalID: -6994611378848178114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_35
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ce37932c2cf2f4595afaa0e9e3415d
+      internalID: 5738532733220263436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_36
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543413beedabe4f4c84eebbe6453b347
+      internalID: -8870905835585100602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_37
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b445ba1d7280ef41befe0a850e2d5af
+      internalID: -4153683773517398132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_38
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5aa2541ccb7b34cac7b76c797a5dbc
+      internalID: -8854133746420935831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_39
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c03e6cd13154b42b41e84cb14a7723
+      internalID: -4324577033166462894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_40
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42899eca90a76d4a8afeb01cba88b50
+      internalID: -8279662642277197263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_41
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac417c45f9043a4dbd54bde300d4a97
+      internalID: 3011331195671378607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_42
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b0f0a4346d6f34283866bcff3c17ed
+      internalID: -1157272893458783414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_43
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 2188
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a355fe047ee94a9b7ae3eafc4b4d5
+      internalID: -8430634469731795570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb5faf594160154a9929fe91f5f84f2
+      internalID: -8542621288932709833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_45
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479892221cd29a34e8ecc39aa6a5c874
+      internalID: -5356415918988049453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_46
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0cf527767c8454e90e7128b117a8c0
+      internalID: 1388088006581032084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_47
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c21413cd89dede49bbcabad9ab6906d
+      internalID: 8434304854298656823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_48
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa215815723e7bd4a8f4f8514c0983cd
+      internalID: 3231886766608148674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_49
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636afa6724989854db4a48840e5d2235
+      internalID: 8909526291333249506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_50
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7453f29cd6c590748bc0fc5ba322a469
+      internalID: 5691599692075610420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_51
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e63832798ecc2147a33ae5449869d87
+      internalID: -1913614417870308506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_52
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3e366eaf48f3e4d9a6299f7572b513
+      internalID: 6800927784145477647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_53
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7758c7c91ed93b7419844fa4de17d9a1
+      internalID: 4209367402054875312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_54
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 1711
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be81e84e8ed3f42aa48b3b94e7fa14
+      internalID: 2245501344828119413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4014e33e82538064da5066db192d6713
+      internalID: 5132717276497798934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_56
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ebb151853b0d44ca9f00a71fba5c1c
+      internalID: 3556162713383313614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_57
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1838f385bd9ec4d9151a76604f8020
+      internalID: -2075012492384129058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_58
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09afcf3070199a34c96184b08b312303
+      internalID: -6499113515634938592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_59
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23b08f7c6fc29a47a668173d60a796c
+      internalID: -2837318268079170907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_60
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080d2e673ec209f4499cf0303e83e522
+      internalID: -4975737396066751612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_61
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f32d09d32953a489a868724dd1f32d
+      internalID: -1391063484092814597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_62
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec957998e050629408b35c434a97c782
+      internalID: -2502323466276061932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_63
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe20b178d00799e429382e4d39fdd199
+      internalID: -5333975070315828211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_64
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bf1fd70923a494f9424c92e72aa785
+      internalID: -1618368177384179079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_65
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 1234
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cd632f6a60f684e8b7b0df0a34abe4
+      internalID: -5747045898843400116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19ee387964bf164f9b39abedbb79e5c
+      internalID: -4400515262932934709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_67
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2911b3cd16f9c488edf55decb95ccc
+      internalID: 2212134165989976994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_68
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265e0468b041d844591a76688d85fe80
+      internalID: 1316289903861964746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_69
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6abc8591ef2e1142807af386bb4acd4
+      internalID: -3373434055416527467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_70
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6715767238bd3848b758bc6a9b9f229
+      internalID: 4544713901450917570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_71
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c095b6a4076cc084e8052f39a74106bc
+      internalID: -4561354778930124078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_72
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c817986fadef4945afb1a57863a9fd4
+      internalID: 5768833409663095049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Welleeeeeeeeeee_73
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 757
+        width: 698
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381e29eb0c10db848bd2ac7c4039ddfe
+      internalID: 1696947724814828281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dae47ee6bb4f6ae4d8cd6eb6d44342c0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
