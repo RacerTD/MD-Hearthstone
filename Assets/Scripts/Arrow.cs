@@ -10,37 +10,69 @@ public class Arrow : MonoBehaviour
     private GameObject ArrowPrefab;
     [SerializeField]
     private GameObject ArrowPointPrefab;
-    private int count;
     private UILineRenderer UILineRenderer;
-   private Vector3 endPos;
-    
-    
+    List<GameObject> array = new List<GameObject>();
+    bool active = true;
+    GameObject newLineGen;
+    Vector3 secondPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
 
+    public void Start()
+    {
+        LineRenderer();
+    }
     private void Update()
     {
+        mouseButtonDown();
 
+    }
+    private void mouseButtonDown()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
+            
             newPos.z = 0;
             CreatePointMarker(newPos);
-            
+
         }
-
-        
-
-        if (Input.GetKeyDown("e"))
+        if(Input.GetMouseButton(0))
         {
-            GenerateNewLine();
+
         }
-        
-        
+        if (active)
+        {
+            if (array.Count == 1)
+            {
+                
+                newLineGen.GetComponent<UILineRenderer>();
+
+                newLineGen.transform.position = Input.mousePosition;
+            }
+
+            if (array.Count >= 2)
+            {
+                active = false;
+
+            }
+        }
+    }
+    public void LineRenderer()
+    {
+        newLineGen = Instantiate(ArrowPrefab);
+
+        UILineRenderer lRend = newLineGen.GetComponent<UILineRenderer>();
+
+        lRend.transform.SetParent(transform);
     }
 
-    private void CreatePointMarker(Vector3 pointPosition)
+    public void CreatePointMarker(Vector3 pointPosition)
     {
+        
         GameObject arrowinstance = Instantiate(ArrowPointPrefab, pointPosition, Quaternion.identity);
+        array.Add(arrowinstance);
+        
         arrowinstance.transform.SetParent(transform);
+        GenerateNewLine();
     }
 
     private void ClearAllPoints()
@@ -53,36 +85,44 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    private void GenerateNewLine()
+    public void GenerateNewLine()
     {
         GameObject[] allPoints = GameObject.FindGameObjectsWithTag("PointMarker");
         Vector2[] allPointPositions = new Vector2[allPoints.Length];
 
-        if (allPoints.Length >= 2)
+        
+        if (allPoints.Length == 2)
+        {
+
+            ClearAllPoints();
+
+        }
+        if (allPoints.Length >= 1)
         {
             for (int i = 0; i < allPoints.Length; i++)
             {
                 allPointPositions[i] = allPoints[i].transform.position;
+                SpawnLineGenerator(allPointPositions);
             }
-
-            SpawnLineGenerator(allPointPositions);
+            
         }
+        
     }
 
     private void SpawnLineGenerator(Vector2[] linePoints)
     {
-
-        GameObject newLineGen = Instantiate(ArrowPrefab);
+        newLineGen = Instantiate(ArrowPrefab);
 
         UILineRenderer lRend = newLineGen.GetComponent<UILineRenderer>();
+
         int length = lRend.GetComponent<UILineRenderer>().Points.Length;
         length = linePoints.Length;
         lRend.Points = linePoints;
-    
+        
         lRend.transform.SetParent(transform);
-    
-       
-        ClearAllPoints();
-        Destroy(newLineGen, 5);
+        
+
+        
+        Destroy(newLineGen, 2f);
     }
 }
