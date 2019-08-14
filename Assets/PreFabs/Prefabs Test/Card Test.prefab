@@ -1339,40 +1339,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyField: {fileID: 0}
-  gameManger: {fileID: 0}
+  gameManager: {fileID: 0}
   cardDeck: {fileID: 0}
+  manPower: {fileID: 0}
+  mana: {fileID: 0}
+  hand: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: Card
+  onBoard: 0
+  equipmentCount: 0
   cardGraphic: {fileID: 0}
   costText:
-  - {fileID: 9148656048647217521}
-  - {fileID: 3021288863453095179}
+  - {fileID: 0}
+  - {fileID: 0}
   nameText: []
   descriptionText:
   - {fileID: 0}
-  - {fileID: 8979891006280579402}
+  - {fileID: 0}
   attackText:
-  - {fileID: 4296131589253129049}
-  - {fileID: 8257974468313986153}
-  - {fileID: 8549998557452943434}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   lifeText:
-  - {fileID: 2257746452484942498}
-  - {fileID: 114268455796427534}
-  - {fileID: 7720339898498255693}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   maxLifeText: []
-  selector: {fileID: 0}
+  abilityCollider: []
   enemyCardFront: {fileID: 7737135837499770940}
   spellCardFront: {fileID: 7814761885994125248}
   equipmentCardFront: {fileID: 7814761885994125248}
   humanCardFront: {fileID: 1425804309755669620}
-  cardType: 
+  boardCard: {fileID: 0}
+  manaShow: []
+  lowHealGameObject: {fileID: 0}
+  highHealGameObject: {fileID: 0}
+  lowDMGGameObject: {fileID: 0}
+  highDMGGameObject: {fileID: 0}
+  taunt: {fileID: 0}
   _health: 0
+  _attack: 0
   maxHealth: 0
-  attack: 0
   cost: 0
-  equipmentCount: 0
-  hasAttacked: 0
-  summoningSickness: 1
 --- !u!114 &2939533858275004874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,10 +1394,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
-  draggable: 1
+  _draggable: 1
   setsDraggableFalse: 0
   dragOffset: {x: 0, y: 0, z: 0}
   gameManager: {fileID: 0}
+  manPower: {fileID: 0}
+  mana: {fileID: 0}
 --- !u!225 &6880766264752176644
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2272,42 +2282,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efd04d9a25737a49afa604bedfd12f9, type: 3}
---- !u!114 &2257746452484942498 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8317277114913092974, guid: 2efd04d9a25737a49afa604bedfd12f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7798483134078656460}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4296131589253129049 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6316065365963472021, guid: 2efd04d9a25737a49afa604bedfd12f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7798483134078656460}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &9148656048647217521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1355382431803948733, guid: 2efd04d9a25737a49afa604bedfd12f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7798483134078656460}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1425804309755669620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9219077759095485368, guid: 2efd04d9a25737a49afa604bedfd12f9,
