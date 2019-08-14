@@ -18,7 +18,7 @@ public class CardsSideBySide : MonoBehaviour
     public float scale;
     Transform myChild;
     int childCount;
-    float startingAngle;
+    public float startingAngle;
     float startingPosition;
     private void Start()
     {
@@ -41,7 +41,7 @@ public class CardsSideBySide : MonoBehaviour
     }
 
     
-    void UpdateCardPositions()
+   public void UpdateCardPositions()
     {
         startingAngle = -(rotationOffSet * (transform.childCount - 1) / 2);
         startingPosition = - ((transform.childCount - 1) * cardOffSetHorizontal) / 2;
