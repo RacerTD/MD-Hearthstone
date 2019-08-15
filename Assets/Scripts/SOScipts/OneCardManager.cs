@@ -137,6 +137,7 @@ public class OneCardManager : MonoBehaviour
         Debug.Log("Equipment got Equipped");
         maxHealth += equipment.maxHealth;
         Health += equipment.maxHealth;
+        equipmentCount++;
 
         if (equipment.highHeal.enabled)
         {

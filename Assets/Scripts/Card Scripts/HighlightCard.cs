@@ -53,7 +53,7 @@ public class HighlightCard : MonoBehaviour
         {
             currendCardInHand = gameManager.cardInHand;
 
-            if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount <= 4 && gameObject.GetComponent < OneCardManager>().cardAsset.cardType == CardType.Human)
+            if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount < 4 && gameObject.GetComponent < OneCardManager>().cardAsset.cardType == CardType.Human && CheckIfEquipmentIsPossible())
             {
                 //Färben auf equipmentColor
                 ChangeColor(equipmentColor, waves);
@@ -200,6 +200,39 @@ public class HighlightCard : MonoBehaviour
             newSizeSet = false;
         }
         
+
+    }
+
+    private bool CheckIfEquipmentIsPossible()
+    {
+        CardAsset equipment = gameObject.GetComponent<OneCardManager>().cardAsset;
+
+        if (!gameManager.currentlyDragging.cardAsset.lowHeal.enabled && !gameManager.currentlyDragging.cardAsset.highHeal.enabled && !gameManager.currentlyDragging.cardAsset.lowDMG.enabled && !gameManager.currentlyDragging.cardAsset.highDMG.enabled)
+        {
+            return true;
+        }
+
+        if (gameManager.currentlyDragging.cardAsset.lowHeal.enabled && !equipment.lowHeal.enabled)
+        {
+            return true;
+        }
+
+        if (gameManager.currentlyDragging.cardAsset.highHeal.enabled && !equipment.highHeal.enabled)
+        {
+            return true;
+        }
+
+        if (gameManager.currentlyDragging.cardAsset.lowDMG.enabled && !equipment.lowDMG.enabled)
+        {
+            return true;
+        }
+
+        if (gameManager.currentlyDragging.cardAsset.highDMG.enabled && !equipment.highDMG.enabled)
+        {
+            return true;
+        }
+
+        return false;
 
     }
 }
