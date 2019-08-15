@@ -6,7 +6,7 @@ using System.Linq;
 public class CardDeckScript : MonoBehaviour
 {
     public List<CardAsset> deckCards = new List<CardAsset>();
-    public GameObject hand;
+    public HandScript hand;
     public GameObject cardPrefab;
     //comment
     void Start()

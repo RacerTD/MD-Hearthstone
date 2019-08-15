@@ -33,10 +33,10 @@ public class CardsSideBySide : MonoBehaviour
     {
         if (childCount != transform.childCount)
         {
+            childCount = transform.childCount;
             UpdateCardPositions();
             //Debug.Log("Baum");
         }
-        childCount = transform.childCount;
         //UpdateCardPositions();
     }
 

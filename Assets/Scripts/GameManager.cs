@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject cardDeck;
     public HandScript hand;
+    public CardsSideBySide cardsSideBySide;
     public EnemyFieldScript enemyField;
     public ManaScript mana;
     public PlayerFieldScript playerField;
@@ -47,9 +48,17 @@ public class GameManager : MonoBehaviour
 
     public GameState gameState;
 
+    public static GameManager Main;
+
     void Awake()
     {
-
+        if(Main != null && Main != this)
+        {
+            Destroy(this);
+        } else if(Main == null)
+        {
+            Main = this;
+        }
     }
     private void Start()
     {

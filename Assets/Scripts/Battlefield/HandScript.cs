@@ -12,6 +12,6 @@ public class HandScript : MonoBehaviour
     public List<GameObject> handPositions = new List<GameObject>();
     void Start()
     {
-        
+        GameManager.Main.cardsSideBySide = GetComponent<CardsSideBySide>();
     }
 }

@@ -1232,8 +1232,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eb796c7d5f736a34a8e346943ac1d34d, type: 2}
   - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
-  hand: {fileID: 1771408303}
-  cardPrefab: {fileID: 8024431533381291182, guid: 349e46d64f4f8724ca439e5871727d2c,
+  hand: {fileID: 1771408305}
+  cardPrefab: {fileID: 8024431533381291182, guid: 853bb67edef706048acf0779c996c53c,
     type: 3}
 --- !u!1 &979661366
 GameObject:
@@ -1786,7 +1786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466492}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8466797}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -2023,6 +2023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardDeck: {fileID: 929220776}
   hand: {fileID: 1771408305}
+  cardsSideBySide: {fileID: 0}
   enemyField: {fileID: 188098478}
   mana: {fileID: 1520702376}
   playerField: {fileID: 501992565}
@@ -2401,7 +2402,7 @@ MonoBehaviour:
   randomHorizontal: 0
   randomAngle: 0
   verticalOffset_: -50
-  cardOffSetHorizontal: 100
+  cardOffSetHorizontal: 125
   cardOffSetDepth: 0
   rotationOffSet: -6
   scale: 0.75
