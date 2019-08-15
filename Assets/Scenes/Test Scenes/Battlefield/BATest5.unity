@@ -380,7 +380,6 @@ MonoBehaviour:
   playerField: {fileID: 501992565}
   timeBetweenActions: 0
   enemyWaveCount: 0
-  taunt: 0
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +403,7 @@ MonoBehaviour:
   cardOffSetDepth: 0
   rotationOffSet: 0
   scale: 1
+  startingAngle: 0
 --- !u!114 &188098480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,6 +825,7 @@ MonoBehaviour:
   cardOffSetDepth: 0
   rotationOffSet: 0
   scale: 1
+  startingAngle: 0
 --- !u!114 &501992565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,7 +1233,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
   hand: {fileID: 1771408303}
-  cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
+  cardPrefab: {fileID: 8024431533381291182, guid: 349e46d64f4f8724ca439e5871727d2c,
     type: 3}
 --- !u!1 &979661366
 GameObject:
@@ -1785,7 +1786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466797}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8466492}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -2029,6 +2030,7 @@ MonoBehaviour:
   cardInHand: 4
   highlight: 4
   currentlyDragging: {fileID: 0}
+  particlePosition: []
   gameState: 0
 --- !u!4 &1683640947
 Transform:
@@ -2403,3 +2405,4 @@ MonoBehaviour:
   cardOffSetDepth: 0
   rotationOffSet: -6
   scale: 0.75
+  startingAngle: 0

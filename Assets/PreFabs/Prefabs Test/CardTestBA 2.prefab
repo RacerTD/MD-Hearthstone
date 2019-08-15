@@ -3211,9 +3211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hovered: 0
-  handRotation: 0
-  MyPosition: {x: 0, y: 0, z: 0}
-  MyRotation: {x: 0, y: 0, z: 0}
+  CardsSideBySide: {fileID: 0}
+  targetSize: {x: 0, y: 0, z: 0}
 --- !u!1 &3791546565282006418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8028,6 +8027,7 @@ MonoBehaviour:
   prefabName: Card
   onBoard: 0
   equipmentCount: 0
+  healParticles: {fileID: 0}
   boardCardImage: []
   cardGraphic:
   - {fileID: 6748079393637625128}

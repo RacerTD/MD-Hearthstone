@@ -11,8 +11,7 @@ public class HoverPreview : MonoBehaviour
     //3 public Quaternion originalPos;
     //public bool handRotation;
 
-    public CardsSideBySide CardsSideBySide;
-   public Vector3 targetSize;
+   
 
 
     public void Start()
@@ -23,7 +22,7 @@ public class HoverPreview : MonoBehaviour
         //3 originalPos = transform.rotation;
         //handRotation = true;
 
-        targetSize = transform.eulerAngles;
+        
         //if (handRotation)
         //{
         //    CardsSideBySide.UpdateCardPositions();
@@ -39,6 +38,7 @@ public class HoverPreview : MonoBehaviour
         if(hovered) targetSize = new Vector3(1.6f, 1.6f, 1.6f);
 
         // float number regulates the velocity of the preview
+        transform.localPosition = Vector3.Lerp(transform.localPosition, targetSize, 0);
         transform.localScale = Vector3.Lerp(transform.localScale, targetSize, 0.12f);
        
     }
@@ -51,7 +51,7 @@ public class HoverPreview : MonoBehaviour
         hovered = true;
 
 
-        //if(hovered) transform.rotation = Quaternion.identity;
+        if(hovered) transform.rotation = Quaternion.identity;
         
 
         //transform.rotation = Quaternion.identity;
@@ -61,10 +61,11 @@ public class HoverPreview : MonoBehaviour
         //Debug.Log("Exit GameObject");
       
         hovered = false;
+        
         //1 startRotation = transform.eulerAngles;
         //2 initialRot = transform.eulerAngles;
         //3 transform.rotation = originalPos;
-        targetSize = transform.eulerAngles;
+        
 
     }
 }
