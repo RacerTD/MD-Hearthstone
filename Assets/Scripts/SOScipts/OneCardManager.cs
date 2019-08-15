@@ -100,10 +100,14 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
-        if (cardAsset.cardType == CardType.Epuipment && transform.GetComponentInParent<OneCardManager>().cardAsset.cardType == CardType.Human)
+        if (transform.GetComponentInParent<OneCardManager>())
         {
-            transform.GetComponentInParent<OneCardManager>().EquipEquipment(cardAsset);
+            if (cardAsset.cardType == CardType.Epuipment && transform.GetComponentInParent<OneCardManager>().cardAsset.cardType == CardType.Human)
+            {
+               transform.GetComponentInParent<OneCardManager>().EquipEquipment(cardAsset);
+            }
         }
+        
 
         if (transform.childCount != childCount)
         {
@@ -434,7 +438,7 @@ public class OneCardManager : MonoBehaviour
 
     public bool HealAbilityAvailible()
     {
-        if (cardAsset.lowHeal.used || cardAsset.highHeal.used)
+        if ((cardAsset.lowHeal.used || cardAsset.highHeal.used) && cardAsset.cardType == CardType.Human)
         {
             return true;
         }

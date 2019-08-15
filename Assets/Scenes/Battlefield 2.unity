@@ -1147,17 +1147,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckCards:
-  - {fileID: 11400000, guid: 2d660bf1dd9e7e44c8ce4b4f7c4f7519, type: 2}
-  - {fileID: 11400000, guid: 81c13117081682d42bae21e4867b2b87, type: 2}
-  - {fileID: 11400000, guid: 5e01c18b4a07a294e806e1bb3e6dc1b7, type: 2}
-  - {fileID: 11400000, guid: eb796c7d5f736a34a8e346943ac1d34d, type: 2}
-  - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
-  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
   - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
-  - {fileID: 11400000, guid: 9edfeb7f5ffe01c4d8349b61f26098b5, type: 2}
   - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
-  - {fileID: 11400000, guid: 73fc980707963eb42a314ed719c5f548, type: 2}
+  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
+  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
+  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
+  - {fileID: 11400000, guid: 81c13117081682d42bae21e4867b2b87, type: 2}
+  - {fileID: 11400000, guid: f1826212c1e6c8145ade4e7bc98908b7, type: 2}
+  - {fileID: 11400000, guid: 5e01c18b4a07a294e806e1bb3e6dc1b7, type: 2}
+  - {fileID: 11400000, guid: 2d660bf1dd9e7e44c8ce4b4f7c4f7519, type: 2}
+  - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
+  - {fileID: 11400000, guid: eb796c7d5f736a34a8e346943ac1d34d, type: 2}
+  - {fileID: 11400000, guid: 81c13117081682d42bae21e4867b2b87, type: 2}
+  - {fileID: 11400000, guid: f1826212c1e6c8145ade4e7bc98908b7, type: 2}
+  - {fileID: 11400000, guid: 5e01c18b4a07a294e806e1bb3e6dc1b7, type: 2}
+  - {fileID: 11400000, guid: 2d660bf1dd9e7e44c8ce4b4f7c4f7519, type: 2}
+  - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
+  - {fileID: 11400000, guid: eb796c7d5f736a34a8e346943ac1d34d, type: 2}
   hand: {fileID: 1771408305}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
@@ -1712,7 +1719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466797}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8466492}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -1896,7 +1903,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1571175730
 RectTransform:
