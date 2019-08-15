@@ -38,7 +38,7 @@ public class HoverPreview : MonoBehaviour
         if(hovered) targetSize = new Vector3(1.6f, 1.6f, 1.6f);
 
         // float number regulates the velocity of the preview
-        transform.localPosition = Vector3.Lerp(transform.localPosition, targetSize, 0);
+        //transform.localPosition = Vector3.Lerp(transform.localPosition, transform.position. 0);
         transform.localScale = Vector3.Lerp(transform.localScale, targetSize, 0.12f);
        
     }
