@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
 
 public class Arrow : MonoBehaviour
 {
@@ -8,13 +10,15 @@ public class Arrow : MonoBehaviour
 
     [SerializeField]
     private GameObject ArrowPrefab;
+    private Image ArrowPointImage;
     [SerializeField]
-    private GameObject ArrowPointPrefab;
-    private UILineRenderer UILineRenderer;
-    List<GameObject> array = new List<GameObject>();
+    //private GameObject ArrowPointPrefab;
+    private UILineRenderer _UILineRenderer;
+    List<GameObject> arrayOfLinePoints = new List<GameObject>();
     bool active = true;
     GameObject newLineGen;
-    Vector3 secondPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
+
+    public bool ArrowActive = false;
 
     public void Start()
     {
@@ -27,62 +31,109 @@ public class Arrow : MonoBehaviour
     }
     private void mouseButtonDown()
     {
-        if (Input.GetMouseButtonDown(0))
+       
+
+            if (Input.GetMouseButtonDown(0))
         {
-            Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
+           
+            RaycastHit hit;
+            if (Physics.Raycast(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -20), new Vector3(0, 0, 300), out hit, 10000))
+            {
+                //Debug.DrawRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -20), new Vector3(0, 0, 300), Color.red);
+                Debug.Log("Hit ");
             
-            newPos.z = 0;
-            CreatePointMarker(newPos);
-
+                // if hit.GetComponent
+                Debug.Log("clicked on object");
+                //ADD IN CHECK if can attack 
+               SpawnArrowPrefab(hit.transform.position);
+            }         
         }
-        if(Input.GetMouseButton(0))
-        {
 
-        }
-        if (active)
+            // right click
+        if (Input.GetMouseButtonDown(1))
         {
-            if (array.Count == 1)
+            if (ArrowActive)
             {
-                
-                newLineGen.GetComponent<UILineRenderer>();
+                _UILineRenderer.Points = null;
 
-                newLineGen.transform.position = Input.mousePosition;
+                //Disable Arrow On right click
             }
 
-            if (array.Count >= 2)
-            {
-                active = false;
+            ArrowActive = false;
+        }
 
-            }
+        // if we already click on a card that can attack, make second point of line renderer follow the mouse
+        if (ArrowActive)
+        {
+            Vector3 screenPoint = Input.mousePosition;
+            screenPoint.z = 0;
+            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(screenPoint);
+            Debug.Log("moving point");
+
+            Vector2[] allPointPositions = new Vector2[2];
+
+            allPointPositions[0] = _UILineRenderer.Points[0];
+
+            allPointPositions[1] = worldPoint;
+
+            _UILineRenderer.Points = allPointPositions;
+
+            RotateAndMoveArrow();
+            //Debug.DrawLine(allPointPositions[0], allPointPositions[1], Color.green);
+
+   
         }
     }
     public void LineRenderer()
     {
-        newLineGen = Instantiate(ArrowPrefab);
+        /*newLineGen = Instantiate(ArrowPrefab);
 
         UILineRenderer lRend = newLineGen.GetComponent<UILineRenderer>();
 
         lRend.transform.SetParent(transform);
+        */
     }
 
-    public void CreatePointMarker(Vector3 pointPosition)
+    public void RotateAndMoveArrow()
     {
-        
-        GameObject arrowinstance = Instantiate(ArrowPointPrefab, pointPosition, Quaternion.identity);
-        array.Add(arrowinstance);
-        
-        arrowinstance.transform.SetParent(transform);
-        GenerateNewLine();
+        ArrowPointImage.transform.position = _UILineRenderer.Points[1];
+
+        Vector3 diff = Camera.main.ScreenToWorldPoint(_UILineRenderer.Points[0]) - ArrowPointImage.transform.position;
+        diff.Normalize();
+
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        ArrowPointImage.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+    }
+
+    public void SpawnArrowPrefab(Vector3 pointPosition)
+    {
+        ArrowActive = true;
+        GameObject ArrowGameObject = Instantiate(ArrowPrefab, pointPosition, Quaternion.identity, transform);
+
+        _UILineRenderer = ArrowGameObject.GetComponent<UILineRenderer>();
+        ArrowPointImage = GetComponentInChildren<Image>();
+
+        if (_UILineRenderer == null)
+        Debug.Log("shit");
+
+        //Vector2[] allPointPositions = new Vector2[2];
+
+        //allPointPositions[0] = pointPosition;
+        //allPointPositions[1] = pointPosition;
+        //Debug.DrawLine(allPointPositions[0], allPointPositions[1], Color.green);
+       _UILineRenderer.Points[0] = new Vector2(pointPosition.x-400, pointPosition.y);
+        Debug.Log(pointPosition);
     }
 
     private void ClearAllPoints()
-    {
+    {   
+        /*
         GameObject[] allPoints = GameObject.FindGameObjectsWithTag("PointMarker");
 
         foreach (GameObject p in allPoints)
         {
             Destroy(p);
-        }
+        }*/
     }
 
     public void GenerateNewLine()
