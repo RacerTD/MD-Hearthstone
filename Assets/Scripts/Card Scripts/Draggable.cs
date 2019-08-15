@@ -98,6 +98,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 Dragable = false;
             }
             //Debug.Log("OnEndDrag"); // 1
+
             this.transform.position = new Vector3(eventData.position.x, eventData.position.y, 0) + dragOffset; ;
             this.transform.SetParent(parentToReturnTo);                     // Die Karte wird beim loslassen zurück in die Hand eingeordnet
             GetComponent<CanvasGroup>().blocksRaycasts = true;              // Raycasts werden wieder durch Karte geblockt.

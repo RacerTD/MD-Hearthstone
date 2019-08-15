@@ -7197,7 +7197,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -4308527448094293404, guid: efdf1dc99a2184344bddca0f5c744525,
+  m_Sprite: {fileID: 3018493783556981442, guid: efdf1dc99a2184344bddca0f5c744525,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8089,6 +8089,8 @@ GameObject:
   - component: {fileID: 2692757249103482073}
   - component: {fileID: -66830520009072450}
   - component: {fileID: 5667295705822332382}
+  - component: {fileID: 586549595767707529}
+  - component: {fileID: 4158954060804109793}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -8189,6 +8191,8 @@ MonoBehaviour:
   onBoard: 0
   equipmentCount: 0
   healParticles: {fileID: 2208058058934572405, guid: 99578a7f9ecefb44e8e120787c24c722,
+    type: 3}
+  humanDamageParticles: {fileID: 1569837123769672165, guid: 9193b3379d0ec6a47aef9fbdff885af4,
     type: 3}
   boardCardImage:
   - {fileID: 2128503077460143997}
@@ -8335,6 +8339,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!222 &586549595767707529
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8024431533381291182}
+  m_CullTransparentMesh: 0
+--- !u!114 &4158954060804109793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8024431533381291182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99ab6ab5de07ed49af77d06899df4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8195037775092677742
 GameObject:
   m_ObjectHideFlags: 0

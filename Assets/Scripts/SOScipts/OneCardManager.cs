@@ -21,6 +21,7 @@ public class OneCardManager : MonoBehaviour
 
     [Header("Particle Systems")]
     public GameObject healParticles;
+    public GameObject humanDamageParticles;
 
     [Header("CardComponents")]
     public List<Image> boardCardImage = new List<Image>();
@@ -129,12 +130,16 @@ public class OneCardManager : MonoBehaviour
             case CardType.Egg:
                 enemyCardFront.SetActive(true);
                 break;
-            case CardType.Spell:
+
+            case CardType.AOEDMGSpell:
+            case CardType.AOEHealSpell:
                 spellCardFront.SetActive(true);
                 break;
+
             case CardType.Epuipment:
                 equipmentCardFront.SetActive(true);
                 break;
+
             case CardType.Human:
                 humanCardFront.SetActive(true);
                 break;
@@ -395,6 +400,7 @@ public class OneCardManager : MonoBehaviour
     public void Damage(int damage)
     {
         Health = Health - damage;
+        Instantiate(humanDamageParticles, gameObject.transform.localPosition, Quaternion.identity);
     }
 
     public bool AttackAbilityAvailible()

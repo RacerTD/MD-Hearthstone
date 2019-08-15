@@ -191,15 +191,19 @@ public class GameManager : MonoBehaviour
             {
                 if (clicked02.cardAsset.taunt && enemyField.HasTaunt())
                 {
-                    clicked01.Health = clicked01.Health - clicked02.Attack;
-                    clicked02.Health = clicked02.Health - clicked01.Attack;
+                    particlePosition.Add(clicked01.transform.position);
+                    clicked01.Damage(clicked02.Attack);
+                    particlePosition.Add(clicked02.transform.position);
+                    clicked02.Damage(clicked01.Attack);
                     clicked01.cardAsset.attackUsed = true;
                     ResetAbilitys();
                 }
                 else if (!enemyField.HasTaunt())
                 {
-                    clicked01.Health = clicked01.Health - clicked02.Attack;
-                    clicked02.Health = clicked02.Health - clicked01.Attack;
+                    particlePosition.Add(clicked01.transform.position);
+                    clicked01.Damage(clicked02.Attack);
+                    particlePosition.Add(clicked02.transform.position);
+                    clicked02.Damage(clicked01.Attack);
                     clicked01.cardAsset.attackUsed = true;
                     ResetAbilitys();
                 }
@@ -222,8 +226,10 @@ public class GameManager : MonoBehaviour
 
             if (clicked01 != null && clicked02 != null)
             {
-                clicked01.Health = clicked01.Health - clicked02.Attack;
-                clicked02.Health = clicked02.Health - clicked01.Attack;
+                particlePosition.Add(clicked01.transform.position);
+                clicked01.Damage(clicked02.Attack);
+                particlePosition.Add(clicked02.transform.position);
+                clicked02.Damage(clicked01.Attack);
                 ResetAbilitys();
             }
         }
