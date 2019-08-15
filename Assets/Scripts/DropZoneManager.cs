@@ -34,11 +34,13 @@ public class DropZoneManager : MonoBehaviour
                 case CardType.Human:
                     playerField.enabled = true;
                     mana.enabled = true;
+                    hand.enabled = true;
                     manPower.enabled = true;
                     break;
 
                 case CardType.Epuipment:
-                    ActivateHumanDropZones();
+                    hand.enabled = true;
+                    ChangeHumanDropZones(true);
                     break;
 
                 case CardType.AOEDMGSpell:
@@ -54,7 +56,6 @@ public class DropZoneManager : MonoBehaviour
                 case CardType.Nothing:
                     DeactivateAllDropZones();
                     break;
-
             }
         }
     }
@@ -66,11 +67,26 @@ public class DropZoneManager : MonoBehaviour
         hand.enabled = false;
         mana.enabled = false;
         manPower.enabled = false;
+        ChangeHumanDropZones(false);
     }
 
-    private void ActivateHumanDropZones()
+    private void ChangeHumanDropZones(bool activate)
     {
         //Code
+        for (int i = 0; i < playerField.transform.childCount; i++)
+        {
+            if (activate)
+            {
+                if (playerField.transform.GetChild(i).GetComponent<OneCardManager>().equipmentCount <= 4)
+                {
+                    playerField.transform.GetChild(i).GetComponent<Image>().enabled = activate;
+                }
+            }
+            else
+            {
+                playerField.transform.GetChild(i).GetComponent<Image>().enabled = activate;
+            }
+        }
     }
 
 }

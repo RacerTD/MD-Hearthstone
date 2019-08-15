@@ -51,6 +51,7 @@ public class OneCardManager : MonoBehaviour
 
     [Header("Spott")]
     public GameObject taunt;
+    public int childCount = 4;
 
     public int Health
     {
@@ -99,7 +100,67 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (cardAsset.cardType == CardType.Epuipment && transform.GetComponentInParent<OneCardManager>().cardAsset.cardType == CardType.Human)
+        {
+            transform.GetComponentInParent<OneCardManager>().EquipEquipment(cardAsset);
+        }
+
+        if (transform.childCount != childCount)
+        {
+            childCount = transform.childCount;
+
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                if (transform.GetChild(i).GetComponent<OneCardManager>())
+                {
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment)
+                    {
+                        EquipEquipment(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset);
+                        transform.GetChild(i).GetComponent<OneCardManager>().DeleteEquipment();
+                    }
+                    else
+                    {
+                        transform.GetChild(i).GetComponent<OneCardManager>().BackToHand();
+                    }
+                }
+            }
+        }
+    }
+
+    public void DeleteEquipment()
+    {
+        Destroy(gameObject);
+    }
+
+    public void EquipEquipment(CardAsset equipment)
+    {
+        Debug.Log("Equipment got Equipped");
+        maxHealth += equipment.maxHealth;
+        Health += equipment.maxHealth;
+
+        if (equipment.highHeal.enabled)
+        {
+            cardAsset.highHeal.enabled = true;
+        }
+        else if (equipment.highDMG.enabled)
+        {
+            cardAsset.highDMG.enabled = true;
+        }
+        else if (equipment.lowHeal.enabled)
+        {
+            cardAsset.lowHeal.enabled = true;
+        }
+        else if (equipment.lowDMG.enabled)
+        {
+            cardAsset.lowDMG.enabled = true;
+        }
+
+        UpdateAbilitys();
+    }
+
+    public void BackToHand()
+    { 
+        transform.SetParent(hand.transform);
     }
 
     void InitializeCard(CardAsset newAsset = null)
