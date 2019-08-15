@@ -47,6 +47,6 @@ public class CardDeckScript : MonoBehaviour
     }
     public void MoveCardToHand()
     {
-        this.gameObject.transform.GetChild(0).SetParent(hand.transform, false);
+        this.gameObject.transform.GetChild(0).SetParent(hand.transform, true);
     }
 }

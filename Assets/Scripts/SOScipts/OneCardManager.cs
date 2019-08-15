@@ -137,6 +137,7 @@ public class OneCardManager : MonoBehaviour
         Debug.Log("Equipment got Equipped");
         maxHealth += equipment.maxHealth;
         Health += equipment.maxHealth;
+        Attack += equipment.attack;
         equipmentCount++;
 
         if (equipment.highHeal.enabled)
@@ -170,11 +171,12 @@ public class OneCardManager : MonoBehaviour
         {
             transform.SetParent(cardDeck.transform, false);
             transform.localPosition = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else
         {
             transform.SetParent(enemyField.transform, false);
-            transform.localPosition = new Vector3(0, 0, 0);
+            transform.localPosition = new Vector3(0, 1000, 0);
         }
 
         if (newAsset == null && cardAsset == null)
