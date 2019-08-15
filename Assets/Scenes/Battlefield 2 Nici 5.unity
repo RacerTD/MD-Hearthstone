@@ -367,9 +367,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strongEnemyCards:
-  - {fileID: 11400000, guid: 129cdf06e854d534d8f4186a3f4ff692, type: 2}
-  weakEnemyCards:
+  - {fileID: 11400000, guid: be61d38baabcd7548a6dc9d966691dd3, type: 2}
+  - {fileID: 11400000, guid: 56520d2e26cd87d4ebda65408e9208b6, type: 2}
   - {fileID: 11400000, guid: 4e791500832f77f40b474672c01d9a33, type: 2}
+  - {fileID: 11400000, guid: b81238b1c67bc884983381831a285245, type: 2}
+  weakEnemyCards:
+  - {fileID: 11400000, guid: 756240d219664cc488206509fd356de1, type: 2}
   eggCard:
   - {fileID: 11400000, guid: ef2b93a1b93c22b46b4c2b7728f0ec50, type: 2}
   queen: {fileID: 0}

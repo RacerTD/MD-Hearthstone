@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabName: HumanCard
   cardType: 0
-  cardImage: {fileID: 21300000, guid: cbe5775882921a54dbd7ad0dccb63d9a, type: 3}
+  cardImage: {fileID: 21300000, guid: b25b719a6460b0e4bb054570db551c52, type: 3}
   boardCardImage: {fileID: 0}
   maxHealth: 4
   attack: 3
