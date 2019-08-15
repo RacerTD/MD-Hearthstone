@@ -39,7 +39,7 @@ public class Damage : MonoBehaviour
 
     IEnumerator KillSystem()
     {
-        yield return new WaitForSecondsRealtime(0.8f);
+        yield return new WaitForSecondsRealtime(0.1f);
         enable = false;
         yield return new WaitForSecondsRealtime(1f);
         Destroy(gameObject);

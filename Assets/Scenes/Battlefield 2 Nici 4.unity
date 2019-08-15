@@ -1134,7 +1134,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eb796c7d5f736a34a8e346943ac1d34d, type: 2}
   - {fileID: 11400000, guid: dfc2d77f1d940e54e862143d1f6fef76, type: 2}
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
-  hand: {fileID: 1771408303}
+  hand: {fileID: 1771408305}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
 --- !u!1 &979661366
@@ -1659,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4285055546168868349, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d, type: 3}
 --- !u!1 &1520702370
@@ -1882,7 +1887,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1571175730
 RectTransform:
@@ -1935,6 +1940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardDeck: {fileID: 929220776}
   hand: {fileID: 1771408305}
+  cardsSideBySide: {fileID: 0}
   enemyField: {fileID: 188098478}
   mana: {fileID: 1520702376}
   playerField: {fileID: 501992565}

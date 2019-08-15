@@ -31,8 +31,8 @@ public class Heal : MonoBehaviour
         StartCoroutine(KillSystem());
         if (Time.time > nextSpawn && enable)
         {
-            nextSpawn = Time.time + (spawnRate + 0.2f);
-            Vector2 newPos = spawnPosition + new Vector3(UnityEngine.Random.Range(-50, 50), 0, 0);
+            nextSpawn = Time.time + (spawnRate);
+            Vector2 newPos = spawnPosition + new Vector3(UnityEngine.Random.Range(-50, 50), UnityEngine.Random.Range(-50, 50), 0);
             GameObject myObject = Instantiate(healParticle, newPos, Quaternion.identity);
             myObject.transform.SetParent(transform);
         }

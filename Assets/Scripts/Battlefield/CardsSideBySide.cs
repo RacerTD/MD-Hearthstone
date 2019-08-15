@@ -52,26 +52,26 @@ public class CardsSideBySide : MonoBehaviour
             myChild = transform.GetChild(i);
             if (randomVertical && randomHorizontal)
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)), 1f);
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)), 1f).SetEase(Ease.OutQuart);
             }
             else if (randomVertical)
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)),1f);
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)),1f).SetEase(Ease.OutQuart);
             }
             else
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth)),1f);
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth)),1f).SetEase(Ease.OutQuart);
             }
             
             if (randomAngle)
             {
-                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]),1f);
-                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f);
+                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]),1f).SetEase(Ease.OutQuart);
+                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f).SetEase(Ease.OutQuart);
             }
             else
             {
-                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i),1f);
-                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f);
+                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i),1f).SetEase(Ease.OutQuart);
+                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f).SetEase(Ease.OutQuart);
             }
         }
 

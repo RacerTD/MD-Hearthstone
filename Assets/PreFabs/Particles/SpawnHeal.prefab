@@ -45,6 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healParticle: {fileID: 6660653872741993437, guid: 6de51bc4555ffcd468debcae95a82295,
     type: 3}
-  spawnRate: 0.001
-  nextSpawn: 0.1
+  spawnRate: 0.2
+  nextSpawn: 0
   speed: 0

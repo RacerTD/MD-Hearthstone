@@ -16,13 +16,13 @@ MonoBehaviour:
   cardType: 2
   cardImage: {fileID: 21300000, guid: 53255e867b41d8d40ad443c7fe93ac8d, type: 3}
   boardCardImage: {fileID: 21300000, guid: ff763f82042414a48b8ca354fb967877, type: 3}
-  maxHealth: 8
-  attack: 3
+  maxHealth: 0
+  attack: 4
   attackUsed: 0
   summoningSickness: 1
   taunt: 0
-  cost: 4
-  description: 
+  cost: 2
+  description: Recieve 4 Attack Damage permanently
   lowHeal:
     enabled: 0
     effect: 0
