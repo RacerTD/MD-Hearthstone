@@ -39,7 +39,7 @@ MonoBehaviour:
     enabled: 0
     effect: 3
     used: 0
-    cost: 1
+    cost: 2
     name: 1
   lowDMG:
     enabled: 0

@@ -25,25 +25,25 @@ MonoBehaviour:
   description: 
   lowHeal:
     enabled: 0
-    effect: 0
+    effect: 1
     used: 0
-    cost: 0
+    cost: 1
     name: 0
   highHeal:
     enabled: 0
-    effect: 0
+    effect: 3
     used: 0
-    cost: 0
+    cost: 2
     name: 1
   lowDMG:
     enabled: 0
-    effect: 0
+    effect: 2
     used: 0
-    cost: 0
+    cost: 1
     name: 2
   highDMG:
     enabled: 0
-    effect: 2
+    effect: 4
     used: 0
-    cost: 3
+    cost: 2
     name: 3
