@@ -44,5 +44,6 @@ public class Heal : MonoBehaviour
         enable = false;
         yield return new WaitForSecondsRealtime(2f);
         Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

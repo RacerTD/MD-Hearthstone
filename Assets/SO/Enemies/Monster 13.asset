@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
-  m_Name: Pepe
+  m_Name: Monster 13
   m_EditorClassIdentifier: 
   prefabName: HumanCard
-  cardType: 1
-  cardImage: {fileID: 21300000, guid: aff5b006e67528b43a197c3fa0febec3, type: 3}
-  boardCardImage: {fileID: 21300000, guid: 5159fd5812e54754e8a53cc65279f2ee, type: 3}
-  maxHealth: 2
-  attack: 2
+  cardType: 0
+  cardImage: {fileID: 21300000, guid: f9f3fa7cf4bd6a64397c3a96a232123a, type: 3}
+  boardCardImage: {fileID: 0}
+  maxHealth: 5
+  attack: 4
   attackUsed: 0
   summoningSickness: 0
   taunt: 1
-  cost: 3
+  cost: 2
   description: 
   lowHeal:
     enabled: 0

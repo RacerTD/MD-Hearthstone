@@ -43,5 +43,6 @@ public class Damage : MonoBehaviour
         enable = false;
         yield return new WaitForSecondsRealtime(1f);
         Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

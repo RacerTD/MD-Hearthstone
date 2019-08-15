@@ -22,7 +22,7 @@ MonoBehaviour:
   summoningSickness: 1
   taunt: 0
   cost: 0
-  description: Heals an ally by 1
+  description: Restores 1 hitpoint of an allys health.
   lowHeal:
     enabled: 1
     effect: 1
