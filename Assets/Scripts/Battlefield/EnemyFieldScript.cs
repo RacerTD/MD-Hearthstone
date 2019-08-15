@@ -169,6 +169,7 @@ public class EnemyFieldScript : MonoBehaviour
 
             
         }
+        timer = 0;
     }
 
     private void SpawnEggEnemy()
