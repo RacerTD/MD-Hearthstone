@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CardsSideBySide : MonoBehaviour
 {
@@ -51,26 +52,26 @@ public class CardsSideBySide : MonoBehaviour
             myChild = transform.GetChild(i);
             if (randomVertical && randomHorizontal)
             {
-                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)), 1f);
             }
             else if (randomVertical)
             {
-                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)),1f);
             }
             else
             {
-                myChild.transform.localPosition = new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth));
+                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth)),1f);
             }
             
             if (randomAngle)
             {
-                myChild.transform.eulerAngles = new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]);
-                myChild.transform.localScale = new Vector3(scale, scale, scale);
+                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]),1f);
+                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f);
             }
             else
             {
-                myChild.transform.eulerAngles = new Vector3(0, 0, startingAngle + rotationOffSet * i);
-                myChild.transform.localScale = new Vector3(scale, scale, scale);
+                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i),1f);
+                myChild.transform.DOScale(new Vector3(scale, scale, scale),1f);
             }
         }
 
