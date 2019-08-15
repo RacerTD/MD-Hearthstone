@@ -18,7 +18,7 @@ public class DamageMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomDirection = new Vector3(Random.Range(-5,5), Random.Range(-5, 5), 0);
+        randomDirection = new Vector3(Random.Range(-2,2), Random.Range(-2, 2), 0);
         StartCoroutine(ShowRandomImage());
     }
 
@@ -31,14 +31,14 @@ public class DamageMove : MonoBehaviour
     }
     IEnumerator Kill()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(1f);
         Destroy(gameObject);
     }
     IEnumerator Fade()
     {
         // fade from opaque to transparent
         // loop over 1 second backwards
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0);
         for (float i = 1; i >= 0; i -= Time.deltaTime)
         {
             // set color with i as alpha

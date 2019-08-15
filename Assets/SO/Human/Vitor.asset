@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
-  m_Name: Egg
+  m_Name: Vitor
   m_EditorClassIdentifier: 
   prefabName: HumanCard
-  cardType: 4
-  cardImage: {fileID: 21300000, guid: f59844ea23335b540953fac9ba2eeca3, type: 3}
-  boardCardImage: {fileID: 0}
+  cardType: 1
+  cardImage: {fileID: 21300000, guid: 92d99250ee5e56348a729a8c0d712ad0, type: 3}
+  boardCardImage: {fileID: 21300000, guid: 6859ed366edad1b4297c512cd911c938, type: 3}
   maxHealth: 1
-  attack: 0
+  attack: 3
   attackUsed: 0
-  summoningSickness: 0
+  summoningSickness: 1
   taunt: 0
-  cost: 2
+  cost: 1
   description: 
   lowHeal:
     enabled: 0
@@ -34,16 +34,16 @@ MonoBehaviour:
     effect: 0
     used: 0
     cost: 0
-    name: 0
+    name: 1
   lowDMG:
     enabled: 0
     effect: 0
     used: 0
     cost: 0
-    name: 0
+    name: 2
   highDMG:
     enabled: 0
-    effect: 0
+    effect: 2
     used: 0
-    cost: 0
-    name: 0
+    cost: 3
+    name: 3
