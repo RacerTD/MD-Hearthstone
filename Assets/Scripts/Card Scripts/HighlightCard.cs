@@ -35,8 +35,9 @@ public class HighlightCard : MonoBehaviour
     public Color equipmentColor;
     public Color defaultColor;
     public Color attackColor;
-    public Color abilityUsed;
+    public Color abilityUsedColor;
     public Color summoningSicknessColor;
+    public Color selectedCardColor;
 
     void Start()
     {
@@ -48,6 +49,7 @@ public class HighlightCard : MonoBehaviour
     void Update()
     {
         Hover();
+        HighlightAbilityOrAttack();
 
         if (currendCardInHand != gameManager.cardInHand)
         {
@@ -99,7 +101,7 @@ public class HighlightCard : MonoBehaviour
 
             if (healAbilityUsed)
             {
-                ChangeColor(abilityUsed, healAbility);
+                ChangeColor(abilityUsedColor, healAbility);
                 ChangeBoxColliderState(false, healAbility);
             }
             else
@@ -115,7 +117,7 @@ public class HighlightCard : MonoBehaviour
 
             if (attackAbilityUsed)
             {
-                ChangeColor(abilityUsed, attackAbility);
+                ChangeColor(abilityUsedColor, attackAbility);
                 ChangeBoxColliderState(false, attackAbility);
             }
             else
@@ -209,5 +211,23 @@ public class HighlightCard : MonoBehaviour
 
         return false;
 
+    }
+    private void HighlightAbilityOrAttack()
+    {
+        
+        if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+        {
+            ChangeColor(selectedCardColor, waves);
+            
+        }
+        else
+        {
+            ChangeColor(defaultColor, waves);
+            return;
+        }
+        if (gameManager.abilityUser != null)
+        {
+
+        }
     }
 }
