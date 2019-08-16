@@ -54,6 +54,7 @@ public class OneCardManager : MonoBehaviour
     public int childCount = 4;
 
     public Vector3 targetPosition;
+    public Vector3 targetRotation;
 
     public int Health
     {

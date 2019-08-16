@@ -66,16 +66,21 @@ public class CardsSideBySide : MonoBehaviour
             myChild.GetComponent<OneCardManager>().targetPosition = targetPosition;
             myChild.transform.DOLocalMove(targetPosition, 1f).SetEase(Ease.OutQuart);
 
+            Vector3 targetRotation;
+
             if (randomAngle)
             {
-                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]),1f).SetEase(Ease.OutQuart);
+                targetRotation=new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]);
                 myChild.transform.DOScale(new Vector3(scale, scale, scale),1f).SetEase(Ease.OutQuart);
             }
             else
             {
-                myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i),1f).SetEase(Ease.OutQuart);
+                targetRotation=new Vector3(0, 0, startingAngle + rotationOffSet * i);
                 myChild.transform.DOScale(new Vector3(scale, scale, scale),1f).SetEase(Ease.OutQuart);
             }
+
+            myChild.GetComponent<OneCardManager>().targetRotation = targetRotation;
+            myChild.transform.DOLocalRotate(targetRotation, 1f).SetEase(Ease.OutQuart);
         }
 
     }
