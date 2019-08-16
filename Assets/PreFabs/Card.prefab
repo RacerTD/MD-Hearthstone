@@ -1690,8 +1690,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828, y: -125.13}
-  m_SizeDelta: {x: 260, y: 149.73}
+  m_AnchoredPosition: {x: -0.9, y: -125.58}
+  m_SizeDelta: {x: 217.32, y: 101.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3542379692262463905
 CanvasRenderer:
@@ -1725,8 +1725,8 @@ MonoBehaviour:
 
     of an allys health.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f34c7e30cd27a241ac791df23c99b6f, type: 2}
-  m_sharedMaterial: {fileID: -8946599373471384499, guid: 4f34c7e30cd27a241ac791df23c99b6f,
+  m_fontAsset: {fileID: 11400000, guid: 364d8ff1e42840d42a3b563d9c598772, type: 2}
+  m_sharedMaterial: {fileID: 924796799174266834, guid: 364d8ff1e42840d42a3b563d9c598772,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1758,7 +1758,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_textAlignment: 514
   m_characterSpacing: -4
   m_wordSpacing: 0
@@ -2747,9 +2747,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Restores 1 hitpoint
-
-    of an allys health.'
+  m_text: Restores 1 hitpoint of an allys health.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 364d8ff1e42840d42a3b563d9c598772, type: 2}
   m_sharedMaterial: {fileID: 924796799174266834, guid: 364d8ff1e42840d42a3b563d9c598772,
@@ -2785,7 +2783,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_textAlignment: 514
+  m_textAlignment: 513
   m_characterSpacing: -4
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2816,7 +2814,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 6.4265137, y: 18.206955, z: 17.271362, w: 20.150604}
+  m_margin: {x: 17.6391, y: 18.206955, z: 16.523926, w: 20.150604}
   m_textInfo:
     textComponent: {fileID: 3877422553795464316}
     characterCount: 39
@@ -3585,7 +3583,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -5362046612960252700, guid: 0f3705880dc9eeb48bc300a99da0d863,
+  m_Sprite: {fileID: -8289257138106565965, guid: 0f3705880dc9eeb48bc300a99da0d863,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8240,6 +8238,8 @@ MonoBehaviour:
   highDMGGameObject: {fileID: 6949324951023926921}
   taunt: {fileID: 0}
   childCount: 4
+  targetPosition: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 0, y: 0, z: 0}
   _health: 0
   _attack: 0
   maxHealth: 0

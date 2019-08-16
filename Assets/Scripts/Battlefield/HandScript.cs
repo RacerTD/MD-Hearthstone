@@ -32,18 +32,18 @@ public class HandScript : MonoBehaviour
         {
             bool hovered = card == curHover;
             Vector3 targetSize = new Vector3(GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale);
-            if (hovered) targetSize = targetSize * 1.8f;
+            if (hovered) targetSize = targetSize * 1.6f;
 
             Vector3 targetRotation = card.targetRotation;
             if(hovered) targetRotation=new Vector3();
 
             Vector3 targetPosition = card.targetPosition;
-            if (hovered) targetPosition.y += 160;
+            if (hovered) targetPosition.y += 200;
 
             float speed = 0.12f;
             if (hovered) speed = 0.26f;
 
-                card.transform.localScale = Vector3.Lerp(card.transform.localScale, targetSize, speed);
+            card.transform.localScale = Vector3.Lerp(card.transform.localScale, targetSize, speed);
             card.transform.localPosition = Vector3.Lerp(card.transform.localPosition, targetPosition, speed);
             card.transform.localRotation = Quaternion.Lerp(card.transform.localRotation, Quaternion.Euler(targetRotation), speed);
             //Debug.Log(card.transform.localScale+" -> " + targetSize + " cur:" + cards.IndexOf(curHover));
