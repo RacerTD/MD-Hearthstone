@@ -18,7 +18,7 @@ public class OneCardManager : MonoBehaviour
     public string prefabName;
     public bool onBoard = false;
     public int equipmentCount = 0;
-
+    
     [Header("Particle Systems")]
     public GameObject healParticles;
     public GameObject humanDamageParticles;
@@ -52,6 +52,8 @@ public class OneCardManager : MonoBehaviour
     [Header("Spott")]
     public GameObject taunt;
     public int childCount = 4;
+
+    public Vector3 targetPosition;
 
     public int Health
     {

@@ -50,19 +50,22 @@ public class CardsSideBySide : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);
+            Vector3 targetPosition;
             if (randomVertical && randomHorizontal)
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)), 1f).SetEase(Ease.OutQuart);
+                targetPosition=new Vector3((i * cardOffSetHorizontal + startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
             }
             else if (randomVertical)
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth)),1f).SetEase(Ease.OutQuart);
+                targetPosition=new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
             }
             else
             {
-                myChild.transform.DOLocalMove(new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth)),1f).SetEase(Ease.OutQuart);
+                targetPosition=new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth));
             }
-            
+            myChild.GetComponent<OneCardManager>().targetPosition = targetPosition;
+            myChild.transform.DOLocalMove(targetPosition, 1f).SetEase(Ease.OutQuart);
+
             if (randomAngle)
             {
                 myChild.transform.DOLocalRotate(new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]),1f).SetEase(Ease.OutQuart);
