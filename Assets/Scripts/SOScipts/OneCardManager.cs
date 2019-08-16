@@ -103,6 +103,7 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
+        /*
         if (transform.GetComponentInParent<OneCardManager>())
         {
             if (cardAsset.cardType == CardType.Epuipment && transform.GetComponentInParent<OneCardManager>().cardAsset.cardType == CardType.Human)
@@ -110,7 +111,7 @@ public class OneCardManager : MonoBehaviour
                transform.GetComponentInParent<OneCardManager>().EquipEquipment(cardAsset);
             }
         }
-        
+        */
 
         if (transform.childCount != childCount)
         {
@@ -120,7 +121,7 @@ public class OneCardManager : MonoBehaviour
             {
                 if (transform.GetChild(i).GetComponent<OneCardManager>())
                 {
-                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment)
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human)
                     {
                         EquipEquipment(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset);
                         transform.GetChild(i).GetComponent<OneCardManager>().DeleteEquipment();
@@ -302,6 +303,25 @@ public class OneCardManager : MonoBehaviour
             abilityCollider[i].enabled = true;
         }
         
+        if (cardAsset.cardType == CardType.Egg)
+        {
+            cardAsset = enemyField.strongEnemyCards[Random.Range(0, enemyField.strongEnemyCards.Count)];
+            UpdateList(costText, cost.ToString());
+            UpdateList(nameText, cardAsset.name);
+            UpdateList(descriptionText, cardAsset.description);
+            UpdateList(attackText, Attack.ToString());
+            UpdateList(lifeText, _health.ToString());
+            UpdateList(maxLifeText, maxHealth.ToString());
+
+            for (int i = 0; i < cardGraphic.Count; i++)
+            {
+                cardGraphic[i].sprite = cardAsset.cardImage;
+            }
+            for (int i = 0; i < boardCardImage.Count; i++)
+            {
+                boardCardImage[i].sprite = cardAsset.boardCardImage;
+            }
+        }
     }
     private void UpdateAbilitys()
     {

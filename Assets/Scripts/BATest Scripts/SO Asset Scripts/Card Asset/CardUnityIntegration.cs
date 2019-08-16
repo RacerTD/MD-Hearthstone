@@ -9,7 +9,7 @@ using UnityEngine;
 
 static class CardUnityIntegration
 {
-    [MenuItem("Assets/Create/CardAsset")]
+    //[MenuItem("Assets/Create/CardAsset")]
     public static void CreateYourScriptableObject()
     {
         ScriptableObjectUtility.CreateAsset<CardAsset>();

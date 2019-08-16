@@ -16,9 +16,9 @@ public class GameManager : MonoBehaviour
     public Highlight highlight = Highlight.Nothing;
     public OneCardManager currentlyDragging = null;
 
-    private OneCardManager clicked01 = null;
-    private OneCardManager clicked02 = null;
-    private OneCardManager abilityUser = null;
+    public OneCardManager clicked01 = null;
+    public OneCardManager clicked02 = null;
+    public OneCardManager abilityUser = null;
     public List<Vector3> particlePosition = new List<Vector3>();
 
     private int healAbilityCost;

@@ -177,31 +177,6 @@ public class HighlightCard : MonoBehaviour
             }
         }
     }
-    public void HandHover(bool ja)
-    {
-        if (ja)
-        {
-            if (!newSizeSet)
-            {
-                originalPosition = transform.position;
-                originalRotation = transform.eulerAngles;
-                originalScale = transform.localScale;
-                newSizeSet = true;
-                transform.position += new Vector3(0, 20, 0);
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-        }
-        else
-        {
-            transform.position = originalPosition;
-            transform.eulerAngles = originalRotation;
-            transform.localScale = originalScale;
-            newSizeSet = false;
-        }
-        
-
-    }
 
     private bool CheckIfEquipmentIsPossible()
     {
