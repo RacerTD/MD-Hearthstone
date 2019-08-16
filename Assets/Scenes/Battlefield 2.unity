@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1683640946}
-  manPower: 0
-  maxManPower: 0
+  manPower: 20
+  maxManPower: 20
 --- !u!1 &164939110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,7 +1726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466492}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8465576}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -1816,8 +1816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1683640946}
-  manaCount: 0
-  maxMana: 0
+  manaCount: 20
+  maxMana: 20
 --- !u!1 &1571175725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0580662f0027749b17cf432a8dff0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardDeck: {fileID: 929220776}
+  cardDeck: {fileID: 929220778}
   hand: {fileID: 1771408305}
   cardsSideBySide: {fileID: 0}
   enemyField: {fileID: 188098478}
@@ -1972,6 +1972,9 @@ MonoBehaviour:
   cardInHand: 6
   highlight: 4
   currentlyDragging: {fileID: 0}
+  clicked01: {fileID: 0}
+  clicked02: {fileID: 0}
+  abilityUser: {fileID: 0}
   particlePosition: []
   gameState: 0
 --- !u!4 &1683640947
@@ -2321,12 +2324,7 @@ MonoBehaviour:
   playerField: {fileID: 501992558}
   manPower: {fileID: 129020263}
   mana: {fileID: 1520702370}
-  handPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cards: []
 --- !u!224 &1771408306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2364,7 +2362,7 @@ MonoBehaviour:
   randomVertical: 0
   randomHorizontal: 0
   randomAngle: 0
-  verticalOffset_: 50
+  verticalOffset_: 0
   cardOffSetHorizontal: 100
   cardOffSetDepth: 0
   rotationOffSet: -6

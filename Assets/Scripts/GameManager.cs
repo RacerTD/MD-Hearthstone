@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject cardDeck;
+    public CardDeckScript cardDeck;
     public HandScript hand;
     public CardsSideBySide cardsSideBySide;
     public EnemyFieldScript enemyField;
@@ -79,14 +79,12 @@ public class GameManager : MonoBehaviour
         switch (gameState)
         {
             case GameState.GameStart:
-                //KartenDeck Spawnen
-                cardDeck.GetComponent<CardDeckScript>().ShuffleDeck();
-                cardDeck.GetComponent<CardDeckScript>().SpawnCardDeck();
+                cardDeck.ShuffleDeck();
+                cardDeck.SpawnCardDeck();
                 gameState = GameState.Enemy;
                 break;
 
             case GameState.Enemy:
-                //Gesamter Enemy Turn
                 break;
 
             case GameState.PlayerCardDraw:

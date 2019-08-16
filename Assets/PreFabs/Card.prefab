@@ -8165,8 +8165,9 @@ MonoBehaviour:
   equipmentColor: {r: 1, g: 0.84181607, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   attackColor: {r: 1, g: 0.5372549, b: 0.5554664, a: 1}
-  abilityUsed: {r: 0.64199996, g: 0.64199996, b: 0.64199996, a: 1}
+  abilityUsedColor: {r: 0, g: 0, b: 0, a: 0}
   summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
+  selectedCardColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8219,6 +8220,28 @@ MonoBehaviour:
   - {fileID: 855212604930130579}
   maxLifeText:
   - {fileID: 9010260354255808698}
+  damageNumbers:
+  - {fileID: 0}
+  - {fileID: 5207927261390264729, guid: 966a1d85060d21a4aa55b2c9b0de2161, type: 3}
+  - {fileID: 812410873911173233, guid: afe41b134fb71fa4d8ae2db6a30eb58e, type: 3}
+  - {fileID: 7440554070467457470, guid: af12853681f6dc94d84dfc2072a1da04, type: 3}
+  - {fileID: 3461358274019108491, guid: c78e8296b799ded4aa7c724894d32b4d, type: 3}
+  - {fileID: 5869401682040521544, guid: 8912ef4402906d44eb4abcbed0145006, type: 3}
+  - {fileID: 1574046779556397718, guid: 39adaf2562d1cca478d608c1e2ffbe1d, type: 3}
+  - {fileID: 6921672036588363011, guid: fdf390f14cbc1824ab36bbe6e93770bc, type: 3}
+  - {fileID: 1092816021884410563, guid: d9c0fe67ad236af4e897613a688da8e8, type: 3}
+  - {fileID: 1690976817615331011, guid: af5474e3c693dd24a99b2719a53c11a1, type: 3}
+  - {fileID: 4391111301515173566, guid: 566e3a9a0012658418e61e148efb0c88, type: 3}
+  - {fileID: 74951754005975871, guid: 3b033fef5434f2c44a911322f1940e95, type: 3}
+  - {fileID: 4140275670486746042, guid: cf554f933239b9b41905cc8bf27324fc, type: 3}
+  - {fileID: 1185415040374125854, guid: eb1ed61a9365b7246a74df23bacb8763, type: 3}
+  - {fileID: 3551308602252756122, guid: b5f6df98ea9c74a4587d55d0fdc47989, type: 3}
+  - {fileID: 39601804209571319, guid: 3adaf3a69e0eb4c48a3e168322dfdec0, type: 3}
+  - {fileID: 2589844122849656754, guid: a3b4a460f7c3c974898298acc931f71e, type: 3}
+  - {fileID: 9220095621558677448, guid: 77698d0a3b30aba4b9bc809fb122f6b8, type: 3}
+  - {fileID: 7787564949065364512, guid: a6d1da5adff8a4b4b87301640cdf2ac3, type: 3}
+  - {fileID: 3373621680241590504, guid: 6517d5714bb614f4a801c30c06cec493, type: 3}
+  - {fileID: 4138941840413639889, guid: b1c03dd615f3ae64caee335f82742668, type: 3}
   abilityCollider:
   - {fileID: 7300961016330758611}
   enemyCardFront: {fileID: 5417867203999520390}

@@ -20,6 +20,7 @@ public class Damage : MonoBehaviour
     void Start()
     {
         spawnPosition = gameManager.particlePosition[0];
+        //Debug.Log("Damage deleted Number");
         gameManager.particlePosition.RemoveAt(0);
     }
 

@@ -32,6 +32,7 @@ public class OneCardManager : MonoBehaviour
     public List<TextMeshProUGUI> attackText = new List<TextMeshProUGUI>(); //
     public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>(); //
     public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>(); //
+    public List<GameObject> damageNumbers = new List<GameObject>();
 
     public List<BoxCollider2D> abilityCollider = new List<BoxCollider2D>();
 
@@ -103,15 +104,6 @@ public class OneCardManager : MonoBehaviour
     }
     private void Update()
     {
-        /*
-        if (transform.GetComponentInParent<OneCardManager>())
-        {
-            if (cardAsset.cardType == CardType.Epuipment && transform.GetComponentInParent<OneCardManager>().cardAsset.cardType == CardType.Human)
-            {
-               transform.GetComponentInParent<OneCardManager>().EquipEquipment(cardAsset);
-            }
-        }
-        */
 
         if (transform.childCount != childCount)
         {
@@ -426,6 +418,78 @@ public class OneCardManager : MonoBehaviour
         }
     }
 
+    public void ShowDamageNumber(int number)
+    {
+        switch (number)
+        {
+            case 0:
+                break;
+            case 1:
+                Instantiate(damageNumbers[1], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 2:
+                Instantiate(damageNumbers[2], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 3:
+                Instantiate(damageNumbers[3], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 4:
+                Instantiate(damageNumbers[4], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 5:
+                Instantiate(damageNumbers[5], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 6:
+                Instantiate(damageNumbers[6], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 7:
+                Instantiate(damageNumbers[7], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 8:
+                Instantiate(damageNumbers[8], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 9:
+                Instantiate(damageNumbers[9], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 10:
+                Instantiate(damageNumbers[10], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 11:
+                Instantiate(damageNumbers[11], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 12:
+                Instantiate(damageNumbers[12], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 13:
+                Instantiate(damageNumbers[13], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 14:
+                Instantiate(damageNumbers[14], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 15:
+                Instantiate(damageNumbers[15], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 16:
+                Instantiate(damageNumbers[16], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 17:
+                Instantiate(damageNumbers[17], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 18:
+                Instantiate(damageNumbers[18], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 19:
+                Instantiate(damageNumbers[19], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            case 20:
+                Instantiate(damageNumbers[20], gameManager.particlePosition[0], Quaternion.identity);
+                break;
+            default:
+                break;
+        }
+    }
+
+
     #region Abilitys
 
     public void HealAbility()
@@ -490,6 +554,7 @@ public class OneCardManager : MonoBehaviour
 
     public void Damage(int damage)
     {
+        ShowDamageNumber(damage);
         Health = Health - damage;
         Instantiate(humanDamageParticles, gameObject.transform.localPosition, Quaternion.identity);
     }

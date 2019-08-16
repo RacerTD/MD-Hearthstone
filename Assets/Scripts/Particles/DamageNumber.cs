@@ -6,9 +6,9 @@ using DG.Tweening;
 
 public class DamageNumber : MonoBehaviour
 {
-    public GameObject explosion;
+    //public GameObject explosion;
     public Image image;
-    bool enable;
+    //bool enable;
 
     private GameManager gameManager;
     private Vector3 spawnPosition;
@@ -20,11 +20,16 @@ public class DamageNumber : MonoBehaviour
 
     void Start()
     {
+        //Debug.Log("Number got its number");
         spawnPosition = gameManager.particlePosition[0];
         transform.DOScale(2f, 0f);
-        enable = true;
+        //enable = true;
+        transform.position = spawnPosition;
+        transform.DOScale(1f, 10f).SetEase(Ease.OutElastic);
+        StartCoroutine(Fade());
+        StartCoroutine(KillSystem());
     }
-
+    /*
     void Update()
     {
         if (enable)
@@ -36,6 +41,7 @@ public class DamageNumber : MonoBehaviour
         StartCoroutine(Fade());
         StartCoroutine(KillSystem());
     }
+    */
     IEnumerator Fade()
     {
         // fade from opaque to transparent
@@ -51,7 +57,7 @@ public class DamageNumber : MonoBehaviour
     IEnumerator KillSystem()
     {
         //yield return new WaitForSecondsRealtime(0.8f);
-        enable = false;
+        //enable = false;
         yield return new WaitForSecondsRealtime(3f);
         Destroy(gameObject);
     }
