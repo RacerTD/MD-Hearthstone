@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
+  m_Name: _Vorlage
+  m_EditorClassIdentifier: 
+  prefabName: HumanCard
+  cardType: 1
+  cardImage: {fileID: 0}
+  boardCardImage: {fileID: 0}
+  maxHealth: 10
+  attack: 10
+  attackUsed: 0
+  summoningSickness: 1
+  taunt: 0
+  cost: 4
+  description: 'Deals 2 Damage to an enemy Target.
+
+    Deals 4 Damage to an enemy Target.
+
+    Restores 1 hitpoint of an allys health.
+
+    Restores 3 hitpoints of an allys health.'
+  lowHeal:
+    enabled: 0
+    effect: 1
+    used: 0
+    cost: 1
+    name: 0
+  highHeal:
+    enabled: 0
+    effect: 3
+    used: 0
+    cost: 2
+    name: 1
+  lowDMG:
+    enabled: 0
+    effect: 2
+    used: 0
+    cost: 1
+    name: 2
+  highDMG:
+    enabled: 0
+    effect: 4
+    used: 0
+    cost: 2
+    name: 3

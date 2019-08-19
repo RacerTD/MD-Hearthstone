@@ -43,5 +43,6 @@ public class DamageNumber : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
         Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }
