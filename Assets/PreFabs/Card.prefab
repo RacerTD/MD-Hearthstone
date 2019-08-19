@@ -6201,7 +6201,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -76.8, y: -131.9}
-  m_SizeDelta: {x: 39.03, y: 39.03}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5534342337301255390
 CanvasRenderer:
@@ -6231,7 +6231,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6fd80e22991078b42b573878a62f7a71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78ec9926a8c7ca74e883b065c9345919, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8186,6 +8186,7 @@ MonoBehaviour:
   manPower: {fileID: 0}
   mana: {fileID: 0}
   hand: {fileID: 0}
+  playerField: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: Card
   onBoard: 0
@@ -8242,6 +8243,12 @@ MonoBehaviour:
   - {fileID: 7787564949065364512, guid: a6d1da5adff8a4b4b87301640cdf2ac3, type: 3}
   - {fileID: 3373621680241590504, guid: 6517d5714bb614f4a801c30c06cec493, type: 3}
   - {fileID: 4138941840413639889, guid: b1c03dd615f3ae64caee335f82742668, type: 3}
+  abilityImages:
+  - {fileID: 21300000, guid: 78ec9926a8c7ca74e883b065c9345919, type: 3}
+  - {fileID: 21300000, guid: ef3b40033fddf8342be8b17bfa6caddb, type: 3}
+  - {fileID: 21300000, guid: 4ba9872f28dc3334384120699317b2a9, type: 3}
+  - {fileID: 21300000, guid: 421a0185adf60094fbab5668bbc127ce, type: 3}
+  handAbilitySymbol: {fileID: 1020561800576242802}
   abilityCollider:
   - {fileID: 7300961016330758611}
   enemyCardFront: {fileID: 5417867203999520390}
@@ -8261,6 +8268,7 @@ MonoBehaviour:
   highDMGGameObject: {fileID: 6949324951023926921}
   taunt: {fileID: 0}
   childCount: 4
+  summoningSickness: 1
   targetPosition: {x: 0, y: 0, z: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   _health: 0
