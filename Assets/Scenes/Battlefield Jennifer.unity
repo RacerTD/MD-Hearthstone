@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1683640946}
-  manPower: 12
-  maxManPower: 12
+  manPower: 20
+  maxManPower: 20
 --- !u!1 &164939110
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,10 +486,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1153,6 +1153,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
   - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
   - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
+  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
+  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
+  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
+  - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
+  - {fileID: 11400000, guid: 1d149124827efcb44ac523619518b185, type: 2}
+  - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
+  - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
+  - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
+  - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
+  - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
+  - {fileID: 11400000, guid: c87cce089cb1cde46a8644cf16bc50e5, type: 2}
   - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
   - {fileID: 11400000, guid: 1d149124827efcb44ac523619518b185, type: 2}
   - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
@@ -1198,7 +1209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: -205}
+  m_AnchoredPosition: {x: 575, y: -415}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979661368
@@ -1355,7 +1366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -284, y: -202}
+  m_AnchoredPosition: {x: -567, y: -410}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077346826
@@ -1528,10 +1539,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1715,7 +1726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466797}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8465576}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -1805,8 +1816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1683640946}
-  manaCount: 12
-  maxMana: 12
+  manaCount: 20
+  maxMana: 20
 --- !u!1 &1571175725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1910,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1571175730
 RectTransform:
@@ -1951,7 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0580662f0027749b17cf432a8dff0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardDeck: {fileID: 929220776}
+  cardDeck: {fileID: 929220778}
   hand: {fileID: 1771408305}
   cardsSideBySide: {fileID: 0}
   enemyField: {fileID: 188098478}
@@ -1961,6 +1972,9 @@ MonoBehaviour:
   cardInHand: 6
   highlight: 4
   currentlyDragging: {fileID: 0}
+  clicked01: {fileID: 0}
+  clicked02: {fileID: 0}
+  abilityUser: {fileID: 0}
   particlePosition: []
   gameState: 0
 --- !u!4 &1683640947
@@ -2044,8 +2058,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.00028968, y: 0.000090065}
+  m_SizeDelta: {x: 191.6, y: 35.873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721373203
 MonoBehaviour:
@@ -2095,14 +2109,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 44.75
+  m_fontSize: 32.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 150
   m_fontStyle: 1
-  m_textAlignment: 257
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2133,7 +2147,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.00005113833, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1721373203}
     characterCount: 8
@@ -2217,10 +2231,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2310,12 +2324,7 @@ MonoBehaviour:
   playerField: {fileID: 501992558}
   manPower: {fileID: 129020263}
   mana: {fileID: 1520702370}
-  handPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cards: []
 --- !u!224 &1771408306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2353,7 +2362,7 @@ MonoBehaviour:
   randomVertical: 0
   randomHorizontal: 0
   randomAngle: 0
-  verticalOffset_: 50
+  verticalOffset_: 0
   cardOffSetHorizontal: 100
   cardOffSetDepth: 0
   rotationOffSet: -6

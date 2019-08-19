@@ -214,20 +214,25 @@ public class HighlightCard : MonoBehaviour
     }
     private void HighlightAbilityOrAttack()
     {
-        
-        if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+        if (currendCardInHand != gameManager.cardInHand)
         {
-            ChangeColor(selectedCardColor, waves);
-            
-        }
-        else
-        {
-            ChangeColor(defaultColor, waves);
-            return;
-        }
-        if (gameManager.abilityUser != null)
-        {
+            currendCardInHand = gameManager.cardInHand;
 
+            if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+            {
+                ChangeColor(selectedCardColor, waves);
+
+            }
+            else
+            {
+                ChangeColor(defaultColor, waves);
+                return;
+            }
+            if (gameManager.abilityUser != null)
+            {
+
+            }
         }
     }
+
 }

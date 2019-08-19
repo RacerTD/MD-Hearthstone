@@ -8167,7 +8167,7 @@ MonoBehaviour:
   attackColor: {r: 1, g: 0.5372549, b: 0.5554664, a: 1}
   abilityUsedColor: {r: 0, g: 0, b: 0, a: 0}
   summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
-  selectedCardColor: {r: 0, g: 0, b: 0, a: 0}
+  selectedCardColor: {r: 0.5969685, g: 0.22748311, b: 0.6792453, a: 1}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
