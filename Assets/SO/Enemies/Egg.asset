@@ -21,7 +21,7 @@ MonoBehaviour:
   attackUsed: 0
   summoningSickness: 1
   taunt: 0
-  cost: 2
+  cost: 42
   description: 
   lowHeal:
     enabled: 0
