@@ -379,7 +379,7 @@ MonoBehaviour:
   cardOffSetHorizontal: 230
   cardOffSetDepth: 0
   rotationOffSet: 0
-  scale: 1
+  scale: 0.75
   startingAngle: 0
 --- !u!114 &188098480
 MonoBehaviour:
@@ -1161,13 +1161,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
   - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
   - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
-  - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
+  - {fileID: 11400000, guid: 418f535e74b62ef48a8b35a5b8786a6e, type: 2}
   - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
   - {fileID: 11400000, guid: c87cce089cb1cde46a8644cf16bc50e5, type: 2}
   - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
   - {fileID: 11400000, guid: 1d149124827efcb44ac523619518b185, type: 2}
   - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
-  - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
+  - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
   - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
   - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
   - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
@@ -1175,6 +1175,9 @@ MonoBehaviour:
   hand: {fileID: 1771408305}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
+  startCards:
+  - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
+  - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
 --- !u!1 &979661366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,22 +1643,22 @@ PrefabInstance:
     - target: {fileID: 4285055546168868350, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 676.5
+      value: 602.2
       objectReference: {fileID: 0}
     - target: {fileID: 4285055546168868350, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 380.5
+      value: 339.8
       objectReference: {fileID: 0}
     - target: {fileID: 4285055546168868350, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1353
+      value: 1204.4
       objectReference: {fileID: 0}
     - target: {fileID: 4285055546168868350, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 761
+      value: 679.7
       objectReference: {fileID: 0}
     - target: {fileID: 4285055546168868350, guid: add1ffd18a14cbc47b7a4b7ec7dd4c9d,
         type: 3}

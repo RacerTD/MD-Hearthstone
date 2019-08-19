@@ -177,6 +177,7 @@ public class EnemyFieldScript : MonoBehaviour
                 enemyState = EnemyState.Wait;
                 break;
             case 3:
+                Debug.Log("Du hast gewonnen");
                 break;
         }
         timer = 0;
@@ -266,6 +267,7 @@ public class EnemyFieldScript : MonoBehaviour
         }
         else
         {
+            Debug.Log("Du hast verloren");
             //Deathscreen
             enemyState = EnemyState.End;
         }
