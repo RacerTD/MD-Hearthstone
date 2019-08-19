@@ -55,11 +55,13 @@ public class GameManager : MonoBehaviour
         if(Main != null && Main != this)
         {
             Destroy(this);
-        } else if(Main == null)
+        }
+        else if(Main == null)
         {
             Main = this;
         }
     }
+
     private void Start()
     {
         gameState = GameState.GameStart;
@@ -123,7 +125,7 @@ public class GameManager : MonoBehaviour
                         hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().HealAbility();
                         break;
                     case "Frame":
-                    case "Background":
+                    case "Image":
                         hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
                         break;
                     default:
@@ -149,10 +151,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// clickedOn will be set ...
-    /// </summary>
-    /// <param name="clickedOn"></param>
     public void CardClicked(OneCardManager clickedOn)
     {
         if (gameState == GameState.PlayerIdle)
@@ -245,7 +243,7 @@ public class GameManager : MonoBehaviour
     void TurnBegin()
     {
         playerField.TurnBegin();
-        enemyField.TurnStart();
+        //enemyField.TurnStart();
         mana.TurnBegin();
     }
 
@@ -330,7 +328,7 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
-        TurnBegin();
+        //TurnBegin();
         gameState = GameState.Enemy;
         enemyField.ResetEnemyState();
     }

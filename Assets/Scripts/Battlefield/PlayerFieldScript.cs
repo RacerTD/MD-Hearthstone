@@ -55,6 +55,7 @@ public class PlayerFieldScript : MonoBehaviour
 
     public void TurnBegin()
     {
+        Debug.Log("Player Turn Begin");
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);

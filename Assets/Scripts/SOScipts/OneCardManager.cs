@@ -53,6 +53,7 @@ public class OneCardManager : MonoBehaviour
     [Header("Spott")]
     public GameObject taunt;
     public int childCount = 4;
+    public bool summoningSickness = true;
 
     public Vector3 targetPosition;
     public Vector3 targetRotation;
@@ -102,8 +103,36 @@ public class OneCardManager : MonoBehaviour
         }
         InitializeCard();
     }
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
+        /*
+        if (summoningSickness == true)
+        {
+            for (int i = 0; i < boardCardImage.Count; i++)
+            {
+                boardCardImage[i].color = new Color(0, 0, 1, 1);
+            }
+            for (int i = 0; i < cardGraphic.Count; i++)
+            {
+                cardGraphic[i].color = new Color(0, 0, 1, 1);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < boardCardImage.Count; i++)
+            {
+                boardCardImage[i].color = new Color(0, 1, 0, 1);
+            }
+            for (int i = 0; i < cardGraphic.Count; i++)
+            {
+                cardGraphic[i].color = new Color(0, 1, 0, 1);
+            }
+        }
+        */
 
         if (transform.childCount != childCount)
         {
@@ -134,7 +163,7 @@ public class OneCardManager : MonoBehaviour
 
     public void EquipEquipment(CardAsset equipment)
     {
-        Debug.Log("Equipment got Equipped");
+        //Debug.Log("Equipment got Equipped");
         maxHealth += equipment.maxHealth;
         Health += equipment.maxHealth;
         Attack += equipment.attack;
@@ -213,6 +242,7 @@ public class OneCardManager : MonoBehaviour
         maxHealth = newAsset.maxHealth;
         Health = maxHealth;
         cost = newAsset.cost;
+        summoningSickness = true;
 
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
@@ -278,26 +308,28 @@ public class OneCardManager : MonoBehaviour
 
     public void TurnBegin()
     {
-        //Debug.Log("Baum3");
+        //Debug.Log("Turn Begin");
         cardAsset.lowHeal.used = false;
         cardAsset.highHeal.used = false;
         cardAsset.lowDMG.used = false;
         cardAsset.highDMG.used = false;
         cardAsset.attackUsed = false;
-        ChangeSummoningSickness();
-    }
-
-    public void ChangeSummoningSickness()
-    {
-        cardAsset.summoningSickness = false;
-        for (int i = 0; i < abilityCollider.Count; i++)
+        if (cardAsset.cardType == CardType.Human)
         {
-            abilityCollider[i].enabled = true;
+            DeactivateSummoningSickness();
         }
         
+    }
+
+    public void ChangeEggToEnemy()
+    {
         if (cardAsset.cardType == CardType.Egg)
         {
+            //Debug.Log("Egg to Normal transformation");
             cardAsset = enemyField.strongEnemyCards[Random.Range(0, enemyField.strongEnemyCards.Count)];
+            maxHealth = cardAsset.maxHealth;
+            Health = cardAsset.maxHealth;
+            Attack = cardAsset.attack;
             UpdateList(costText, cost.ToString());
             UpdateList(nameText, cardAsset.name);
             UpdateList(descriptionText, cardAsset.description);
@@ -314,6 +346,24 @@ public class OneCardManager : MonoBehaviour
                 boardCardImage[i].sprite = cardAsset.boardCardImage;
             }
         }
+    }
+
+
+
+
+    public void DeactivateSummoningSickness()
+    {
+        summoningSickness = false;
+
+        for (int i = 0; i < abilityCollider.Count; i++)
+        {
+            abilityCollider[i].enabled = true;
+        }
+
+        ChangeEggToEnemy();
+
+        cardAsset.summoningSickness = false;
+        //Debug.Log("Deactivate Summoning Sickness");
     }
     private void UpdateAbilitys()
     {
@@ -363,6 +413,7 @@ public class OneCardManager : MonoBehaviour
 
     public void NowOnField()
     {
+        //Debug.Log("Card Now on Field");
         if (!onBoard)
         {
             if (manPower.manPower >= cardAsset.cost)
@@ -374,22 +425,23 @@ public class OneCardManager : MonoBehaviour
                 ManPowerCost();
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
                 gameObject.GetComponent<Draggable>().Dragable = false;
-                TurnBegin();
+                //TurnBegin();
 
                 for (int i = 0; i < abilityCollider.Count; i++)
                 {
                     abilityCollider[i].enabled = false;
                 }
-                cardAsset.summoningSickness = true;
+                //Debug.Log("Changed Summoning Sicness (Now on field)");
             }
             else if (cardAsset.cardType == CardType.Epuipment)
             {
                 //Werte anrechnen
-                Debug.Log("Equpment angelegt");
+                //Debug.Log("Equpment angelegt");
             }
             else
             {
                 this.gameObject.transform.SetParent(hand.GetComponent<Transform>());
+
             }
         }
     }

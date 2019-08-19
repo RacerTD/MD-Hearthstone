@@ -356,7 +356,7 @@ MonoBehaviour:
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
   timeBetweenActions: 0
-  enemyWaveCount: 0
+  enemyWaveCount: -1
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.760503, y: 0.532}
   m_AnchorMax: {x: 1, y: 0.6116809}
-  m_AnchoredPosition: {x: 0.99993896, y: 0}
+  m_AnchoredPosition: {x: 1, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905709587
@@ -1726,7 +1726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8465576}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.846405}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372

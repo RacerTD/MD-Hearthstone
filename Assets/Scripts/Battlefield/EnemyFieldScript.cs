@@ -25,13 +25,14 @@ public class EnemyFieldScript : MonoBehaviour
     public float timeBetweenActions = 5;
 
     [Header("Variablen für andere Scripte")]
-    public int enemyWaveCount = 0;
+    public int enemyWaveCount = -1;
 
     private Transform myChild;
     private int childCount;
     private float timer;
     private bool attacked = false;
     private bool firstTurn = true;
+    private bool firstTurn_ = true;
     private int timeToWait = 2;
 
     private EnemyState enemyState = EnemyState.Start;
@@ -62,7 +63,6 @@ public class EnemyFieldScript : MonoBehaviour
                 case EnemyState.Start:
                     TurnStart();
                     EnemyCardSpawn();
-                    
 
                     if (firstTurn)
                     {
@@ -86,7 +86,6 @@ public class EnemyFieldScript : MonoBehaviour
                     {
                         enemyState = EnemyState.End;
                     }
-                    
                     break;
 
                 case EnemyState.Wait:
@@ -97,7 +96,15 @@ public class EnemyFieldScript : MonoBehaviour
                     break;
 
                 case EnemyState.End:
-                    TurnStart();
+                    if (firstTurn_)
+                    {
+                        firstTurn_ = false;
+                    }
+                    else
+                    {
+                        //TurnStart();
+                    }
+                    
                     gameManager.gameState = GameState.PlayerCardDraw;
                     break;
             }
@@ -108,7 +115,7 @@ public class EnemyFieldScript : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+            if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy && transform.GetChild(i).GetComponent<OneCardManager>().summoningSickness == false)
             {
                 attackList.Add(transform.GetChild(i).GetComponent<OneCardManager>());
             }
@@ -130,10 +137,12 @@ public class EnemyFieldScript : MonoBehaviour
 
     public void TurnStart()
     {
+        Debug.Log("Enemy Turn Begin");
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);
             myChild.GetComponent<OneCardManager>().TurnBegin();
+            myChild.GetComponent<OneCardManager>().DeactivateSummoningSickness();
         }
         attacked = false;
     }
@@ -142,32 +151,32 @@ public class EnemyFieldScript : MonoBehaviour
     {
         if (transform.childCount == 0)
         {
-            switch (enemyWaveCount)
-            {
-                case 0:
-                    SpawnEggEnemy();
-                    SpawnWeakEnemy();
-                    SpawnWeakEnemy();
-                    enemyState = EnemyState.Wait;
-                    break;
-                case 1:
-                    SpawnWeakEnemy();
-                    SpawnStrongEnemy();
-                    SpawnEggEnemy();
-                    enemyState = EnemyState.Wait;
-                    break;
-                case 2:
-                    SpawnStrongEnemy();
-                    SpawnStrongEnemy();
-                    SpawnEggEnemy();
-                    enemyState = EnemyState.Wait;
-                    break;
-                case 3:
-                    break;
-            }
             enemyWaveCount++;
+            Debug.Log("Wave Count +1 " + enemyWaveCount);
+        }
 
-            
+        switch (enemyWaveCount)
+        {
+            case 0:
+                SpawnEggEnemy();
+                SpawnWeakEnemy();
+                SpawnWeakEnemy();
+                enemyState = EnemyState.Wait;
+                break;
+            case 1:
+                SpawnWeakEnemy();
+                SpawnStrongEnemy();
+                SpawnEggEnemy();
+                enemyState = EnemyState.Wait;
+                break;
+            case 2:
+                SpawnStrongEnemy();
+                SpawnStrongEnemy();
+                SpawnEggEnemy();
+                enemyState = EnemyState.Wait;
+                break;
+            case 3:
+                break;
         }
         timer = 0;
     }
@@ -255,5 +264,14 @@ public class EnemyFieldScript : MonoBehaviour
     public void ResetEnemyState()
     {
         enemyState = EnemyState.Start;
+    }
+
+    public void ActivateSummoningSicness()
+    {
+        Debug.Log("Activated Summoning Sicness");
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<OneCardManager>().summoningSickness = true;
+        }
     }
 }
