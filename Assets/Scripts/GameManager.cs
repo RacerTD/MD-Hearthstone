@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
         switch (gameState)
         {
             case GameState.GameStart:
+                cardDeck.SpawnStartCards();
                 cardDeck.ShuffleDeck();
                 cardDeck.SpawnCardDeck();
                 gameState = GameState.Enemy;
@@ -171,10 +172,12 @@ public class GameManager : MonoBehaviour
                 {
                     if (clicked01.cardAsset.taunt && enemyField.HasTaunt())
                     {
+                        particlePosition.Add(clicked01.transform.position);
                         Damage();
                     }
                     else if (!enemyField.HasTaunt())
                     {
+                        particlePosition.Add(clicked01.transform.position);
                         Damage();
                     }
                 }
@@ -248,7 +251,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void ResetAbilitys()
+    public void ResetAbilitys()
     {
         clicked01 = null;
         clicked02 = null;

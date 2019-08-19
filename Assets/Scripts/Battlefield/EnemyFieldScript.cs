@@ -61,6 +61,7 @@ public class EnemyFieldScript : MonoBehaviour
             switch (enemyState)
             {
                 case EnemyState.Start:
+                    gameManager.ResetAbilitys();
                     TurnStart();
                     EnemyCardSpawn();
 
@@ -183,20 +184,30 @@ public class EnemyFieldScript : MonoBehaviour
 
     private void SpawnEggEnemy()
     {
-        cardsToSpawn.Add(eggCard[Random.Range(0, eggCard.Count)]);
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        if (transform.childCount < 7)
+        {
+            cardsToSpawn.Add(eggCard[Random.Range(0, eggCard.Count)]);
+            Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        }
+        
     }
 
     private void SpawnWeakEnemy()
     {
-        cardsToSpawn.Add(weakEnemyCards[Random.Range(0, weakEnemyCards.Count)]);
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        if (transform.childCount < 7)
+        {
+            cardsToSpawn.Add(weakEnemyCards[Random.Range(0, weakEnemyCards.Count)]);
+            Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        }
     }
 
     private void SpawnStrongEnemy()
     {
-        cardsToSpawn.Add(strongEnemyCards[Random.Range(0, strongEnemyCards.Count)]);
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        if (transform.childCount < 7)
+        {
+            cardsToSpawn.Add(strongEnemyCards[Random.Range(0, strongEnemyCards.Count)]);
+            Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        }
     }
 
     public CardAsset cardToSpawn()

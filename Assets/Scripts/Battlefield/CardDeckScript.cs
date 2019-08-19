@@ -8,6 +8,7 @@ public class CardDeckScript : MonoBehaviour
     public List<CardAsset> deckCards = new List<CardAsset>();
     public HandScript hand;
     public GameObject cardPrefab;
+    public List<CardAsset> startCards = new List<CardAsset>();
     //comment
     void Start()
     {
@@ -48,5 +49,11 @@ public class CardDeckScript : MonoBehaviour
     public void MoveCardToHand()
     {
         this.gameObject.transform.GetChild(0).SetParent(hand.transform, true);
+    }
+
+    public void SpawnStartCards()
+    {
+        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
     }
 }

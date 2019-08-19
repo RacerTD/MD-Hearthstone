@@ -7,12 +7,14 @@ using TMPro;
 
 public class OneCardManager : MonoBehaviour
 {
+
     public EnemyFieldScript enemyField;
     public GameManager gameManager;
     public CardDeckScript cardDeck;
     public ManPowerScript manPower;
     public ManaScript mana;
     public HandScript hand;
+    public PlayerFieldScript playerField;
 
     public CardAsset cardAsset;
     public string prefabName;
@@ -33,6 +35,11 @@ public class OneCardManager : MonoBehaviour
     public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>(); //
     public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>(); //
     public List<GameObject> damageNumbers = new List<GameObject>();
+
+    [Header("Ability Symbol on Hand")]
+    [Tooltip("0. Low Heal, 1. High Heal, 2. Low Damage, 3. High Damage")]
+    public List<Sprite> abilityImages = new List<Sprite>();
+    public Image handAbilitySymbol;
 
     public List<BoxCollider2D> abilityCollider = new List<BoxCollider2D>();
 
@@ -92,10 +99,16 @@ public class OneCardManager : MonoBehaviour
         manPower = GameObject.Find("ManPower").GetComponent<ManPowerScript>();
         mana = GameObject.Find("Mana").GetComponent<ManaScript>();
         hand = GameObject.Find("Hand").GetComponent<HandScript>();
+        playerField = GameObject.Find("PlayerField").GetComponent<PlayerFieldScript>();
 
         if (gameManager.gameState != GameManager.GameState.Enemy)
         {
             cardAsset = cardDeck.CardToSpawn();
+        }
+        else if (gameManager.gameState == GameManager.GameState.GameStart)
+        {
+            cardAsset = cardDeck.startCards[0];
+            cardDeck.startCards.RemoveAt(0);
         }
         else
         {
@@ -103,6 +116,7 @@ public class OneCardManager : MonoBehaviour
         }
         InitializeCard();
     }
+
     private void Start()
     {
         
@@ -142,7 +156,7 @@ public class OneCardManager : MonoBehaviour
             {
                 if (transform.GetChild(i).GetComponent<OneCardManager>())
                 {
-                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human)
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human && cardAsset.cost <= mana.manaCount)
                     {
                         EquipEquipment(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset);
                         transform.GetChild(i).GetComponent<OneCardManager>().DeleteEquipment();
@@ -168,6 +182,7 @@ public class OneCardManager : MonoBehaviour
         Health += equipment.maxHealth;
         Attack += equipment.attack;
         equipmentCount++;
+        mana.UsedMana(equipment.cost);
 
         if (equipment.highHeal.enabled)
         {
@@ -198,12 +213,21 @@ public class OneCardManager : MonoBehaviour
     {
         if (gameManager.gameState != GameManager.GameState.Enemy)
         {
-            transform.SetParent(cardDeck.transform, false);
-            transform.localPosition = new Vector3(0, 0, 0);
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            if (gameManager.gameState == GameManager.GameState.GameStart && cardAsset.cost == 0)
+            {
+                transform.SetParent(playerField.transform, false);
+            }
+            else
+            {
+                transform.SetParent(cardDeck.transform, false);
+                transform.localPosition = new Vector3(0, 0, 0);
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
         }
         else
         {
+            gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
+            gameObject.GetComponent<Draggable>().Dragable = false;
             transform.SetParent(enemyField.transform, false);
             transform.localPosition = new Vector3(0, 1000, 0);
         }
@@ -370,10 +394,12 @@ public class OneCardManager : MonoBehaviour
         if (cardAsset.lowHeal.enabled)
         {
             lowHealGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[0];
         }
         else if (cardAsset.highHeal.enabled)
         {
             highHealGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[1];
         }
         else
         {
@@ -384,10 +410,12 @@ public class OneCardManager : MonoBehaviour
         if (cardAsset.lowDMG.enabled)
         {
             lowDMGGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[2];
         }
         else if (cardAsset.highDMG.enabled)
         {
             highDMGGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[3];
         }
         else
         {
