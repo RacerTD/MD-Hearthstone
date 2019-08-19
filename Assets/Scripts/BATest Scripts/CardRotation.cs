@@ -11,56 +11,48 @@ public class CardRotation : MonoBehaviour
 
     public RectTransform CardBack;
 
-    // an empty Game Object that is placed a bit above the face of the card, in the center of the card
-    public Transform targetFacePoint;
+    //bool showingFront = false;
 
-    public Collider collision;
-
-    // if this is true, player see the card Back
-    private bool showingBack = false;
+    private void Start()
+    {
+        //Hardset der Kartenrotation um 180 Grad
+        transform.eulerAngles = new Vector3(0, 180, 0);
+        //showingFront = false;
+    }
 
     // called once per frame
     void Update()
     {
-        // Raycast from Camera to a target point on the face of the card
-        // If it passes through the card's collider, we should show the back of the card
 
-        RaycastHit[] hits;
-        hits = Physics.RaycastAll(origin: Camera.main.transform.position,
-            // direction: target - Camera. / .normalized means magnitude is equal to 1 
-            direction: (-Camera.main.transform.position + targetFacePoint.position).normalized,
-            maxDistance: (-Camera.main.transform.position + targetFacePoint.position).magnitude) ;
-
-
-        bool passedThroughColliderOnCard = false;
-       
-        // sets bool passedThruoghColliderOnCard to true if collider gets hit
-        foreach (RaycastHit hitsHit in hits)
-        {
-            if (hitsHit.collider == collision)
-                passedThroughColliderOnCard = true;
-        }
-
-        // passedThroughColliderOnCard and showingBack must be in sync, if not, changes must be done
-        if (passedThroughColliderOnCard != showingBack)
-        {
-            showingBack = passedThroughColliderOnCard;
-            if (showingBack)
-            {
-                CardFront.gameObject.SetActive(false);
-                CardBack.gameObject.SetActive(true);
-            }
-            else
-            {
-                CardFront.gameObject.SetActive(true);
-                CardBack.gameObject.SetActive(false);
-            }
-
-        }
-
-
-
-
+        CalculateRotation();
 
     }
+
+    private void CalculateRotation()
+    {
+        float x = transform.rotation.eulerAngles.y;
+
+        // Berechnung der Rotation (Frontside/Backside) mit Hilfe einer Sinus-Funktion.
+        // Im positiven Bereich (+1) wird CardFront gezeigt; Im negativen (-1) wird CardBack gezeigt.
+        float FrontBackSolution = Mathf.Sin(x / (180 / Mathf.PI) + Mathf.PI / 2);
+
+        float signFB = Mathf.Sign(FrontBackSolution);
+
+        if (signFB == 1) //&& !showingFront)
+        {
+            CardFront.gameObject.SetActive(true);
+            CardBack.gameObject.SetActive(false);
+            //showingFront = true;
+        }
+        else if (signFB == -1) //&& showingFront)
+        {
+            CardFront.gameObject.SetActive(false);
+            CardBack.gameObject.SetActive(true);
+            //showingFront = false;
+        }
+    }
+
+
+
+   
 }
