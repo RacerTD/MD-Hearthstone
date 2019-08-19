@@ -164,4 +164,4 @@ MonoBehaviour:
   - {fileID: 5768833409663095049, guid: 4caa580d64adae14b99ba7967b498606, type: 3}
   - {fileID: 1696947724814828281, guid: 4caa580d64adae14b99ba7967b498606, type: 3}
   toAnimate: {fileID: 2664472179195961826}
-  speed: 0.884
+  speed: 0.38

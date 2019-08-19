@@ -13,7 +13,7 @@ public class waveVisibility : MonoBehaviour
     public float speed = 1;
     void Start()
     {
-        counter = Random.Range(0, animation.Count);
+        counter = 0;
     }
 
     // Update is called once per frame
