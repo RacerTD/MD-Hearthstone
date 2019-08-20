@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -344,8 +344,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: be61d38baabcd7548a6dc9d966691dd3, type: 2}
   - {fileID: 11400000, guid: 56520d2e26cd87d4ebda65408e9208b6, type: 2}
   - {fileID: 11400000, guid: 4e791500832f77f40b474672c01d9a33, type: 2}
+  - {fileID: 11400000, guid: 691d70c75b028f94c9ab120bef5a3cba, type: 2}
   - {fileID: 11400000, guid: b81238b1c67bc884983381831a285245, type: 2}
   weakEnemyCards:
+  - {fileID: 11400000, guid: c0e045bb08bf093449ffb025e5d81f1c, type: 2}
+  - {fileID: 11400000, guid: b327cb1141c87314abdcb495ecbda041, type: 2}
+  - {fileID: 11400000, guid: e2b41465a6cdcce428abb4365b1b0ae8, type: 2}
   - {fileID: 11400000, guid: 756240d219664cc488206509fd356de1, type: 2}
   eggCard:
   - {fileID: 11400000, guid: ef2b93a1b93c22b46b4c2b7728f0ec50, type: 2}
@@ -356,7 +360,7 @@ MonoBehaviour:
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
   timeBetweenActions: 0
-  enemyWaveCount: 0
+  enemyWaveCount: -1
 --- !u!114 &188098479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1224,36 +1228,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckCards:
-  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
-  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
-  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
-  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
-  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
-  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
   - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
-  - {fileID: 11400000, guid: 1d149124827efcb44ac523619518b185, type: 2}
-  - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
-  - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
-  - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
-  - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
-  - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
-  - {fileID: 11400000, guid: c87cce089cb1cde46a8644cf16bc50e5, type: 2}
-  - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
+  - {fileID: 11400000, guid: a31bbe8957a2b7b43b977218530e1994, type: 2}
+  - {fileID: 11400000, guid: c1eac7feed0966e4ea51313735f7e327, type: 2}
+  - {fileID: 11400000, guid: ba4c6cc6ac8f5c849a57972d499374ed, type: 2}
   - {fileID: 11400000, guid: 1d149124827efcb44ac523619518b185, type: 2}
   - {fileID: 11400000, guid: 86a6e5231d7abc04ba99b15991e3a4fa, type: 2}
   - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
   - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
   - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
+  - {fileID: 11400000, guid: 418f535e74b62ef48a8b35a5b8786a6e, type: 2}
   - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
   - {fileID: 11400000, guid: c87cce089cb1cde46a8644cf16bc50e5, type: 2}
-  - {fileID: 11400000, guid: 418f535e74b62ef48a8b35a5b8786a6e, type: 2}
-  - {fileID: 11400000, guid: c1eac7feed0966e4ea51313735f7e327, type: 2}
-  - {fileID: 11400000, guid: 418f535e74b62ef48a8b35a5b8786a6e, type: 2}
-  - {fileID: 11400000, guid: c1eac7feed0966e4ea51313735f7e327, type: 2}
+  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
+  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
+  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
+  - {fileID: 11400000, guid: 0039b2302222e5d479ba24780dd4617f, type: 2}
+  - {fileID: 11400000, guid: df66fe9671452a84dabe2ca7e897d67b, type: 2}
+  - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
+  - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
+  - {fileID: 11400000, guid: 0039b2302222e5d479ba24780dd4617f, type: 2}
   hand: {fileID: 1771408305}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
   startCards: []
+  spellCards:
+  - {fileID: 11400000, guid: e1ad824d1fedbc24186daa347a5a585d, type: 2}
+  - {fileID: 11400000, guid: ca70210b2cc23f84eaa429ca4b0b63f0, type: 2}
+  - {fileID: 11400000, guid: 2e1d0432b398cb54d8b8f87c4f063b78, type: 2}
+  - {fileID: 11400000, guid: 36578b250d7e91843a278f977568dca3, type: 2}
 --- !u!1 &979661366
 GameObject:
   m_ObjectHideFlags: 0

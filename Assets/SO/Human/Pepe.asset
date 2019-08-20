@@ -16,7 +16,7 @@ MonoBehaviour:
   cardType: 1
   cardImage: {fileID: 21300000, guid: aff5b006e67528b43a197c3fa0febec3, type: 3}
   boardCardImage: {fileID: 21300000, guid: 5159fd5812e54754e8a53cc65279f2ee, type: 3}
-  maxHealth: 2
+  maxHealth: 3
   attack: 2
   attackUsed: 0
   summoningSickness: 1
@@ -38,12 +38,12 @@ MonoBehaviour:
   lowDMG:
     enabled: 1
     effect: 2
-    used: 1
+    used: 0
     cost: 1
     name: 2
   highDMG:
     enabled: 0
     effect: 4
-    used: 1
+    used: 0
     cost: 2
     name: 3

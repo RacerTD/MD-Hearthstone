@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabName: HumanCard
   cardType: 0
-  cardImage: {fileID: 21300000, guid: db8b43efef325ed40b0a3d026ca204e2, type: 3}
+  cardImage: {fileID: 21300000, guid: d0fb792d9a6f9284ca4b466b9ac1fb86, type: 3}
   boardCardImage: {fileID: 0}
   maxHealth: 3
   attack: 4
   attackUsed: 0
-  summoningSickness: 1
+  summoningSickness: 0
   taunt: 0
   cost: 2
   description: 

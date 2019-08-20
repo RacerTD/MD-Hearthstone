@@ -19,7 +19,7 @@ MonoBehaviour:
   maxHealth: 2
   attack: 4
   attackUsed: 0
-  summoningSickness: 1
+  summoningSickness: 0
   taunt: 0
   cost: 2
   description: 
