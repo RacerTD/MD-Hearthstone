@@ -3058,8 +3058,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8499832, y: 47.5}
-  m_SizeDelta: {x: 150, y: 225}
+  m_AnchoredPosition: {x: -0.425, y: 47.5}
+  m_SizeDelta: {x: 149.15, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5553528622409650401
 CanvasRenderer:
@@ -4209,7 +4209,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bd67893a96335a149aaf8d0f3dfc0c4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7bb3479089a679b4f884ec8bed20b853, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9497,16 +9497,19 @@ MonoBehaviour:
   - {fileID: 6748079393637625128}
   - {fileID: 5202951085365801590}
   - {fileID: 559674425037709449}
+  - {fileID: 5499200692890376601}
   costText:
   - {fileID: 7468989295531121839}
   - {fileID: 8221567622445463828}
   - {fileID: 5529822943979641309}
+  - {fileID: 9217823236628353764}
   nameText:
   - {fileID: 1760030276566862595}
   - {fileID: 6945970059845049947}
   descriptionText:
   - {fileID: 3877422553795464316}
   - {fileID: 4854005312142825582}
+  - {fileID: 8654234993982848514}
   attackText:
   - {fileID: 8713700212934884906}
   - {fileID: 2525405862592004278}
@@ -9889,7 +9892,7 @@ GameObject:
   - component: {fileID: 5370146755825969507}
   - component: {fileID: 5499200692890376601}
   m_Layer: 0
-  m_Name: Item
+  m_Name: Spell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

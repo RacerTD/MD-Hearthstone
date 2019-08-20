@@ -21,7 +21,7 @@ public class dirtwavespawn : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + (spawnRate+0.2f);
-            Vector2 newPos = new Vector2(UnityEngine.Random.Range(150, Screen.width - 150), UnityEngine.Random.Range(475, Screen.height - 50));
+            Vector2 newPos = new Vector2(UnityEngine.Random.Range(150, Screen.width - 150), UnityEngine.Random.Range(700, Screen.height - 50));
             GameObject myObject = Instantiate(wave, newPos, Quaternion.identity);
             myObject.GetComponent<Image>().color = dirtyColor;
             myObject.transform.SetParent(transform);
