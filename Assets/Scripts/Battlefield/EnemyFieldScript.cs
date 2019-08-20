@@ -21,6 +21,7 @@ public class EnemyFieldScript : MonoBehaviour
     public GameManager gameManager;
     public PlayerFieldScript playerField;
     public CardDeckScript cardDeck;
+    public ManaScript mana;
 
     [Header("Anderes")]
     public float timeBetweenActions = 5;
@@ -56,6 +57,19 @@ public class EnemyFieldScript : MonoBehaviour
     {
         timer += Time.deltaTime;
 
+        if (childCount != transform.childCount)
+        {
+            Debug.Log("Called");
+            childCount = transform.childCount;
+            for (int i = childCount - 1; i > -1; i--)
+            {
+                if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEDMGSpell)
+                {
+                    AOEDamage(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);
+                    Destroy(transform.GetChild(i).gameObject);
+                }
+            }
+        }
 
         if (gameManager.gameState == GameState.Enemy)
         {
@@ -110,6 +124,15 @@ public class EnemyFieldScript : MonoBehaviour
                     gameManager.gameState = GameState.PlayerCardDraw;
                     break;
             }
+        }
+    }
+
+    private void AOEDamage(int cost, int effect)
+    {
+        mana.UsedMana(cost);
+        for (int k = transform.childCount - 1; k >= 0; k--)
+        {
+            transform.GetChild(k).GetComponent<OneCardManager>().Damage(effect);
         }
     }
 

@@ -456,9 +456,15 @@ public class OneCardManager : MonoBehaviour
 
     public void NowOnField()
     {
+        //Debug.Log("Called");
         //Debug.Log("Card Now on Field");
         if (!onBoard)
         {
+            if (cardAsset.cardType == CardType.AOEDMGSpell)
+            {
+                
+                return;
+            }
             if (manPower.manPower >= cardAsset.cost)
             {
                 humanCardFront.SetActive(false);
@@ -515,6 +521,7 @@ public class OneCardManager : MonoBehaviour
 
     public void ShowDamageNumber(int number)
     {
+        gameManager.particlePosition.Add(transform.position);
         switch (number)
         {
             case 0:
@@ -582,6 +589,7 @@ public class OneCardManager : MonoBehaviour
             default:
                 break;
         }
+        gameManager.particlePosition.RemoveAt(0);
     }
 
 
@@ -610,12 +618,16 @@ public class OneCardManager : MonoBehaviour
 
     public void Heal(int heal)
     {
-        Health = Health + heal;
-        if (Health > maxHealth)
+        if (cardAsset.cardType == CardType.Human)
         {
-            Health = maxHealth;
+            Health = Health + heal;
+            if (Health > maxHealth)
+            {
+                Health = maxHealth;
+            }
+            gameManager.particlePosition.Add(this.transform.position);
+            Instantiate(healParticles, gameObject.transform.localPosition, Quaternion.identity);
         }
-        Instantiate(healParticles, gameObject.transform.localPosition, Quaternion.identity);
     }
 
     public bool HealAbilityAvailible()

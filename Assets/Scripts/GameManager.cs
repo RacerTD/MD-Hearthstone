@@ -290,7 +290,7 @@ public class GameManager : MonoBehaviour
             clicked01.Heal(healAbilityEffect);
             mana.UsedMana(healAbilityCost);
 
-            particlePosition.Add(clicked01.transform.position);
+            //particlePosition.Add(clicked01.transform.position);
             abilityUser.UsedHeal();
             ResetAbilitys();
         }

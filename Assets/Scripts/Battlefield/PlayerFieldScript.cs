@@ -9,6 +9,7 @@ public class PlayerFieldScript : MonoBehaviour
     Transform myChild;
     public GameManager gameManager;
     public GameObject manPower;
+    public ManaScript mana;
     private CardType currentHandCard;
 
     public Image toHighlight;
@@ -25,9 +26,19 @@ public class PlayerFieldScript : MonoBehaviour
     {
         if (childCount != transform.childCount)
         {
+            childCount = transform.childCount;
+            for (int i = childCount - 1; i > -1; i--)
+            {
+                if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEHealSpell)
+                {
+                    AOEHeal(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);
+                    Destroy(transform.GetChild(i).gameObject);
+                }
+            }
+
             UpdateCardParts();
         }
-        childCount = transform.childCount;
+        
 
         if (currentHandCard != gameManager.cardInHand)
         {
@@ -43,6 +54,16 @@ public class PlayerFieldScript : MonoBehaviour
             }
         }
     }
+
+    private void AOEHeal(int cost, int effect)
+    {
+        mana.UsedMana(cost);
+        for (int k = transform.childCount - 1; k >= 0; k--)
+        {
+            transform.GetChild(k).GetComponent<OneCardManager>().Heal(effect);
+        }
+    }
+
 
     void UpdateCardParts()
     {

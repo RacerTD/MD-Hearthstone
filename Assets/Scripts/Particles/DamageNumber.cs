@@ -14,12 +14,12 @@ public class DamageNumber : MonoBehaviour
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        spawnPosition = gameManager.particlePosition[0];
     }
 
     void Start()
     {
         //Debug.Log("Number got its number");
-        spawnPosition = gameManager.particlePosition[0];
         transform.DOScale(3f, 0f);
         //enable = true;
         transform.position = spawnPosition;
