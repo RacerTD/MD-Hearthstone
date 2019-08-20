@@ -661,9 +661,12 @@ public class OneCardManager : MonoBehaviour
 
     public void Damage(int damage)
     {
+        if (cardAsset.cardType != CardType.AOEHealSpell && cardAsset.cardType != CardType.AOEDMGSpell)
         ShowDamageNumber(damage);
+        gameManager.particlePosition.Add(transform.position);
         Health = Health - damage;
         Instantiate(humanDamageParticles, gameObject.transform.localPosition, Quaternion.identity);
+        gameManager.particlePosition.RemoveAt(0);
     }
 
     public bool AttackAbilityAvailible()

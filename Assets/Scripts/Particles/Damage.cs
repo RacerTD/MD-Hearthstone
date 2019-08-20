@@ -16,12 +16,13 @@ public class Damage : MonoBehaviour
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        spawnPosition = gameManager.particlePosition[0];
     }
     void Start()
     {
-        spawnPosition = gameManager.particlePosition[0];
+        //spawnPosition = gameManager.particlePosition[0];
         //Debug.Log("Damage deleted Number");
-        gameManager.particlePosition.RemoveAt(0);
+        //gameManager.particlePosition.RemoveAt(0);
     }
 
     void Update()

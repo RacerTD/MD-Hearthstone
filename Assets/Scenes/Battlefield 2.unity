@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 188098480}
   - component: {fileID: 188098479}
   - component: {fileID: 188098478}
+  - component: {fileID: 188098482}
   m_Layer: 5
   m_Name: EnemyField
   m_TagString: Untagged
@@ -356,6 +357,7 @@ MonoBehaviour:
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
   cardDeck: {fileID: 929220778}
+  mana: {fileID: 1520702376}
   timeBetweenActions: 0
   enemyWaveCount: -1
 --- !u!114 &188098479
@@ -419,6 +421,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188098476}
   m_CullTransparentMesh: 0
+--- !u!114 &188098482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188098476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99ab6ab5de07ed49af77d06899df4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &238401020
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1683640946}
   manPower: {fileID: 129020263}
+  mana: {fileID: 1520702376}
   toHighlight: {fileID: 501992562}
   humanCardHighlight: {r: 1, g: 1, b: 0, a: 0.5882353}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.5882353}
@@ -1296,6 +1311,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
   spellCards:
   - {fileID: 11400000, guid: e1ad824d1fedbc24186daa347a5a585d, type: 2}
+  - {fileID: 11400000, guid: ca70210b2cc23f84eaa429ca4b0b63f0, type: 2}
+  - {fileID: 11400000, guid: 2e1d0432b398cb54d8b8f87c4f063b78, type: 2}
+  - {fileID: 11400000, guid: 36578b250d7e91843a278f977568dca3, type: 2}
 --- !u!1 &979661366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,7 +1865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8463745}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8462524}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
