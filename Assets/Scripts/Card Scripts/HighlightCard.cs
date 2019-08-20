@@ -17,13 +17,20 @@ public class HighlightCard : MonoBehaviour
     public EnemyFieldScript enemyField;
     private bool summoningSickness;
     private CardType currendCardInHand = CardType.Nothing;
-    private Highlight currenHighlight = Highlight.Nothing;
+    private Highlight currentHighlight = Highlight.Nothing;
     private bool healAbilityUsed = false;
     private bool attackAbilityUsed = false;
     private bool seeMaxLife = false;
     private bool attackUsed = false;
+    private bool clickedAbility01 = false;
+    private bool clickedAbility02 = false;
     public TextMeshProUGUI maxLife;
     public TextMeshProUGUI currentLife;
+
+    public GameObject lowHealGlow;
+    public GameObject highHealGlow;
+    public GameObject lowDMGGlow;
+    public GameObject highDMGGlow;
 
     private Vector3 originalPosition = new Vector3(0, 0, 0);
     private Vector3 originalRotation = new Vector3(0, 0, 0);
@@ -48,8 +55,56 @@ public class HighlightCard : MonoBehaviour
 
     void Update()
     {
+        if (currentHighlight == Highlight.Attack)
+            //Highlights child when it does a basic attack
+            
+            if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+            {
+
+                ChangeColor(selectedCardColor, waves);
+
+            }
+        if (gameManager.GetComponent<GameManager>().abilityUser != null)
+        {
+
+            if (GetComponent<OneCardManager>().cardAsset.lowHeal.enabled == true && GetComponent<OneCardManager>().cardAsset.lowHeal.used == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            //Highlights low Heal Ability
+            {
+                lowHealGlow.SetActive(true);
+
+            }
+
+            if (GetComponent<OneCardManager>().cardAsset.highHeal.enabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.used == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            //Highlights high Heal Ability
+            {
+                highHealGlow.SetActive(true);
+            }
+           
+            if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().lowDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            //Highlights low Damage Ability
+            {
+                    lowDMGGlow.SetActive(true);
+            }
+            
+
+            if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().highDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            //Highlights high Damage Ability
+            {
+                    highDMGGlow.SetActive(true);
+            }
+            
+
+
+        } else
+        {
+            lowHealGlow.SetActive(false);
+            lowDMGGlow.SetActive(false);
+            highDMGGlow.SetActive(false);
+            highHealGlow.SetActive(false);
+        }
+        
+
         Hover();
-        HighlightAbilityOrAttack();
 
         if (currendCardInHand != gameManager.cardInHand)
         {
@@ -67,17 +122,21 @@ public class HighlightCard : MonoBehaviour
             }
         }
 
-        if (currenHighlight != gameManager.highlight)
+        if (currentHighlight != gameManager.highlight)
         {
-            currenHighlight = gameManager.highlight;
-
-            if (currenHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
+            currentHighlight = gameManager.highlight;
+            
+            if (currentHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
             {
+                
+
                 //Umfärben auf healColor
                 ChangeColor(healColor, waves);
             }
-            else if (currenHighlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
+            else if (currentHighlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
             {
+                
+
                 if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
                 {
                     ChangeColor(attackColor, waves);
@@ -90,6 +149,7 @@ public class HighlightCard : MonoBehaviour
             }
             else
             {
+
                 //färben auf defaultColor
                 ChangeColor(defaultColor, waves);
             }
@@ -141,6 +201,7 @@ public class HighlightCard : MonoBehaviour
                 ChangeColor(defaultColor, bigImages);
             }
         }
+
     }
 
     private void ChangeColor(Color color, List<Image> toChange)
@@ -165,7 +226,7 @@ public class HighlightCard : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-        if (hit.collider != null)
+        if (hit.collider != null && (hit.collider.name != "LowHealLoot"))
         {
             if (hit.collider.name == "HPIcon" && gameObject.GetComponent<OneCardManager>().onBoard)
             {
@@ -211,28 +272,6 @@ public class HighlightCard : MonoBehaviour
 
         return false;
 
-    }
-    private void HighlightAbilityOrAttack()
-    {
-        if (currendCardInHand != gameManager.cardInHand)
-        {
-            currendCardInHand = gameManager.cardInHand;
-
-            if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
-            {
-                ChangeColor(selectedCardColor, waves);
-
-            }
-            else
-            {
-                ChangeColor(defaultColor, waves);
-                return;
-            }
-            if (gameManager.abilityUser != null)
-            {
-
-            }
-        }
     }
 
 }
