@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
+  m_Name: Cedro
+  m_EditorClassIdentifier: 
+  prefabName: HumanCard
+  cardType: 1
+  cardImage: {fileID: 21300000, guid: 3e59cd9e76ddc6e4d9290469f17e8151, type: 3}
+  boardCardImage: {fileID: 21300000, guid: 910c0a622e389614fa0d8fc6b6219edf, type: 3}
+  maxHealth: 5
+  attack: 2
+  attackUsed: 0
+  summoningSickness: 1
+  taunt: 1
+  cost: 3
+  description: 'Taunt: This Unit must be killed first.'
+  lowHeal:
+    enabled: 0
+    effect: 1
+    used: 0
+    cost: 1
+    name: 0
+  highHeal:
+    enabled: 0
+    effect: 3
+    used: 0
+    cost: 2
+    name: 1
+  lowDMG:
+    enabled: 0
+    effect: 2
+    used: 0
+    cost: 1
+    name: 2
+  highDMG:
+    enabled: 0
+    effect: 4
+    used: 0
+    cost: 2
+    name: 3
