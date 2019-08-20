@@ -9,11 +9,22 @@ public class CardDeckScript : MonoBehaviour
     public HandScript hand;
     public GameObject cardPrefab;
     public List<CardAsset> startCards = new List<CardAsset>();
+    public List<CardAsset> spellCards = new List<CardAsset>();
+
     //comment
     void Start()
     {
         
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("d"))
+        {
+            SpawnSpellCard();
+        }
+    }
+
 
     public void ShuffleDeck()
     {
@@ -55,5 +66,10 @@ public class CardDeckScript : MonoBehaviour
     {
         Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
         Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+    }
+
+    public void SpawnSpellCard()
+    {
+        Instantiate(cardPrefab, hand.transform);
     }
 }

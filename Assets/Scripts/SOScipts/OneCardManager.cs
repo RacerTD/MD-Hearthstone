@@ -101,7 +101,11 @@ public class OneCardManager : MonoBehaviour
         hand = GameObject.Find("Hand").GetComponent<HandScript>();
         playerField = GameObject.Find("PlayerField").GetComponent<PlayerFieldScript>();
 
-        if (gameManager.gameState != GameManager.GameState.Enemy)
+        if (transform.GetComponentInParent<HandScript>())
+        {
+            cardAsset = cardDeck.spellCards[Random.Range(0, cardDeck.spellCards.Count)];
+        }
+        else if (gameManager.gameState != GameManager.GameState.Enemy)
         {
             cardAsset = cardDeck.CardToSpawn();
         }
@@ -251,6 +255,7 @@ public class OneCardManager : MonoBehaviour
             case CardType.AOEDMGSpell:
             case CardType.AOEHealSpell:
                 spellCardFront.SetActive(true);
+                transform.SetParent(hand.transform);
                 break;
 
             case CardType.Epuipment:
