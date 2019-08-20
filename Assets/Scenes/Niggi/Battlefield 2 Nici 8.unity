@@ -351,6 +351,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b327cb1141c87314abdcb495ecbda041, type: 2}
   - {fileID: 11400000, guid: e2b41465a6cdcce428abb4365b1b0ae8, type: 2}
   - {fileID: 11400000, guid: 756240d219664cc488206509fd356de1, type: 2}
+  - {fileID: 11400000, guid: d99713b9ab6f24444a7934520bf7746b, type: 2}
   eggCard:
   - {fileID: 11400000, guid: ef2b93a1b93c22b46b4c2b7728f0ec50, type: 2}
   queen: {fileID: 0}
@@ -359,6 +360,7 @@ MonoBehaviour:
     type: 3}
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
+  cardDeck: {fileID: 929220778}
   timeBetweenActions: 0
   enemyWaveCount: -1
 --- !u!114 &188098479
@@ -521,6 +523,120 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!1 &278523637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278523638}
+  - component: {fileID: 278523642}
+  - component: {fileID: 278523641}
+  - component: {fileID: 278523640}
+  - component: {fileID: 278523639}
+  m_Layer: 5
+  m_Name: LootField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &278523638
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278523637}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0810713, y: 1.0810713, z: 1.0810713}
+  m_Children: []
+  m_Father: {fileID: 316994143}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.6}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.000061, y: 56}
+  m_SizeDelta: {x: -144, y: -420.9}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &278523639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278523637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb7cf1a18df7384daffcb2f15f78355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleLoot:
+  - {fileID: 4543228503057613223, guid: aa29cdb75810a6d4b8d759051c3559b7, type: 3}
+--- !u!114 &278523640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278523637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalOffset: []
+  horizontalOffset: []
+  angleOffset: []
+  randomVertical: 1
+  randomHorizontal: 1
+  randomAngle: 1
+  verticalOffset_: 0
+  cardOffSetHorizontal: 230
+  cardOffSetDepth: 0
+  rotationOffSet: 0
+  scale: 0.75
+  startingAngle: 0
+--- !u!114 &278523641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278523637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.48627448, b: 0.5221687, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &278523642
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278523637}
+  m_CullTransparentMesh: 0
 --- !u!1 &316994140
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +717,7 @@ RectTransform:
   - {fileID: 1520702371}
   - {fileID: 188098477}
   - {fileID: 1771408306}
+  - {fileID: 278523638}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1248,6 +1365,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2aa529dbe1adf084ba6429691dbcc468, type: 2}
   - {fileID: 11400000, guid: 0fb3fb6c7d01dd24b981bf28c01616a1, type: 2}
   - {fileID: 11400000, guid: 0039b2302222e5d479ba24780dd4617f, type: 2}
+  - {fileID: 11400000, guid: 9368ceff3d2a1ab479d070eba729f357, type: 2}
+  - {fileID: 11400000, guid: 85968fbe36ad3904bb1ad40f5223da41, type: 2}
   hand: {fileID: 1771408305}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
@@ -1818,7 +1937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8465576}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8465881}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -2068,6 +2187,8 @@ MonoBehaviour:
   clicked02: {fileID: 0}
   abilityUser: {fileID: 0}
   particlePosition: []
+  healAbilityCost: 0
+  DMGAbilityCost: 0
   gameState: 0
 --- !u!4 &1683640947
 Transform:
