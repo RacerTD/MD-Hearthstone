@@ -3058,7 +3058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.425, y: 47.5}
+  m_AnchoredPosition: {x: -0.42500305, y: 47.5}
   m_SizeDelta: {x: 149.15, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5553528622409650401
@@ -9456,6 +9456,7 @@ MonoBehaviour:
   highHealGlow: {fileID: 6250213902236241954}
   lowDMGGlow: {fileID: 4462264010600636348}
   highDMGGlow: {fileID: 6188611065449845050}
+  enemyWave: {fileID: 3842560175817704468}
   healColor: {r: 0.3184436, g: 1, b: 0.2735849, a: 1}
   equipmentColor: {r: 1, g: 0.84181607, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9463,6 +9464,7 @@ MonoBehaviour:
   abilityUsedColor: {r: 0, g: 0, b: 0, a: 0}
   summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
   selectedCardColor: {r: 0.5969685, g: 0.22748311, b: 0.6792453, a: 1}
+  defaultEnemyColor: {r: 0.77647066, g: 0.93725497, b: 0.61960787, a: 1}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0

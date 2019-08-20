@@ -31,6 +31,7 @@ public class HighlightCard : MonoBehaviour
     public GameObject highHealGlow;
     public GameObject lowDMGGlow;
     public GameObject highDMGGlow;
+    public GameObject enemyWave;
 
     private Vector3 originalPosition = new Vector3(0, 0, 0);
     private Vector3 originalRotation = new Vector3(0, 0, 0);
@@ -45,6 +46,7 @@ public class HighlightCard : MonoBehaviour
     public Color abilityUsedColor;
     public Color summoningSicknessColor;
     public Color selectedCardColor;
+    public Color defaultEnemyColor;
 
     void Start()
     {
@@ -73,6 +75,7 @@ public class HighlightCard : MonoBehaviour
                 lowHealGlow.SetActive(true);
 
             }
+
 
             if (GetComponent<OneCardManager>().cardAsset.highHeal.enabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.used == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Heal Ability
@@ -149,9 +152,10 @@ public class HighlightCard : MonoBehaviour
             }
             else
             {
-
+                
                 //färben auf defaultColor
                 ChangeColor(defaultColor, waves);
+                enemyWave.GetComponent<Image>().color = defaultEnemyColor;
             }
         }
 
@@ -199,6 +203,7 @@ public class HighlightCard : MonoBehaviour
             else
             {
                 ChangeColor(defaultColor, bigImages);
+                
             }
         }
 
