@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7228577102762199143
+--- !u!1 &3094124152684418077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7228577102762199160}
-  - component: {fileID: 7228577102762199163}
-  - component: {fileID: 7228577102762199162}
-  - component: {fileID: 7228577102762199141}
-  - component: {fileID: 7228577102762199140}
+  - component: {fileID: 3094124152684418050}
+  - component: {fileID: 3094124152684418049}
+  - component: {fileID: 3094124152684418048}
+  - component: {fileID: 3094124152684418079}
+  - component: {fileID: 3094124152684418078}
+  - component: {fileID: 3094124152684418051}
   m_Layer: 5
-  m_Name: Waves
+  m_Name: Waves 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7228577102762199160
+--- !u!224 &3094124152684418050
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7228577102762199143}
+  m_GameObject: {fileID: 3094124152684418077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
@@ -39,13 +40,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!223 &7228577102762199163
+--- !u!223 &3094124152684418049
 Canvas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7228577102762199143}
+  m_GameObject: {fileID: 3094124152684418077}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
@@ -58,15 +59,15 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -1
   m_TargetDisplay: 0
---- !u!114 &7228577102762199162
+--- !u!114 &3094124152684418048
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7228577102762199143}
+  m_GameObject: {fileID: 3094124152684418077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -82,13 +83,13 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &7228577102762199141
+--- !u!114 &3094124152684418079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7228577102762199143}
+  m_GameObject: {fileID: 3094124152684418077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -99,13 +100,13 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7228577102762199140
+--- !u!114 &3094124152684418078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7228577102762199143}
+  m_GameObject: {fileID: 3094124152684418077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96b28910df7fcf44cbc97969b992b2c1, type: 3}
@@ -113,3 +114,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wave: {fileID: 4603169709691623498, guid: eaff4dae259ab944ab091a3d5acc92c6, type: 3}
   spawnRate: 0.4
+--- !u!114 &3094124152684418051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094124152684418077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10afb2b2dcd22b44084685adc5a57cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wave: {fileID: 4603169709691623498, guid: eaff4dae259ab944ab091a3d5acc92c6, type: 3}
+  spawnRate: 0.2
+  dirtyColor: {r: 0.77647066, g: 0.93725497, b: 0.61960787, a: 1}
