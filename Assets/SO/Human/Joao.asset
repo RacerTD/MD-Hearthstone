@@ -19,7 +19,7 @@ MonoBehaviour:
   maxHealth: 2
   attack: 1
   attackUsed: 0
-  summoningSickness: 1
+  summoningSickness: 0
   taunt: 1
   cost: 1
   description: 'Taunt: This Unit must be killed first.'
