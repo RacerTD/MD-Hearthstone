@@ -23,7 +23,7 @@ public class CardRotation : MonoBehaviour
     // called once per frame
     void Update()
     {
-
+        // Methode
         CalculateRotation();
 
     }
@@ -33,7 +33,7 @@ public class CardRotation : MonoBehaviour
         float x = transform.rotation.eulerAngles.y;
 
         // Berechnung der Rotation (Frontside/Backside) mit Hilfe einer Sinus-Funktion.
-        // Im positiven Bereich (+1) wird CardFront gezeigt; Im negativen (-1) wird CardBack gezeigt.
+        // Im positiven Bereich (+1) wird CardFront gezeigt; Im negativen (-1) wird CardBack gezeigt;
         float FrontBackSolution = Mathf.Sin(x / (180 / Mathf.PI) + Mathf.PI / 2);
 
         float signFB = Mathf.Sign(FrontBackSolution);
