@@ -3555,7 +3555,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6058225891050e746af6a42b5bb55f6f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1641f31d53a9f9345ad758565618b825, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9482,6 +9482,7 @@ MonoBehaviour:
   mana: {fileID: 0}
   hand: {fileID: 0}
   playerField: {fileID: 0}
+  lootField: {fileID: 0}
   cardAsset: {fileID: 0}
   prefabName: Card
   onBoard: 0

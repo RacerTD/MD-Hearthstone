@@ -20,7 +20,7 @@ public class wavespawn : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + (spawnRate+0.2f);
-            Vector2 newPos = new Vector2(UnityEngine.Random.Range(100, Screen.width - 100), UnityEngine.Random.Range(250, Screen.height - 50));
+            Vector2 newPos = new Vector2(UnityEngine.Random.Range(150, Screen.width - 150), UnityEngine.Random.Range(350, Screen.height - 50));
             GameObject myObject = Instantiate(wave, newPos, Quaternion.identity);
             myObject.transform.SetParent(transform);
             transform.position += new Vector3(0, newPos.x + 100, Time.deltaTime) ;
