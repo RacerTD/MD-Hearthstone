@@ -15,6 +15,7 @@ public class OneCardManager : MonoBehaviour
     public ManaScript mana;
     public HandScript hand;
     public PlayerFieldScript playerField;
+    public LootFildScript lootField;
 
     public CardAsset cardAsset;
     public string prefabName;
@@ -99,6 +100,7 @@ public class OneCardManager : MonoBehaviour
         manPower = GameObject.Find("ManPower").GetComponent<ManPowerScript>();
         mana = GameObject.Find("Mana").GetComponent<ManaScript>();
         hand = GameObject.Find("Hand").GetComponent<HandScript>();
+        lootField = GameObject.Find("LootField").GetComponent<LootFildScript>();
         playerField = GameObject.Find("PlayerField").GetComponent<PlayerFieldScript>();
 
         if (transform.GetComponentInParent<HandScript>())
@@ -125,6 +127,7 @@ public class OneCardManager : MonoBehaviour
     {
         
     }
+
     private void Update()
     {
         /*
@@ -188,23 +191,26 @@ public class OneCardManager : MonoBehaviour
         equipmentCount++;
         mana.UsedMana(equipment.cost);
 
-        if (equipment.highHeal.enabled)
-        {
-            cardAsset.highHeal.enabled = true;
-        }
-        else if (equipment.highDMG.enabled)
-        {
-            cardAsset.highDMG.enabled = true;
-        }
-        else if (equipment.lowHeal.enabled)
-        {
-            cardAsset.lowHeal.enabled = true;
-        }
-        else if (equipment.lowDMG.enabled)
-        {
-            cardAsset.lowDMG.enabled = true;
-        }
+        UpdateAbilitys();
+    }
 
+    public void EquipAbility(AbilityNames ability)
+    {
+        switch (ability)
+        {
+            case AbilityNames.lowHeal:
+                cardAsset.lowHeal.enabled = true;
+                break;
+            case AbilityNames.highHeal:
+                cardAsset.highHeal.enabled = true;
+                break;
+            case AbilityNames.lowDMG:
+                cardAsset.lowDMG.enabled = true;
+                break;
+            case AbilityNames.highDMG:
+                cardAsset.highDMG.enabled = true;
+                break;
+        }
         UpdateAbilitys();
     }
 
@@ -255,7 +261,8 @@ public class OneCardManager : MonoBehaviour
             case CardType.AOEDMGSpell:
             case CardType.AOEHealSpell:
                 spellCardFront.SetActive(true);
-                transform.SetParent(hand.transform);
+                transform.position = new Vector3(1200, 1000, 0);
+                transform.SetParent(hand.transform, false);
                 break;
 
             case CardType.Epuipment:
@@ -311,6 +318,11 @@ public class OneCardManager : MonoBehaviour
         if (onBoard)
         {
             manPower.UsedManPower(-cardAsset.cost);
+        }
+
+        if (cardAsset.cardType == CardType.Enemy && Random.Range(0, 2) == 0)
+        {
+            lootField.SpawnAbility();
         }
         Destroy(gameObject);
     }
@@ -377,9 +389,6 @@ public class OneCardManager : MonoBehaviour
         }
     }
 
-
-
-
     public void DeactivateSummoningSickness()
     {
         summoningSickness = false;
@@ -394,6 +403,7 @@ public class OneCardManager : MonoBehaviour
         cardAsset.summoningSickness = false;
         //Debug.Log("Deactivate Summoning Sickness");
     }
+
     private void UpdateAbilitys()
     {
         if (cardAsset.lowHeal.enabled)

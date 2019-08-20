@@ -21,10 +21,13 @@ public class GameManager : MonoBehaviour
     public OneCardManager abilityUser = null;
     public List<Vector3> particlePosition = new List<Vector3>();
 
-    private int healAbilityCost;
+    public int healAbilityCost;
     private int healAbilityEffect;
-    private int DMGAbilityCost;
+    public int DMGAbilityCost;
     private int DMGAbilityEffect;
+
+    private AbilityNames abilityToActivate = AbilityNames.nothing;
+    private LootScript lootEnabler = null;
 
     public enum Highlight
     {
@@ -112,7 +115,7 @@ public class GameManager : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
             //Debug.Log(hit.collider.name);
 
-            if (hit.collider != null)
+            if (hit.collider != null && gameState == GameState.PlayerIdle)
             {
                 switch (hit.collider.name)
                 {
@@ -128,6 +131,14 @@ public class GameManager : MonoBehaviour
                     case "Frame":
                     case "Image":
                         hit.collider.gameObject.transform.GetComponentInParent<OneCardManager>().GiveGameManagerCard();
+                        break;
+                    case "LowHealLoot(Clone)":
+                        abilityToActivate = AbilityNames.lowHeal;
+                        lootEnabler = hit.collider.GetComponent<LootScript>();
+                        break;
+                    case "HighHealLoot(Clone)":
+                        abilityToActivate = AbilityNames.highHeal;
+                        lootEnabler = hit.collider.GetComponent<LootScript>();
                         break;
                     default:
                         ResetAbilitys();
@@ -154,7 +165,13 @@ public class GameManager : MonoBehaviour
 
     public void CardClicked(OneCardManager clickedOn)
     {
-        if (gameState == GameState.PlayerIdle)
+        if (abilityToActivate != AbilityNames.nothing)
+        {
+            clickedOn.GetComponent<OneCardManager>().EquipAbility(abilityToActivate);
+            lootEnabler.Destroy();
+            ResetAbilitys();
+        } 
+        else if (gameState == GameState.PlayerIdle)
         {
             if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
             {
@@ -261,6 +278,8 @@ public class GameManager : MonoBehaviour
         DMGAbilityEffect = 0;
         abilityUser = null;
         highlight = Highlight.Nothing;
+        abilityToActivate = AbilityNames.nothing;
+        lootEnabler = null;
     }
 
     #region Abilitys
@@ -287,7 +306,7 @@ public class GameManager : MonoBehaviour
         {
             clicked01.Damage(DMGAbilityEffect);
             mana.UsedMana(DMGAbilityCost);
-            particlePosition.Add(clicked01.transform.position);
+            //particlePosition.Add(clicked01.transform.position);
 
             abilityUser.UsedDamage();
             ResetAbilitys();

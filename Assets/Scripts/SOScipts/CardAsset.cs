@@ -19,7 +19,8 @@ public enum AbilityNames
     lowHeal,
     highHeal,
     lowDMG,
-    highDMG
+    highDMG,
+    nothing
 }
 
 [CreateAssetMenu(fileName = "Data", menuName = "Create New Card", order = 1)]

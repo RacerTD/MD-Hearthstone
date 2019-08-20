@@ -355,6 +355,7 @@ MonoBehaviour:
     type: 3}
   gameManager: {fileID: 1683640946}
   playerField: {fileID: 501992565}
+  cardDeck: {fileID: 929220778}
   timeBetweenActions: 0
   enemyWaveCount: -1
 --- !u!114 &188098479
@@ -597,6 +598,7 @@ RectTransform:
   - {fileID: 1520702371}
   - {fileID: 188098477}
   - {fileID: 1771408306}
+  - {fileID: 592556812}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -974,6 +976,120 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &592556811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592556812}
+  - component: {fileID: 592556815}
+  - component: {fileID: 592556814}
+  - component: {fileID: 592556813}
+  - component: {fileID: 592556816}
+  m_Layer: 5
+  m_Name: LootField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &592556812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592556811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0810744, y: 1.0810744, z: 1.0810744}
+  m_Children: []
+  m_Father: {fileID: 316994143}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.6}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1, y: -27}
+  m_SizeDelta: {x: -144, y: -420.9}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &592556813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592556811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c8474062dfc234993287f056c77141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalOffset: []
+  horizontalOffset: []
+  angleOffset: []
+  randomVertical: 1
+  randomHorizontal: 1
+  randomAngle: 1
+  verticalOffset_: 0
+  cardOffSetHorizontal: 230
+  cardOffSetDepth: 0
+  rotationOffSet: 0
+  scale: 0.75
+  startingAngle: 0
+--- !u!114 &592556814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592556811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.48627448, b: 0.5221687, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &592556815
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592556811}
+  m_CullTransparentMesh: 0
+--- !u!114 &592556816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592556811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb7cf1a18df7384daffcb2f15f78355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleLoot:
+  - {fileID: 4543228503057613223, guid: aa29cdb75810a6d4b8d759051c3559b7, type: 3}
 --- !u!1 &905709585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1294,8 @@ MonoBehaviour:
   startCards:
   - {fileID: 11400000, guid: d597de12b7dddcd459c13ae9bffd8e00, type: 2}
   - {fileID: 11400000, guid: b6bb12e205944e449892050e0d5b8b9c, type: 2}
+  spellCards:
+  - {fileID: 11400000, guid: e1ad824d1fedbc24186daa347a5a585d, type: 2}
 --- !u!1 &979661366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.846405}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8463745}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -1979,6 +2097,8 @@ MonoBehaviour:
   clicked02: {fileID: 0}
   abilityUser: {fileID: 0}
   particlePosition: []
+  healAbilityCost: 0
+  DMGAbilityCost: 0
   gameState: 0
 --- !u!4 &1683640947
 Transform:

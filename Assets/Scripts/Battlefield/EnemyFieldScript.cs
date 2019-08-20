@@ -20,6 +20,7 @@ public class EnemyFieldScript : MonoBehaviour
     public GameObject cardPrefab;
     public GameManager gameManager;
     public PlayerFieldScript playerField;
+    public CardDeckScript cardDeck;
 
     [Header("Anderes")]
     public float timeBetweenActions = 5;
@@ -153,6 +154,8 @@ public class EnemyFieldScript : MonoBehaviour
         if (transform.childCount == 0)
         {
             enemyWaveCount++;
+            if (enemyWaveCount != 0)
+                cardDeck.SpawnSpellCard();
             Debug.Log("Wave Count +1 " + enemyWaveCount);
         }
 

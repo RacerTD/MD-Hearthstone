@@ -63,7 +63,9 @@ public class CardsSideBySide : MonoBehaviour
             {
                 targetPosition=new Vector3((i * cardOffSetHorizontal + startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth));
             }
-            myChild.GetComponent<OneCardManager>().targetPosition = targetPosition;
+
+            if (myChild.GetComponent<OneCardManager>())
+                myChild.GetComponent<OneCardManager>().targetPosition = targetPosition;
             myChild.transform.DOLocalMove(targetPosition, 1f).SetEase(Ease.OutQuart);
 
             Vector3 targetRotation;
@@ -79,7 +81,8 @@ public class CardsSideBySide : MonoBehaviour
                 myChild.transform.DOScale(new Vector3(scale, scale, scale),1f).SetEase(Ease.OutQuart);
             }
 
-            myChild.GetComponent<OneCardManager>().targetRotation = targetRotation;
+            if (myChild.GetComponent<OneCardManager>())
+                myChild.GetComponent<OneCardManager>().targetRotation = targetRotation;
             myChild.transform.DOLocalRotate(targetRotation, 1f).SetEase(Ease.OutQuart);
         }
 
