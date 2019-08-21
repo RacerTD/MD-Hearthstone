@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1658288904675574162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -104,7 +104,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -449,7 +449,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -1046,7 +1046,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -1280,7 +1280,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Stronger Heal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2239,6 +2239,80 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d387ff050fdf03d4a87dc68bc112d88a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!1 &2583482446946430827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8784774067648543390}
+  - component: {fileID: 8581208118748640111}
+  - component: {fileID: 3035509334398861752}
+  m_Layer: 0
+  m_Name: TauntIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &8784774067648543390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583482446946430827}
+  m_LocalRotation: {x: -0, y: 1, z: 0, w: -0.00000004371139}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children: []
+  m_Father: {fileID: 732447496877993469}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 82.239975, y: -131.9}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8581208118748640111
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583482446946430827}
+  m_CullTransparentMesh: 0
+--- !u!114 &3035509334398861752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583482446946430827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 4001b13b299f7144cb3e14430a5a6834, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3155,7 +3229,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3338,7 +3412,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3375,7 +3449,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "R\xFCdiger"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -3454,7 +3528,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -4388,7 +4462,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Heal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -4467,7 +4541,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -5162,7 +5236,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -5241,7 +5315,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -6142,7 +6216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7049186094424258289
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6394,7 +6468,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -6473,7 +6547,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -7103,6 +7177,7 @@ RectTransform:
   - {fileID: 2988524821235162933}
   - {fileID: 1966098992960930767}
   - {fileID: 6034642269864512397}
+  - {fileID: 8784774067648543390}
   - {fileID: 3775226574275335454}
   - {fileID: 9220853867626554692}
   - {fileID: 1579050687999467875}
@@ -7259,7 +7334,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Boomerang
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -7338,7 +7413,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -7445,7 +7520,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7557,7 +7632,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "R\xFCdiger\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -7636,7 +7711,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -8186,7 +8261,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
@@ -8265,7 +8340,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -8710,7 +8785,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8888,7 +8963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7618808521375383697
 Transform:
   m_ObjectHideFlags: 0
@@ -9544,6 +9619,10 @@ MonoBehaviour:
   - {fileID: 7787564949065364512, guid: a6d1da5adff8a4b4b87301640cdf2ac3, type: 3}
   - {fileID: 3373621680241590504, guid: 6517d5714bb614f4a801c30c06cec493, type: 3}
   - {fileID: 4138941840413639889, guid: b1c03dd615f3ae64caee335f82742668, type: 3}
+  tauntImages:
+  - {fileID: 2583482446946430827}
+  - {fileID: 5457414864443337773}
+  - {fileID: 14874151715002713}
   abilityImages:
   - {fileID: 21300000, guid: 78ec9926a8c7ca74e883b065c9345919, type: 3}
   - {fileID: 21300000, guid: ef3b40033fddf8342be8b17bfa6caddb, type: 3}
@@ -9576,7 +9655,6 @@ MonoBehaviour:
   lowDamageUsed: 0
   highDamageUsed: 0
   attackUsed: 0
-  taunt: {fileID: 0}
   childCount: 4
   summoningSickness: 1
   targetPosition: {x: 0, y: 0, z: 0}
@@ -9761,7 +9839,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 732447496877993469}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10321,7 +10399,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Yo-yo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb0737e1010890f4fa5d10446d6cbdba, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
     type: 2}
   m_fontSharedMaterials: []
