@@ -224,14 +224,14 @@ public class GameManager : MonoBehaviour
         } 
         else if (gameState == GameState.PlayerIdle)
         {
-            if (abilityUser != null && clickedOn.cardAsset.cardType == CardType.Enemy)
+            if (abilityUser != null && (clickedOn.cardAsset.cardType == CardType.Enemy || clickedOn.cardAsset.cardType == CardType.Human || clickedOn.cardAsset.cardType == CardType.Egg))
             {
                 clicked01 = clickedOn;
-                if (healAbilityCost != 0 && healAbilityEffect != 0)
+                if (healAbilityCost != 0 && healAbilityEffect != 0 && clickedOn.cardAsset.cardType == CardType.Human)
                 {
                     Heal();
                 }
-                else if (DMGAbilityCost != 0 && DMGAbilityEffect != 0)
+                else if (DMGAbilityCost != 0 && DMGAbilityEffect != 0 && (clickedOn.cardAsset.cardType == CardType.Human || clickedOn.cardAsset.cardType == CardType.Egg))
                 {
                     if (clicked01.cardAsset.taunt && enemyField.HasTaunt())
                     {
