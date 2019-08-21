@@ -299,7 +299,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 00e0f4a57d9fb0b409feaadca0770ce5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22130bc039c7fbf4c8792298044ad877, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -822,7 +822,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 00e0f4a57d9fb0b409feaadca0770ce5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22130bc039c7fbf4c8792298044ad877, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9567,6 +9567,15 @@ MonoBehaviour:
   highHealGameObject: {fileID: 4838957960786439543}
   lowDMGGameObject: {fileID: 4950162859170515547}
   highDMGGameObject: {fileID: 6949324951023926921}
+  lowHealEnabled: 0
+  highhealEnabled: 0
+  lowDamageEnabled: 0
+  highDamageEnabled: 0
+  lowHealUsed: 0
+  highHealUsed: 0
+  lowDamageUsed: 0
+  highDamageUsed: 0
+  attackUsed: 0
   taunt: {fileID: 0}
   childCount: 4
   summoningSickness: 1
