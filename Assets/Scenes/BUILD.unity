@@ -460,6 +460,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 85968fbe36ad3904bb1ad40f5223da41, type: 2}
   - {fileID: 11400000, guid: 0b9bc550167127b4da90c286dde617e3, type: 2}
   - {fileID: 11400000, guid: 41d2d707fd2be9c47becf3dce2aaa184, type: 2}
+  - {fileID: 11400000, guid: a8a737ec999bc214dbe60899ff7cde47, type: 2}
+  - {fileID: 11400000, guid: 85968fbe36ad3904bb1ad40f5223da41, type: 2}
+  - {fileID: 11400000, guid: ba4c6cc6ac8f5c849a57972d499374ed, type: 2}
+  - {fileID: 11400000, guid: fa7b199f865f8254b902010a5c2d653a, type: 2}
+  - {fileID: 11400000, guid: c87cce089cb1cde46a8644cf16bc50e5, type: 2}
+  - {fileID: 11400000, guid: fe98bcaedb8725342be1cb6cd1f8c7bf, type: 2}
   hand: {fileID: 69746572}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
@@ -850,6 +856,8 @@ MonoBehaviour:
   mana: {fileID: 993509646}
   timeBetweenActions: 0
   enemyWaveCount: -1
+  queenHealth: 0
+  queenAttack: 0
 --- !u!1 &663135407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,8 +1049,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1605193035}
-  manPower: 20
-  maxManPower: 20
+  manPower: 0
+  maxManPower: 0
 --- !u!114 &898012277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8465881}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8465576}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &993509642
@@ -1238,8 +1246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1605193035}
-  manaCount: 20
-  maxMana: 20
+  manaCount: 0
+  maxMana: 0
 --- !u!1 &1110875430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3877975345615025487, guid: 7cad0bf0afcc80b4896ab231e4d81fa9,
