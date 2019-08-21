@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     private int DMGAbilityEffect;
 
     private AbilityNames abilityToActivate = AbilityNames.nothing;
-    private LootScript lootEnabler = null;
+    public LootScript lootEnabler = null;
 
     public enum Highlight
     {
