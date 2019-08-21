@@ -364,16 +364,6 @@ public class OneCardManager : MonoBehaviour
 
     public void GiveGameManagerCard()
     {
-        /*
-        if (gameManager.highlight == GameManager.Highlight.Heal || gameManager.highlight == GameManager.Highlight.Attack)
-        {
-            gameManager.CardClicked(this);
-        }
-        else if (cardAsset.attackUsed == false || gameManager.lootEnabler != null)
-        {
-            gameManager.CardClicked(this);
-        }
-        */
         gameManager.CardClicked(this);
     }
 
@@ -494,8 +484,6 @@ public class OneCardManager : MonoBehaviour
 
     public void NowOnField()
     {
-        //Debug.Log("Called");
-        //Debug.Log("Card Now on Field");
         if (!onBoard)
         {
             if (cardAsset.cardType == CardType.AOEDMGSpell)
@@ -511,19 +499,17 @@ public class OneCardManager : MonoBehaviour
                 ManPowerCost();
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
                 gameObject.GetComponent<Draggable>().Dragable = false;
-                //TurnBegin();
-                /*
-                for (int i = 0; i < abilityCollider.Count; i++)
+                if (cardAsset.taunt)
                 {
-                    abilityCollider[i].enabled = false;
+                    for (int i = 0; i < tauntImages.Count; i++)
+                    {
+                        tauntImages[i].SetActive(true);
+                    }
                 }
-                */
-                //Debug.Log("Changed Summoning Sicness (Now on field)");
             }
             else if (cardAsset.cardType == CardType.Epuipment)
             {
-                //Werte anrechnen
-                //Debug.Log("Equpment angelegt");
+
             }
             else
             {
@@ -635,11 +621,8 @@ public class OneCardManager : MonoBehaviour
 
     public void HealAbility()
     {
-        //Debug.Log("Heal Called");
         if (lowHealEnabled && !lowHealUsed)
         {
-            //Debug.Log("HealEnabled");
-            //Debug.Log(cardAsset.lowHeal.used);
             gameManager.HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this, lowHealUsed);
         }
         else if (highhealEnabled && !highHealUsed)

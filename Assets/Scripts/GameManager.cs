@@ -218,7 +218,7 @@ public class GameManager : MonoBehaviour
 
     public void CardClicked(OneCardManager clickedOn)
     {
-        Debug.Log("Clicked on Card");
+        //Debug.Log("Clicked on Card");
         if (lootEnabler != null)
         {
             clickedOn.GetComponent<OneCardManager>().EquipAbility(abilityToActivate);
