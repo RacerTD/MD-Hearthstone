@@ -29,6 +29,8 @@ public class EnemyFieldScript : MonoBehaviour
     [Header("Variablen für andere Scripte")]
     public int enemyWaveCount = -1;
 
+    private int gameRound = 0;
+
     private Transform myChild;
     private int childCount;
     private float timer;
@@ -36,6 +38,10 @@ public class EnemyFieldScript : MonoBehaviour
     private bool firstTurn = true;
     private bool firstTurn_ = true;
     private int timeToWait = 2;
+
+    [Header("Werte für Queen")]
+    public int queenHealth;
+    public int queenAttack;
 
     private EnemyState enemyState = EnemyState.Start;
 
@@ -175,6 +181,7 @@ public class EnemyFieldScript : MonoBehaviour
 
     private void EnemyCardSpawn()
     {
+        gameRound++;
         if (transform.childCount == 0)
         {
             enemyWaveCount++;
@@ -204,11 +211,32 @@ public class EnemyFieldScript : MonoBehaviour
                 enemyState = EnemyState.Wait;
                 break;
             case 3:
-                Debug.Log("Du hast gewonnen");
+                CalcQueenStats();
+                SpawnEggEnemy();
+                SpawnStrongEnemy();
+                SpawnQueenEnemy();
+                SpawnStrongEnemy();
+                SpawnEggEnemy();
+                enemyWaveCount++;
+                break;
+            case 4:
+                SpawnEggEnemy();
+                SpawnStrongEnemy();
+                SpawnStrongEnemy();
+                SpawnEggEnemy();
+                break;
+            default:
                 break;
         }
         timer = 0;
     }
+
+    private void CalcQueenStats()
+    {
+        queenHealth = 10 + gameRound * 2;
+        queenAttack = 2 + Mathf.FloorToInt(gameRound * 0.5f);
+    }
+
 
     private void SpawnEggEnemy()
     {
@@ -217,7 +245,14 @@ public class EnemyFieldScript : MonoBehaviour
             cardsToSpawn.Add(eggCard[Random.Range(0, eggCard.Count)]);
             Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
         }
-        
+    }
+    private void SpawnQueenEnemy()
+    {
+        if (transform.childCount < 7)
+        {
+            cardsToSpawn.Add(queen);
+            Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        }
     }
 
     private void SpawnWeakEnemy()
@@ -296,6 +331,7 @@ public class EnemyFieldScript : MonoBehaviour
         else
         {
             Debug.Log("Du hast verloren");
+            gameManager.TriggerEndScreen(true);
             //Deathscreen
             enemyState = EnemyState.End;
         }

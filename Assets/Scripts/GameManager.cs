@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
     /// Aktiviert den Endscreen
     /// </summary>
     /// <param name="death"></param>
-    private void TriggerEndScreen(bool death)
+    public void TriggerEndScreen(bool death)
     {
         gameState = GameState.End;
         if (death)

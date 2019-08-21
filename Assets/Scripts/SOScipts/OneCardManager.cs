@@ -292,6 +292,13 @@ public class OneCardManager : MonoBehaviour
         cost = cardAsset.cost;
         summoningSickness = true;
 
+        if (cardAsset.name == "Queen")
+        {
+            maxHealth = enemyField.queenHealth;
+            Health = maxHealth;
+            Attack = enemyField.queenAttack;
+        }
+
         lowHealEnabled = cardAsset.lowHeal.enabled;
         highhealEnabled = cardAsset.highHeal.enabled;
         lowDamageEnabled = cardAsset.lowDMG.enabled;
@@ -463,6 +470,11 @@ public class OneCardManager : MonoBehaviour
 
     private void CheckIfDead()
     {
+        if (cardAsset.name == "Queen")
+        {
+            gameManager.TriggerEndScreen(false);
+        }
+
         if (_health <= 0 && (cardAsset.cardType == CardType.Enemy || cardAsset.cardType == CardType.Human || cardAsset.cardType == CardType.Egg))
         {
             delete();

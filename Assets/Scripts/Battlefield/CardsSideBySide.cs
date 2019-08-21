@@ -82,8 +82,15 @@ public class CardsSideBySide : MonoBehaviour
             }
 
             if (myChild.GetComponent<OneCardManager>())
+            {
                 myChild.GetComponent<OneCardManager>().targetRotation = targetRotation;
+            }
             myChild.transform.DOLocalRotate(targetRotation, 1f).SetEase(Ease.OutQuart);
+
+            if (myChild.GetComponent<OneCardManager>().cardAsset.name == "Queen")
+            {
+                myChild.transform.DOScale(new Vector3(scale * 2, scale * 2, scale * 2), 1f).SetEase(Ease.OutQuart);
+            }
         }
 
     }
