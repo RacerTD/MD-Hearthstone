@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
-  m_Name: Leon
+  m_Name: Sofia
   m_EditorClassIdentifier: 
   prefabName: HumanCard
   cardType: 1
-  cardImage: {fileID: 21300000, guid: 4a55479a71a15f845a6f381149fa58f1, type: 3}
-  boardCardImage: {fileID: 21300000, guid: 69c84f61a572ca74b90dd9a9ccd86307, type: 3}
-  maxHealth: 2
+  cardImage: {fileID: 21300000, guid: 63f6898440caced44884f8928b23885f, type: 3}
+  boardCardImage: {fileID: 21300000, guid: f004ac89eaeaed548af42c0cfe854f77, type: 3}
+  maxHealth: 1
   attack: 2
   attackUsed: 0
-  summoningSickness: 0
+  summoningSickness: 1
   taunt: 0
-  cost: 0
-  description: 
+  cost: 1
+  description: Restores 1 hitpoint of an allys health.
   lowHeal:
-    enabled: 0
+    enabled: 1
     effect: 1
     used: 0
     cost: 1

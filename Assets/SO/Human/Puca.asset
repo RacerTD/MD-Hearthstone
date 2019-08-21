@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a3da48a740ee468879dff74e29f7c, type: 3}
-  m_Name: Leon
+  m_Name: Puca
   m_EditorClassIdentifier: 
   prefabName: HumanCard
   cardType: 1
-  cardImage: {fileID: 21300000, guid: 4a55479a71a15f845a6f381149fa58f1, type: 3}
-  boardCardImage: {fileID: 21300000, guid: 69c84f61a572ca74b90dd9a9ccd86307, type: 3}
-  maxHealth: 2
+  cardImage: {fileID: 21300000, guid: 3ef9d44ee763c75449a714630c3d3d13, type: 3}
+  boardCardImage: {fileID: 21300000, guid: d2f67a9bdfec2e848b903b2d92421b83, type: 3}
+  maxHealth: 7
   attack: 2
   attackUsed: 0
-  summoningSickness: 0
+  summoningSickness: 1
   taunt: 0
-  cost: 0
+  cost: 4
   description: 
   lowHeal:
     enabled: 0

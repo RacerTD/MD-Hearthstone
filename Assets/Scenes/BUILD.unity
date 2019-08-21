@@ -458,6 +458,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0039b2302222e5d479ba24780dd4617f, type: 2}
   - {fileID: 11400000, guid: 9368ceff3d2a1ab479d070eba729f357, type: 2}
   - {fileID: 11400000, guid: 85968fbe36ad3904bb1ad40f5223da41, type: 2}
+  - {fileID: 11400000, guid: 0b9bc550167127b4da90c286dde617e3, type: 2}
+  - {fileID: 11400000, guid: 41d2d707fd2be9c47becf3dce2aaa184, type: 2}
   hand: {fileID: 69746572}
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
@@ -838,7 +840,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d99713b9ab6f24444a7934520bf7746b, type: 2}
   eggCard:
   - {fileID: 11400000, guid: ef2b93a1b93c22b46b4c2b7728f0ec50, type: 2}
-  queen: {fileID: 0}
+  queen: {fileID: 11400000, guid: 8f5ad5b42862a4d4384e0f261a9b22df, type: 2}
   cardsToSpawn: []
   cardPrefab: {fileID: 8024431533381291182, guid: 5d961669afe0e234c8c9563f90525759,
     type: 3}
@@ -1146,7 +1148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8466187}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.8465881}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &993509642
