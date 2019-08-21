@@ -109,6 +109,10 @@ public class GameManager : MonoBehaviour
 
     private void Clicking()
     {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ResetAbilitys();
+        }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
