@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -753,8 +753,8 @@ RectTransform:
   m_LocalScale: {x: 53, y: 53, z: 1}
   m_Children:
   - {fileID: 866643821512970828}
-  - {fileID: 1568466922048546810}
   - {fileID: 603534974591616933}
+  - {fileID: 1568466922048546810}
   - {fileID: 8191892971128663149}
   - {fileID: 5099653879125889795}
   m_Father: {fileID: 3737685193205017296}
@@ -816,11 +816,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5895884379007519679}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.45, y: 0}
+  m_AnchoredPosition: {x: -0.5053036, y: 0}
   m_SizeDelta: {x: 50.011963, y: 4.419922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6792324063624553357
@@ -959,11 +959,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5895884379007519679}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.3, y: 6.38}
+  m_AnchoredPosition: {x: 0, y: 6.38}
   m_SizeDelta: {x: 11.109985, y: 10.449951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6792324064327183799
@@ -1105,7 +1105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.06, y: 0}
+  m_AnchoredPosition: {x: 0.11175585, y: 0}
   m_SizeDelta: {x: 25, y: 15.002441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6792324065091757396
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
