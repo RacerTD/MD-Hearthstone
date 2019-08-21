@@ -58,10 +58,17 @@ public class OneCardManager : MonoBehaviour
     public GameObject lowDMGGameObject;
     public GameObject highDMGGameObject;
 
-    public bool LowHealEnabled;
-    public bool HighhealEnabled;
-    public bool LowDamageEnabled;
-    public bool HighDamageEnabled;
+    public bool lowHealEnabled;
+    public bool highhealEnabled;
+    public bool lowDamageEnabled;
+    public bool highDamageEnabled;
+
+    public bool lowHealUsed = false;
+    public bool highHealUsed = false;
+    public bool lowDamageUsed = false;
+    public bool highDamageUsed = false;
+
+    public bool attackUsed = false;
 
     [Header("Spott")]
     public GameObject taunt;
@@ -168,7 +175,7 @@ public class OneCardManager : MonoBehaviour
             {
                 if (transform.GetChild(i).GetComponent<OneCardManager>())
                 {
-                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human && cardAsset.cost <= mana.manaCount)
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human && transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost <= mana.manaCount)
                     {
                         EquipEquipment(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset);
                         transform.GetChild(i).GetComponent<OneCardManager>().DeleteEquipment();
@@ -204,16 +211,16 @@ public class OneCardManager : MonoBehaviour
         switch (ability)
         {
             case AbilityNames.lowHeal:
-                LowHealEnabled = true;
+                lowHealEnabled = true;
                 break;
             case AbilityNames.highHeal:
-                HighhealEnabled = true;
+                highhealEnabled = true;
                 break;
             case AbilityNames.lowDMG:
-                LowDamageEnabled = true;
+                lowDamageEnabled = true;
                 break;
             case AbilityNames.highDMG:
-                HighDamageEnabled = true;
+                highDamageEnabled = true;
                 break;
         }
         UpdateAbilitys();
@@ -279,16 +286,16 @@ public class OneCardManager : MonoBehaviour
                 break;
         }
 
-        Attack = newAsset.attack;
-        maxHealth = newAsset.maxHealth;
+        Attack = cardAsset.attack;
+        maxHealth = cardAsset.maxHealth;
         Health = maxHealth;
-        cost = newAsset.cost;
+        cost = cardAsset.cost;
         summoningSickness = true;
 
-        LowHealEnabled = cardAsset.lowHeal.enabled;
-        HighhealEnabled = cardAsset.highHeal.enabled;
-        LowDamageEnabled = cardAsset.lowDMG.enabled;
-        HighhealEnabled = cardAsset.highDMG.enabled;
+        lowHealEnabled = cardAsset.lowHeal.enabled;
+        highhealEnabled = cardAsset.highHeal.enabled;
+        lowDamageEnabled = cardAsset.lowDMG.enabled;
+        highhealEnabled = cardAsset.highDMG.enabled;
 
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
@@ -339,14 +346,17 @@ public class OneCardManager : MonoBehaviour
 
     public void GiveGameManagerCard()
     {
+        /*
         if (gameManager.highlight == GameManager.Highlight.Heal || gameManager.highlight == GameManager.Highlight.Attack)
         {
             gameManager.CardClicked(this);
         }
-        else if (cardAsset.attackUsed == false)
+        else if (cardAsset.attackUsed == false || gameManager.lootEnabler != null)
         {
             gameManager.CardClicked(this);
         }
+        */
+        gameManager.CardClicked(this);
     }
 
     private void UpdateList(List<TextMeshProUGUI> bla, string value)
@@ -360,11 +370,12 @@ public class OneCardManager : MonoBehaviour
     public void TurnBegin()
     {
         //Debug.Log("Turn Begin");
-        cardAsset.lowHeal.used = false;
-        cardAsset.highHeal.used = false;
-        cardAsset.lowDMG.used = false;
-        cardAsset.highDMG.used = false;
-        cardAsset.attackUsed = false;
+        lowHealUsed = false;
+        highHealUsed = false;
+        lowDamageUsed = false;
+        highDamageUsed = false;
+        attackUsed = false;
+
         if (cardAsset.cardType == CardType.Human)
         {
             DeactivateSummoningSickness();
@@ -402,12 +413,6 @@ public class OneCardManager : MonoBehaviour
     public void DeactivateSummoningSickness()
     {
         summoningSickness = false;
-
-        for (int i = 0; i < abilityCollider.Count; i++)
-        {
-            abilityCollider[i].enabled = true;
-        }
-
         ChangeEggToEnemy();
 
         cardAsset.summoningSickness = false;
@@ -416,12 +421,12 @@ public class OneCardManager : MonoBehaviour
 
     private void UpdateAbilitys()
     {
-        if (LowHealEnabled)
+        if (lowHealEnabled)
         {
             lowHealGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[0];
         }
-        else if (HighhealEnabled)
+        else if (highhealEnabled)
         {
             highHealGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[1];
@@ -432,12 +437,12 @@ public class OneCardManager : MonoBehaviour
             lowHealGameObject.SetActive(false);
         }
 
-        if (LowDamageEnabled)
+        if (lowDamageEnabled)
         {
             lowDMGGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[2];
         }
-        else if (HighhealEnabled)
+        else if (highDamageEnabled)
         {
             highDMGGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[3];
@@ -472,7 +477,6 @@ public class OneCardManager : MonoBehaviour
         {
             if (cardAsset.cardType == CardType.AOEDMGSpell)
             {
-                
                 return;
             }
             if (manPower.manPower >= cardAsset.cost)
@@ -485,11 +489,12 @@ public class OneCardManager : MonoBehaviour
                 gameObject.GetComponent<Draggable>().setsDraggableFalse = true;
                 gameObject.GetComponent<Draggable>().Dragable = false;
                 //TurnBegin();
-
+                /*
                 for (int i = 0; i < abilityCollider.Count; i++)
                 {
                     abilityCollider[i].enabled = false;
                 }
+                */
                 //Debug.Log("Changed Summoning Sicness (Now on field)");
             }
             else if (cardAsset.cardType == CardType.Epuipment)
@@ -608,22 +613,22 @@ public class OneCardManager : MonoBehaviour
     public void HealAbility()
     {
         //Debug.Log("Heal Called");
-        if (LowHealEnabled)
+        if (lowHealEnabled && !lowHealUsed)
         {
             //Debug.Log("HealEnabled");
             //Debug.Log(cardAsset.lowHeal.used);
-            gameManager.HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this, cardAsset.lowHeal.used);
+            gameManager.HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this, lowHealUsed);
         }
-        else if (HighhealEnabled)
+        else if (highhealEnabled && !highHealUsed)
         {
-            gameManager.HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this, cardAsset.highHeal.used);
+            gameManager.HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this, highHealUsed);
         }
     }
 
     public void UsedHeal()
     {
-        cardAsset.lowHeal.used = true;
-        cardAsset.highHeal.used = true;
+        lowHealUsed = true;
+        highHealUsed = true;
     }
 
     public void Heal(int heal)
@@ -642,7 +647,7 @@ public class OneCardManager : MonoBehaviour
 
     public bool HealAbilityAvailible()
     {
-        if ((cardAsset.lowHeal.used || cardAsset.highHeal.used) && cardAsset.cardType == CardType.Human)
+        if ((lowHealUsed || highHealUsed) && cardAsset.cardType == CardType.Human)
         {
             return true;
         }
@@ -654,34 +659,38 @@ public class OneCardManager : MonoBehaviour
 
     public void DamageAbility()
     {
-        if (LowDamageEnabled)
+        if (lowDamageEnabled)
         {
-            gameManager.DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this, cardAsset.lowDMG.used);
+            gameManager.DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this, lowDamageUsed);
         }
-        else if (HighDamageEnabled)
+        else if (highDamageEnabled)
         {
-            gameManager.DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this, cardAsset.highDMG.used);
+            gameManager.DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this, highDamageUsed);
         }
     }
     public void UsedDamage()
     {
-        cardAsset.lowDMG.used = true;
-        cardAsset.highDMG.used = true;
+        lowDamageUsed = true;
+        highDamageUsed = true;
     }
 
     public void Damage(int damage)
     {
         if (cardAsset.cardType != CardType.AOEHealSpell && cardAsset.cardType != CardType.AOEDMGSpell)
-        ShowDamageNumber(damage);
-        gameManager.particlePosition.Add(transform.position);
+        {
+            ShowDamageNumber(damage);
+        }
+
         Health = Health - damage;
+
+        gameManager.particlePosition.Add(transform.position);
         Instantiate(humanDamageParticles, gameObject.transform.localPosition, Quaternion.identity);
         gameManager.particlePosition.RemoveAt(0);
     }
 
     public bool AttackAbilityAvailible()
     {
-        if (cardAsset.lowDMG.used || cardAsset.highDMG.used)
+        if (lowDamageUsed || highDamageUsed)
         {
             return true;
         }

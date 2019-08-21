@@ -146,11 +146,11 @@ public class GameManager : MonoBehaviour
                         lootEnabler = hit.collider.GetComponent<LootScript>();
                         break;
                     case "LowDamageLoot(Clone)":
-                        abilityToActivate = AbilityNames.highDMG;
+                        abilityToActivate = AbilityNames.lowDMG;
                         lootEnabler = hit.collider.GetComponent<LootScript>();
                         break;
                     case "HighDamageLoot(Clone)":
-                        abilityToActivate = AbilityNames.lowDMG;
+                        abilityToActivate = AbilityNames.highDMG;
                         lootEnabler = hit.collider.GetComponent<LootScript>();
                         break;
                     default:
@@ -178,7 +178,8 @@ public class GameManager : MonoBehaviour
 
     public void CardClicked(OneCardManager clickedOn)
     {
-        if (abilityToActivate != AbilityNames.nothing)
+        Debug.Log("Clicked on Card");
+        if (lootEnabler != null)
         {
             clickedOn.GetComponent<OneCardManager>().EquipAbility(abilityToActivate);
             lootEnabler.Destroy();
@@ -186,63 +187,63 @@ public class GameManager : MonoBehaviour
         } 
         else if (gameState == GameState.PlayerIdle)
         {
-            if (clicked02 == null && clicked01 == null && clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+            if (abilityUser != null)
             {
                 clicked01 = clickedOn;
-                highlight = Highlight.Attack;
-                if (healAbilityCost != 0 && healAbilityEffect != 0) //Check for Heal Abilityclicked01.GetComponent<OneCardManager>().
+                if (healAbilityCost != 0 && healAbilityEffect != 0)
                 {
                     Heal();
                 }
-            }
-            else if (clicked02 == null && clicked01 == null && (clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
-            {
-                clicked01 = clickedOn;
-                if (DMGAbilityCost != 0 && DMGAbilityEffect != 0) // Check for Damage Ability
+                else if (DMGAbilityCost != 0 && DMGAbilityEffect != 0)
                 {
                     if (clicked01.cardAsset.taunt && enemyField.HasTaunt())
                     {
-                        //particlePosition.Add(clicked01.transform.position);
                         Damage();
                     }
                     else if (!enemyField.HasTaunt())
                     {
-                        //particlePosition.Add(clicked01.transform.position);
                         Damage();
                     }
                 }
                 else
                 {
-                    clicked01 = null;
+                    ResetAbilitys();
+                    return;
                 }
-            }
-            else if (clicked01 != null && clickedOn != clicked01 && (clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || clickedOn.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
-            {
-                clicked02 = clickedOn;
             }
             else
             {
-                ResetAbilitys();
-            }
-
-            if (clicked01 != null && clicked02 != null) //Basic Attack
-            {
-                if (clicked02.cardAsset.taunt && enemyField.HasTaunt())
+                if (clicked01 == null && clickedOn.cardAsset.cardType == CardType.Human && clickedOn.summoningSickness == false)
                 {
-                    //particlePosition.Add(clicked01.transform.position);
-                    clicked01.Damage(clicked02.Attack);
-                    //particlePosition.Add(clicked02.transform.position);
-                    clicked02.Damage(clicked01.Attack);
-                    clicked01.cardAsset.attackUsed = true;
-                    ResetAbilitys();
+                    highlight = Highlight.Attack;
+                    clicked01 = clickedOn;
                 }
-                else if (!enemyField.HasTaunt())
+                else if (clicked01 != null && clicked02 == null && (clickedOn.cardAsset.cardType == CardType.Enemy || clickedOn.cardAsset.cardType == CardType.Egg))
                 {
-                    //particlePosition.Add(clicked01.transform.position);
-                    clicked01.Damage(clicked02.Attack);
-                    //particlePosition.Add(clicked02.transform.position);
-                    clicked02.Damage(clicked01.Attack);
-                    clicked01.cardAsset.attackUsed = true;
+                    clicked02 = clickedOn;
+                    if (clicked02.cardAsset.taunt && enemyField.HasTaunt())
+                    {
+                        clicked01.attackUsed = true;
+                        clicked01.Damage(clicked02.Attack);
+                        clicked02.Damage(clicked01.Attack);
+                        clicked01.cardAsset.attackUsed = true;
+                        ResetAbilitys();
+                    }
+                    else if (!enemyField.HasTaunt())
+                    {
+                        clicked01.attackUsed = true;
+                        clicked01.Damage(clicked02.Attack);
+                        clicked02.Damage(clicked01.Attack);
+                        clicked01.cardAsset.attackUsed = true;
+                        ResetAbilitys();
+                    }
+                    else
+                    {
+                        ResetAbilitys();
+                    }
+                }
+                else
+                {
                     ResetAbilitys();
                 }
             }

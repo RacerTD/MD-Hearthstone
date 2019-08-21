@@ -33,9 +33,6 @@ public class HighlightCard : MonoBehaviour
     public GameObject highDMGGlow;
     public GameObject enemyWave;
 
-    private Vector3 originalPosition = new Vector3(0, 0, 0);
-    private Vector3 originalRotation = new Vector3(0, 0, 0);
-    private Vector3 originalScale = new Vector3(0, 0, 0);
     private bool newSizeSet = false;
 
     [Header("Colors")]
@@ -54,66 +51,167 @@ public class HighlightCard : MonoBehaviour
         enemyField = GameObject.Find("EnemyField").GetComponent<EnemyFieldScript>();
     }
 
-
-    void Update()
+    private void Attack()
     {
-        if (currentHighlight == Highlight.Attack)
-            //Highlights child when it does a basic attack
-            
-            if (gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+        if (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+        {
+            if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
             {
-
-                ChangeColor(selectedCardColor, waves);
-
+                ChangeColor(attackColor, waves);
             }
+            else if (!enemyField.HasTaunt())
+            {
+                ChangeColor(attackColor, waves);
+            }
+        }
+        else
+        {
+            ChangeColor(defaultEnemyColor, waves);
+        }
+    }
+
+    private void AbilityUser()
+    {
         if (gameManager.GetComponent<GameManager>().abilityUser != null)
         {
 
-            if (GetComponent<OneCardManager>().cardAsset.lowHeal.enabled == true && GetComponent<OneCardManager>().cardAsset.lowHeal.used == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().lowHealEnabled == true && GetComponent<OneCardManager>().lowHealUsed == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Heal Ability
             {
                 lowHealGlow.SetActive(true);
-
             }
 
-
-            if (GetComponent<OneCardManager>().cardAsset.highHeal.enabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.used == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().highhealEnabled == true && GetComponent<OneCardManager>().highHealUsed == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Heal Ability
             {
                 highHealGlow.SetActive(true);
             }
-           
+
             if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().lowDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Damage Ability
             {
-                    lowDMGGlow.SetActive(true);
+                lowDMGGlow.SetActive(true);
             }
-            
 
             if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().highDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Damage Ability
             {
-                    highDMGGlow.SetActive(true);
+                highDMGGlow.SetActive(true);
             }
-            
-
-
-        } else
+        }
+        else
         {
             lowHealGlow.SetActive(false);
             lowDMGGlow.SetActive(false);
             highDMGGlow.SetActive(false);
             highHealGlow.SetActive(false);
         }
-        
+    }
 
-        Hover();
+    private void HealAndAttackHighlight()
+    {
+        if (gameManager.highlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
+        {
+            //Umfärben auf healColor
+            ChangeColor(healColor, waves);
+        }
+        else if (gameManager.highlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
+        {
+            if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+            {
+                ChangeColor(attackColor, waves);
+            }
+            else if (!enemyField.HasTaunt())
+            {
+                ChangeColor(attackColor, waves);
+            }
+            //Umfärben auf attackColor
+        }
+        else
+        {
+            //färben auf defaultColor
+            ChangeColor(defaultColor, waves);
+            enemyWave.GetComponent<Image>().color = defaultEnemyColor;
+        }
+    }
 
+
+    private void AttackUser()
+    {
+        if (currentHighlight == Highlight.Attack && gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+        {
+            //Highlights child when it does a basic attack
+            ChangeColor(selectedCardColor, waves);
+        }
+        else
+        {
+            ChangeColor(defaultColor, waves);
+        }
+    }
+
+    private void HealAbilityUsed()
+    {
+        if (healAbilityUsed != gameObject.GetComponent<OneCardManager>().HealAbilityAvailible())
+        {
+            healAbilityUsed = gameObject.GetComponent<OneCardManager>().HealAbilityAvailible();
+
+            if (healAbilityUsed)
+            {
+                ChangeColor(abilityUsedColor, healAbility);
+                //ChangeBoxColliderState(false, healAbility);
+            }
+            else
+            {
+                ChangeColor(defaultColor, healAbility);
+                //ChangeBoxColliderState(true, healAbility);
+            }
+        }
+    }
+
+    private void AttackAbilityUsed()
+    {
+        if (attackAbilityUsed != gameObject.GetComponent<OneCardManager>().AttackAbilityAvailible())
+        {
+            attackAbilityUsed = gameObject.GetComponent<OneCardManager>().AttackAbilityAvailible();
+
+            if (attackAbilityUsed)
+            {
+                ChangeColor(abilityUsedColor, attackAbility);
+                //ChangeBoxColliderState(false, attackAbility);
+            }
+            else
+            {
+                ChangeColor(defaultColor, attackAbility);
+                //ChangeBoxColliderState(true, attackAbility);
+            }
+        }
+    }
+
+    private void SummoningSickness()
+    {
+        if (summoningSickness != gameObject.GetComponent<OneCardManager>().summoningSickness || gameObject.GetComponent<OneCardManager>().attackUsed == true)
+        {
+            summoningSickness = gameObject.GetComponent<OneCardManager>().summoningSickness;
+            attackUsed = gameObject.GetComponent<OneCardManager>().attackUsed;
+
+            if (gameObject.GetComponent<OneCardManager>().summoningSickness || gameObject.GetComponent<OneCardManager>().attackUsed)
+            {
+                ChangeColor(summoningSicknessColor, bigImages);
+            }
+            else
+            {
+                ChangeColor(defaultColor, bigImages);
+            }
+        }
+    }
+
+    private void EquipmentHighlight()
+    {
         if (currendCardInHand != gameManager.cardInHand)
         {
             currendCardInHand = gameManager.cardInHand;
 
-            if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount < 4 && gameObject.GetComponent < OneCardManager>().cardAsset.cardType == CardType.Human && CheckIfEquipmentIsPossible())
+            if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount < 4 && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && CheckIfEquipmentIsPossible())
             {
                 //Färben auf equipmentColor
                 ChangeColor(equipmentColor, waves);
@@ -124,90 +222,65 @@ public class HighlightCard : MonoBehaviour
                 ChangeColor(defaultColor, waves);
             }
         }
-
-        if (currentHighlight != gameManager.highlight)
-        {
-            currentHighlight = gameManager.highlight;
-            
-            if (currentHighlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
-            {
-                
-
-                //Umfärben auf healColor
-                ChangeColor(healColor, waves);
-            }
-            else if (currentHighlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
-            {
-                
-
-                if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
-                {
-                    ChangeColor(attackColor, waves);
-                }
-                else if (!enemyField.HasTaunt())
-                {
-                    ChangeColor(attackColor, waves);
-                }
-                //Umfärben auf attackColor
-            }
-            else
-            {
-                
-                //färben auf defaultColor
-                ChangeColor(defaultColor, waves);
-                enemyWave.GetComponent<Image>().color = defaultEnemyColor;
-            }
-        }
-
-        if (healAbilityUsed != gameObject.GetComponent<OneCardManager>().HealAbilityAvailible())
-        {
-            healAbilityUsed = gameObject.GetComponent<OneCardManager>().HealAbilityAvailible();
-
-            if (healAbilityUsed)
-            {
-                ChangeColor(abilityUsedColor, healAbility);
-                ChangeBoxColliderState(false, healAbility);
-            }
-            else
-            {
-                ChangeColor(defaultColor, healAbility);
-                ChangeBoxColliderState(true, healAbility);
-            }
-        }
-
-        if (attackAbilityUsed != gameObject.GetComponent<OneCardManager>().AttackAbilityAvailible())
-        {
-            attackAbilityUsed = gameObject.GetComponent<OneCardManager>().AttackAbilityAvailible();
-
-            if (attackAbilityUsed)
-            {
-                ChangeColor(abilityUsedColor, attackAbility);
-                ChangeBoxColliderState(false, attackAbility);
-            }
-            else
-            {
-                ChangeColor(defaultColor, attackAbility);
-                ChangeBoxColliderState(true, attackAbility);
-            }
-        }
-
-        if (summoningSickness != gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness || attackUsed != gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed)
-        {
-            summoningSickness = gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness;
-            attackUsed = gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed;
-
-            if (gameObject.GetComponent<OneCardManager>().cardAsset.summoningSickness || gameObject.GetComponent<OneCardManager>().cardAsset.attackUsed)
-            {
-                ChangeColor(summoningSicknessColor, bigImages);
-            }
-            else
-            {
-                ChangeColor(defaultColor, bigImages);
-                
-            }
-        }
-
     }
+
+    void Update()
+    {
+        //Attack();
+        AbilityUser();
+        //AttackUser();
+        //HealAndAttackHighlight();
+        HealAbilityUsed();
+        AttackAbilityUsed();
+        SummoningSickness();
+        //EquipmentHighlight();
+        Hover();
+
+        WavesHighlight();
+    }
+
+    private void WavesHighlight()
+    {
+        if (gameManager.highlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
+        {
+            //Umfärben auf healColor
+            ChangeColor(healColor, waves);
+        }
+        else if (gameManager.highlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg) && (gameManager.clicked01 != null || gameManager.abilityUser != null))
+        {
+            if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+            {
+                ChangeColor(attackColor, waves);
+            }
+            else if (!enemyField.HasTaunt())
+            {
+                ChangeColor(attackColor, waves);
+            }
+            //Umfärben auf attackColor
+        }
+        else if (gameManager.highlight == Highlight.Attack && gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
+        {
+            //Highlights child when it does a basic attack
+            ChangeColor(selectedCardColor, waves);
+        }
+        else if (gameManager.cardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount < 4 && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+        {
+            //Färben auf equipmentColor
+            ChangeColor(equipmentColor, waves);
+        }
+        else
+        {
+            if (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human)
+            {
+                ChangeColor(defaultColor, waves);
+            }
+            else
+            {
+                ChangeColor(defaultEnemyColor, waves);
+            }
+        }
+    }
+
 
     private void ChangeColor(Color color, List<Image> toChange)
     {
@@ -254,29 +327,7 @@ public class HighlightCard : MonoBehaviour
         {
             return true;
         }
-
-        if (gameManager.currentlyDragging.cardAsset.lowHeal.enabled && !equipment.lowHeal.enabled)
-        {
-            return true;
-        }
-
-        if (gameManager.currentlyDragging.cardAsset.highHeal.enabled && !equipment.highHeal.enabled)
-        {
-            return true;
-        }
-
-        if (gameManager.currentlyDragging.cardAsset.lowDMG.enabled && !equipment.lowDMG.enabled)
-        {
-            return true;
-        }
-
-        if (gameManager.currentlyDragging.cardAsset.highDMG.enabled && !equipment.highDMG.enabled)
-        {
-            return true;
-        }
-
         return false;
-
     }
 
 }

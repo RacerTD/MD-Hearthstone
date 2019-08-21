@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 7812e55d6a740ef4d88df2aed0eb2223
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Battlefield 2.unity
     guid: 9b8a2186ba6d4ba4dbf2694dba26c6f1
+  - enabled: 1
+    path: Assets/Scenes/Niggi/Battlefield 2 Nici 8.unity
+    guid: d58e64c289b13dd4496925476e8baff6
   m_configObjects: {}
