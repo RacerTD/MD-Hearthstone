@@ -63,6 +63,7 @@ public class EnemyFieldScript : MonoBehaviour
             childCount = transform.childCount;
             for (int i = childCount - 1; i > -1; i--)
             {
+                transform.GetChild(i).GetComponent<Draggable>().enabled = false;
                 if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEDMGSpell)
                 {
                     AOEDamage(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);
@@ -268,6 +269,7 @@ public class EnemyFieldScript : MonoBehaviour
                 do
                 {
                     int merker = Random.Range(0, playerField.GetComponent<Transform>().childCount);
+
                     if (playerField.GetComponent<Transform>().GetChild(merker).GetComponent<OneCardManager>().cardAsset.taunt)
                     {
                         attackList[0].GiveGameManagerCard();

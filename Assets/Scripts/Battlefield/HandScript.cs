@@ -8,6 +8,7 @@ public class HandScript : MonoBehaviour
     public GameObject playerField;
     public GameObject manPower;
     public GameObject mana;
+    private int childCount;
 
     private OneCardManager curHover = null;
 
@@ -21,6 +22,14 @@ public class HandScript : MonoBehaviour
 
     private void Update()
     {
+        if (childCount != transform.childCount)
+        {
+            childCount = transform.childCount;
+            for (int i = childCount - 1; i > 0; i--)
+            {
+                transform.GetChild(i).GetComponent<Draggable>().enabled = true;
+            }
+        }
         cards = GetComponentsInChildren<OneCardManager>().ToList();
         FindHover();
         ZoomHover();

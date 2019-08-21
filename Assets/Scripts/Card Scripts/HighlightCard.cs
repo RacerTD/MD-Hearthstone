@@ -231,7 +231,7 @@ public class HighlightCard : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-        if (hit.collider != null && (hit.collider.name != "LowHealLoot"))
+        if (hit.collider != null && (hit.collider.name != "LowHealLoot(Clone)" && hit.collider.name != "HighHealLoot(Clone)" && hit.collider.name != "HighDamageLoot(Clone)" && hit.collider.name != "LowDamageLoot(Clone)"))
         {
             if (hit.collider.name == "HPIcon" && gameObject.GetComponent<OneCardManager>().onBoard)
             {

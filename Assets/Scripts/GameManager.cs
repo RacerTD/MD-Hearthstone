@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public EnemyFieldScript enemyField;
     public ManaScript mana;
     public PlayerFieldScript playerField;
+    public LootFildScript lootField;
 
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
@@ -140,6 +141,14 @@ public class GameManager : MonoBehaviour
                         abilityToActivate = AbilityNames.highHeal;
                         lootEnabler = hit.collider.GetComponent<LootScript>();
                         break;
+                    case "LowDamageLoot(Clone)":
+                        abilityToActivate = AbilityNames.highDMG;
+                        lootEnabler = hit.collider.GetComponent<LootScript>();
+                        break;
+                    case "HighDamageLoot(Clone)":
+                        abilityToActivate = AbilityNames.lowDMG;
+                        lootEnabler = hit.collider.GetComponent<LootScript>();
+                        break;
                     default:
                         ResetAbilitys();
                         break;
@@ -251,9 +260,9 @@ public class GameManager : MonoBehaviour
 
             if (clicked01 != null && clicked02 != null)
             {
-                particlePosition.Add(clicked01.transform.position);
+                //particlePosition.Add(clicked01.transform.position);
                 clicked01.Damage(clicked02.Attack);
-                particlePosition.Add(clicked02.transform.position);
+                //particlePosition.Add(clicked02.transform.position);
                 clicked02.Damage(clicked01.Attack);
                 ResetAbilitys();
             }
@@ -351,6 +360,8 @@ public class GameManager : MonoBehaviour
     public void EndTurn()
     {
         //TurnBegin();
+        ResetAbilitys();
+        lootField.OnEndTurn();
         gameState = GameState.Enemy;
         enemyField.ResetEnemyState();
     }

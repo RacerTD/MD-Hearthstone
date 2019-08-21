@@ -58,6 +58,11 @@ public class OneCardManager : MonoBehaviour
     public GameObject lowDMGGameObject;
     public GameObject highDMGGameObject;
 
+    public bool LowHealEnabled;
+    public bool HighhealEnabled;
+    public bool LowDamageEnabled;
+    public bool HighDamageEnabled;
+
     [Header("Spott")]
     public GameObject taunt;
     public int childCount = 4;
@@ -199,16 +204,16 @@ public class OneCardManager : MonoBehaviour
         switch (ability)
         {
             case AbilityNames.lowHeal:
-                cardAsset.lowHeal.enabled = true;
+                LowHealEnabled = true;
                 break;
             case AbilityNames.highHeal:
-                cardAsset.highHeal.enabled = true;
+                HighhealEnabled = true;
                 break;
             case AbilityNames.lowDMG:
-                cardAsset.lowDMG.enabled = true;
+                LowDamageEnabled = true;
                 break;
             case AbilityNames.highDMG:
-                cardAsset.highDMG.enabled = true;
+                HighDamageEnabled = true;
                 break;
         }
         UpdateAbilitys();
@@ -279,6 +284,11 @@ public class OneCardManager : MonoBehaviour
         Health = maxHealth;
         cost = newAsset.cost;
         summoningSickness = true;
+
+        LowHealEnabled = cardAsset.lowHeal.enabled;
+        HighhealEnabled = cardAsset.highHeal.enabled;
+        LowDamageEnabled = cardAsset.lowDMG.enabled;
+        HighhealEnabled = cardAsset.highDMG.enabled;
 
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
@@ -406,12 +416,12 @@ public class OneCardManager : MonoBehaviour
 
     private void UpdateAbilitys()
     {
-        if (cardAsset.lowHeal.enabled)
+        if (LowHealEnabled)
         {
             lowHealGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[0];
         }
-        else if (cardAsset.highHeal.enabled)
+        else if (HighhealEnabled)
         {
             highHealGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[1];
@@ -422,12 +432,12 @@ public class OneCardManager : MonoBehaviour
             lowHealGameObject.SetActive(false);
         }
 
-        if (cardAsset.lowDMG.enabled)
+        if (LowDamageEnabled)
         {
             lowDMGGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[2];
         }
-        else if (cardAsset.highDMG.enabled)
+        else if (HighhealEnabled)
         {
             highDMGGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[3];
@@ -598,13 +608,13 @@ public class OneCardManager : MonoBehaviour
     public void HealAbility()
     {
         //Debug.Log("Heal Called");
-        if (cardAsset.lowHeal.enabled)
+        if (LowHealEnabled)
         {
             //Debug.Log("HealEnabled");
             //Debug.Log(cardAsset.lowHeal.used);
             gameManager.HealAbility(cardAsset.lowHeal.effect, cardAsset.lowHeal.cost, this, cardAsset.lowHeal.used);
         }
-        else if (cardAsset.highHeal.enabled)
+        else if (HighhealEnabled)
         {
             gameManager.HealAbility(cardAsset.highHeal.effect, cardAsset.highHeal.cost, this, cardAsset.highHeal.used);
         }
@@ -644,11 +654,11 @@ public class OneCardManager : MonoBehaviour
 
     public void DamageAbility()
     {
-        if (cardAsset.lowDMG.enabled)
+        if (LowDamageEnabled)
         {
             gameManager.DMGAbility(cardAsset.lowDMG.effect, cardAsset.lowDMG.cost, this, cardAsset.lowDMG.used);
         }
-        else if (cardAsset.highDMG.enabled)
+        else if (HighDamageEnabled)
         {
             gameManager.DMGAbility(cardAsset.highDMG.effect, cardAsset.highDMG.cost, this, cardAsset.highDMG.used);
         }

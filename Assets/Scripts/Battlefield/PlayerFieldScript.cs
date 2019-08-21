@@ -29,6 +29,7 @@ public class PlayerFieldScript : MonoBehaviour
             childCount = transform.childCount;
             for (int i = childCount - 1; i > -1; i--)
             {
+                transform.GetChild(i).GetComponent<Draggable>().enabled = false;
                 if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEHealSpell)
                 {
                     AOEHeal(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);

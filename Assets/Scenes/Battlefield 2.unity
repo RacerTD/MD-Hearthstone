@@ -1104,6 +1104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleLoot:
+  - {fileID: 4543228503057613223, guid: 61eca88ddbd6e44488897a12960c7c24, type: 3}
+  - {fileID: 4543228503057613223, guid: d32c49c195281f74e92fb07f5966381d, type: 3}
+  - {fileID: 4543228503057613223, guid: 6b463cc3231d85a4fb6d35daa85398e3, type: 3}
   - {fileID: 4543228503057613223, guid: aa29cdb75810a6d4b8d759051c3559b7, type: 3}
 --- !u!1 &905709585
 GameObject:
@@ -1865,7 +1868,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.744, y: 0.028619442}
   m_AnchorMax: {x: 0.8457917, y: 0.19644167}
-  m_AnchoredPosition: {x: 7.5999756, y: -3.8462524}
+  m_AnchoredPosition: {x: 7.5999756, y: -3.846283}
   m_SizeDelta: {x: -25.099976, y: -10.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1520702372
@@ -2107,6 +2110,7 @@ MonoBehaviour:
   enemyField: {fileID: 188098478}
   mana: {fileID: 1520702376}
   playerField: {fileID: 501992565}
+  lootField: {fileID: 592556816}
   playersTurn: 1
   cardInHand: 6
   highlight: 4
