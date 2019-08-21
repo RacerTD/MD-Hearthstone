@@ -470,13 +470,13 @@ public class OneCardManager : MonoBehaviour
 
     private void CheckIfDead()
     {
-        if (cardAsset.name == "Queen")
-        {
-            gameManager.TriggerEndScreen(false);
-        }
 
         if (_health <= 0 && (cardAsset.cardType == CardType.Enemy || cardAsset.cardType == CardType.Human || cardAsset.cardType == CardType.Egg))
         {
+            if (cardAsset.name == "Queen")
+            {
+                gameManager.TriggerEndScreen(false);
+            }
             delete();
         }
     }

@@ -89,7 +89,7 @@ public class CardsSideBySide : MonoBehaviour
 
             if (myChild.GetComponent<OneCardManager>().cardAsset.name == "Queen")
             {
-                myChild.transform.DOScale(new Vector3(scale * 2, scale * 2, scale * 2), 1f).SetEase(Ease.OutQuart);
+                myChild.transform.DOScale(new Vector3(scale * 1.5f, scale * 1.5f, scale * 1.5f), 1f).SetEase(Ease.OutQuart);
             }
         }
 
