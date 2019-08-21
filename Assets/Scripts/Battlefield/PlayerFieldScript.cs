@@ -42,7 +42,7 @@ public class PlayerFieldScript : MonoBehaviour
                         transform.GetChild(i).GetComponent<OneCardManager>().BackToHand();
                     }
                 }
-                else if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && transform.childCount > 5)
+                else if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEHealSpell && transform.childCount > 5)
                 {
                     transform.GetChild(i).GetComponent<OneCardManager>().BackToHand();
                 }
