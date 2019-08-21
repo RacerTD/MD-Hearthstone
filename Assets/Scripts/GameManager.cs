@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public ManaScript mana;
     public PlayerFieldScript playerField;
     public LootFildScript lootField;
+    public GameObject defeatScreen;
+    public GameObject victoryScreen;
 
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
@@ -47,7 +50,8 @@ public class GameManager : MonoBehaviour
         PlayerIdle,
         PlayerCardInHand,
         PlayerAttack,
-        PlayerAbility
+        PlayerAbility,
+        End
     }
 
     public GameState gameState;
@@ -79,6 +83,11 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown("x"))
         {
+            TriggerEndScreen(true);
+        }
+        if (Input.GetKeyDown("y"))
+        {
+            TriggerEndScreen(false);
         }
 
 
@@ -106,6 +115,34 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
+    /// <summary>
+    /// Aktiviert den Endscreen
+    /// </summary>
+    /// <param name="death"></param>
+    private void TriggerEndScreen(bool death)
+    {
+        gameState = GameState.End;
+        if (death)
+        {
+            defeatScreen.SetActive(true);
+            defeatScreen.GetComponent<Animator>().SetBool("EndGame", true);
+        }
+        else
+        {
+            victoryScreen.SetActive(true);
+            victoryScreen.GetComponent<Animator>().SetBool("EndGame", true);
+        }
+        StartCoroutine(GameEnd());
+
+    }
+
+    private IEnumerator GameEnd()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        SceneManager.LoadScene("MainMenu");
+    }
+
 
     private void Clicking()
     {
