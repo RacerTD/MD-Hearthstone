@@ -250,7 +250,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                if (clicked01 == null && clickedOn.cardAsset.cardType == CardType.Human && clickedOn.summoningSickness == false)
+                if (clicked01 == null && clickedOn.cardAsset.cardType == CardType.Human && clickedOn.summoningSickness == false && clickedOn.attackUsed == false)
                 {
                     highlight = Highlight.Attack;
                     clicked01 = clickedOn;

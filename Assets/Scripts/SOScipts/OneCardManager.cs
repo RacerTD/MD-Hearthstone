@@ -36,6 +36,7 @@ public class OneCardManager : MonoBehaviour
     public List<TextMeshProUGUI> lifeText = new List<TextMeshProUGUI>(); //
     public List<TextMeshProUGUI> maxLifeText = new List<TextMeshProUGUI>(); //
     public List<GameObject> damageNumbers = new List<GameObject>();
+    public List<GameObject> tauntImages = new List<GameObject>();
 
     [Header("Ability Symbol on Hand")]
     [Tooltip("0. Low Heal, 1. High Heal, 2. Low Damage, 3. High Damage")]
@@ -71,7 +72,6 @@ public class OneCardManager : MonoBehaviour
     public bool attackUsed = false;
 
     [Header("Spott")]
-    public GameObject taunt;
     public int childCount = 4;
     public bool summoningSickness = true;
 
@@ -303,6 +303,15 @@ public class OneCardManager : MonoBehaviour
         highhealEnabled = cardAsset.highHeal.enabled;
         lowDamageEnabled = cardAsset.lowDMG.enabled;
         highDamageEnabled = cardAsset.highDMG.enabled;
+
+        if (cardAsset.taunt)
+        {
+            for (int i = 0; i < tauntImages.Count; i++)
+            {
+                tauntImages[i].SetActive(true);
+            }
+        }
+
 
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
