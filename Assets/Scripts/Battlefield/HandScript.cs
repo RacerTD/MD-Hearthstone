@@ -12,6 +12,11 @@ public class HandScript : MonoBehaviour
 
     private OneCardManager curHover = null;
 
+
+    // Bugfix1:
+    //public bool zoomHover;
+    //public bool findHover;
+
     //Liste aller Handkarten
     public List<OneCardManager> cards = new List<OneCardManager>();
 
@@ -22,6 +27,18 @@ public class HandScript : MonoBehaviour
 
     private void Update()
     {
+        // Bugfix1:
+
+        //zoomHover = true; 
+        //findHover = true; 
+        //if (zoomHover && findHover) 
+        //{ 
+        //    ZoomHover(); 
+        //    FindHover(); 
+        //}
+
+
+        //ZoomHover();
         if (childCount != transform.childCount)
         {
             childCount = transform.childCount;
@@ -33,29 +50,54 @@ public class HandScript : MonoBehaviour
         cards = GetComponentsInChildren<OneCardManager>().ToList();
         FindHover();
         ZoomHover();
+        // Bugfix1:
+
+        //if (Input.GetMouseButtonDown(0) == false)
+        //{
+        //    zoomHover = true;
+        //    findHover = true;
+        //}
+        //else if (Input.GetMouseButtonDown(0))
+        //{
+        //    zoomHover = false;
+        //    findHover = false;
+        //    Debug.Log("zoom Set False"+ Input.GetMouseButtonDown(0));
+        //}
+
+       
     }
 
     private void ZoomHover()
     {
         foreach (OneCardManager card in cards)
         {
+            
             bool hovered = card == curHover;
-            Vector3 targetSize = new Vector3(GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale);
-            if (hovered) targetSize = targetSize * 1.6f;
+            // Bugfix2:
+            //if(hovered = card == curHover){
+                Vector3 targetSize = new Vector3(GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale, GameManager.Main.cardsSideBySide.scale);
+                if (hovered) targetSize = targetSize * 1.6f;
 
-            Vector3 targetRotation = card.targetRotation;
-            if(hovered) targetRotation=new Vector3();
+                Vector3 targetRotation = card.targetRotation;
+                if (hovered) targetRotation = new Vector3();
 
-            Vector3 targetPosition = card.targetPosition;
-            if (hovered) targetPosition.y += 200;
+                Vector3 targetPosition = card.targetPosition;
+                if (hovered) targetPosition.y += 200;
 
-            float speed = 0.12f;
-            if (hovered) speed = 0.26f;
+                float speed = 0.12f;
+                if (hovered) speed = 0.26f;
 
-            card.transform.localScale = Vector3.Lerp(card.transform.localScale, targetSize, speed);
-            card.transform.localPosition = Vector3.Lerp(card.transform.localPosition, targetPosition, speed);
-            card.transform.localRotation = Quaternion.Lerp(card.transform.localRotation, Quaternion.Euler(targetRotation), speed);
-            //Debug.Log(card.transform.localScale+" -> " + targetSize + " cur:" + cards.IndexOf(curHover));
+                card.transform.localScale = Vector3.Lerp(card.transform.localScale, targetSize, speed);
+                card.transform.localPosition = Vector3.Lerp(card.transform.localPosition, targetPosition, speed);
+                card.transform.localRotation = Quaternion.Lerp(card.transform.localRotation, Quaternion.Euler(targetRotation), speed);
+            //Bugfix2:
+
+            //} 
+            //Debug.Log(card.transform.localScale+" -> " + targetSize + " cur:" + cards.IndexOf(curHover)); 
+            //else if (hovered = GameManager.Main.currentlyDragging) 
+            //{ 
+                hovered = false;
+            //} Bugfix2
         }
 
         List<OneCardManager> sorted = cards.OrderBy(c => c.transform.position.x).ToList();
