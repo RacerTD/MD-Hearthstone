@@ -26,13 +26,24 @@ public class ManaScript : MonoBehaviour
 
     public void UpdateMana()
     {
-        foreach (Transform child in transform)
+        if (gameManager.humanKilled == false)
         {
-            manaCount = manaCount + child.GetComponent<OneCardManager>().cost;
-            maxMana = maxMana + child.GetComponent<OneCardManager>().cost;
-            child.GetComponent<OneCardManager>().delete();
+            foreach (Transform child in transform)
+            {
+                manaCount = manaCount + child.GetComponent<OneCardManager>().cost;
+                maxMana = maxMana + child.GetComponent<OneCardManager>().cost;
+                gameManager.humanKilled = true;
+                child.GetComponent<OneCardManager>().delete();
+            }
+            gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
         }
-        gameManager.GetComponent<HudManager>().UpdateMana(manaCount);
+        else
+        {
+            foreach (Transform child in transform)
+            {
+                child.GetComponent<OneCardManager>().BackToHand();
+            }
+        }
     }
 
     public void UsedMana(int cost)

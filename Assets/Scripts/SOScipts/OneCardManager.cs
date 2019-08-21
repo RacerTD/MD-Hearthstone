@@ -275,6 +275,8 @@ public class OneCardManager : MonoBehaviour
                 spellCardFront.SetActive(true);
                 transform.position = new Vector3(1200, 1000, 0);
                 transform.SetParent(hand.transform, false);
+                gameObject.GetComponent<Draggable>().setsDraggableFalse = false;
+                gameObject.GetComponent<Draggable>().Dragable = true;
                 break;
 
             case CardType.Epuipment:
@@ -437,15 +439,15 @@ public class OneCardManager : MonoBehaviour
 
     private void UpdateAbilitys()
     {
-        if (lowHealEnabled)
-        {
-            lowHealGameObject.SetActive(true);
-            handAbilitySymbol.sprite = abilityImages[0];
-        }
-        else if (highhealEnabled)
+        if (highhealEnabled)
         {
             highHealGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[1];
+        }
+        else if (lowHealEnabled)
+        {
+            lowHealGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[0];
         }
         else
         {
@@ -453,15 +455,15 @@ public class OneCardManager : MonoBehaviour
             lowHealGameObject.SetActive(false);
         }
 
-        if (lowDamageEnabled)
-        {
-            lowDMGGameObject.SetActive(true);
-            handAbilitySymbol.sprite = abilityImages[2];
-        }
-        else if (highDamageEnabled)
+        if (highDamageEnabled)
         {
             highDMGGameObject.SetActive(true);
             handAbilitySymbol.sprite = abilityImages[3];
+        }
+        else if (lowDamageEnabled)
+        {
+            lowDMGGameObject.SetActive(true);
+            handAbilitySymbol.sprite = abilityImages[2];
         }
         else
         {

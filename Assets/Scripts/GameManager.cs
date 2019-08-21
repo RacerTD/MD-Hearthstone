@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject defeatScreen;
     public GameObject victoryScreen;
 
+    public bool humanKilled = false;
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
     public Highlight highlight = Highlight.Nothing;
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown("space"))
         {
             cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
@@ -89,6 +91,7 @@ public class GameManager : MonoBehaviour
         {
             TriggerEndScreen(false);
         }
+        */
 
 
         switch (gameState)
@@ -231,7 +234,7 @@ public class GameManager : MonoBehaviour
                 {
                     Heal();
                 }
-                else if (DMGAbilityCost != 0 && DMGAbilityEffect != 0 && (clickedOn.cardAsset.cardType == CardType.Human || clickedOn.cardAsset.cardType == CardType.Egg))
+                else if (DMGAbilityCost != 0 && DMGAbilityEffect != 0 && (clickedOn.cardAsset.cardType == CardType.Enemy || clickedOn.cardAsset.cardType == CardType.Egg))
                 {
                     if (clicked01.cardAsset.taunt && enemyField.HasTaunt())
                     {
@@ -313,6 +316,7 @@ public class GameManager : MonoBehaviour
 
     void TurnBegin()
     {
+        humanKilled = false;
         playerField.TurnBegin();
         //enemyField.TurnStart();
         mana.TurnBegin();
@@ -401,11 +405,14 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
-        //TurnBegin();
-        ResetAbilitys();
-        lootField.OnEndTurn();
-        gameState = GameState.Enemy;
-        enemyField.ResetEnemyState();
+        if (gameState == GameState.PlayerIdle)
+        {
+            //TurnBegin();
+            ResetAbilitys();
+            lootField.OnEndTurn();
+            gameState = GameState.Enemy;
+            enemyField.ResetEnemyState();
+        }
     }
 
     private void PlayerCardDraw()

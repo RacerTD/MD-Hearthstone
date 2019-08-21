@@ -26,14 +26,24 @@ public class ManPowerScript : MonoBehaviour
 
     public void UpdateManPower()
     {
-        foreach (Transform child in transform)
+        if (gameManager.humanKilled == false)
         {
-            manPower = manPower + child.GetComponent<OneCardManager>().cost;
-            maxManPower = manPower + child.GetComponent<OneCardManager>().cost;
-
-            child.GetComponent<OneCardManager>().delete();
+            foreach (Transform child in transform)
+            {
+                manPower = manPower + child.GetComponent<OneCardManager>().cost;
+                maxManPower = maxManPower + child.GetComponent<OneCardManager>().cost;
+                gameManager.humanKilled = true;
+                child.GetComponent<OneCardManager>().delete();
+            }
+            gameManager.GetComponent<HudManager>().UpdateManPower(manPower);
         }
-        gameManager.GetComponent<HudManager>().UpdateManPower(manPower);
+        else
+        {
+            foreach (Transform child in transform)
+            {
+                child.GetComponent<OneCardManager>().BackToHand();
+            }
+        }
     }
 
     public void UsedManPower(int mp)

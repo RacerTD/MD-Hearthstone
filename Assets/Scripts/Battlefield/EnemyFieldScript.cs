@@ -72,8 +72,15 @@ public class EnemyFieldScript : MonoBehaviour
                 transform.GetChild(i).GetComponent<Draggable>().enabled = false;
                 if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.AOEDMGSpell)
                 {
-                    AOEDamage(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);
-                    Destroy(transform.GetChild(i).gameObject);
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost <= mana.manaCount)
+                    {
+                        AOEDamage(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost, transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.attack);
+                        Destroy(transform.GetChild(i).gameObject);
+                    }
+                    else
+                    {
+                        transform.GetChild(i).GetComponent<OneCardManager>().BackToHand();
+                    }
                 }
             }
         }
