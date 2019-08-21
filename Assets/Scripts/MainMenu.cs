@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Battlefield Jennifer");
+        SceneManager.LoadScene("BUILD");
     }
     public void QuitGame()
     {
