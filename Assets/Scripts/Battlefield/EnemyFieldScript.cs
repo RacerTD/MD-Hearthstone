@@ -286,6 +286,7 @@ public class EnemyFieldScript : MonoBehaviour
 
         for (int i = 0; i < transform.childCount; i++)
         {
+            Debug.Log("Baumstamm");
             myChild = transform.GetChild(i);
             if (myChild.GetComponent<OneCardManager>().cardAsset.taunt)
             {

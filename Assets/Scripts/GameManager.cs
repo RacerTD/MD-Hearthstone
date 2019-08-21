@@ -263,7 +263,7 @@ public class GameManager : MonoBehaviour
                         clicked01.attackUsed = true;
                         clicked01.Damage(clicked02.Attack);
                         clicked02.Damage(clicked01.Attack);
-                        clicked01.cardAsset.attackUsed = true;
+                        clicked01.attackUsed = true;
                         ResetAbilitys();
                     }
                     else if (!enemyField.HasTaunt())
@@ -271,7 +271,7 @@ public class GameManager : MonoBehaviour
                         clicked01.attackUsed = true;
                         clicked01.Damage(clicked02.Attack);
                         clicked02.Damage(clicked01.Attack);
-                        clicked01.cardAsset.attackUsed = true;
+                        clicked01.attackUsed = true;
                         ResetAbilitys();
                     }
                     else
