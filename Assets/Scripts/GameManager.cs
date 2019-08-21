@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator GameEnd()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(3.5f);
         SceneManager.LoadScene("MainMenu");
     }
 
