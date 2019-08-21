@@ -22,13 +22,13 @@ MonoBehaviour:
   summoningSickness: 1
   taunt: 0
   cost: 4
-  description: 'Deals 2 Damage to an enemy Target.
+  description: 'Deals 2 Damage to an enemy Target
 
-    Deals 4 Damage to an enemy Target.
+    Deals 4 Damage to an enemy Target
 
-    Restores 1 hitpoint of an allys health.
+    Restores 1 hitpoint of an allys health
 
-    Restores 3 hitpoints of an allys health.'
+    Restores 3 hitpoints of an allys health'
   lowHeal:
     enabled: 0
     effect: 1

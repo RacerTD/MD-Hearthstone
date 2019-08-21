@@ -22,7 +22,7 @@ MonoBehaviour:
   summoningSickness: 0
   taunt: 1
   cost: 1
-  description: 'Taunt: This Unit must be killed first.'
+  description: 'Taunt: This unit must be killed first'
   lowHeal:
     enabled: 0
     effect: 1

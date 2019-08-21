@@ -22,7 +22,7 @@ MonoBehaviour:
   summoningSickness: 0
   taunt: 0
   cost: 4
-  description: Deals 4 Damage to an enemy Target.
+  description: Deals 4 Damage to an enemy Target
   lowHeal:
     enabled: 0
     effect: 1

@@ -22,7 +22,7 @@ MonoBehaviour:
   summoningSickness: 1
   taunt: 0
   cost: 2
-  description: Recieve 4 Attack Damage permanently
+  description: Gain 4 Attack Damage permanently
   lowHeal:
     enabled: 0
     effect: 0
