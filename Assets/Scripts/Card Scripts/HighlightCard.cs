@@ -189,19 +189,13 @@ public class HighlightCard : MonoBehaviour
 
     private void SummoningSickness()
     {
-        if (summoningSickness != gameObject.GetComponent<OneCardManager>().summoningSickness || gameObject.GetComponent<OneCardManager>().attackUsed == true)
+        if (gameObject.GetComponent<OneCardManager>().summoningSickness || gameObject.GetComponent<OneCardManager>().attackUsed)
         {
-            summoningSickness = gameObject.GetComponent<OneCardManager>().summoningSickness;
-            attackUsed = gameObject.GetComponent<OneCardManager>().attackUsed;
-
-            if (gameObject.GetComponent<OneCardManager>().summoningSickness || gameObject.GetComponent<OneCardManager>().attackUsed)
-            {
-                ChangeColor(summoningSicknessColor, bigImages);
-            }
-            else
-            {
-                ChangeColor(defaultColor, bigImages);
-            }
+            ChangeColor(summoningSicknessColor, bigImages);
+        }
+        else
+        {
+            ChangeColor(defaultColor, bigImages);
         }
     }
 

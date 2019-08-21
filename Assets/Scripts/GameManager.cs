@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
         } 
         else if (gameState == GameState.PlayerIdle)
         {
-            if (abilityUser != null)
+            if (abilityUser != null && clickedOn.cardAsset.cardType == CardType.Enemy)
             {
                 clicked01 = clickedOn;
                 if (healAbilityCost != 0 && healAbilityEffect != 0)

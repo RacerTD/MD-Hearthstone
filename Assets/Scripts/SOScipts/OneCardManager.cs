@@ -302,7 +302,7 @@ public class OneCardManager : MonoBehaviour
         lowHealEnabled = cardAsset.lowHeal.enabled;
         highhealEnabled = cardAsset.highHeal.enabled;
         lowDamageEnabled = cardAsset.lowDMG.enabled;
-        highhealEnabled = cardAsset.highDMG.enabled;
+        highDamageEnabled = cardAsset.highDMG.enabled;
 
         UpdateList(costText, cost.ToString());
         UpdateList(nameText, cardAsset.name);
