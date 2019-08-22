@@ -223,6 +223,7 @@ public class EnemyFieldScript : MonoBehaviour
                 SpawnQueenEnemy();
                 SpawnStrongEnemy();
                 SpawnEggEnemy();
+                AudioManager.Instance.QueenMusic();
                 enemyWaveCount++;
                 break;
             case 4:
@@ -345,8 +346,8 @@ public class EnemyFieldScript : MonoBehaviour
         enemyState = EnemyState.Start;
     }
 
-    public void ActivateSummoningSicness() { 
-    
+    public void ActivateSummoningSicness()
+    { 
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).GetComponent<OneCardManager>().summoningSickness = true;
