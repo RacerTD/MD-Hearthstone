@@ -47,3 +47,4 @@ MonoBehaviour:
     type: 3}
   nextSpawn: 1
   speed: 0
+  damageSFX: {fileID: 8300000, guid: 0cb68dd1af3b9f044bb3497fb083e7f4, type: 3}

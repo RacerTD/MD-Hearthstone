@@ -13,6 +13,8 @@ public class Damage : MonoBehaviour
     private GameManager gameManager;
     private Vector3 spawnPosition;
 
+    public AudioClip damageSFX;
+
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -36,6 +38,7 @@ public class Damage : MonoBehaviour
             Vector2 newPos = spawnPosition + new Vector3(0,0,0); //transform.position durch spawnPosition erstetzen
             GameObject myObject = Instantiate(damageParticle, newPos, Quaternion.identity);
             myObject.transform.SetParent(transform);
+            AudioManager.Instance.PlaySFX(damageSFX);
         }
     }
 

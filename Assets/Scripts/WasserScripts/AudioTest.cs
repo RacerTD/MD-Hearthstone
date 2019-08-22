@@ -19,5 +19,4 @@ public class AudioTest : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(buttonClickSFX);
     }
-
 }

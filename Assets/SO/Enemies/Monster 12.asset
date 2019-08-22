@@ -16,10 +16,10 @@ MonoBehaviour:
   cardType: 0
   cardImage: {fileID: 21300000, guid: 8ae419f8020130c4198ecaf527d1801b, type: 3}
   boardCardImage: {fileID: 0}
-  maxHealth: 4
+  maxHealth: 5
   attack: 5
   attackUsed: 0
-  summoningSickness: 1
+  summoningSickness: 0
   taunt: 0
   cost: 2
   description: 
