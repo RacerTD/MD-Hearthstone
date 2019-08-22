@@ -345,7 +345,7 @@ public class EnemyFieldScript : MonoBehaviour
         enemyState = EnemyState.Start;
     }
 
-    public void ActivateSummoningSicness()
+    public void ActivateSummoningSicness() { 
     
         for (int i = 0; i < transform.childCount; i++)
         {
