@@ -51,6 +51,7 @@ public class AudioManager : MonoBehaviour
 
         musicSource.loop = true;
         musicSource2.loop = true;
+        musicSource2.clip = music;
 
     }
     void Update()
@@ -67,6 +68,7 @@ public class AudioManager : MonoBehaviour
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;
 
         activeSource.clip = musicClip;
+        activeSource.clip = music;
         activeSource.volume = 1;
         activeSource.Play();
     }

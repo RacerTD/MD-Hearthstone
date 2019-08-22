@@ -7,6 +7,7 @@ public class PauseScipt : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public AudioClip music;
 
     void Update()
     {
@@ -19,6 +20,7 @@ public class PauseScipt : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
+       
     }
 
     public void Pause()
@@ -26,6 +28,7 @@ public class PauseScipt : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         GameIsPaused = true;
+
     }
 
     public void Menu()
