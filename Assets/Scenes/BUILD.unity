@@ -707,7 +707,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 2.258
+  m_padding: 0
   m_canvasRenderer: {fileID: 352860189}
   m_TextComponent: {fileID: 1799092514}
   m_materialReferenceIndex: 1
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   clicked02: {fileID: 0}
   abilityUser: {fileID: 0}
   particlePosition: []
-  normalPool: {fileID: 21300000, guid: 33776c0e14aa5d7409399a962ff304fa, type: 3}
-  glowingPool: {fileID: 21300000, guid: 33776c0e14aa5d7409399a962ff304fa, type: 3}
+  normalPool: {fileID: 21300000, guid: f7872bb612088ab41a2ac70d67d8b48b, type: 3}
+  glowingPool: {fileID: 21300000, guid: b0500a3af8c4a8b4ba0fdeb8c37899d9, type: 3}
   pool1: {fileID: 199702651}
   healAbilityCost: 0
   DMGAbilityCost: 0

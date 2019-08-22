@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5304,7 +5304,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Julia Le
+  m_text: "Julia L\xEA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 364d8ff1e42840d42a3b563d9c598772, type: 2}
   m_sharedMaterial: {fileID: 924796799174266834, guid: 364d8ff1e42840d42a3b563d9c598772,
@@ -5565,8 +5565,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 75.6
-  m_fontSizeBase: 75.6
+  m_fontSize: 54
+  m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

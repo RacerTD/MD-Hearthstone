@@ -13,6 +13,8 @@ public class Heal : MonoBehaviour
     private GameManager gameManager;
     private Vector3 spawnPosition;
 
+    public AudioClip damageSFX;
+
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -23,6 +25,7 @@ public class Heal : MonoBehaviour
     {
         spawnPosition = gameManager.particlePosition[0];
         gameManager.particlePosition.RemoveAt(0);
+        //AudioManager.Instance.PlaySFX(damageSFX);
     }
 
     // Update is called once per frame
@@ -35,6 +38,7 @@ public class Heal : MonoBehaviour
             Vector2 newPos = spawnPosition + new Vector3(UnityEngine.Random.Range(-50, 50), UnityEngine.Random.Range(-50, 50), 0);
             GameObject myObject = Instantiate(healParticle, newPos, Quaternion.identity);
             myObject.transform.SetParent(transform);
+            
         }
     }
 

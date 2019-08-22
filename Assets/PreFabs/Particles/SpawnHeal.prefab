@@ -48,3 +48,4 @@ MonoBehaviour:
   spawnRate: 0.2
   nextSpawn: 0
   speed: 0
+  damageSFX: {fileID: 8300000, guid: f189d29ce83595042869a108ffdaff93, type: 3}

@@ -2279,7 +2279,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 82.239975, y: -131.9}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8581208118748640111
 CanvasRenderer:
@@ -7517,7 +7517,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 82.239975, y: -131.9}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5534342337301255390
 CanvasRenderer:
@@ -7964,9 +7964,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Restores 1 hitpoint
+  m_text: 'Restores 1 Hitpoint
 
-    of an allys health.'
+    of an ally''s Health.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 364d8ff1e42840d42a3b563d9c598772, type: 2}
   m_sharedMaterial: {fileID: 924796799174266834, guid: 364d8ff1e42840d42a3b563d9c598772,
@@ -8626,9 +8626,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Restores 3 hitpoint
+  m_text: 'Restores 3 Hitpoints
 
-    of an allys health.'
+    of an ally''s Health.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 364d8ff1e42840d42a3b563d9c598772, type: 2}
   m_sharedMaterial: {fileID: 924796799174266834, guid: 364d8ff1e42840d42a3b563d9c598772,
@@ -9513,8 +9513,8 @@ MonoBehaviour:
   bigImages:
   - {fileID: 2128503077460143997}
   - {fileID: 5202951085365801590}
-  fullLifeSprite: {fileID: 0}
-  lifeSprite: {fileID: 0}
+  fullLifeSprite: {fileID: 21300000, guid: a1d01b89cf285b1468142a098c968432, type: 3}
+  lifeSprite: {fileID: 21300000, guid: 59705b56c839d6648a69632db140c528, type: 3}
   lifeBackground: {fileID: 3829997763385730404}
   gameManager: {fileID: 0}
   enemyField: {fileID: 0}
@@ -9537,7 +9537,7 @@ MonoBehaviour:
   maxLifeColor: {r: 1, g: 1, b: 1, a: 1}
   currentLifeColor: {r: 0, g: 0, b: 0, a: 1}
   lifeDisabledColor: {r: 0, g: 0, b: 0, a: 0}
-  lowHPColor: {r: 1, g: 0.08472431, b: 0, a: 1}
+  lowHPColor: {r: 0.099679604, g: 0.19719344, b: 0.3018868, a: 1}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
