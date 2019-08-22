@@ -225,9 +225,12 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Clicked on Card");
         if (lootEnabler != null)
         {
-            clickedOn.GetComponent<OneCardManager>().EquipAbility(abilityToActivate);
-            lootEnabler.Destroy();
-            ResetAbilitys();
+            if (clickedOn.cardAsset.cardType == CardType.Human)
+            {
+                clickedOn.GetComponent<OneCardManager>().EquipAbility(abilityToActivate);
+                lootEnabler.Destroy();
+                ResetAbilitys();
+            }
         } 
         else if (gameState == GameState.PlayerIdle)
         {

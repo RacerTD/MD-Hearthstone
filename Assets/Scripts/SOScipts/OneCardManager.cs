@@ -218,7 +218,7 @@ public class OneCardManager : MonoBehaviour
                 lowHealEnabled = true;
                 if (highhealEnabled)
                 {
-                    lowDamageEnabled = false;
+                    lowHealEnabled = false;
                 }
                 break;
             case AbilityNames.highHeal:
@@ -229,7 +229,7 @@ public class OneCardManager : MonoBehaviour
                 lowDamageEnabled = true;
                 if (highDamageEnabled)
                 {
-                    lowHealEnabled = false;
+                    lowDamageEnabled = false;
                 }
                 break;
             case AbilityNames.highDMG:
