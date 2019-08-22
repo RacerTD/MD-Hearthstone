@@ -71,6 +71,7 @@ public class PlayerFieldScript : MonoBehaviour
         }
     }
 
+
     public void DeactivateAllTooltips()
     {
         for (int i = 0; i < transform.childCount; i++)

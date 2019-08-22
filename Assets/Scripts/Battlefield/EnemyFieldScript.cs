@@ -22,6 +22,7 @@ public class EnemyFieldScript : MonoBehaviour
     public PlayerFieldScript playerField;
     public CardDeckScript cardDeck;
     public ManaScript mana;
+    public HandScript hand;
 
     [Header("Anderes")]
     public float timeBetweenActions = 5;
@@ -92,7 +93,9 @@ public class EnemyFieldScript : MonoBehaviour
                 case EnemyState.Start:
                     gameManager.ResetAbilitys();
                     TurnStart();
+                    hand.DeactivateDraggingScript();
                     EnemyCardSpawn();
+                    
 
                     if (firstTurn)
                     {

@@ -115,6 +115,7 @@ public class GameManager : MonoBehaviour
 
             case GameState.PlayerCardDraw:
                 PlayerCardDraw();
+                hand.AcvtivateDraggingScript();
                 ResetAbilitys();
                 TurnBegin();
                 break;

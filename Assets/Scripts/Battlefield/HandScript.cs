@@ -114,6 +114,22 @@ public class HandScript : MonoBehaviour
         }
     }
 
+    public void AcvtivateDraggingScript()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<Draggable>().enabled = true;
+        }
+    }
+
+    public void DeactivateDraggingScript()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<Draggable>().enabled = false;
+        }
+    }
+
     private void FindHover()
     {
         OneCardManager oldHover = curHover;
