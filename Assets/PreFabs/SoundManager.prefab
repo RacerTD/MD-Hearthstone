@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af9990ca6cd1704a9d35974aeef4a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muteButton: {fileID: 0}
+  soundOn: {fileID: 21300000, guid: 85d680cec30563942aaaf530a512022b, type: 3}
+  soundOff: {fileID: 21300000, guid: 04a600d9cf9ac1547aa8d061e6b58ace, type: 3}
 --- !u!114 &6714948956621954660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,5 +59,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771ab255337b007428936a55a1f9f23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickSFX: {fileID: 0}
+  buttonClickSFX: {fileID: 8300000, guid: 25c4089518197f1459451b9a5ed7dfef, type: 3}
   music: {fileID: 8300000, guid: 6306b31422de76849b57759e3853087b, type: 3}

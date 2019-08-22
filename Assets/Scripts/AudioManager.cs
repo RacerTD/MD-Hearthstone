@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -33,20 +34,32 @@ public class AudioManager : MonoBehaviour
     private AudioSource musicSource;
     private AudioSource musicSource2;
     private AudioSource sfxSource;
-
+    public GameObject muteButton;
+    public Sprite soundOn;
+    public Sprite soundOff;
+    public AudioClip music;
     private bool firstMusicSourceIsPlaying;
     #endregion
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-
+        muteButton = GameObject.Find("MuteButton");
         musicSource = this.gameObject.AddComponent<AudioSource>();
         musicSource2 = this.gameObject.AddComponent<AudioSource>();
         sfxSource = this.gameObject.AddComponent<AudioSource>();
 
         musicSource.loop = true;
         musicSource2.loop = true;
+
+    }
+    void Update()
+    {
+        if (musicSource2 == null)
+        {
+            musicSource2.clip = music;
+        }
+
     }
 
     public void PlayMusic(AudioClip musicClip)
@@ -81,9 +94,9 @@ public class AudioManager : MonoBehaviour
         {
             activeSource.Play();
         }
-        float t = 0.0f;
+        float t = 0.1f;
 
-        for (t = 0; t < transitionTime; t += Time.deltaTime)
+        for (t = 0.1f; t < transitionTime; t += Time.deltaTime)
         {
             activeSource.volume = (1 - (t / transitionTime));
             yield return null;
@@ -93,7 +106,7 @@ public class AudioManager : MonoBehaviour
         activeSource.clip = newClip;
         activeSource.Play();
 
-        for (t = 0; t < transitionTime; t += Time.deltaTime)
+        for (t = 0.1f; t < transitionTime; t += Time.deltaTime)
         {
             activeSource.volume = (t / transitionTime);
             yield return null;
@@ -130,5 +143,23 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = volume;
     }
+    public void pauseMusic()
+    {
+        Muted();
+    }
+    public void Muted()
+    {
+        if(musicSource2.volume > 0)
+        {
+            AudioManager.Instance.musicSource2.volume = 0;
+            muteButton.GetComponent<Image>().sprite = soundOff;
 
+        }
+        else
+        {
+            AudioManager.Instance.musicSource2.volume = 1;
+            muteButton.GetComponent<Image>().sprite = soundOn;
+
+        }
+    }
 }
