@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        /*
+        
         if (Input.GetKeyDown("space"))
         {
             cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
         {
             TriggerEndScreen(false);
         }
-        */
+        
 
 
         switch (gameState)
@@ -199,6 +199,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             ResetAbilitys();
+            playerField.DeactivateAllTooltips();
 
             Vector3 mousePos = Input.mousePosition;
 

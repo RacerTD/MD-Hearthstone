@@ -47,6 +47,10 @@ public class PlayerFieldScript : MonoBehaviour
                     transform.GetChild(i).GetComponent<OneCardManager>().BackToHand();
                 }
             }
+            if (transform.childCount > 5)
+            {
+                transform.GetChild(transform.childCount - 1).GetComponent<OneCardManager>().BackToHand();
+            }
 
             UpdateCardParts();
         }
@@ -64,6 +68,15 @@ public class PlayerFieldScript : MonoBehaviour
             {
                 toHighlight.color = defaultColor;
             }
+        }
+    }
+
+    public void DeactivateAllTooltips()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            myChild = transform.GetChild(i);
+            myChild.GetComponent<NameTooltip>().DeactivateToolTip();
         }
     }
 

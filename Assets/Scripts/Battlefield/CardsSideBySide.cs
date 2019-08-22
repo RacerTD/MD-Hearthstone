@@ -43,9 +43,60 @@ public class CardsSideBySide : MonoBehaviour
 
     
    public void UpdateCardPositions()
-    {
+   {
         startingAngle = -(rotationOffSet * (transform.childCount - 1) / 2);
         startingPosition = - ((transform.childCount - 1) * cardOffSetHorizontal) / 2;
+
+        if (gameObject.GetComponent<PlayerFieldScript>())
+        {
+            Debug.Log("PlayerField");
+            for (int i = transform.childCount - 1; i >= 0; i--)
+            {
+                myChild = transform.GetChild(i);
+                Vector3 targetPosition;
+                if (randomVertical && randomHorizontal)
+                {
+                    targetPosition = new Vector3((i * - cardOffSetHorizontal - startingPosition + horizontalOffset[i]), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
+                }
+                else if (randomVertical)
+                {
+                    targetPosition = new Vector3((i * - cardOffSetHorizontal - startingPosition), (verticalOffset_ + verticalOffset[i]), (i * cardOffSetDepth));
+                }
+                else
+                {
+                    targetPosition = new Vector3((i * - cardOffSetHorizontal - startingPosition), (verticalOffset_ - (Mathf.Abs(startingAngle + rotationOffSet * i) * 2)), (i * cardOffSetDepth));
+                }
+
+                if (myChild.GetComponent<OneCardManager>())
+                    myChild.GetComponent<OneCardManager>().targetPosition = targetPosition;
+                myChild.transform.DOLocalMove(targetPosition, 1f).SetEase(Ease.OutQuart);
+
+                Vector3 targetRotation;
+
+                if (randomAngle)
+                {
+                    targetRotation = new Vector3(0, 0, startingAngle + rotationOffSet * i + angleOffset[i]);
+                    myChild.transform.DOScale(new Vector3(scale, scale, scale), 1f).SetEase(Ease.OutQuart);
+                }
+                else
+                {
+                    targetRotation = new Vector3(0, 0, startingAngle + rotationOffSet * i);
+                    myChild.transform.DOScale(new Vector3(scale, scale, scale), 1f).SetEase(Ease.OutQuart);
+                }
+
+                if (myChild.GetComponent<OneCardManager>())
+                {
+                    myChild.GetComponent<OneCardManager>().targetRotation = targetRotation;
+                }
+                myChild.transform.DOLocalRotate(targetRotation, 1f).SetEase(Ease.OutQuart);
+
+                if (myChild.GetComponent<OneCardManager>().cardAsset.name == "Queen")
+                {
+                    myChild.transform.DOScale(new Vector3(scale * 1.5f, scale * 1.5f, scale * 1.5f), 1f).SetEase(Ease.OutQuart);
+                }
+            }
+            return;
+        }
 
         for (int i = 0; i < transform.childCount; i++)
         {

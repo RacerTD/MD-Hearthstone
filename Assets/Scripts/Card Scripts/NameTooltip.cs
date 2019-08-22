@@ -34,6 +34,15 @@ public class NameTooltip : MonoBehaviour
             HideTip();
         }
     }
+    
+    public void DeactivateToolTip()
+    {
+        if (visible)
+        {
+            HideTip();
+            visible = false;
+        }
+    }
 
     private void moveNameTip()
     {
@@ -45,10 +54,12 @@ public class NameTooltip : MonoBehaviour
             objects[i].SetActive(true);
             objects[i].transform.DOLocalMove(new Vector3(15, -26, 0), 0.7f).SetEase(Ease.OutQuart);
         }
-        /*box.transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
+        /*
+        box.transform.DOScale(1f, 0f).SetEase(Ease.OutQuart);
         box.transform.position = box.transform.position + new Vector3(0, -20f, 0);
         box.SetActive(true);
-        box.transform.DOLocalMove(new Vector3(447, 600, 0), 0.7f).SetEase(Ease.OutQuart);*/
+        box.transform.DOLocalMove(new Vector3(447, 600, 0), 0.7f).SetEase(Ease.OutQuart);
+        */
     }
 
     private void HideTip()
