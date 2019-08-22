@@ -9513,6 +9513,9 @@ MonoBehaviour:
   bigImages:
   - {fileID: 2128503077460143997}
   - {fileID: 5202951085365801590}
+  fullLifeSprite: {fileID: 0}
+  lifeSprite: {fileID: 0}
+  lifeBackground: {fileID: 3829997763385730404}
   gameManager: {fileID: 0}
   enemyField: {fileID: 0}
   maxLife: {fileID: 9010260354255808698}

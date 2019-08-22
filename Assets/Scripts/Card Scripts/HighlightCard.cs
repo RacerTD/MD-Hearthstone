@@ -12,6 +12,9 @@ public class HighlightCard : MonoBehaviour
     public List<Image> healAbility = new List<Image>();
     public List<Image> attackAbility = new List<Image>();
     public List<Image> bigImages = new List<Image>();
+    public Sprite fullLifeSprite;
+    public Sprite lifeSprite;
+    public Image lifeBackground;
 
     public GameManager gameManager;
     public EnemyFieldScript enemyField;
@@ -225,15 +228,10 @@ public class HighlightCard : MonoBehaviour
 
     void Update()
     {
-        //Attack();
         AbilityUser();
-        //AttackUser();
-        //HealAndAttackHighlight();
         HealAbilityUsed();
         AttackAbilityUsed();
         SummoningSickness();
-        //EquipmentHighlight();
-        //Hover();
 
         NormalLifeColor();
 
@@ -332,6 +330,16 @@ public class HighlightCard : MonoBehaviour
         {
             currentLife.color = lifeDisabledColor;
         }
+
+        if (gameObject.GetComponent<OneCardManager>().Health < gameObject.GetComponent<OneCardManager>().maxHealth)
+        {
+            lifeBackground.sprite = lifeSprite;
+        }
+        else
+        {
+            lifeBackground.sprite = fullLifeSprite;
+        }
+
     }
 
     private bool CheckIfEquipmentIsPossible()
