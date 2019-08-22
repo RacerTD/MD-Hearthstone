@@ -235,6 +235,8 @@ public class HighlightCard : MonoBehaviour
         //EquipmentHighlight();
         //Hover();
 
+        NormalLifeColor();
+
         WavesHighlight();
     }
 
@@ -309,15 +311,26 @@ public class HighlightCard : MonoBehaviour
         {
             normalLifeEnabled = true;
             maxLife.color = lifeDisabledColor;
+            currentLife.color = currentLifeColor;
+        }
+    }
+
+    private void NormalLifeColor()
+    {
+        if (normalLifeEnabled)
+        {
             if (gameObject.GetComponent<OneCardManager>().Health < gameObject.GetComponent<OneCardManager>().maxHealth)
             {
-                hpImage.color = lowHPColor;
+                currentLife.color = lowHPColor;
             }
             else
             {
-                hpImage.color = defaultColor;
+                currentLife.color = currentLifeColor;
             }
-            //currentLife.color = currentLifeColor;
+        }
+        else
+        {
+            currentLife.color = lifeDisabledColor;
         }
     }
 
