@@ -9,11 +9,15 @@ public class AudioTest : MonoBehaviour
 
     public void Start()
     {
-        AudioManager.Instance.PlayMusic(music);
+        AudioManager.Instance.PlayMusicWithFade(music);
     }
     private void Update()
     {
         
+    }
+    public void ButtonPressed()
+    {
+        AudioManager.Instance.PlaySFX(buttonClickSFX);
     }
 
 }

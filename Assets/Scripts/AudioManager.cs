@@ -57,14 +57,14 @@ public class AudioManager : MonoBehaviour
         activeSource.volume = 1;
         activeSource.Play();
     }
-    public void PlayMusicWithFade(AudioClip newClip, float transitionTime = 1.0f)
+    public void PlayMusicWithFade(AudioClip newClip, float transitionTime = 0.5f)
     {
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;
 
         StartCoroutine(UpdateMusicWithFade(activeSource, newClip, transitionTime));
     }
 
-    public void PlayMusicWithCrossFade(AudioClip musicClip, float transitionTime = 1.0f)
+    public void PlayMusicWithCrossFade(AudioClip musicClip, float transitionTime = 0.5f)
     {
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;
         AudioSource newSource = (firstMusicSourceIsPlaying) ? musicSource2 : musicSource;
