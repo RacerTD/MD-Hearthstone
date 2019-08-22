@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using DG.Tweening;
 
 public class OneCardManager : MonoBehaviour
 {
@@ -142,6 +142,10 @@ public class OneCardManager : MonoBehaviour
 
     private void Update()
     {
+        if (this == gameManager.currentlyDragging)
+        {
+            gameObject.transform.DOScale(new Vector3(0.75f, 0.75f, 0.75f), 0.5f).SetEase(Ease.OutQuart);
+        }
         /*
         if (summoningSickness == true)
         {

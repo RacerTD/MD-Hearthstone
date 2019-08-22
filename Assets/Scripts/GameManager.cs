@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        /*
         if (Input.GetKeyDown("space"))
         {
             cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
         {
             TriggerEndScreen(false);
         }
+        */
         
 
 

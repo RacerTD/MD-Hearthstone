@@ -19,12 +19,12 @@ public class CardDeckScript : MonoBehaviour
 
     private void Update()
     {
-        
+        /*
         if (Input.GetKeyDown("d"))
         {
             SpawnSpellCard();
         }
-        
+        */
     }
 
 
