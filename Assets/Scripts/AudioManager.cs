@@ -163,10 +163,4 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void QueenMusic()
-    {
-
-        musicSource2.clip = QueenMusicClip;
-
-    }
 }
