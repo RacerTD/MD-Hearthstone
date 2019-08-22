@@ -12,6 +12,7 @@ public class HighlightCard : MonoBehaviour
     public List<Image> healAbility = new List<Image>();
     public List<Image> attackAbility = new List<Image>();
     public List<Image> bigImages = new List<Image>();
+    public Image hpImage;
 
     public GameManager gameManager;
     public EnemyFieldScript enemyField;
@@ -48,6 +49,7 @@ public class HighlightCard : MonoBehaviour
     public Color maxLifeColor;
     public Color currentLifeColor;
     public Color lifeDisabledColor;
+    public Color lowHPColor;
 
     void Start()
     {
@@ -233,8 +235,21 @@ public class HighlightCard : MonoBehaviour
         SummoningSickness();
         //EquipmentHighlight();
         //Hover();
+        UpdateHPBackground();
 
         WavesHighlight();
+    }
+
+    private void UpdateHPBackground()
+    {
+        if (gameObject.GetComponent<OneCardManager>().Health < gameObject.GetComponent<OneCardManager>().maxHealth)
+        {
+            hpImage.color = lowHPColor;
+        }
+        else
+        {
+            hpImage.color = defaultColor;
+        }
     }
 
     private void WavesHighlight()
