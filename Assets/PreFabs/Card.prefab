@@ -450,8 +450,7 @@ MonoBehaviour:
   m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1047,8 +1046,7 @@ MonoBehaviour:
   m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1281,8 +1279,7 @@ MonoBehaviour:
   m_text: Stronger Heal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3450,8 +3447,7 @@ MonoBehaviour:
   m_text: "R\xFCdiger"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4463,8 +4459,7 @@ MonoBehaviour:
   m_text: Heal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5237,8 +5232,7 @@ MonoBehaviour:
   m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6469,8 +6463,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7335,8 +7328,7 @@ MonoBehaviour:
   m_text: Boomerang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7633,8 +7625,7 @@ MonoBehaviour:
   m_text: "R\xFCdiger\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8262,8 +8253,7 @@ MonoBehaviour:
   m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a9573d44f4394d4c8199904b83aaa91, type: 2}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9533,12 +9523,12 @@ MonoBehaviour:
   enemyWave: {fileID: 3842560175817704468}
   normalLifeEnabled: 1
   healColor: {r: 0.3184436, g: 1, b: 0.2735849, a: 1}
-  equipmentColor: {r: 1, g: 0.84181607, b: 0, a: 1}
+  equipmentColor: {r: 1, g: 0.69650847, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  attackColor: {r: 1, g: 0.5372549, b: 0.5554664, a: 1}
-  abilityUsedColor: {r: 0, g: 0, b: 0, a: 0}
-  summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
-  selectedCardColor: {r: 0.5969685, g: 0.22748311, b: 0.6792453, a: 1}
+  attackColor: {r: 1, g: 0, b: 0.16666698, a: 1}
+  abilityUsedColor: {r: 0.3207547, g: 0.28141686, b: 0.28141686, a: 1}
+  summoningSicknessColor: {r: 0.4339623, g: 0.3029548, b: 0.35658357, a: 1}
+  selectedCardColor: {r: 0.4433962, g: 0.9253881, b: 1, a: 1}
   defaultEnemyColor: {r: 0.77647066, g: 0.93725497, b: 0.61960787, a: 1}
   maxLifeColor: {r: 1, g: 1, b: 1, a: 1}
   currentLifeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -10403,8 +10393,7 @@ MonoBehaviour:
   m_text: Yo-yo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: -9142828541452871571, guid: eb0737e1010890f4fa5d10446d6cbdba,
-    type: 2}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

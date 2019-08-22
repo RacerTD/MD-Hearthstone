@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class wavespawn : MonoBehaviour
+public class dirtwavespawn1 : MonoBehaviour
 {
     public GameObject wave;
     public float spawnRate = 0.2f;
     float nextSpawn = 1.1f;
     float speed;
+    public Color dirtyColor;
     void Start()
     {
     }
@@ -19,11 +20,12 @@ public class wavespawn : MonoBehaviour
     {
         if (Time.time > nextSpawn)
         {
-            nextSpawn = Time.time + (spawnRate+0.2f);
-            Vector2 newPos = new Vector2(UnityEngine.Random.Range(150, Screen.width - 150), UnityEngine.Random.Range(Screen.height * 0.3f, Screen.height * 0.6f));
+            nextSpawn = Time.time + (spawnRate + 0.2f);
+            Vector2 newPos = new Vector2(UnityEngine.Random.Range(Screen.width * 0.2f, Screen.width * 0.8f), UnityEngine.Random.Range(Screen.height * 0.7f, Screen.height * 0.95f));
             GameObject myObject = Instantiate(wave, newPos, Quaternion.identity);
+            myObject.GetComponent<Image>().color = dirtyColor;
             myObject.transform.SetParent(transform);
-            transform.position += new Vector3(0, newPos.x + 100, Time.deltaTime) ;
+            transform.position += new Vector3(0, newPos.x + 100, Time.deltaTime);
         }
     }
 }
