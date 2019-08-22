@@ -27,8 +27,8 @@ public class GameManager : MonoBehaviour
     public OneCardManager abilityUser = null;
     public List<Vector3> particlePosition = new List<Vector3>();
 
-    public Color defaultPoolColor;
-    public Color poolUnavailibleColor;
+    public Sprite normalPool;
+    public Sprite glowingPool;
     public Image pool1;
 
     public int healAbilityCost;
@@ -130,11 +130,11 @@ public class GameManager : MonoBehaviour
     {
         if (humanKilled)
         {
-            pool1.color = poolUnavailibleColor;
+            pool1.sprite = normalPool;
         }
         else
         {
-            pool1.color = defaultPoolColor;
+            pool1.sprite = glowingPool;
         }
     }
 
