@@ -179,7 +179,7 @@ public class OneCardManager : MonoBehaviour
             {
                 if (transform.GetChild(i).GetComponent<OneCardManager>())
                 {
-                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human && transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost <= mana.manaCount)
+                    if (transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cardType == CardType.Epuipment && cardAsset.cardType == CardType.Human && transform.GetChild(i).GetComponent<OneCardManager>().cardAsset.cost <= mana.manaCount && equipmentCount <= 4)
                     {
                         EquipEquipment(transform.GetChild(i).GetComponent<OneCardManager>().cardAsset);
                         transform.GetChild(i).GetComponent<OneCardManager>().DeleteEquipment();
