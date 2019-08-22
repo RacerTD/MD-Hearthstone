@@ -146,30 +146,6 @@ public class OneCardManager : MonoBehaviour
         {
             gameObject.transform.DOScale(new Vector3(0.75f, 0.75f, 0.75f), 0.5f).SetEase(Ease.OutQuart);
         }
-        /*
-        if (summoningSickness == true)
-        {
-            for (int i = 0; i < boardCardImage.Count; i++)
-            {
-                boardCardImage[i].color = new Color(0, 0, 1, 1);
-            }
-            for (int i = 0; i < cardGraphic.Count; i++)
-            {
-                cardGraphic[i].color = new Color(0, 0, 1, 1);
-            }
-        }
-        else
-        {
-            for (int i = 0; i < boardCardImage.Count; i++)
-            {
-                boardCardImage[i].color = new Color(0, 1, 0, 1);
-            }
-            for (int i = 0; i < cardGraphic.Count; i++)
-            {
-                cardGraphic[i].color = new Color(0, 1, 0, 1);
-            }
-        }
-        */
 
         if (transform.childCount != childCount)
         {
@@ -200,7 +176,6 @@ public class OneCardManager : MonoBehaviour
 
     public void EquipEquipment(CardAsset equipment)
     {
-        //Debug.Log("Equipment got Equipped");
         maxHealth += equipment.maxHealth;
         Health += equipment.maxHealth;
         Attack += equipment.attack;
@@ -352,12 +327,10 @@ public class OneCardManager : MonoBehaviour
     {
         if (maxHealth > _health)
         {
-            //Debug.Log("Healable");
             return true;
         }
         else
         {
-            //Debug.Log("Not Healable");
             return false;
         }
     }
@@ -391,7 +364,6 @@ public class OneCardManager : MonoBehaviour
 
     public void TurnBegin()
     {
-        //Debug.Log("Turn Begin");
         lowHealUsed = false;
         highHealUsed = false;
         lowDamageUsed = false;
@@ -409,7 +381,6 @@ public class OneCardManager : MonoBehaviour
     {
         if (cardAsset.cardType == CardType.Egg)
         {
-            //Debug.Log("Egg to Normal transformation");
             cardAsset = enemyField.strongEnemyCards[Random.Range(0, enemyField.strongEnemyCards.Count)];
             maxHealth = cardAsset.maxHealth;
             Health = cardAsset.maxHealth;
@@ -438,7 +409,6 @@ public class OneCardManager : MonoBehaviour
         ChangeEggToEnemy();
 
         cardAsset.summoningSickness = false;
-        //Debug.Log("Deactivate Summoning Sickness");
     }
 
     private void UpdateAbilitys()

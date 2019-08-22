@@ -83,28 +83,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (Input.GetKeyDown("space"))
-        {
-            cardDeck.GetComponent<CardDeckScript>().MoveCardToHand();
-        }
-        if (Input.GetKeyDown("x"))
-        {
-            TriggerEndScreen(true);
-        }
-        if (Input.GetKeyDown("y"))
-        {
-            TriggerEndScreen(false);
-        }
-        */
-
         ColorPools();
 
 
         switch (gameState)
         {
             case GameState.GameStart:
-                cardDeck.SpawnStartCards();
                 cardDeck.ShuffleDeck();
                 cardDeck.SpawnCardDeck();
                 gameState = GameState.Enemy;
@@ -172,10 +156,9 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
+            Vector3 mousePos = Input.mousePosition;
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            //Debug.Log(hit.collider.name);
 
             if (hit.collider != null && gameState == GameState.PlayerIdle)
             {
@@ -242,7 +225,6 @@ public class GameManager : MonoBehaviour
 
     public void CardClicked(OneCardManager clickedOn)
     {
-        //Debug.Log("Clicked on Card");
         if (lootEnabler != null)
         {
             if (clickedOn.cardAsset.cardType == CardType.Human)
@@ -332,9 +314,7 @@ public class GameManager : MonoBehaviour
 
             if (clicked01 != null && clicked02 != null)
             {
-                //particlePosition.Add(clicked01.transform.position);
                 clicked01.Damage(clicked02.Attack);
-                //particlePosition.Add(clicked02.transform.position);
                 clicked02.Damage(clicked01.Attack);
                 ResetAbilitys();
             }
@@ -345,7 +325,6 @@ public class GameManager : MonoBehaviour
     {
         humanKilled = false;
         playerField.TurnBegin();
-        //enemyField.TurnStart();
         mana.TurnBegin();
     }
 
@@ -372,7 +351,6 @@ public class GameManager : MonoBehaviour
             clicked01.Heal(healAbilityEffect);
             mana.UsedMana(healAbilityCost);
 
-            //particlePosition.Add(clicked01.transform.position);
             abilityUser.UsedHeal();
             ResetAbilitys();
         }
@@ -388,7 +366,6 @@ public class GameManager : MonoBehaviour
         {
             clicked01.Damage(DMGAbilityEffect);
             mana.UsedMana(DMGAbilityCost);
-            //particlePosition.Add(clicked01.transform.position);
 
             abilityUser.UsedDamage();
             ResetAbilitys();
@@ -434,7 +411,6 @@ public class GameManager : MonoBehaviour
     {
         if (gameState == GameState.PlayerIdle)
         {
-            //TurnBegin();
             ResetAbilitys();
             lootField.OnEndTurn();
             gameState = GameState.Enemy;

@@ -16,12 +16,6 @@ public class PlayerFieldScript : MonoBehaviour
     public Color humanCardHighlight;
     public Color defaultColor;
 
-    void Start()
-    {
-        
-    }
-
-    
     void Update()
     {
         if (childCount != transform.childCount)
@@ -55,7 +49,6 @@ public class PlayerFieldScript : MonoBehaviour
             UpdateCardParts();
         }
         
-
         if (currentHandCard != gameManager.cardInHand)
         {
             currentHandCard = gameManager.cardInHand;
@@ -70,7 +63,6 @@ public class PlayerFieldScript : MonoBehaviour
             }
         }
     }
-
 
     public void DeactivateAllTooltips()
     {

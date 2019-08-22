@@ -19,11 +19,6 @@ public class LootScript : MonoBehaviour
         transform.SetParent(lootField.transform, false);
     }
 
-    void Update()
-    {
-        
-    }
-
     public void Destroy()
     {
         Destroy(gameObject);

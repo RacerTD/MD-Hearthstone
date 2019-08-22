@@ -36,9 +36,7 @@ public class CardsSideBySide : MonoBehaviour
         {
             childCount = transform.childCount;
             UpdateCardPositions();
-            //Debug.Log("Baum");
         }
-        //UpdateCardPositions();
     }
 
     

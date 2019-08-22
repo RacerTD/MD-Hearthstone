@@ -9,12 +9,7 @@ public class ManPowerScript : MonoBehaviour
     public int manPower = 0;
     public int maxManPower = 0;
     int childcounter;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (childcounter != transform.childCount)

@@ -11,36 +11,21 @@ public class CardDeckScript : MonoBehaviour
     public List<CardAsset> startCards = new List<CardAsset>();
     public List<CardAsset> spellCards = new List<CardAsset>();
 
-    //comment
-    void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        /*
-        if (Input.GetKeyDown("d"))
-        {
-            SpawnSpellCard();
-        }
-        */
-    }
-
-
     public void ShuffleDeck()
     {
         CardAsset merker;
         int switcher;
+        int spott1;
+        int spott2;
         for (int i = 0; i <= (deckCards.Count - 1); i++)
         {
-            merker = deckCards[i];
-            switcher = Random.Range(0, deckCards.Count);
-            deckCards[i] = deckCards[switcher];
-            deckCards[switcher] = merker;
-        }
+            spott1 = Random.Range(0, deckCards.Count);
+            spott2 = Random.Range(0, deckCards.Count);
 
-        //deckCards=deckCards.OrderBy(c => Random.value).ToList();
+            merker = deckCards[spott1];
+            deckCards[spott1] = deckCards[spott2];
+            deckCards[spott2] = merker;
+        }
     }
 
     public void SpawnCardDeck()
@@ -53,21 +38,17 @@ public class CardDeckScript : MonoBehaviour
         } while (i > 0);
         
     }
+
     public CardAsset CardToSpawn()
     {
         CardAsset cardToSpawn = deckCards[0];
         deckCards.RemoveAt(0);
         return cardToSpawn;
     }
+
     public void MoveCardToHand()
     {
         this.gameObject.transform.GetChild(0).SetParent(hand.transform, true);
-    }
-
-    public void SpawnStartCards()
-    {
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
-        Instantiate(cardPrefab, new Vector3(1000, 1000, 1000), Quaternion.identity);
     }
 
     public void SpawnSpellCard()

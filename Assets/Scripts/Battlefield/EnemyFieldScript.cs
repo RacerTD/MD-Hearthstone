@@ -133,10 +133,6 @@ public class EnemyFieldScript : MonoBehaviour
                     {
                         firstTurn_ = false;
                     }
-                    else
-                    {
-                        //TurnStart();
-                    }
                     
                     gameManager.gameState = GameState.PlayerCardDraw;
                     break;
@@ -179,7 +175,6 @@ public class EnemyFieldScript : MonoBehaviour
 
     public void TurnStart()
     {
-        Debug.Log("Enemy Turn Begin");
         for (int i = 0; i < transform.childCount; i++)
         {
             myChild = transform.GetChild(i);
@@ -196,8 +191,9 @@ public class EnemyFieldScript : MonoBehaviour
         {
             enemyWaveCount++;
             if (enemyWaveCount != 0)
+            {
                 cardDeck.SpawnSpellCard();
-            Debug.Log("Wave Count +1 " + enemyWaveCount);
+            }
         }
 
         switch (enemyWaveCount)
@@ -296,7 +292,6 @@ public class EnemyFieldScript : MonoBehaviour
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            Debug.Log("Baumstamm");
             myChild = transform.GetChild(i);
             if (myChild.GetComponent<OneCardManager>().cardAsset.taunt)
             {
@@ -324,7 +319,6 @@ public class EnemyFieldScript : MonoBehaviour
                         attacked = true;
                         timer = 0;
                         enemyState = EnemyState.Wait;
-                        Debug.Log("Attacked");
                     }
                 } while (!attacked);
             }
@@ -336,14 +330,11 @@ public class EnemyFieldScript : MonoBehaviour
                 attacked = true;
                 timer = 0;
                 enemyState = EnemyState.Wait;
-                Debug.Log("Attacked");
             }
         }
         else
         {
-            Debug.Log("Du hast verloren");
             gameManager.TriggerEndScreen(true);
-            //Deathscreen
             enemyState = EnemyState.End;
         }
     }
@@ -355,8 +346,7 @@ public class EnemyFieldScript : MonoBehaviour
     }
 
     public void ActivateSummoningSicness()
-    {
-        Debug.Log("Activated Summoning Sicness");
+    
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).GetComponent<OneCardManager>().summoningSickness = true;
