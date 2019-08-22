@@ -149,10 +149,6 @@ public class GameManager : MonoBehaviour
 
     private void Clicking()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            ResetAbilitys();
-        }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Vector3 mousePos = Input.mousePosition; // Camera.main.Screen/ToWorldPoint(Input.mousePosition);
@@ -202,6 +198,8 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
+            ResetAbilitys();
+
             Vector3 mousePos = Input.mousePosition;
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
@@ -211,6 +209,10 @@ public class GameManager : MonoBehaviour
                 if (hit.collider.name == "Frame")
                 {
                     hit.collider.gameObject.GetComponentInParent<NameTooltip>().TooltipSwitch();
+                }
+                else if (hit.collider.name == "HPIcon")
+                {
+                    hit.collider.GetComponentInParent<HighlightCard>().EnableMaxLife();
                 }
             }
         }

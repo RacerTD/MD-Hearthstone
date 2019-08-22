@@ -212,15 +212,25 @@ public class OneCardManager : MonoBehaviour
         {
             case AbilityNames.lowHeal:
                 lowHealEnabled = true;
+                if (highhealEnabled)
+                {
+                    lowDamageEnabled = false;
+                }
                 break;
             case AbilityNames.highHeal:
                 highhealEnabled = true;
+                lowHealEnabled = false;
                 break;
             case AbilityNames.lowDMG:
                 lowDamageEnabled = true;
+                if (highDamageEnabled)
+                {
+                    lowHealEnabled = false;
+                }
                 break;
             case AbilityNames.highDMG:
                 highDamageEnabled = true;
+                lowDamageEnabled = false;
                 break;
         }
         UpdateAbilitys();
@@ -432,11 +442,13 @@ public class OneCardManager : MonoBehaviour
         if (highhealEnabled)
         {
             highHealGameObject.SetActive(true);
+            lowHealGameObject.SetActive(false);
             handAbilitySymbol.sprite = abilityImages[1];
         }
         else if (lowHealEnabled)
         {
             lowHealGameObject.SetActive(true);
+            highHealGameObject.SetActive(false);
             handAbilitySymbol.sprite = abilityImages[0];
         }
         else
@@ -448,11 +460,13 @@ public class OneCardManager : MonoBehaviour
         if (highDamageEnabled)
         {
             highDMGGameObject.SetActive(true);
+            lowDMGGameObject.SetActive(false);
             handAbilitySymbol.sprite = abilityImages[3];
         }
         else if (lowDamageEnabled)
         {
             lowDMGGameObject.SetActive(true);
+            highDMGGameObject.SetActive(false);
             handAbilitySymbol.sprite = abilityImages[2];
         }
         else

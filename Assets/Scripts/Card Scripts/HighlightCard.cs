@@ -34,6 +34,7 @@ public class HighlightCard : MonoBehaviour
     public GameObject enemyWave;
 
     private bool newSizeSet = false;
+    public bool normalLifeEnabled = true;
 
     [Header("Colors")]
     public Color healColor;
@@ -44,6 +45,9 @@ public class HighlightCard : MonoBehaviour
     public Color summoningSicknessColor;
     public Color selectedCardColor;
     public Color defaultEnemyColor;
+    public Color maxLifeColor;
+    public Color currentLifeColor;
+    public Color lifeDisabledColor;
 
     void Start()
     {
@@ -75,25 +79,25 @@ public class HighlightCard : MonoBehaviour
         if (gameManager.GetComponent<GameManager>().abilityUser != null)
         {
 
-            if (GetComponent<OneCardManager>().lowHealEnabled == true && GetComponent<OneCardManager>().lowHealUsed == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().lowHealEnabled == true && gameManager.healAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Heal Ability
             {
                 lowHealGlow.SetActive(true);
             }
 
-            if (GetComponent<OneCardManager>().highhealEnabled == true && GetComponent<OneCardManager>().highHealUsed == false && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().highhealEnabled == true && gameManager.healAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Heal Ability
             {
                 highHealGlow.SetActive(true);
             }
 
-            if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().lowDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().lowDMGGameObject == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Damage Ability
             {
                 lowDMGGlow.SetActive(true);
             }
 
-            if (currentHighlight == Highlight.Attack && GetComponent<OneCardManager>().highDMGGameObject == true && gameManager.GetComponent<GameManager>().abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().highDMGGameObject == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Damage Ability
             {
                 highDMGGlow.SetActive(true);
@@ -228,7 +232,7 @@ public class HighlightCard : MonoBehaviour
         AttackAbilityUsed();
         SummoningSickness();
         //EquipmentHighlight();
-        Hover();
+        //Hover();
 
         WavesHighlight();
     }
@@ -292,24 +296,19 @@ public class HighlightCard : MonoBehaviour
         }
     }
 
-    private void Hover()
+    public void EnableMaxLife()
     {
-        Vector3 mousePos = Input.mousePosition;
-
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-        if (hit.collider != null && (hit.collider.name != "LowHealLoot(Clone)" && hit.collider.name != "HighHealLoot(Clone)" && hit.collider.name != "HighDamageLoot(Clone)" && hit.collider.name != "LowDamageLoot(Clone)"))
+        if (normalLifeEnabled)
         {
-            if (hit.collider.name == "HPIcon" && gameObject.GetComponent<OneCardManager>().onBoard)
-            {
-                hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = true;
-                hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = false;
-            }
-            else
-            {
-                hit.collider.GetComponentInParent<HighlightCard>().maxLife.enabled = false;
-                hit.collider.GetComponentInParent<HighlightCard>().currentLife.enabled = true;
-            }
+            normalLifeEnabled = false;
+            maxLife.color = maxLifeColor;
+            currentLife.color = lifeDisabledColor;
+        }
+        else
+        {
+            normalLifeEnabled = true;
+            maxLife.color = lifeDisabledColor;
+            currentLife.color = currentLifeColor;
         }
     }
 

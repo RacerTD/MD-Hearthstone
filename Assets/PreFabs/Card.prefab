@@ -8560,8 +8560,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -5955235605704117728, guid: efdf1dc99a2184344bddca0f5c744525,
-    type: 3}
+  m_Sprite: {fileID: 283331153905114450, guid: efdf1dc99a2184344bddca0f5c744525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9071,7 +9070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5007041523379934720
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9131,8 +9130,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292208880
-  m_fontColor: {r: 0.94117653, g: 0.909804, b: 0.8352942, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9532,6 +9531,7 @@ MonoBehaviour:
   lowDMGGlow: {fileID: 4462264010600636348}
   highDMGGlow: {fileID: 6188611065449845050}
   enemyWave: {fileID: 3842560175817704468}
+  normalLifeEnabled: 1
   healColor: {r: 0.3184436, g: 1, b: 0.2735849, a: 1}
   equipmentColor: {r: 1, g: 0.84181607, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9540,6 +9540,9 @@ MonoBehaviour:
   summoningSicknessColor: {r: 0.4117647, g: 0.42745098, b: 0.42745098, a: 1}
   selectedCardColor: {r: 0.5969685, g: 0.22748311, b: 0.6792453, a: 1}
   defaultEnemyColor: {r: 0.77647066, g: 0.93725497, b: 0.61960787, a: 1}
+  maxLifeColor: {r: 1, g: 1, b: 1, a: 1}
+  currentLifeColor: {r: 0, g: 0, b: 0, a: 1}
+  lifeDisabledColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &7828345410005056317
 MonoBehaviour:
   m_ObjectHideFlags: 0
