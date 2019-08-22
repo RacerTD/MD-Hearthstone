@@ -38,6 +38,7 @@ public class AudioManager : MonoBehaviour
     public Sprite soundOn;
     public Sprite soundOff;
     public AudioClip music;
+    public AudioClip QueenMusicClip;
     private bool firstMusicSourceIsPlaying;
     #endregion
 
@@ -51,15 +52,12 @@ public class AudioManager : MonoBehaviour
 
         musicSource.loop = true;
         musicSource2.loop = true;
+        musicSource.clip = music;
         musicSource2.clip = music;
 
     }
     void Update()
     {
-        if (musicSource2 == null)
-        {
-            musicSource2.clip = music;
-        }
 
     }
 
@@ -68,7 +66,7 @@ public class AudioManager : MonoBehaviour
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;
 
         activeSource.clip = musicClip;
-        activeSource.clip = music;
+
         activeSource.volume = 1;
         activeSource.Play();
     }
@@ -163,5 +161,12 @@ public class AudioManager : MonoBehaviour
             muteButton.GetComponent<Image>().sprite = soundOn;
 
         }
+    }
+
+    public void QueenMusic()
+    {
+
+        musicSource2.clip = QueenMusicClip;
+
     }
 }

@@ -47,6 +47,8 @@ MonoBehaviour:
   muteButton: {fileID: 0}
   soundOn: {fileID: 21300000, guid: 85d680cec30563942aaaf530a512022b, type: 3}
   soundOff: {fileID: 21300000, guid: 04a600d9cf9ac1547aa8d061e6b58ace, type: 3}
+  music: {fileID: 8300000, guid: 6306b31422de76849b57759e3853087b, type: 3}
+  QueenMusicClip: {fileID: 8300000, guid: 4f23cf35ac3186648bdf0ad0db52e365, type: 3}
 --- !u!114 &6714948956621954660
 MonoBehaviour:
   m_ObjectHideFlags: 0

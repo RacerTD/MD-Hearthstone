@@ -6173,12 +6173,22 @@ PrefabInstance:
         type: 3}
       propertyPath: music
       value: 
-      objectReference: {fileID: 8300000, guid: 6306b31422de76849b57759e3853087b, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714948956621954661, guid: c3ee88b3c79c4604f9498b74a92dbf78,
+        type: 3}
+      propertyPath: QueenMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f23cf35ac3186648bdf0ad0db52e365, type: 3}
     - target: {fileID: 6714948956621954660, guid: c3ee88b3c79c4604f9498b74a92dbf78,
         type: 3}
       propertyPath: buttonClickSFX
       value: 
       objectReference: {fileID: 8300000, guid: 25c4089518197f1459451b9a5ed7dfef, type: 3}
+    - target: {fileID: 6714948956621954660, guid: c3ee88b3c79c4604f9498b74a92dbf78,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: 6306b31422de76849b57759e3853087b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ee88b3c79c4604f9498b74a92dbf78, type: 3}
 --- !u!114 &1578907912 stripped

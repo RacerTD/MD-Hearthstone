@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1937,7 +1937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClickSFX: {fileID: 8300000, guid: 25c4089518197f1459451b9a5ed7dfef, type: 3}
-  music: {fileID: 0}
+  music: {fileID: 8300000, guid: 6306b31422de76849b57759e3853087b, type: 3}
 --- !u!1001 &1465086037
 PrefabInstance:
   m_ObjectHideFlags: 0
