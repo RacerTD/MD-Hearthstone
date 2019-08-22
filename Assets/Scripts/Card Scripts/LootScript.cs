@@ -16,7 +16,7 @@ public class LootScript : MonoBehaviour
 
     void Start()
     {
-        transform.SetParent(lootField.transform);
+        transform.SetParent(lootField.transform, false);
     }
 
     void Update()

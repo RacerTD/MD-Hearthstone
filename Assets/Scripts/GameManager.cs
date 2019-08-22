@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +26,10 @@ public class GameManager : MonoBehaviour
     public OneCardManager clicked02 = null;
     public OneCardManager abilityUser = null;
     public List<Vector3> particlePosition = new List<Vector3>();
+
+    public Color defaultPoolColor;
+    public Color poolUnavailibleColor;
+    public Image pool1;
 
     public int healAbilityCost;
     private int healAbilityEffect;
@@ -92,7 +97,8 @@ public class GameManager : MonoBehaviour
             TriggerEndScreen(false);
         }
         */
-        
+
+        ColorPools();
 
 
         switch (gameState)
@@ -119,6 +125,19 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
+    private void ColorPools()
+    {
+        if (humanKilled)
+        {
+            pool1.color = poolUnavailibleColor;
+        }
+        else
+        {
+            pool1.color = defaultPoolColor;
+        }
+    }
+
 
     /// <summary>
     /// Aktiviert den Endscreen
