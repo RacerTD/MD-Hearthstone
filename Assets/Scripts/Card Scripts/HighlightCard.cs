@@ -91,13 +91,13 @@ public class HighlightCard : MonoBehaviour
                 highHealGlow.SetActive(true);
             }
 
-            if (GetComponent<OneCardManager>().lowDMGGameObject == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().lowDamageEnabled == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Damage Ability
             {
                 lowDMGGlow.SetActive(true);
             }
 
-            if (GetComponent<OneCardManager>().highDMGGameObject == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
+            if (GetComponent<OneCardManager>().highDamageEnabled == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Damage Ability
             {
                 highDMGGlow.SetActive(true);
