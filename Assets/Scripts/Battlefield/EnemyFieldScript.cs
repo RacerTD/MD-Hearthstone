@@ -223,7 +223,6 @@ public class EnemyFieldScript : MonoBehaviour
                 SpawnQueenEnemy();
                 SpawnStrongEnemy();
                 SpawnEggEnemy();
-                AudioManager.Instance.QueenMusic();
                 enemyWaveCount++;
                 break;
             case 4:

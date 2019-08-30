@@ -4,7 +4,6 @@ using UnityEngine;
 
 
 // [Attribut]: Code will also be called in Editor Mode
-[ExecuteInEditMode]
 public class CardRotation : MonoBehaviour
 {
     public RectTransform CardFront;

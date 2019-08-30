@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public bool playersTurn;
     public CardType cardInHand = CardType.Nothing;
     public Highlight highlight = Highlight.Nothing;
+    public HighlightState highlightState = HighlightState.Normal;
     public OneCardManager currentlyDragging = null;
 
     public OneCardManager clicked01 = null;
@@ -46,6 +47,12 @@ public class GameManager : MonoBehaviour
         AOEAttack,
         AOEHeal,
         Nothing
+    }
+
+    public enum HighlightState
+    {
+        RoundStart,
+        Normal
     }
 
     public enum GameState
@@ -98,6 +105,8 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.PlayerCardDraw:
+                highlightState = HighlightState.RoundStart;
+                StartCoroutine(SetHighlightState());
                 PlayerCardDraw();
                 hand.AcvtivateDraggingScript();
                 ResetAbilitys();
@@ -110,6 +119,13 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
+    IEnumerator SetHighlightState()
+    {
+        Debug.Log("Baum");
+        yield return new WaitForSeconds(2f);
+        highlightState = HighlightState.Normal;
+    } 
 
     private void ColorPools()
     {

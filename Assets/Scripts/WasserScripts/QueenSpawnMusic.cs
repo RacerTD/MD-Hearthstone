@@ -5,14 +5,18 @@ using UnityEngine;
 public class QueenSpawnMusic : MonoBehaviour
 {
     public AudioClip music;
+    public EnemyFieldScript enemyField;
     bool yes = true;
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        enemyField = GameObject.Find("EnemyField").GetComponent<EnemyFieldScript>();
+    }
+
     void Start()
     {
-
-
         AudioManager.Instance.music = music;
-
+        
         
     }
 

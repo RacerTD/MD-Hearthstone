@@ -7,7 +7,7 @@ using TMPro;
 
 public class HighlightCard : MonoBehaviour
 {
-
+    [Header("Things to Color")]
     public List<Image> waves = new List<Image>();
     public List<Image> healAbility = new List<Image>();
     public List<Image> attackAbility = new List<Image>();
@@ -16,24 +16,31 @@ public class HighlightCard : MonoBehaviour
     public Sprite lifeSprite;
     public Image lifeBackground;
 
+    [Header("Public Field Stuff")]
     public GameManager gameManager;
     public EnemyFieldScript enemyField;
-    private bool summoningSickness;
+    public ManaScript mana;
+
     private CardType currendCardInHand = CardType.Nothing;
     private Highlight currentHighlight = Highlight.Nothing;
     private bool healAbilityUsed = false;
     private bool attackAbilityUsed = false;
-    private bool seeMaxLife = false;
-    private bool attackUsed = false;
-    private bool clickedAbility01 = false;
-    private bool clickedAbility02 = false;
+
+    [Header("Life Texts")]
     public TextMeshProUGUI maxLife;
     public TextMeshProUGUI currentLife;
+
+    [Header("Everything Abilitys")]
+    public GameObject lowHealInUseGlow;
+    public GameObject highHealInUseGlow;
+    public GameObject lowDMGInUseGlow;
+    public GameObject highDMGInUseGlow;
 
     public GameObject lowHealGlow;
     public GameObject highHealGlow;
     public GameObject lowDMGGlow;
     public GameObject highDMGGlow;
+
     public GameObject enemyWave;
 
     private bool newSizeSet = false;
@@ -57,25 +64,107 @@ public class HighlightCard : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         enemyField = GameObject.Find("EnemyField").GetComponent<EnemyFieldScript>();
+        mana = GameObject.Find("Mana").GetComponent<ManaScript>();
     }
 
-    private void Attack()
+    void Update()
+    { 
+        HealAbilityUsed();
+        AttackAbilityUsed();
+        SummoningSickness();
+        RoundStartHighlight();
+        NormalLifeColor();
+
+        WavesHighlight();
+    }
+
+    private void RoundStartHighlight()
     {
-        if (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy)
+        if (gameManager.highlightState == HighlightState.RoundStart)
         {
-            if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
+            if (GetComponent<OneCardManager>().lowHealEnabled == true)
             {
-                ChangeColor(attackColor, waves);
+                lowHealGlow.SetActive(true);
             }
-            else if (!enemyField.HasTaunt())
+            else
             {
-                ChangeColor(attackColor, waves);
+                lowHealGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().highhealEnabled == true)
+            {
+                highHealGlow.SetActive(true);
+            }
+            else
+            {
+                highHealGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().lowDamageEnabled == true)
+            {
+                lowDMGGlow.SetActive(true);
+            }
+            else
+            {
+                lowDMGGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().highDamageEnabled == true)
+            {
+                highDMGGlow.SetActive(true);
+            }
+            else
+            {
+                highHealGlow.SetActive(false);
+            }
+        }
+        else if (gameManager.highlightState == HighlightState.Normal)
+        {
+            if (GetComponent<OneCardManager>().lowHealEnabled == true && GetComponent<OneCardManager>().cardAsset.lowHeal.cost <= mana.manaCount)
+            {
+                lowHealGlow.SetActive(true);
+            }
+            else
+            {
+                lowHealGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().highhealEnabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.cost <= mana.manaCount)
+            {
+                highHealGlow.SetActive(true);
+            }
+            else
+            {
+                highHealGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().lowDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.lowDMG.cost <= mana.manaCount)
+            {
+                lowDMGGlow.SetActive(true);
+            }
+            else
+            {
+                lowDMGGlow.SetActive(false);
+            }
+
+            if (GetComponent<OneCardManager>().highDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.highDMG.cost <= mana.manaCount)
+            {
+                highDMGGlow.SetActive(true);
+            }
+            else
+            {
+                highHealGlow.SetActive(false);
             }
         }
         else
         {
-            ChangeColor(defaultEnemyColor, waves);
+            lowHealGlow.SetActive(false);
+            lowDMGGlow.SetActive(false);
+            highDMGGlow.SetActive(false);
+            highHealGlow.SetActive(false);
         }
+
+        AbilityUser();
     }
 
     private void AbilityUser()
@@ -86,74 +175,37 @@ public class HighlightCard : MonoBehaviour
             if (GetComponent<OneCardManager>().lowHealEnabled == true && gameManager.healAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Heal Ability
             {
-                lowHealGlow.SetActive(true);
+                lowHealInUseGlow.SetActive(true);
+                lowHealGlow.SetActive(false);
             }
 
             if (GetComponent<OneCardManager>().highhealEnabled == true && gameManager.healAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Heal Ability
             {
-                highHealGlow.SetActive(true);
+                highHealInUseGlow.SetActive(true);
+                highHealGlow.SetActive(false);
             }
 
             if (GetComponent<OneCardManager>().lowDamageEnabled == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights low Damage Ability
             {
-                lowDMGGlow.SetActive(true);
+                lowDMGInUseGlow.SetActive(true);
+                lowDMGGlow.SetActive(false);
             }
 
             if (GetComponent<OneCardManager>().highDamageEnabled == true && gameManager.DMGAbilityCost != 0 && gameManager.abilityUser == gameObject.GetComponent<OneCardManager>())
             //Highlights high Damage Ability
             {
-                highDMGGlow.SetActive(true);
+                highDMGInUseGlow.SetActive(true);
+                highDMGGlow.SetActive(false);
             }
         }
         else
         {
-            lowHealGlow.SetActive(false);
-            lowDMGGlow.SetActive(false);
-            highDMGGlow.SetActive(false);
-            highHealGlow.SetActive(false);
-        }
-    }
-
-    private void HealAndAttackHighlight()
-    {
-        if (gameManager.highlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
-        {
-            //Umfärben auf healColor
-            ChangeColor(healColor, waves);
-        }
-        else if (gameManager.highlight == Highlight.Attack && (gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Enemy || gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Egg))
-        {
-            if (enemyField.HasTaunt() && gameObject.GetComponent<OneCardManager>().cardAsset.taunt)
-            {
-                ChangeColor(attackColor, waves);
-            }
-            else if (!enemyField.HasTaunt())
-            {
-                ChangeColor(attackColor, waves);
-            }
-            //Umfärben auf attackColor
-        }
-        else
-        {
-            //färben auf defaultColor
-            ChangeColor(defaultColor, waves);
-            enemyWave.GetComponent<Image>().color = defaultEnemyColor;
-        }
-    }
-
-
-    private void AttackUser()
-    {
-        if (currentHighlight == Highlight.Attack && gameManager.clicked01 == gameObject.GetComponent<OneCardManager>())
-        {
-            //Highlights child when it does a basic attack
-            ChangeColor(selectedCardColor, waves);
-        }
-        else
-        {
-            ChangeColor(defaultColor, waves);
+            lowHealInUseGlow.SetActive(false);
+            lowDMGInUseGlow.SetActive(false);
+            highDMGInUseGlow.SetActive(false);
+            highHealInUseGlow.SetActive(false);
         }
     }
 
@@ -207,37 +259,6 @@ public class HighlightCard : MonoBehaviour
         }
     }
 
-    private void EquipmentHighlight()
-    {
-        if (currendCardInHand != gameManager.cardInHand)
-        {
-            currendCardInHand = gameManager.cardInHand;
-
-            if (currendCardInHand == CardType.Epuipment && gameObject.GetComponent<OneCardManager>().equipmentCount < 4 && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && CheckIfEquipmentIsPossible())
-            {
-                //Färben auf equipmentColor
-                ChangeColor(equipmentColor, waves);
-            }
-            else
-            {
-                //Färben auf defaultColor
-                ChangeColor(defaultColor, waves);
-            }
-        }
-    }
-
-    void Update()
-    {
-        AbilityUser();
-        HealAbilityUsed();
-        AttackAbilityUsed();
-        SummoningSickness();
-
-        NormalLifeColor();
-
-        WavesHighlight();
-    }
-
     private void WavesHighlight()
     {
         if (gameManager.highlight == Highlight.Heal && gameObject.GetComponent<OneCardManager>().cardAsset.cardType == CardType.Human && gameObject.GetComponent<OneCardManager>().Healable())
@@ -289,14 +310,6 @@ public class HighlightCard : MonoBehaviour
         }
     }
 
-    private void ChangeBoxColliderState(bool toSetTo, List<Image> toChange)
-    {
-        for (int i = 0; i < toChange.Count; i++)
-        {
-            toChange[i].GetComponent<BoxCollider2D>().enabled = toSetTo;
-        }
-    }
-
     public void EnableMaxLife()
     {
         if (normalLifeEnabled)
@@ -341,16 +354,4 @@ public class HighlightCard : MonoBehaviour
         }
 
     }
-
-    private bool CheckIfEquipmentIsPossible()
-    {
-        CardAsset equipment = gameObject.GetComponent<OneCardManager>().cardAsset;
-
-        if (!gameManager.currentlyDragging.cardAsset.lowHeal.enabled && !gameManager.currentlyDragging.cardAsset.highHeal.enabled && !gameManager.currentlyDragging.cardAsset.lowDMG.enabled && !gameManager.currentlyDragging.cardAsset.highDMG.enabled)
-        {
-            return true;
-        }
-        return false;
-    }
-
 }
