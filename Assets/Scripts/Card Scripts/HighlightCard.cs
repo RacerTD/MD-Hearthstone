@@ -120,7 +120,7 @@ public class HighlightCard : MonoBehaviour
         }
         else if (gameManager.highlightState == HighlightState.Normal)
         {
-            if (GetComponent<OneCardManager>().lowHealEnabled == true && GetComponent<OneCardManager>().cardAsset.lowHeal.cost <= mana.manaCount)
+            if (GetComponent<OneCardManager>().lowHealEnabled == true && GetComponent<OneCardManager>().cardAsset.lowHeal.cost <= mana.manaCount && GetComponent<OneCardManager>().lowHealUsed == false)
             {
                 lowHealGlow.SetActive(true);
             }
@@ -129,7 +129,7 @@ public class HighlightCard : MonoBehaviour
                 lowHealGlow.SetActive(false);
             }
 
-            if (GetComponent<OneCardManager>().highhealEnabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.cost <= mana.manaCount)
+            if (GetComponent<OneCardManager>().highhealEnabled == true && GetComponent<OneCardManager>().cardAsset.highHeal.cost <= mana.manaCount && GetComponent<OneCardManager>().highHealUsed == false)
             {
                 highHealGlow.SetActive(true);
             }
@@ -138,7 +138,7 @@ public class HighlightCard : MonoBehaviour
                 highHealGlow.SetActive(false);
             }
 
-            if (GetComponent<OneCardManager>().lowDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.lowDMG.cost <= mana.manaCount)
+            if (GetComponent<OneCardManager>().lowDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.lowDMG.cost <= mana.manaCount && GetComponent<OneCardManager>().lowDamageUsed == false)
             {
                 lowDMGGlow.SetActive(true);
             }
@@ -147,13 +147,13 @@ public class HighlightCard : MonoBehaviour
                 lowDMGGlow.SetActive(false);
             }
 
-            if (GetComponent<OneCardManager>().highDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.highDMG.cost <= mana.manaCount)
+            if (GetComponent<OneCardManager>().highDamageEnabled == true && GetComponent<OneCardManager>().cardAsset.highDMG.cost <= mana.manaCount && GetComponent<OneCardManager>().highDamageUsed == false)
             {
                 highDMGGlow.SetActive(true);
             }
             else
             {
-                highHealGlow.SetActive(false);
+                highDMGGlow.SetActive(false);
             }
         }
         else
